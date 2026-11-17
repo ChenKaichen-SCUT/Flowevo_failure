@@ -1,0 +1,41 @@
+task,success_job,failure_job,first_action_divergence_step,success_goal,failure_goal,same_initial_public_state,success_action,failure_action,success_feedback,failure_feedback,note
+find-animal,discovery-v2.F.def63cb9dcbcef266a65,discovery-v2.F.1b4703786cd7f2ff0592,1,"Task Description:
+Your task is to find a(n) animal. First, focus on the thing. Then, move it to the yellow box in the kitchen.","Task Description:
+Your task is to find a(n) animal. First, focus on the thing. Then, move it to the red box in the living room.",False,open bee hive,open drawer,The bee hive is now open.,The drawer is now open.,Different variation/goal/start state; earliest lexical divergence is not a causal attribution.
+find-living-thing,discovery-v2.F.b305a2703799b76c3a98,discovery-v2.F.ef2e54dbb3a42029c804,1,"Task Description:
+Your task is to find a(n) living thing. First, focus on the thing. Then, move it to the green box in the bedroom.","Task Description:
+Your task is to find a(n) living thing. First, focus on the thing. Then, move it to the green box in the bathroom.",False,focus on adult pea plant,focus on adult peach tree,You focus on the pea.,You focus on the plant.,Different variation/goal/start state; earliest lexical divergence is not a causal attribution.
+find-plant,discovery-v2.F.965d4f1df81ea937ed3b,discovery-v2.F.3c034ff32bf35c264df7,1,"Task Description:
+Your task is to find a(n) plant. First, focus on the thing. Then, move it to the purple box in the workshop.","Task Description:
+Your task is to find a(n) plant. First, focus on the thing. Then, move it to the orange box in the bathroom.",False,open freezer,open door to hallway,The ultra low temperature freezer is now open.,The door is now open.,Different variation/goal/start state; earliest lexical divergence is not a causal attribution.
+inclined-plane-friction-named-surfaces,discovery-v2.F.5bfedeb6e825464e626d,discovery-v2.F.81f896325b22612a849e,1,"Task Description:
+Your task is to determine which of the two inclined planes (soapy water, rubber) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.","Task Description:
+Your task is to determine which of the two inclined planes (steel, ceramic) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",False,look in drawer,look in bowl,"The drawer isn't open, so you can't see inside.","Inside the bowl is: 
+	a red apple
+	a banana
+	an orange
+	a potato",Different variation/goal/start state; earliest lexical divergence is not a causal attribution.
+inclined-plane-friction-unnamed-surfaces,discovery-v2.F.9cef108e88fa0d6aff89,discovery-v2.F.7ed64659a572c6ec8c7f,2,"Task Description:
+Your task is to determine which of the two inclined planes (unknown material E, unknown material C) has the most friction. After completing your experiment, focus on the inclined plane with the most friction.","Task Description:
+Your task is to determine which of the two inclined planes (unknown material B, unknown material F) has the most friction. After completing your experiment, focus on the inclined plane with the most friction.",False,look around,go to hallway,"This room is called the art studio. In it, you see: 
+	the agent
+	a substance called air
+	a large cupboard. The large cupboard door is closed. 
+	a table. On the table is: a bowl (containing nothing).
+	a wood cup (containing red paint)
+	a wood cup (containing blue paint)
+	a wood cup (containing yellow paint)
+You also see:
+	A door to the hallway (that is open)",You move to the hallway.,Different variation/goal/start state; earliest lexical divergence is not a causal attribution.
+lifespan-longest-lived,discovery-v2.F.2dcdca293d9b16367852,discovery-v2.F.548c37117aa7a7208d43,7,"Task Description:
+Your task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span.","Task Description:
+Your task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span.",False,look at giant tortoise egg,look at chameleon egg,a giant tortoise egg,a chameleon egg,Different variation/goal/start state; earliest lexical divergence is not a causal attribution.
+measure-melting-point-unknown-substance,discovery-v2.F.3fbe681bf784f2d76d21,discovery-v2.F.5de4ccea5ffbd8f8b877,1,"Task Description:
+Your task is to measure the melting point of solid unknown substance C, which is located around the kitchen. First, focus on the thermometer. Next, focus on the solid unknown substance C. If the melting point of solid unknown substance C is above 10.0 degrees celsius, focus on the orange box. If the melting point of solid unknown substance C is below 10.0 degrees celsius, focus on the yellow box. The boxes are located around the kitchen.","Task Description:
+Your task is to measure the melting point of solid unknown substance C, which is located around the kitchen. First, focus on the thermometer. Next, focus on the solid unknown substance C. If the melting point of solid unknown substance C is above 150.0 degrees celsius, focus on the red box. If the melting point of solid unknown substance C is below 150.0 degrees celsius, focus on the green box. The boxes are located around the kitchen.",False,open door to kitchen,open door to hallway,The door is now open.,The door is now open.,Different variation/goal/start state; earliest lexical divergence is not a causal attribution.
+melt,discovery-v2.F.6aebd9fb1322c1074fb6,discovery-v2.F.b22651ad67c9301bcba8,1,"Task Description:
+Your task is to melt ice. First, focus on the substance. Then, take actions that will cause it to change its state of matter.","Task Description:
+Your task is to melt orange juice. First, focus on the substance. Then, take actions that will cause it to change its state of matter.",False,open door to kitchen,focus on orange,The door is now open.,You focus on the orange.,Different variation/goal/start state; earliest lexical divergence is not a causal attribution.
+use-thermometer,discovery-v2.F.2beaa66b5bcd3db3dc64,discovery-v2.F.8e96186d11e9af5659e3,1,"Task Description:
+Your task is to measure the temperature of unknown substance B, which is located around the living room. First, focus on the thermometer. Next, focus on the unknown substance B. If the unknown substance B temperature is above 0.0 degrees celsius, place it in the blue box. If the unknown substance B temperature is below 0.0 degrees celsius, place it in the orange box. The boxes are located around the bedroom.","Task Description:
+Your task is to measure the temperature of unknown substance B, which is located around the living room. First, focus on the thermometer. Next, focus on the unknown substance B. If the unknown substance B temperature is above 200.0 degrees celsius, place it in the orange box. If the unknown substance B temperature is below 200.0 degrees celsius, place it in the yellow box. The boxes are located around the bedroom.",False,focus on thermometer,open door to kitchen,You focus on the thermometer.,The door is now open.,Different variation/goal/start state; earliest lexical divergence is not a causal attribution.
