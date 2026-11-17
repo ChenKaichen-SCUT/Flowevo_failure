@@ -1,0 +1,1 @@
+{"cpus_affinity": 4, "disk_free": 32032505856, "github_write_verified_via_connected_plugin": true, "memory_available": 30963417088, "memory_total": 32255557632, "os": "Ubuntu 22.04.5 LTS", "cgroup_limits": {"user.slice/cpu.max": "max 100000", "user.slice/memory.max": "max", "user.slice/user-0.slice/memory.max": "max"}}
