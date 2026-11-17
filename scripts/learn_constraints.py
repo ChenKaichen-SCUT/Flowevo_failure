@@ -14,6 +14,7 @@ def main():
         name,results=item;path=root/'runs-private/diagnoses'/(a.run_id+'.'+name+'.json')
         if path.exists():return read_json(path)
         d=diagnose_group(name,results,a.run_id);atomic_json(path,d);return d
+    groups={k:v for k,v in groups.items() if len(v)>=2}
     with ThreadPoolExecutor(max_workers=8) as pool:diagnoses=list(pool.map(work,sorted(groups.items())))
     mechanisms=[dict(m,task_name=d['task_name']) for d in diagnoses for m in d['mechanisms'] if m['two_variations_supported']]
     atomic_json(root/'runs-private'/(a.run_id+'.mechanisms.json'),{'mechanisms':mechanisms,'task_count':len(groups),'status':'HYPOTHESES_REQUIRE_PROBES' if mechanisms else 'NO_TWO_VARIATION_HYPOTHESIS'})

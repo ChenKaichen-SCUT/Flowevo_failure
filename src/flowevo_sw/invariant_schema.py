@@ -1,4 +1,4 @@
-FIELDS={'action','last_action','last_feedback','look','inventory','goal','same_action','same_visible_state'}
+FIELDS={'action','last_action','last_feedback','look','inventory','goal','same_action','same_visible_state','action_verb','action_target','target_door_state','target_container_state'}
 
 def validate_expr(expr,depth=0):
     if depth>8 or not isinstance(expr,dict) or len(expr)!=1:raise ValueError('Invalid declarative expression')

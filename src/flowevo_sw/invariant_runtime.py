@@ -1,4 +1,5 @@
 from .invariant_schema import validate_rule
+from .shared_state import action_facts
 
 def evaluate(expr,facts):
     op,value=next(iter(expr.items()))
@@ -21,5 +22,6 @@ def check(rule,context,action):
     validate_rule(rule);history=context.get('history',[]);last=history[-1] if history else {}
     facts={k:context.get(k) for k in ('look','inventory','goal')}
     facts.update(action=action,last_action=last.get('action'),last_feedback=last.get('feedback'),same_action=action==last.get('action') if last else None,same_visible_state=context.get('same_visible_state'))
+    facts.update(action_facts(context,action))
     verdict=evaluate(rule['trigger'],facts)
     return {'decision':'VETO' if verdict is True else 'ALLOW' if verdict is False else 'ABSTAIN','rule_id':rule['rule_id'],'evidence_refs':rule['source_evidence_ids']}

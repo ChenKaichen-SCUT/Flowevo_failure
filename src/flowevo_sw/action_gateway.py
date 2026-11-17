@@ -7,9 +7,11 @@ class ActionGateway:
     def __init__(self,adapter,client=None,arm='F',rules=None):
         self.adapter=adapter;self.client=client;self.arm=arm;self.rules=rules or []
         self.steps=[];self.checks=[];self.last_before=None;self.reviewed_checkpoint=None
+        self.pending_veto=None;self.veto_checkpoint=None
     @property
     def done(self):return self.adapter.done
     def step(self,action,source='dynamic',raw=None,request_id=None,replanned=False):
+        replanned=replanned or self.veto_checkpoint==self.adapter.decisions
         context=self.adapter.context()
         current=digest([context['look'],context['inventory']])
         context['same_visible_state']=current==self.last_before if self.last_before else None
@@ -21,10 +23,13 @@ class ActionGateway:
             verdicts=[dict(review,request_id=rid,rule_id='text_review')]
         self.checks.append({'checkpoint':self.adapter.decisions,'action':action,'source':source,'verdicts':verdicts,'replanned':replanned})
         if any(v.get('decision')=='VETO' for v in verdicts):
-            if not replanned:raise Veto(str(verdicts))
+            if not replanned:
+                self.pending_veto=str(verdicts);self.veto_checkpoint=self.adapter.decisions
+                raise Veto(str(verdicts))
             raise Veto('PERSISTENT_CONFLICT')
         before=self.adapter.view.copy();receipt=self.adapter.execute(action)
         self.last_before=current
+        self.pending_veto=None;self.veto_checkpoint=None
         self.steps.append({'step':self.adapter.decisions,'source':source,'raw_model_response':raw,'parsed_action':action,'executed_action':action,'request_id':request_id,'before':before,'after':self.adapter.view.copy(),'observation_hash':digest(self.adapter.view),'host_outcome':self.adapter.outcome()})
         if hasattr(self,'checkpoint'):self.checkpoint(self.steps)
         return receipt

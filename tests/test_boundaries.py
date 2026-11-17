@@ -101,3 +101,22 @@ def test_no_private_predicate():
         with pytest.raises(ValueError):validate_expr({'eq':[field,'x']})
     r=rule();r['trigger']={'contains':['last_feedback','closed']}
     assert check(r,{'history':[]},'look')['decision']=='ABSTAIN'
+
+def test_current_public_state_and_object_binding():
+    from flowevo_sw.shared_state import action_facts,public_facts
+    c={'look':'This room is called the hallway. A door to the kitchen (that is closed)\nA door to the bedroom (that is open)'}
+    assert action_facts(c,'go to kitchen')['target_door_state']=='closed'
+    assert action_facts(c,'go to door to bedroom')['target_door_state']=='open'
+    assert action_facts(c,'go to bathroom')['target_door_state'] is None
+    c['look']='This room is called the kitchen.'
+    assert action_facts(c,'go to kitchen')['target_door_state'] is None
+
+def test_direct_veto_allows_only_one_replan():
+    class Gen:
+        last={'raw':'{"action":"blocked"}','request_id':'fixture'}
+        def __init__(self):self.n=0
+        def step(self,*args,**kwargs):self.n+=1;return SimpleNamespace(action='blocked',prompt_tokens=1,completion_tokens=1)
+    a=FakeAdapter();g=ActionGateway(a,arm='F-I',rules=[rule()]);gen=Gen();ex=ScienceExecutor(g,gen,max_steps=100)
+    template=AlfWorldSkillTemplate('t','test',['blocked'],[])
+    tr=ex.run(AlfWorldTask('x','test','fixture'),'',['blocked'],skill_bindings={},skill_library_result={'best_layer':1,'template':template})
+    assert gen.n==1 and a.decisions==0 and tr.failure_type=='PERSISTENT_CONSTRAINT_CONFLICT'

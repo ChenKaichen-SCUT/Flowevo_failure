@@ -56,19 +56,20 @@ class ScienceExecutor(AlfWorldExecutor):
         if self.env.done:return
         trace.skill_seeded=bool(skill_context or policy_directives);trace.seeded_use_count=int(trace.skill_seeded)
         while len(trace.actions)<self.max_steps and not self.env.done:
-            correction=None;out=None
+            had_pending=bool(self.env.pending_veto)
+            correction=('Public-state constraint vetoed a direct skill action. Replan once: '+self.env.pending_veto) if had_pending else None;out=None
             for attempt in range(2):
                 try:
                     out=self.generator.step(task.goal,self.env.adapter.view['observation'],self.env.adapter.view['valid_actions'],skill_context=skill_context,policy_directives=policy_directives,correction=correction)
                     trace.llm_call_count+=1;trace.llm_prompt_tokens_total+=out.prompt_tokens;trace.llm_completion_tokens_total+=out.completion_tokens
-                    result=self.env.step(out.action,source='skill_guided' if trace.skill_seeded else 'dynamic',replanned=attempt>0,**self.generator.last)
+                    result=self.env.step(out.action,source='skill_guided' if trace.skill_seeded else 'dynamic',replanned=attempt>0 or had_pending,**self.generator.last)
                     self._record(trace,out.action,result);break
                 except ParseError:
                     correction='Invalid JSON action interface. Return exactly one JSON object containing a nonempty single-line action string.'
                     if attempt:trace.failure_type='ACTION_PARSE_ERROR';return
                 except Veto as exc:
                     correction='Public-state rule rejected the proposed action. Replan once using the SAME remaining episode budget: '+str(exc)
-                    if attempt:trace.failure_type='PERSISTENT_CONSTRAINT_CONFLICT';return
+                    if attempt or had_pending:trace.failure_type='PERSISTENT_CONSTRAINT_CONFLICT';return
                 except DeliveryError as exc:trace.failure_type=str(exc);return
             if trace.success:return
         trace.llm_total_tokens_total=trace.llm_prompt_tokens_total+trace.llm_completion_tokens_total
