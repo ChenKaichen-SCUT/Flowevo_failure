@@ -1,0 +1,23 @@
+{
+  "M0_templates_metadata_restored": 6,
+  "TEST_states_used": 0,
+  "binding_cases": 975,
+  "binding_source_episodes": 15,
+  "binding_verdicts": {
+    "ABSTAIN_INSUFFICIENT_EVIDENCE": 119,
+    "ALLOW": 4,
+    "REJECT_CONDITION_FALSE": 852
+  },
+  "cached_compiler_source_checks": 34,
+  "compiled_candidates": 34,
+  "eligible_train_dev_episodes": 96,
+  "limitations": "Bounded natural-language verifier; unsupported clauses stay UNKNOWN. No material/property oracle and no goal-choice selection. Source validity is not transfer.",
+  "new_model_calls": 0,
+  "repaired_candidates_admitted_to_runtime": 0,
+  "source_repair_status": {
+    "ALREADY_SOURCE_VALID": 13,
+    "AMBIGUOUS_ALIGNMENT": 15,
+    "NO_SOURCE_ALIGNMENT": 1,
+    "SOURCE_VALID_CANDIDATE": 5
+  }
+}

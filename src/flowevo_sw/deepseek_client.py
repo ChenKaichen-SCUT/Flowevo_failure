@@ -1,13 +1,15 @@
-import json,httpx
+import json,httpx,os
 
 class DeliveryError(RuntimeError):pass
 class ParseError(RuntimeError):pass
 
 class DeepSeekClient:
     def __init__(self,job_id,stage='action',endpoint='http://127.0.0.1:8765',meta=None):
+        if os.environ.get('FLOWEVO_OFFLINE_ONLY')=='1':raise DeliveryError('OFFLINE_ONLY_NO_PROVIDER_REQUESTS')
         self.job_id=job_id;self.stage=stage;self.counter=0;self.endpoint=endpoint
         self.http=httpx.Client(timeout=360,trust_env=False);self.meta=meta or {};self.records=[]
     def call(self,instructions,input_text,stage=None,learning=False):
+        if os.environ.get('FLOWEVO_OFFLINE_ONLY')=='1':raise DeliveryError('OFFLINE_ONLY_NO_PROVIDER_REQUESTS')
         stage=stage or self.stage;self.counter+=1;rid=f'{self.job_id}.{stage}.{self.counter:04d}'
         response=self.http.post(self.endpoint+'/request',json={'request_id':rid,'messages':[{'role':'system','content':instructions},{'role':'user','content':input_text}], 'max_tokens':8192 if learning else 4096,'meta':dict(self.meta,job_id=self.job_id,stage=stage)})
         if response.status_code!=200:raise DeliveryError(response.text[:240])

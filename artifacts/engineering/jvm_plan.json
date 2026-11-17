@@ -1,0 +1,136 @@
+{
+  "cases": [
+    {
+      "checkpoint": 0,
+      "job_id": "discovery-v2.F.02e77cda31db3b964346",
+      "kind": "identity",
+      "public_hash": "cf2b97d2988b5d188a60ae312fda4dbf73c10b690a94ab4288c7489e96c5f3c6",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    {
+      "checkpoint": 1,
+      "job_id": "discovery-v2.F.0ef2ea6f576b10fb9a37",
+      "kind": "identity",
+      "public_hash": "61dea88e282036a9150aa6aa113fd0a64f60b10aa430a38dbcb9dab8cc13eff3",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    {
+      "checkpoint": 0,
+      "job_id": "discovery-v2.F.20e65c56c84af8ab157f",
+      "kind": "identity",
+      "public_hash": "acbfb105e70b4a5d1d80491c53c5ec5962d561c1bfe5d34ddbb41154f16058fd",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    {
+      "checkpoint": 13,
+      "job_id": "discovery-v2.F.81f896325b22612a849e",
+      "kind": "identity",
+      "public_hash": "3b784477ca85e470f2bb7dfec02d5c5e222b9cafbe9e9e7ccab3790a399e079e",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    {
+      "checkpoint": 15,
+      "job_id": "discovery-v2.F.d129caa70cba348ea3e4",
+      "kind": "identity",
+      "public_hash": "06d97ea2750bcf2acedd1482bbd25187c2904ce085f223500be9639b473f0516",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    {
+      "checkpoint": 45,
+      "job_id": "discovery-v2.F.1b4703786cd7f2ff0592",
+      "kind": "identity",
+      "public_hash": "36fdd3b3cb2a131f134d7df3d8800cc5207e839ed81d8a492d17c34090f410bf",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    {
+      "checkpoint": 9,
+      "job_id": "discovery-v2.F.06eebbde9128242aba13",
+      "kind": "identity",
+      "public_hash": "7ac6f1ce4c9aafc1e386ea7d9a31818009d42d2f1e264a2ea3f718b2463473fb",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    {
+      "checkpoint": 7,
+      "job_id": "discovery-v2.F.5de4ccea5ffbd8f8b877",
+      "kind": "identity",
+      "public_hash": "a23b3a556c0ab848520232cd42c345eb32f401eb3f45a8e230f77471211edbc1",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    {
+      "checkpoint": 4,
+      "job_id": "selected-train-v1.F.003597b7b9c549df70c6",
+      "kind": "identity",
+      "public_hash": "e79666cc837e9033a8fad4e7995d3035f986b3214f44b637f266b32647b815c1",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    {
+      "checkpoint": 0,
+      "job_id": "discovery-v2.F.7ac4185e5f00f742931e",
+      "kind": "identity",
+      "public_hash": "aa29bc45def958585a8f3c8d9afac102c8ca5f639d0eef97536f9bea0c41f8fe",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    {
+      "checkpoint": 3,
+      "job_id": "dev-baseline-v1.F.cfcb5065ead3594fa047",
+      "kind": "identity",
+      "public_hash": "eec5f491b7e6a4556e0d7feaf58e0d2b482fbc3b63a161fe762e4f796f788927",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    {
+      "checkpoint": 0,
+      "job_id": "discovery-v2.F.06eebbde9128242aba13",
+      "kind": "identity",
+      "public_hash": "9af0f1e5c41735708bda3e8453c78f0d70c3d335149d6afa0a2c31e252ae4d68",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    {
+      "actions": [
+        "look at inclined plane with a brass surface",
+        "connect block to inclined plane with a brass surface"
+      ],
+      "bindings": {
+        "plane": "inclined plane with a brass surface"
+      },
+      "checkpoint": 5,
+      "equivalent_variants": [
+        "retained_conditions_preparation",
+        "literal_parameter_lift_preparation"
+      ],
+      "job_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+      "kind": "preparation",
+      "preparation_only": true,
+      "public_hash": "6b9952cee211cb1bfffafc4a779f2640d5b2595cdf494af2099b75a53f70a68b",
+      "source_validation": true,
+      "split": "dev",
+      "template_id": "prefix_1c956abf86ef3b4a",
+      "variant": "retained_conditions_preparation"
+    },
+    {
+      "actions": [
+        "look at inclined plane with a glass surface",
+        "connect block to inclined plane with a glass surface"
+      ],
+      "bindings": {
+        "plane": "inclined plane with a glass surface"
+      },
+      "checkpoint": 5,
+      "equivalent_variants": [
+        "retained_conditions_preparation",
+        "literal_parameter_lift_preparation"
+      ],
+      "job_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+      "kind": "preparation",
+      "preparation_only": true,
+      "public_hash": "6b9952cee211cb1bfffafc4a779f2640d5b2595cdf494af2099b75a53f70a68b",
+      "source_validation": true,
+      "split": "dev",
+      "template_id": "prefix_1c956abf86ef3b4a",
+      "variant": "retained_conditions_preparation"
+    }
+  ],
+  "maximum_workers": 4,
+  "new_API_calls": 0,
+  "no_TEST": true,
+  "no_model_continuations": true
+}

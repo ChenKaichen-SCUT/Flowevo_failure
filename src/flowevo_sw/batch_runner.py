@@ -3,7 +3,8 @@ from pathlib import Path
 from dataclasses import asdict
 from concurrent.futures import ProcessPoolExecutor,ThreadPoolExecutor
 from alfworld_.schemas import AlfWorldTrace,AlfWorldAction,AlfWorldTask
-from alfworld_.skill_library import SkillLibrary
+from .credit_accounting import ScienceSkillLibrary as SkillLibrary
+from .skill_contracts import ScienceSkillTemplate
 from .adapter import ScienceWorldAdapter
 from .action_gateway import ActionGateway
 from .flowevo_adapter import ScienceExecutor,ScienceGenerator,ScienceCompiler,bind_skill,public_episode
@@ -69,16 +70,13 @@ def publish_batch(lib,results,compiled):
     for r,c in zip(results,compiled):
         if r['status']!='EPISODE_LOCKED':continue
         trace=restore_trace(r);lib.advance_episode();before=lib.to_dict()
-        template=r.get('retrieved',{}).get('template')
-        if template and r['retrieved'].get('best_layer')==1:lib.record_template_usage(template['template_id'],trace.success)
-        if trace.strategy_holdout:lib.record_unguided(trace.task_type,trace.success)
-        elif trace.planning_mode in ('exemplar_guided','insight_guided','direct_then_exemplar','direct_then_insight'):lib.record_guided(trace.task_type,trace.success)
+        credit=lib.record_episode_credits(r)
         lib.record_trace_stats(trace)
         admitted=False
-        if c and c.get('template'):admitted=lib.add_template(AlfWorldSkillTemplate.from_dict(c['template']))
+        if c and c.get('template'):admitted=lib.add_template(ScienceSkillTemplate.from_dict(c['template']))
         if c and c.get('exemplar'):lib.add_exemplar(AlfWorldExemplar.from_dict(c['exemplar']))
         audit=lib.periodic_audit() if lib._current_episode%20==0 else {'not_due':True}
-        events.append({'job_id':r['job_id'],'compiled':bool(c),'admitted':admitted,'audit':audit,'before_hash':digest(before),'after_hash':digest(lib.to_dict()),'status_before':before['template_status'],'status_after':lib.to_dict()['template_status']})
+        events.append({'job_id':r['job_id'],'compiled':bool(c),'admitted':admitted,'audit':audit,'credit':credit,'before_hash':digest(before),'after_hash':digest(lib.to_dict()),'status_before':before['template_status'],'status_after':lib.to_dict()['template_status']})
     return events
 
 def run_batches(specs,root,run_id,bank=None,arms=None,rules=None,workers=8,batch_size=8,limit=100):

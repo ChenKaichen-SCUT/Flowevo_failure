@@ -1,0 +1,72 @@
+[
+  {
+    "actions": [
+      "look at inclined plane with a brass surface",
+      "connect block to inclined plane with a brass surface"
+    ],
+    "bindings": {
+      "plane": "inclined plane with a brass surface"
+    },
+    "checkpoint": 5,
+    "job_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+    "preparation_only": true,
+    "public_hash": "6b9952cee211cb1bfffafc4a779f2640d5b2595cdf494af2099b75a53f70a68b",
+    "source_validation": true,
+    "split": "dev",
+    "template_id": "prefix_1c956abf86ef3b4a",
+    "variant": "retained_conditions_preparation"
+  },
+  {
+    "actions": [
+      "look at inclined plane with a glass surface",
+      "connect block to inclined plane with a glass surface"
+    ],
+    "bindings": {
+      "plane": "inclined plane with a glass surface"
+    },
+    "checkpoint": 5,
+    "job_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+    "preparation_only": true,
+    "public_hash": "6b9952cee211cb1bfffafc4a779f2640d5b2595cdf494af2099b75a53f70a68b",
+    "source_validation": true,
+    "split": "dev",
+    "template_id": "prefix_1c956abf86ef3b4a",
+    "variant": "retained_conditions_preparation"
+  },
+  {
+    "actions": [
+      "look at inclined plane with a brass surface",
+      "connect block to inclined plane with a brass surface"
+    ],
+    "bindings": {
+      "experiment_object": "block",
+      "plane": "inclined plane with a brass surface"
+    },
+    "checkpoint": 5,
+    "job_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+    "preparation_only": true,
+    "public_hash": "6b9952cee211cb1bfffafc4a779f2640d5b2595cdf494af2099b75a53f70a68b",
+    "source_validation": true,
+    "split": "dev",
+    "template_id": "prefix_02605cb6a338d3ed",
+    "variant": "literal_parameter_lift_preparation"
+  },
+  {
+    "actions": [
+      "look at inclined plane with a glass surface",
+      "connect block to inclined plane with a glass surface"
+    ],
+    "bindings": {
+      "experiment_object": "block",
+      "plane": "inclined plane with a glass surface"
+    },
+    "checkpoint": 5,
+    "job_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+    "preparation_only": true,
+    "public_hash": "6b9952cee211cb1bfffafc4a779f2640d5b2595cdf494af2099b75a53f70a68b",
+    "source_validation": true,
+    "split": "dev",
+    "template_id": "prefix_02605cb6a338d3ed",
+    "variant": "literal_parameter_lift_preparation"
+  }
+]

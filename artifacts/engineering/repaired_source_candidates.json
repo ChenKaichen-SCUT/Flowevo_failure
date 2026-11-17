@@ -1,0 +1,890 @@
+{
+  "batch-sensitivity-8-v1.F.1421639dc7e19fcaab35": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "look around",
+      "look at {object}",
+      "focus on {object}"
+    ],
+    "applicability": "Agent is in a room with closed doors leading to other rooms; target objects are located in a reachable room and can be inspected and focused on.",
+    "example_bindings": {
+      "object": "inclined plane with a cloth surface",
+      "room": "hallway"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "object": [
+        "experiment_subject",
+        "goal_choice"
+      ],
+      "room": [
+        "navigation_destination"
+      ]
+    },
+    "parameters": [
+      "room",
+      "object"
+    ],
+    "source_contract": {
+      "repair": "unique alignment and distinct literal source values; aliases are not silently unified",
+      "source_goal": "Task Description:\nYour task is to determine which of the two inclined planes (cloth, steel) has the least friction. After completing your experiment, focus on the inclined plane with the least friction."
+    },
+    "source_task_id": "",
+    "source_trace_id": "batch-sensitivity-8-v1.F.1421639dc7e19fcaab35",
+    "success_count": 0,
+    "task_type": "inclined-plane-friction-named-surfaces",
+    "template_id": "repair_bcb234dd7c1043f8"
+  },
+  "dev-baseline-v1.F.3ea7c55db1ecffae3c8a": {
+    "action_template": [
+      "open {door}",
+      "go to {room}",
+      "look around",
+      "open {target_door}",
+      "go to {target_room}",
+      "connect {block} to {inclined_plane}",
+      "focus on {inclined_plane}"
+    ],
+    "applicability": "Agent is in a room with a closed door leading toward a workshop containing two inclined planes (glass and brass surfaces), a movable block, and a stopwatch; the task requires comparing friction by connecting the block to each inclined plane and focusing on it.",
+    "example_bindings": {
+      "block": "block",
+      "door": "door to hallway",
+      "inclined_plane": "inclined plane with a glass surface",
+      "room": "hallway",
+      "target_door": "door to workshop",
+      "target_room": "workshop"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "block": [
+        "experiment_subject"
+      ],
+      "door": [
+        "manipulated_object"
+      ],
+      "inclined_plane": [
+        "experiment_subject",
+        "goal_choice"
+      ],
+      "room": [
+        "navigation_destination"
+      ],
+      "target_door": [
+        "manipulated_object"
+      ],
+      "target_room": [
+        "navigation_destination"
+      ]
+    },
+    "parameters": [
+      "door",
+      "room",
+      "target_door",
+      "target_room",
+      "block",
+      "inclined_plane"
+    ],
+    "source_contract": {
+      "source_goal": "Task Description:\nYour task is to determine which of the two inclined planes (glass, brass) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+      "source_validation": "exact ordered action subsequence"
+    },
+    "source_task_id": "3ea7c55db1ecffae3c8a",
+    "source_trace_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+    "success_count": 1,
+    "task_type": "inclined-plane-friction-named-surfaces",
+    "template_id": "sw_4a8445e085163685"
+  },
+  "dev-baseline-v1.F.722d467db63128d43cf2": {
+    "action_template": [
+      "open {door}",
+      "go to {room}",
+      "connect brick to {inclined_plane}",
+      "focus on {inclined_plane}"
+    ],
+    "applicability": "Agent is in a building with connected rooms and doors; the target room contains a brick and multiple inclined planes with different surface materials.",
+    "example_bindings": {
+      "door": "door to workshop",
+      "inclined_plane": "inclined plane with a glass surface",
+      "room": "workshop"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "door": [
+        "manipulated_object"
+      ],
+      "inclined_plane": [
+        "experiment_subject",
+        "goal_choice"
+      ],
+      "room": [
+        "navigation_destination"
+      ]
+    },
+    "parameters": [
+      "door",
+      "room",
+      "inclined_plane"
+    ],
+    "source_contract": {
+      "source_goal": "Task Description:\nYour task is to determine which of the two inclined planes (glass, steel) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+      "source_validation": "exact ordered action subsequence"
+    },
+    "source_task_id": "722d467db63128d43cf2",
+    "source_trace_id": "dev-baseline-v1.F.722d467db63128d43cf2",
+    "success_count": 1,
+    "task_type": "inclined-plane-friction-named-surfaces",
+    "template_id": "sw_d54821640b406de5"
+  },
+  "dev-baseline-v1.F.cfcb5065ead3594fa047": {
+    "action_template": [
+      "open {container}",
+      "focus on {animal}",
+      "pick up {animal}",
+      "open {door}",
+      "go to {room}",
+      "move {animal} to {receptacle}",
+      "look in {receptacle}"
+    ],
+    "applicability": "Agent is in a room containing a closed container with an animal inside; the destination receptacle is in another room reachable through closed doors.",
+    "example_bindings": {
+      "animal": "bee 0",
+      "container": "bee hive",
+      "door": "door to hallway",
+      "receptacle": "red box",
+      "room": "hallway"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "animal": [
+        "goal_marker",
+        "manipulated_object"
+      ],
+      "container": [
+        "manipulated_object"
+      ],
+      "door": [
+        "manipulated_object"
+      ],
+      "receptacle": [
+        "manipulated_object",
+        "transfer_destination"
+      ],
+      "room": [
+        "navigation_destination"
+      ]
+    },
+    "parameters": [
+      "container",
+      "animal",
+      "door",
+      "room",
+      "receptacle"
+    ],
+    "source_contract": {
+      "source_goal": "Task Description:\nYour task is to find a(n) animal. First, focus on the thing. Then, move it to the red box in the living room.",
+      "source_validation": "exact ordered action subsequence"
+    },
+    "source_task_id": "cfcb5065ead3594fa047",
+    "source_trace_id": "dev-baseline-v1.F.cfcb5065ead3594fa047",
+    "success_count": 1,
+    "task_type": "find-animal",
+    "template_id": "sw_ad91c21cdf9f9a40"
+  },
+  "discovery-v2.F.09ae344822c12738f557": {
+    "action_template": [
+      "look at {animal}",
+      "focus on {animal}"
+    ],
+    "applicability": "The agent is in a location containing multiple candidate animals and the task is to identify and focus on the animal with the shortest life span.",
+    "example_bindings": {
+      "animal": "baby baby hedgehog"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "animal": [
+        "experiment_subject",
+        "goal_choice"
+      ]
+    },
+    "parameters": [
+      "animal"
+    ],
+    "source_contract": {
+      "source_goal": "Task Description:\nYour task is to find the animal with the shortest life span.  The animals are in the 'outside' location.  Focus on the animal with the shortest life span.",
+      "source_validation": "exact ordered action subsequence"
+    },
+    "source_task_id": "09ae344822c12738f557",
+    "source_trace_id": "discovery-v2.F.09ae344822c12738f557",
+    "success_count": 1,
+    "task_type": "lifespan-shortest-lived",
+    "template_id": "sw_2b4358949f26470f"
+  },
+  "discovery-v2.F.2beaa66b5bcd3db3dc64": {
+    "action_template": [
+      "focus on {instrument}",
+      "pick up {instrument}",
+      "open {door_to_target_room}",
+      "go to {intermediate_room}",
+      "open {door_to_substance_room}",
+      "go to {substance_room}",
+      "use {instrument} on {substance}",
+      "pick up {substance}",
+      "go to {intermediate_room}",
+      "open {door_to_box_room}",
+      "go to {box_room}",
+      "move {substance} to {box}"
+    ],
+    "applicability": "The thermometer and target substance are in different rooms reachable through a shared intermediate room; the blue and orange boxes are together in a separate room. The agent must carry the thermometer to the substance, measure it, then carry the substance to the correct box based on whether the reading is above or below 0.0 degrees celsius.",
+    "example_bindings": {
+      "box": "orange box",
+      "box_room": "bedroom",
+      "door_to_box_room": "door to bedroom",
+      "door_to_substance_room": "door to living room",
+      "door_to_target_room": "door to hallway",
+      "instrument": "thermometer",
+      "intermediate_room": "hallway",
+      "substance": "unknown substance",
+      "substance_room": "living room"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "box": [
+        "transfer_destination"
+      ],
+      "box_room": [
+        "navigation_destination"
+      ],
+      "door_to_box_room": [
+        "manipulated_object"
+      ],
+      "door_to_substance_room": [
+        "manipulated_object"
+      ],
+      "door_to_target_room": [
+        "manipulated_object"
+      ],
+      "instrument": [
+        "experiment_subject",
+        "instrument",
+        "manipulated_object"
+      ],
+      "intermediate_room": [
+        "navigation_destination"
+      ],
+      "substance": [
+        "experiment_subject",
+        "manipulated_object"
+      ],
+      "substance_room": [
+        "navigation_destination"
+      ]
+    },
+    "parameters": [
+      "instrument",
+      "door_to_target_room",
+      "intermediate_room",
+      "door_to_substance_room",
+      "substance_room",
+      "substance",
+      "door_to_box_room",
+      "box_room",
+      "box"
+    ],
+    "source_contract": {
+      "source_goal": "Task Description:\nYour task is to measure the temperature of unknown substance B, which is located around the living room. First, focus on the thermometer. Next, focus on the unknown substance B. If the unknown substance B temperature is above 0.0 degrees celsius, place it in the blue box. If the unknown substance B temperature is below 0.0 degrees celsius, place it in the orange box. The boxes are located around the bedroom.",
+      "source_validation": "exact ordered action subsequence"
+    },
+    "source_task_id": "2beaa66b5bcd3db3dc64",
+    "source_trace_id": "discovery-v2.F.2beaa66b5bcd3db3dc64",
+    "success_count": 1,
+    "task_type": "use-thermometer",
+    "template_id": "sw_91f1f70cfb01313c"
+  },
+  "discovery-v2.F.2dcdca293d9b16367852": {
+    "action_template": [
+      "open {door_1}",
+      "go to {room_1}",
+      "open {door_2}",
+      "go to {room_2}",
+      "open {door_3}",
+      "go to {room_3}",
+      "look at {animal_1}",
+      "focus on {animal_2}"
+    ],
+    "applicability": "Agent starts indoors in a room with a closed door; target animals are located in an outdoor area reachable through a sequence of rooms and doors.",
+    "example_bindings": {
+      "animal_1": "giant tortoise egg",
+      "animal_2": "egg giant tortoise",
+      "door_1": "door to hallway",
+      "door_2": "door to greenhouse",
+      "door_3": "door to outside",
+      "room_1": "hallway",
+      "room_2": "greenhouse",
+      "room_3": "outside"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "animal_1": [
+        "experiment_subject"
+      ],
+      "animal_2": [
+        "goal_choice"
+      ],
+      "door_1": [
+        "manipulated_object"
+      ],
+      "door_2": [
+        "manipulated_object"
+      ],
+      "door_3": [
+        "manipulated_object"
+      ],
+      "room_1": [
+        "navigation_destination"
+      ],
+      "room_2": [
+        "navigation_destination"
+      ],
+      "room_3": [
+        "navigation_destination"
+      ]
+    },
+    "parameters": [
+      "door_1",
+      "room_1",
+      "door_2",
+      "room_2",
+      "door_3",
+      "room_3",
+      "animal_1",
+      "animal_2"
+    ],
+    "source_contract": {
+      "repair": "unique alignment and distinct literal source values; aliases are not silently unified",
+      "source_goal": "Task Description:\nYour task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span."
+    },
+    "source_task_id": "",
+    "source_trace_id": "discovery-v2.F.2dcdca293d9b16367852",
+    "success_count": 0,
+    "task_type": "lifespan-longest-lived",
+    "template_id": "repair_371272ab149b0e0c"
+  },
+  "discovery-v2.F.3fbe681bf784f2d76d21": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "focus on thermometer",
+      "focus on {substance}",
+      "use thermometer on {substance}",
+      "focus on {box}"
+    ],
+    "applicability": "The unknown substance and thermometer are co-located in a room reachable through a closed door; the candidate boxes are in the same room.",
+    "example_bindings": {
+      "box": "orange box",
+      "room": "kitchen",
+      "substance": "solid unknown substance c"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "box": [
+        "goal_choice"
+      ],
+      "room": [
+        "navigation_destination"
+      ],
+      "substance": [
+        "experiment_subject",
+        "goal_marker"
+      ]
+    },
+    "parameters": [
+      "room",
+      "substance",
+      "box"
+    ],
+    "source_contract": {
+      "source_goal": "Task Description:\nYour task is to measure the melting point of solid unknown substance C, which is located around the kitchen. First, focus on the thermometer. Next, focus on the solid unknown substance C. If the melting point of solid unknown substance C is above 10.0 degrees celsius, focus on the orange box. If the melting point of solid unknown substance C is below 10.0 degrees celsius, focus on the yellow box. The boxes are located around the kitchen.",
+      "source_validation": "exact ordered action subsequence"
+    },
+    "source_task_id": "3fbe681bf784f2d76d21",
+    "source_trace_id": "discovery-v2.F.3fbe681bf784f2d76d21",
+    "success_count": 1,
+    "task_type": "measure-melting-point-unknown-substance",
+    "template_id": "sw_375909cbdb878b28"
+  },
+  "discovery-v2.F.5bfedeb6e825464e626d": {
+    "action_template": [
+      "open {container}",
+      "look in {container}",
+      "open {door}",
+      "go to {room}",
+      "look around",
+      "look at {surface_object}",
+      "focus on {surface_object}"
+    ],
+    "applicability": "Agent is in a room with closed containers/doors and must explore connected rooms to locate and select a target object among similar candidates.",
+    "example_bindings": {
+      "container": "drawer",
+      "door": "door to hallway",
+      "room": "hallway",
+      "surface_object": "inclined plane with a soapy water surface"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "container": [
+        "manipulated_object"
+      ],
+      "door": [
+        "manipulated_object"
+      ],
+      "room": [
+        "navigation_destination"
+      ],
+      "surface_object": [
+        "experiment_subject",
+        "goal_choice"
+      ]
+    },
+    "parameters": [
+      "container",
+      "door",
+      "room",
+      "surface_object"
+    ],
+    "source_contract": {
+      "source_goal": "Task Description:\nYour task is to determine which of the two inclined planes (soapy water, rubber) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+      "source_validation": "exact ordered action subsequence"
+    },
+    "source_task_id": "5bfedeb6e825464e626d",
+    "source_trace_id": "discovery-v2.F.5bfedeb6e825464e626d",
+    "success_count": 1,
+    "task_type": "inclined-plane-friction-named-surfaces",
+    "template_id": "sw_341aba094c300a92"
+  },
+  "discovery-v2.F.6aebd9fb1322c1074fb6": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "open {container}",
+      "focus on {substance}",
+      "pick up {substance}",
+      "move {substance} to {device}",
+      "activate {device}"
+    ],
+    "applicability": "Use when the target substance is stored in a closed cold container in a room that also contains an activatable heat source (e.g., stove). Requires the room to be reachable via an openable door.",
+    "example_bindings": {
+      "container": "freezer",
+      "device": "stove",
+      "room": "kitchen",
+      "substance": "ice"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "container": [
+        "manipulated_object"
+      ],
+      "device": [
+        "manipulated_object",
+        "transfer_destination"
+      ],
+      "room": [
+        "navigation_destination"
+      ],
+      "substance": [
+        "goal_marker",
+        "manipulated_object"
+      ]
+    },
+    "parameters": [
+      "room",
+      "container",
+      "substance",
+      "device"
+    ],
+    "source_contract": {
+      "source_goal": "Task Description:\nYour task is to melt ice. First, focus on the substance. Then, take actions that will cause it to change its state of matter.",
+      "source_validation": "exact ordered action subsequence"
+    },
+    "source_task_id": "6aebd9fb1322c1074fb6",
+    "source_trace_id": "discovery-v2.F.6aebd9fb1322c1074fb6",
+    "success_count": 1,
+    "task_type": "melt",
+    "template_id": "sw_760a5887e0fce35a"
+  },
+  "discovery-v2.F.7ac4185e5f00f742931e": {
+    "action_template": [
+      "focus on {object}",
+      "pick up {object}",
+      "open door to {room}",
+      "go to {room}",
+      "move {object} to {container}"
+    ],
+    "applicability": "Agent starts in a room with a movable non-living object and closed doors; the destination room contains an open or accessible container.",
+    "example_bindings": {
+      "container": "yellow box",
+      "object": "picture",
+      "room": "bedroom"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "container": [
+        "transfer_destination"
+      ],
+      "object": [
+        "goal_marker",
+        "manipulated_object"
+      ],
+      "room": [
+        "navigation_destination"
+      ]
+    },
+    "parameters": [
+      "object",
+      "room",
+      "container"
+    ],
+    "source_contract": {
+      "source_goal": "Task Description:\nYour task is to find a(n) non-living thing. First, focus on the thing. Then, move it to the yellow box in the bedroom.",
+      "source_validation": "exact ordered action subsequence"
+    },
+    "source_task_id": "7ac4185e5f00f742931e",
+    "source_trace_id": "discovery-v2.F.7ac4185e5f00f742931e",
+    "success_count": 1,
+    "task_type": "find-non-living-thing",
+    "template_id": "sw_a5b58ef22fe2c009"
+  },
+  "discovery-v2.F.8c8a122797c51e4659c6": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "look at {animal}",
+      "focus on {animal}"
+    ],
+    "applicability": "Agent starts in an indoor room with a closed door leading toward the target location; candidate animals are present in the destination room and can be inspected and focused on.",
+    "example_bindings": {
+      "animal": "chameleon egg",
+      "room": "outside"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "animal": [
+        "experiment_subject",
+        "goal_choice"
+      ],
+      "room": [
+        "navigation_destination"
+      ]
+    },
+    "parameters": [
+      "room",
+      "animal"
+    ],
+    "source_contract": {
+      "source_goal": "Task Description:\nYour task is to find the animal with the shortest life span.  The animals are in the 'outside' location.  Focus on the animal with the shortest life span.",
+      "source_validation": "exact ordered action subsequence"
+    },
+    "source_task_id": "8c8a122797c51e4659c6",
+    "source_trace_id": "discovery-v2.F.8c8a122797c51e4659c6",
+    "success_count": 1,
+    "task_type": "lifespan-shortest-lived",
+    "template_id": "sw_61eb0da7d3cc263c"
+  },
+  "discovery-v2.F.b305a2703799b76c3a98": {
+    "action_template": [
+      "focus on {living_thing_1}",
+      "pick up {living_thing_1}",
+      "open {door_to_hallway}",
+      "go to {hallway}",
+      "open {door_to_bedroom}",
+      "go to {bedroom}",
+      "move {living_thing_2} to {green_box}"
+    ],
+    "applicability": "Use when a living thing must be located in a room, focused on, carried through connected rooms, and deposited into a green box located in a different room; requires doors between rooms to be opened before traversal.",
+    "example_bindings": {
+      "bedroom": "bedroom",
+      "door_to_bedroom": "door to bedroom",
+      "door_to_hallway": "door to hallway",
+      "green_box": "green box",
+      "hallway": "hallway",
+      "living_thing_1": "adult pea plant",
+      "living_thing_2": "dead pea plant"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "bedroom": [
+        "navigation_destination"
+      ],
+      "door_to_bedroom": [
+        "manipulated_object"
+      ],
+      "door_to_hallway": [
+        "manipulated_object"
+      ],
+      "green_box": [
+        "transfer_destination"
+      ],
+      "hallway": [
+        "navigation_destination"
+      ],
+      "living_thing_1": [
+        "goal_marker",
+        "manipulated_object"
+      ],
+      "living_thing_2": [
+        "manipulated_object"
+      ]
+    },
+    "parameters": [
+      "living_thing_1",
+      "door_to_hallway",
+      "hallway",
+      "door_to_bedroom",
+      "bedroom",
+      "living_thing_2",
+      "green_box"
+    ],
+    "source_contract": {
+      "repair": "unique alignment and distinct literal source values; aliases are not silently unified",
+      "source_goal": "Task Description:\nYour task is to find a(n) living thing. First, focus on the thing. Then, move it to the green box in the bedroom."
+    },
+    "source_task_id": "",
+    "source_trace_id": "discovery-v2.F.b305a2703799b76c3a98",
+    "success_count": 0,
+    "task_type": "find-living-thing",
+    "template_id": "repair_e644f8c50f136d63"
+  },
+  "discovery-v2.F.d9797b94d94a3a12ea4b": {
+    "action_template": [
+      "focus on {object}",
+      "pick up {object}",
+      "open door to {room}",
+      "go to {room}",
+      "move {object} to {container}"
+    ],
+    "applicability": "Agent is in a room with a portable non-living object and a closed door leading to the room containing the target container.",
+    "example_bindings": {
+      "container": "red box",
+      "object": "drawing",
+      "room": "bedroom"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "container": [
+        "transfer_destination"
+      ],
+      "object": [
+        "goal_marker",
+        "manipulated_object"
+      ],
+      "room": [
+        "navigation_destination"
+      ]
+    },
+    "parameters": [
+      "object",
+      "room",
+      "container"
+    ],
+    "source_contract": {
+      "source_goal": "Task Description:\nYour task is to find a(n) non-living thing. First, focus on the thing. Then, move it to the red box in the bedroom.",
+      "source_validation": "exact ordered action subsequence"
+    },
+    "source_task_id": "d9797b94d94a3a12ea4b",
+    "source_trace_id": "discovery-v2.F.d9797b94d94a3a12ea4b",
+    "success_count": 1,
+    "task_type": "find-non-living-thing",
+    "template_id": "sw_f0d63aa276833af1"
+  },
+  "discovery-v2.F.def63cb9dcbcef266a65": {
+    "action_template": [
+      "open {container}",
+      "focus on {animal}",
+      "pick up {animal}",
+      "open {door_1}",
+      "go to {room_1}",
+      "move {animal} to {destination_1}",
+      "go to {door_2}",
+      "open {door_2}",
+      "go to {room_2}",
+      "pick up {animal}",
+      "move {animal} to {destination_2}"
+    ],
+    "applicability": "Agent must locate an animal inside a closed container in a room, then transport it through connected rooms to a target container in another room.",
+    "example_bindings": {
+      "animal": "bee 0",
+      "container": "bee hive",
+      "destination_1": "kitchen",
+      "destination_2": "yellow box",
+      "door_1": "door to hallway",
+      "door_2": "door to kitchen",
+      "room_1": "hallway",
+      "room_2": "kitchen"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "animal": [
+        "goal_marker",
+        "manipulated_object"
+      ],
+      "container": [
+        "manipulated_object"
+      ],
+      "destination_1": [
+        "transfer_destination"
+      ],
+      "destination_2": [
+        "transfer_destination"
+      ],
+      "door_1": [
+        "manipulated_object"
+      ],
+      "door_2": [
+        "manipulated_object",
+        "navigation_destination"
+      ],
+      "room_1": [
+        "navigation_destination"
+      ],
+      "room_2": [
+        "navigation_destination"
+      ]
+    },
+    "parameters": [
+      "container",
+      "animal",
+      "door_1",
+      "room_1",
+      "destination_1",
+      "door_2",
+      "room_2",
+      "destination_2"
+    ],
+    "source_contract": {
+      "repair": "unique alignment and distinct literal source values; aliases are not silently unified",
+      "source_goal": "Task Description:\nYour task is to find a(n) animal. First, focus on the thing. Then, move it to the yellow box in the kitchen."
+    },
+    "source_task_id": "",
+    "source_trace_id": "discovery-v2.F.def63cb9dcbcef266a65",
+    "success_count": 0,
+    "task_type": "find-animal",
+    "template_id": "repair_22e699a4dbd997a6"
+  },
+  "selected-train-v1.F.003597b7b9c549df70c6": {
+    "action_template": [
+      "look at {plane}",
+      "connect block to {plane}",
+      "focus on {plane}"
+    ],
+    "applicability": "Workshop with a wood block and two inclined planes of different surface materials; goal is to compare friction and focus on the lowest-friction plane.",
+    "example_bindings": {
+      "plane": "inclined plane with a titanium surface"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "plane": [
+        "experiment_subject",
+        "goal_choice"
+      ]
+    },
+    "parameters": [
+      "plane"
+    ],
+    "source_contract": {
+      "source_goal": "Task Description:\nYour task is to determine which of the two inclined planes (titanium, zinc) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+      "source_validation": "exact ordered action subsequence"
+    },
+    "source_task_id": "003597b7b9c549df70c6",
+    "source_trace_id": "selected-train-v1.F.003597b7b9c549df70c6",
+    "success_count": 1,
+    "task_type": "inclined-plane-friction-named-surfaces",
+    "template_id": "sw_9b4527b829af33c8"
+  },
+  "selected-train-v1.F.098816d79aa10bdc5eec": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "look at {plane}",
+      "connect {object} to {plane}",
+      "focus on {plane}"
+    ],
+    "applicability": "Agent is in a room with closed doors; the target room contains two inclined planes with different surfaces and a movable object; the agent can open doors, move between rooms, connect objects to planes, and focus on planes.",
+    "example_bindings": {
+      "object": "brick",
+      "plane": "inclined plane with a steel surface",
+      "room": "workshop"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "object": [
+        "experiment_subject"
+      ],
+      "plane": [
+        "experiment_subject",
+        "goal_choice"
+      ],
+      "room": [
+        "navigation_destination"
+      ]
+    },
+    "parameters": [
+      "room",
+      "plane",
+      "object"
+    ],
+    "source_contract": {
+      "source_goal": "Task Description:\nYour task is to determine which of the two inclined planes (steel, rubber) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+      "source_validation": "exact ordered action subsequence"
+    },
+    "source_task_id": "098816d79aa10bdc5eec",
+    "source_trace_id": "selected-train-v1.F.098816d79aa10bdc5eec",
+    "success_count": 1,
+    "task_type": "inclined-plane-friction-named-surfaces",
+    "template_id": "sw_c2a8b5165cf2c32c"
+  },
+  "selected-train-v1.F.1421639dc7e19fcaab35": {
+    "action_template": [
+      "open door to {room_1}",
+      "go to {room_1}",
+      "look in {room_2}",
+      "open door to {room_2}",
+      "go to {room_2}",
+      "look at {surface}",
+      "focus on {surface}"
+    ],
+    "applicability": "Use when the agent starts in a room with closed doors and must travel through a hallway to a workshop containing two inclined planes with different surfaces (cloth and steel) and a steel block for a friction comparison experiment.",
+    "example_bindings": {
+      "room_1": "hallway",
+      "room_2": "workshop",
+      "surface": "inclined plane with a cloth surface"
+    },
+    "failure_count": 0,
+    "parameter_roles": {
+      "room_1": [
+        "navigation_destination"
+      ],
+      "room_2": [
+        "manipulated_object",
+        "navigation_destination"
+      ],
+      "surface": [
+        "experiment_subject",
+        "goal_choice"
+      ]
+    },
+    "parameters": [
+      "room_1",
+      "room_2",
+      "surface"
+    ],
+    "source_contract": {
+      "repair": "unique alignment and distinct literal source values; aliases are not silently unified",
+      "source_goal": "Task Description:\nYour task is to determine which of the two inclined planes (cloth, steel) has the least friction. After completing your experiment, focus on the inclined plane with the least friction."
+    },
+    "source_task_id": "",
+    "source_trace_id": "selected-train-v1.F.1421639dc7e19fcaab35",
+    "success_count": 0,
+    "task_type": "inclined-plane-friction-named-surfaces",
+    "template_id": "repair_e72c05383041e8aa"
+  }
+}

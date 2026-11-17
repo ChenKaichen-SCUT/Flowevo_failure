@@ -1,0 +1,526 @@
+[
+  {
+    "case": {
+      "checkpoint": 0,
+      "job_id": "discovery-v2.F.02e77cda31db3b964346",
+      "kind": "identity",
+      "public_hash": "cf2b97d2988b5d188a60ae312fda4dbf73c10b690a94ab4288c7489e96c5f3c6",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    "classification": "IDENTITY_VERIFIED",
+    "full_task_transfer_verified": false,
+    "new_api_calls": 0,
+    "observations": [
+      {
+        "action": "focus on orange",
+        "interface_audit": {
+          "action_unchanged": true,
+          "diagnostic_status": "REVIEW_WARNING",
+          "focus_contract": "focus on marks a task-relevant object and may advance a subgoal, complete the task, or terminate it on a wrong choice. It is not a general inspect/measure operation. The goal may explicitly require focus on an instrument or intermediate object.",
+          "focus_role": "GOAL_COMMITMENT_OR_SUBGOAL_MARKER",
+          "grounding": "NOT_VERIFIED",
+          "parsed_action": "focus on orange",
+          "policy": "REPORT_ONLY",
+          "reason_action_relation": "UNKNOWN",
+          "version": 1,
+          "warnings": [
+            {
+              "category": "FOCUS_AS_INSPECTION",
+              "evidence": "focusing on the orange juice substance first; the orange is in inventory, so focus on it to identify",
+              "level": "PLAUSIBLE_ACTION_SEMANTICS_ERROR"
+            }
+          ]
+        },
+        "public_hash": "d804df262ee665c885307346a8fda4c330e9aab046d9578d38cb642826dcaca1"
+      }
+    ],
+    "prefix_hashes_verified": true,
+    "task_success_rate_computed": false
+  },
+  {
+    "case": {
+      "checkpoint": 1,
+      "job_id": "discovery-v2.F.0ef2ea6f576b10fb9a37",
+      "kind": "identity",
+      "public_hash": "61dea88e282036a9150aa6aa113fd0a64f60b10aa430a38dbcb9dab8cc13eff3",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    "classification": "IDENTITY_VERIFIED",
+    "full_task_transfer_verified": false,
+    "new_api_calls": 0,
+    "observations": [
+      {
+        "action": "focus on picture",
+        "interface_audit": {
+          "action_unchanged": true,
+          "diagnostic_status": "REVIEW_WARNING",
+          "focus_contract": "focus on marks a task-relevant object and may advance a subgoal, complete the task, or terminate it on a wrong choice. It is not a general inspect/measure operation. The goal may explicitly require focus on an instrument or intermediate object.",
+          "focus_role": "GOAL_COMMITMENT_OR_SUBGOAL_MARKER",
+          "grounding": "NOT_VERIFIED",
+          "parsed_action": "focus on picture",
+          "policy": "REPORT_ONLY",
+          "reason_action_relation": "UNKNOWN",
+          "version": 1,
+          "warnings": [
+            {
+              "category": "FOCUS_AS_INSPECTION",
+              "evidence": "focusing on it should reveal",
+              "level": "PLAUSIBLE_ACTION_SEMANTICS_ERROR"
+            }
+          ]
+        },
+        "public_hash": "2952c0f80a49ab696f229a53868a0440ed57ed41efafe873d31058bc479b5d0b"
+      }
+    ],
+    "prefix_hashes_verified": true,
+    "task_success_rate_computed": false
+  },
+  {
+    "case": {
+      "checkpoint": 0,
+      "job_id": "discovery-v2.F.20e65c56c84af8ab157f",
+      "kind": "identity",
+      "public_hash": "acbfb105e70b4a5d1d80491c53c5ec5962d561c1bfe5d34ddbb41154f16058fd",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    "classification": "IDENTITY_VERIFIED",
+    "full_task_transfer_verified": false,
+    "new_api_calls": 0,
+    "observations": [
+      {
+        "action": "focus on red paint in cup",
+        "interface_audit": {
+          "action_unchanged": true,
+          "diagnostic_status": "REVIEW_WARNING",
+          "focus_contract": "focus on marks a task-relevant object and may advance a subgoal, complete the task, or terminate it on a wrong choice. It is not a general inspect/measure operation. The goal may explicitly require focus on an instrument or intermediate object.",
+          "focus_role": "GOAL_COMMITMENT_OR_SUBGOAL_MARKER",
+          "grounding": "LITERAL_TYPE_MISMATCH",
+          "parsed_action": "focus on red paint in cup",
+          "policy": "REPORT_ONLY",
+          "reason_action_relation": "UNKNOWN",
+          "version": 1,
+          "warnings": [
+            {
+              "category": "TARGET_OBJECT_MISMATCH",
+              "evidence": {
+                "action_object": "red paint in cup",
+                "goal_class": "light bulb"
+              },
+              "level": "PUBLIC_GOAL_TYPE_CONTRADICTION"
+            },
+            {
+              "category": "FOCUS_AS_INSPECTION",
+              "evidence": "focus on the red light bulb; the red paint cup is the closest red object available to inspect",
+              "level": "PLAUSIBLE_ACTION_SEMANTICS_ERROR"
+            }
+          ]
+        },
+        "public_hash": "760f23630c69f984cf4e4c504ec24914265866802a972501eaf4c13ad72c51e9"
+      }
+    ],
+    "prefix_hashes_verified": true,
+    "task_success_rate_computed": false
+  },
+  {
+    "case": {
+      "checkpoint": 13,
+      "job_id": "discovery-v2.F.81f896325b22612a849e",
+      "kind": "identity",
+      "public_hash": "3b784477ca85e470f2bb7dfec02d5c5e222b9cafbe9e9e7ccab3790a399e079e",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    "classification": "IDENTITY_VERIFIED",
+    "full_task_transfer_verified": false,
+    "new_api_calls": 0,
+    "observations": [
+      {
+        "action": "focus on ceramic cup",
+        "interface_audit": {
+          "action_unchanged": true,
+          "diagnostic_status": "REVIEW_WARNING",
+          "focus_contract": "focus on marks a task-relevant object and may advance a subgoal, complete the task, or terminate it on a wrong choice. It is not a general inspect/measure operation. The goal may explicitly require focus on an instrument or intermediate object.",
+          "focus_role": "GOAL_COMMITMENT_OR_SUBGOAL_MARKER",
+          "grounding": "LITERAL_TYPE_MISMATCH",
+          "parsed_action": "focus on ceramic cup",
+          "policy": "REPORT_ONLY",
+          "reason_action_relation": "UNKNOWN",
+          "version": 1,
+          "warnings": [
+            {
+              "category": "TARGET_OBJECT_MISMATCH",
+              "evidence": {
+                "action_object": "ceramic cup",
+                "goal_class": "inclined plane"
+              },
+              "level": "PUBLIC_GOAL_TYPE_CONTRADICTION"
+            }
+          ]
+        },
+        "public_hash": "7a97e71ee78e2db5b5262721d0a4b443da0e547095ad520e60c47dffd7fb3dcc"
+      }
+    ],
+    "prefix_hashes_verified": true,
+    "task_success_rate_computed": false
+  },
+  {
+    "case": {
+      "checkpoint": 15,
+      "job_id": "discovery-v2.F.d129caa70cba348ea3e4",
+      "kind": "identity",
+      "public_hash": "06d97ea2750bcf2acedd1482bbd25187c2904ce085f223500be9639b473f0516",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    "classification": "IDENTITY_VERIFIED",
+    "full_task_transfer_verified": false,
+    "new_api_calls": 0,
+    "observations": [
+      {
+        "action": "focus on apple seed in inventory",
+        "interface_audit": {
+          "action_unchanged": true,
+          "diagnostic_status": "REVIEW_WARNING",
+          "focus_contract": "focus on marks a task-relevant object and may advance a subgoal, complete the task, or terminate it on a wrong choice. It is not a general inspect/measure operation. The goal may explicitly require focus on an instrument or intermediate object.",
+          "focus_role": "GOAL_COMMITMENT_OR_SUBGOAL_MARKER",
+          "grounding": "NOT_VERIFIED",
+          "parsed_action": "focus on apple seed in inventory",
+          "policy": "REPORT_ONLY",
+          "reason_action_relation": "UNKNOWN",
+          "version": 1,
+          "warnings": [
+            {
+              "category": "FOCUS_AS_INSPECTION",
+              "evidence": "inspect the apple seed in inventory to learn its propert",
+              "level": "PLAUSIBLE_ACTION_SEMANTICS_ERROR"
+            }
+          ]
+        },
+        "public_hash": "97576b847feb55b827d2e7b111b3089626e9b156c1f427ab61553304c465f145"
+      }
+    ],
+    "prefix_hashes_verified": true,
+    "task_success_rate_computed": false
+  },
+  {
+    "case": {
+      "checkpoint": 45,
+      "job_id": "discovery-v2.F.1b4703786cd7f2ff0592",
+      "kind": "identity",
+      "public_hash": "36fdd3b3cb2a131f134d7df3d8800cc5207e839ed81d8a492d17c34090f410bf",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    "classification": "IDENTITY_VERIFIED",
+    "full_task_transfer_verified": false,
+    "new_api_calls": 0,
+    "observations": [
+      {
+        "action": "focus on potato",
+        "interface_audit": {
+          "action_unchanged": true,
+          "diagnostic_status": "NO_FLAG_NOT_A_CORRECTNESS_CERTIFICATE",
+          "focus_contract": "focus on marks a task-relevant object and may advance a subgoal, complete the task, or terminate it on a wrong choice. It is not a general inspect/measure operation. The goal may explicitly require focus on an instrument or intermediate object.",
+          "focus_role": "GOAL_COMMITMENT_OR_SUBGOAL_MARKER",
+          "grounding": "NOT_VERIFIED",
+          "parsed_action": "focus on potato",
+          "policy": "REPORT_ONLY",
+          "reason_action_relation": "UNKNOWN",
+          "version": 1,
+          "warnings": []
+        },
+        "public_hash": "9db5e843a6714019f7f7a7ab223bf79d1fae81a518d11f4bb404c344ec654cd9"
+      }
+    ],
+    "prefix_hashes_verified": true,
+    "task_success_rate_computed": false
+  },
+  {
+    "case": {
+      "checkpoint": 9,
+      "job_id": "discovery-v2.F.06eebbde9128242aba13",
+      "kind": "identity",
+      "public_hash": "7ac6f1ce4c9aafc1e386ea7d9a31818009d42d2f1e264a2ea3f718b2463473fb",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    "classification": "IDENTITY_VERIFIED",
+    "full_task_transfer_verified": false,
+    "new_api_calls": 0,
+    "observations": [
+      {
+        "action": "focus on red box",
+        "interface_audit": {
+          "action_unchanged": true,
+          "diagnostic_status": "REVIEW_WARNING",
+          "focus_contract": "focus on marks a task-relevant object and may advance a subgoal, complete the task, or terminate it on a wrong choice. It is not a general inspect/measure operation. The goal may explicitly require focus on an instrument or intermediate object.",
+          "focus_role": "EXPLICIT_GOAL_FOCUS_CANDIDATE",
+          "grounding": "NOT_VERIFIED",
+          "parsed_action": "focus on red box",
+          "policy": "REPORT_ONLY",
+          "reason_action_relation": "EXPLICIT_CONFLICT",
+          "version": 1,
+          "warnings": [
+            {
+              "category": "REASON_ACTION_CONFLICT",
+              "evidence": "Correcting: focus on green box",
+              "level": "OBSERVED_TEXT_CONTRADICTION"
+            }
+          ]
+        },
+        "public_hash": "871a9c73de5217c12fd0ccde91c0a737c59211a279df26bd3c13d1ade29b2700"
+      }
+    ],
+    "prefix_hashes_verified": true,
+    "task_success_rate_computed": false
+  },
+  {
+    "case": {
+      "checkpoint": 7,
+      "job_id": "discovery-v2.F.5de4ccea5ffbd8f8b877",
+      "kind": "identity",
+      "public_hash": "a23b3a556c0ab848520232cd42c345eb32f401eb3f45a8e230f77471211edbc1",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    "classification": "IDENTITY_VERIFIED",
+    "full_task_transfer_verified": false,
+    "new_api_calls": 0,
+    "observations": [
+      {
+        "action": "focus on red box",
+        "interface_audit": {
+          "action_unchanged": true,
+          "diagnostic_status": "REVIEW_WARNING",
+          "focus_contract": "focus on marks a task-relevant object and may advance a subgoal, complete the task, or terminate it on a wrong choice. It is not a general inspect/measure operation. The goal may explicitly require focus on an instrument or intermediate object.",
+          "focus_role": "EXPLICIT_GOAL_FOCUS_CANDIDATE",
+          "grounding": "NOT_VERIFIED",
+          "parsed_action": "focus on red box",
+          "policy": "REPORT_ONLY",
+          "reason_action_relation": "EXPLICIT_CONFLICT",
+          "version": 1,
+          "warnings": [
+            {
+              "category": "REASON_ACTION_CONFLICT",
+              "evidence": "Correct action: focus on green box",
+              "level": "OBSERVED_TEXT_CONTRADICTION"
+            }
+          ]
+        },
+        "public_hash": "dc34cbf8ce9afb4c2458645c7b5affb26199657b030d8b0c5528e924923fc967"
+      }
+    ],
+    "prefix_hashes_verified": true,
+    "task_success_rate_computed": false
+  },
+  {
+    "case": {
+      "checkpoint": 4,
+      "job_id": "selected-train-v1.F.003597b7b9c549df70c6",
+      "kind": "identity",
+      "public_hash": "e79666cc837e9033a8fad4e7995d3035f986b3214f44b637f266b32647b815c1",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    "classification": "IDENTITY_VERIFIED",
+    "full_task_transfer_verified": false,
+    "new_api_calls": 0,
+    "observations": [
+      {
+        "action": "focus on inclined plane with a titanium surface",
+        "interface_audit": {
+          "action_unchanged": true,
+          "diagnostic_status": "NO_FLAG_NOT_A_CORRECTNESS_CERTIFICATE",
+          "focus_contract": "focus on marks a task-relevant object and may advance a subgoal, complete the task, or terminate it on a wrong choice. It is not a general inspect/measure operation. The goal may explicitly require focus on an instrument or intermediate object.",
+          "focus_role": "GOAL_COMMITMENT_OR_SUBGOAL_MARKER",
+          "grounding": "NOT_VERIFIED",
+          "parsed_action": "focus on inclined plane with a titanium surface",
+          "policy": "REPORT_ONLY",
+          "reason_action_relation": "UNKNOWN",
+          "version": 1,
+          "warnings": []
+        },
+        "public_hash": "f2f2f4610e3db4995da1eccd957d7af604ca0890cd1f4be2c69683d6420b6b67"
+      }
+    ],
+    "prefix_hashes_verified": true,
+    "task_success_rate_computed": false
+  },
+  {
+    "case": {
+      "checkpoint": 0,
+      "job_id": "discovery-v2.F.7ac4185e5f00f742931e",
+      "kind": "identity",
+      "public_hash": "aa29bc45def958585a8f3c8d9afac102c8ca5f639d0eef97536f9bea0c41f8fe",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    "classification": "IDENTITY_VERIFIED",
+    "full_task_transfer_verified": false,
+    "new_api_calls": 0,
+    "observations": [
+      {
+        "action": "focus on picture",
+        "interface_audit": {
+          "action_unchanged": true,
+          "diagnostic_status": "NO_FLAG_NOT_A_CORRECTNESS_CERTIFICATE",
+          "focus_contract": "focus on marks a task-relevant object and may advance a subgoal, complete the task, or terminate it on a wrong choice. It is not a general inspect/measure operation. The goal may explicitly require focus on an instrument or intermediate object.",
+          "focus_role": "GOAL_COMMITMENT_OR_SUBGOAL_MARKER",
+          "grounding": "NOT_VERIFIED",
+          "parsed_action": "focus on picture",
+          "policy": "REPORT_ONLY",
+          "reason_action_relation": "UNKNOWN",
+          "version": 1,
+          "warnings": []
+        },
+        "public_hash": "69914ad10d4b7f9c3efc331219504323790e1b37a001cb69bad7958c3b6554ab"
+      }
+    ],
+    "prefix_hashes_verified": true,
+    "task_success_rate_computed": false
+  },
+  {
+    "case": {
+      "checkpoint": 3,
+      "job_id": "dev-baseline-v1.F.cfcb5065ead3594fa047",
+      "kind": "identity",
+      "public_hash": "eec5f491b7e6a4556e0d7feaf58e0d2b482fbc3b63a161fe762e4f796f788927",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    "classification": "IDENTITY_VERIFIED",
+    "full_task_transfer_verified": false,
+    "new_api_calls": 0,
+    "observations": [
+      {
+        "action": "open door to hallway",
+        "interface_audit": {
+          "action_unchanged": true,
+          "diagnostic_status": "NO_FLAG_NOT_A_CORRECTNESS_CERTIFICATE",
+          "focus_role": null,
+          "grounding": "NOT_VERIFIED",
+          "parsed_action": "open door to hallway",
+          "policy": "REPORT_ONLY",
+          "reason_action_relation": "NORMAL_WORDING_VARIANT",
+          "version": 1,
+          "warnings": []
+        },
+        "public_hash": "34ab3c02027a6cf859db6d638fada6369a185b9f275637920883879ddbddb9a8"
+      }
+    ],
+    "prefix_hashes_verified": true,
+    "task_success_rate_computed": false
+  },
+  {
+    "case": {
+      "checkpoint": 0,
+      "job_id": "discovery-v2.F.06eebbde9128242aba13",
+      "kind": "identity",
+      "public_hash": "9af0f1e5c41735708bda3e8453c78f0d70c3d335149d6afa0a2c31e252ae4d68",
+      "selection": "Fixed known errors plus mandatory-focus and normal-wording controls; action unchanged"
+    },
+    "classification": "IDENTITY_VERIFIED",
+    "full_task_transfer_verified": false,
+    "new_api_calls": 0,
+    "observations": [
+      {
+        "action": "focus on thermometer",
+        "interface_audit": {
+          "action_unchanged": true,
+          "diagnostic_status": "REVIEW_WARNING",
+          "focus_contract": "focus on marks a task-relevant object and may advance a subgoal, complete the task, or terminate it on a wrong choice. It is not a general inspect/measure operation. The goal may explicitly require focus on an instrument or intermediate object.",
+          "focus_role": "EXPLICIT_GOAL_FOCUS_CANDIDATE",
+          "grounding": "NOT_VERIFIED",
+          "parsed_action": "focus on thermometer",
+          "policy": "REPORT_ONLY",
+          "reason_action_relation": "UNKNOWN",
+          "version": 1,
+          "warnings": [
+            {
+              "category": "FOCUS_AS_INSPECTION",
+              "evidence": "focusing on the thermometer to measure",
+              "level": "PLAUSIBLE_ACTION_SEMANTICS_ERROR"
+            }
+          ]
+        },
+        "public_hash": "d62ffeaa49107db7690cef2266dc04c95161668f2401cf531483d38bfdf05411"
+      }
+    ],
+    "prefix_hashes_verified": true,
+    "task_success_rate_computed": false
+  },
+  {
+    "case": {
+      "actions": [
+        "look at inclined plane with a brass surface",
+        "connect block to inclined plane with a brass surface"
+      ],
+      "bindings": {
+        "plane": "inclined plane with a brass surface"
+      },
+      "checkpoint": 5,
+      "equivalent_variants": [
+        "retained_conditions_preparation",
+        "literal_parameter_lift_preparation"
+      ],
+      "job_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+      "kind": "preparation",
+      "preparation_only": true,
+      "public_hash": "6b9952cee211cb1bfffafc4a779f2640d5b2595cdf494af2099b75a53f70a68b",
+      "source_validation": true,
+      "split": "dev",
+      "template_id": "prefix_1c956abf86ef3b4a",
+      "variant": "retained_conditions_preparation"
+    },
+    "classification": "PREPARATION_ACTIONS_EXECUTABLE_ONLY",
+    "full_task_transfer_verified": false,
+    "new_api_calls": 0,
+    "observations": [
+      {
+        "action": "look at inclined plane with a brass surface",
+        "feedback": "an inclined plane with a brass surface",
+        "public_hash": "61d8d93e309c4e146a30e2aac231dd08d98efb769c14b3ddda86c6650f3567f2"
+      },
+      {
+        "action": "connect block to inclined plane with a brass surface",
+        "feedback": "terminal 1 on wood block is now connected to terminal 1 on inclined plane",
+        "public_hash": "62d5701557f27379764e223506a65e145ee5fad0db2c25402392a6317265b2b1"
+      }
+    ],
+    "prefix_hashes_verified": true,
+    "task_success_rate_computed": false
+  },
+  {
+    "case": {
+      "actions": [
+        "look at inclined plane with a glass surface",
+        "connect block to inclined plane with a glass surface"
+      ],
+      "bindings": {
+        "plane": "inclined plane with a glass surface"
+      },
+      "checkpoint": 5,
+      "equivalent_variants": [
+        "retained_conditions_preparation",
+        "literal_parameter_lift_preparation"
+      ],
+      "job_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+      "kind": "preparation",
+      "preparation_only": true,
+      "public_hash": "6b9952cee211cb1bfffafc4a779f2640d5b2595cdf494af2099b75a53f70a68b",
+      "source_validation": true,
+      "split": "dev",
+      "template_id": "prefix_1c956abf86ef3b4a",
+      "variant": "retained_conditions_preparation"
+    },
+    "classification": "PREPARATION_ACTIONS_EXECUTABLE_ONLY",
+    "full_task_transfer_verified": false,
+    "new_api_calls": 0,
+    "observations": [
+      {
+        "action": "look at inclined plane with a glass surface",
+        "feedback": "an inclined plane with a glass surface",
+        "public_hash": "9c6cae55f05732da4fc5e68946977e702e6ae3d87092206a16f3b73c5270d5b4"
+      },
+      {
+        "action": "connect block to inclined plane with a glass surface",
+        "feedback": "terminal 1 on wood block is now connected to terminal 1 on inclined plane",
+        "public_hash": "62d5701557f27379764e223506a65e145ee5fad0db2c25402392a6317265b2b1"
+      }
+    ],
+    "prefix_hashes_verified": true,
+    "task_success_rate_computed": false
+  }
+]

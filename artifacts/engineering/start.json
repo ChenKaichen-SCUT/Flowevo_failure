@@ -1,0 +1,1 @@
+{"historical_commit": "a0f6e0816c23a4abcb646a5fb018e786c2a6be95", "input": "Existing immutable independent Phase A snapshot reused read-only", "ledger_before": [8941, 12.375240827999969], "new_api_budget_cny": 0, "new_api_requests_budget": 0, "parent": "af07480e7639a583293d825baddc8213d6dfddf8", "started_utc": "2026-11-17T12:08:33.570189+00:00"}

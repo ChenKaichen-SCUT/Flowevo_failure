@@ -1,6 +1,8 @@
 from .invariant_runtime import check
 from .checkpointing import digest
 from .deepseek_client import ParseError
+from .action_consistency import inspect_response
+import json
 
 class Veto(RuntimeError):pass
 
@@ -14,6 +16,7 @@ class ActionGateway:
     def step(self,action,source='dynamic',raw=None,request_id=None,replanned=False):
         replanned=replanned or self.veto_checkpoint==self.adapter.decisions
         context=self.adapter.context()
+        interface_audit=inspect_response(raw if raw is not None else json.dumps({'action':action,'reason':''}),self.adapter.view)
         current=digest([context['look'],context['inventory']])
         context['same_visible_state']=current==self.last_before if self.last_before else None
         verdicts=[]
@@ -25,7 +28,7 @@ class ActionGateway:
             if review['decision'] not in ('ALLOW','VETO','ABSTAIN'):
                 self.client.parsed(rid,'RULE_REVIEW_PARSE_ERROR');raise ParseError('RULE_REVIEW_PARSE_ERROR')
             verdicts=[dict(review,request_id=rid,rule_id='text_review')]
-        self.checks.append({'checkpoint':self.adapter.decisions,'action':action,'source':source,'verdicts':verdicts,'replanned':replanned})
+        self.checks.append({'checkpoint':self.adapter.decisions,'action':action,'source':source,'verdicts':verdicts,'replanned':replanned,'interface_audit':interface_audit})
         if any(v.get('decision')=='VETO' for v in verdicts):
             if not replanned:
                 self.pending_veto=str(verdicts);self.veto_checkpoint=self.adapter.decisions
@@ -34,6 +37,6 @@ class ActionGateway:
         before=self.adapter.view.copy();receipt=self.adapter.execute(action)
         self.last_before=current
         self.pending_veto=None;self.veto_checkpoint=None
-        self.steps.append({'step':self.adapter.decisions,'source':source,'raw_model_response':raw,'parsed_action':action,'executed_action':action,'request_id':request_id,'before':before,'after':self.adapter.view.copy(),'observation_hash':digest(self.adapter.view),'host_outcome':self.adapter.outcome()})
+        self.steps.append({'step':self.adapter.decisions,'source':source,'raw_model_response':raw,'parsed_action':action,'executed_action':action,'request_id':request_id,'before':before,'after':self.adapter.view.copy(),'observation_hash':digest(self.adapter.view),'host_outcome':self.adapter.outcome(),'interface_audit':interface_audit})
         if hasattr(self,'checkpoint'):self.checkpoint(self.steps)
         return receipt

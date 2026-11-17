@@ -1,0 +1,48 @@
+{
+  "config": {
+    "action_checker_policy": "REPORT_ONLY",
+    "binding_state_splits": [
+      "train",
+      "dev"
+    ],
+    "candidate_admission": "none",
+    "conditional_binding_deployment": "offline_diagnostic_only",
+    "direct_runtime_guard": "every_action_must_be_currently_valid",
+    "historical_runtime_commit": "a0f6e0816c23a4abcb646a5fb018e786c2a6be95",
+    "jvm_workers": 4,
+    "network_interfaces_allowed": [
+      "lo"
+    ],
+    "new_api_cost_cny_max": 0,
+    "new_model_requests_max": 0,
+    "new_task_success_rates": false,
+    "parent_commit": "af07480e7639a583293d825baddc8213d6dfddf8",
+    "score_guided_retries": false,
+    "source_validation": "exact_ordered_action_subsequence",
+    "stage": "engineering_falsification",
+    "static_workers": 3
+  },
+  "interfaces": [
+    "lo"
+  ],
+  "new_model_calls": 0,
+  "offline_client_guard": true,
+  "results": [
+    {
+      "script": "engineering_governance.py",
+      "status": "PASSED"
+    },
+    {
+      "script": "engineering_action_audit.py",
+      "status": "PASSED"
+    },
+    {
+      "script": "engineering_binding.py",
+      "status": "PASSED"
+    },
+    {
+      "script": "engineering_jvm_checks.py",
+      "status": "PASSED"
+    }
+  ]
+}

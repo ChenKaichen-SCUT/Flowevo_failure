@@ -14,6 +14,8 @@ from .public_view import parse_action
 from .deepseek_client import ParseError,DeliveryError
 from .action_gateway import Veto
 from .checkpointing import digest
+from .skill_contracts import ScienceSkillTemplate
+from .conditional_binding import roles
 
 ACTION_SYSTEM='''You are operating ScienceWorld, an interactive scientific environment. Complete the given goal using only public observations and normal action feedback. Choose exactly ONE action. The valid-action list is an interface aid, NOT a list of task-correct actions; other syntactically supported commands and numeric ambiguity choices can be used when the environment requests them. Observe scientific processes over time as needed. Use the recent feedback and current look/inventory; old observations may be stale. Return JSON {"action":"one exact environment command","reason":"next subgoal in at most 60 words"}. No fabricated observations. Do not emit an extended internal debate.'''
 
@@ -91,7 +93,9 @@ class ScienceCompiler(AlfWorldCompiler):
             if any(not isinstance(a,str) for a in actions):raise ValueError('invalid action')
             if set(re.findall(r'\{(\w+)\}',' '.join(actions)))!=set(params):raise ValueError('parameter mismatch')
             if any(not isinstance(bindings.get(p),str) for p in params):raise ValueError('invalid binding')
-            template=AlfWorldSkillTemplate('sw_'+digest(d)[:16],trace.task_type,actions,params,bindings,trace.task_id,trace.trace_id,1)
+            template=ScienceSkillTemplate('sw_'+digest(d)[:16],trace.task_type,actions,params,bindings,trace.task_id,trace.trace_id,1,applicability=d.get('applicability',''))
+            template.source_contract={'source_goal':trace.goal,'source_validation':'exact ordered action subsequence'}
+            template.parameter_roles=roles(template,trace.goal)
             it=iter(trace.action_history)
             if not all(any(actual==candidate for actual in it) for candidate in template.instantiate(bindings)):raise ValueError('not an observed action subsequence')
             return template

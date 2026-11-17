@@ -1,0 +1,16 @@
+stage: engineering_falsification
+parent_commit: af07480e7639a583293d825baddc8213d6dfddf8
+historical_runtime_commit: a0f6e0816c23a4abcb646a5fb018e786c2a6be95
+new_model_requests_max: 0
+new_api_cost_cny_max: 0
+network_interfaces_allowed: [lo]
+static_workers: 3
+jvm_workers: 4
+binding_state_splits: [train, dev]
+action_checker_policy: REPORT_ONLY
+score_guided_retries: false
+new_task_success_rates: false
+source_validation: exact_ordered_action_subsequence
+direct_runtime_guard: every_action_must_be_currently_valid
+conditional_binding_deployment: offline_diagnostic_only
+candidate_admission: none
