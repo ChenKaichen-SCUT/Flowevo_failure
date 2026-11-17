@@ -120,3 +120,11 @@ def test_direct_veto_allows_only_one_replan():
     template=AlfWorldSkillTemplate('t','test',['blocked'],[])
     tr=ex.run(AlfWorldTask('x','test','fixture'),'',['blocked'],skill_bindings={},skill_library_result={'best_layer':1,'template':template})
     assert gen.n==1 and a.decisions==0 and tr.failure_type=='PERSISTENT_CONSTRAINT_CONFLICT'
+
+def test_saved_response_settles_after_crash_without_resend(tmp_path):
+    from flowevo_sw.checkpointing import atomic_json
+    l=BudgetLedger(tmp_path/'ledger',1);l.reserve('crash','wire',.2,{})
+    response={'usage':{'prompt_tokens':100,'completion_tokens':20},'choices':[{'finish_reason':'stop'}]}
+    atomic_json(tmp_path/'requests/crash.json',{'response':response})
+    assert l.recover_saved(tmp_path)==['crash']
+    assert l.reserve('crash','wire',.2,{})['state']=='SETTLED'

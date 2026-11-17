@@ -44,6 +44,8 @@ def run_episode(payload):
         trace=executor.run(task,view['observation'],view['valid_actions'],skill_bindings=bindings,skill_library_result=retrieved)
         trace.trace_id=jid;trace.benchmark='scienceworld';trace.strategy_holdout=spec.get('native_holdout',False)
         result={'status':'EPISODE_LOCKED','job_id':jid,'run_id':run_id,'arm':arm,'spec':spec,'initial':_env.initial,'outcome':_env.outcome(),'trace':asdict(trace),'steps':gateway.steps,'checks':gateway.checks,'binding':binding_event,'retrieved':{k:(v.to_dict() if hasattr(v,'to_dict') else v) for k,v in retrieved.items()},'bank_hash':digest(bank),'requests':client.records,'wall_seconds':time.time()-started}
+        if any(code in trace.failure_type for code in ('BUDGET_EXHAUSTED','UNKNOWN','PROVIDER_HTTP','MODEL_MISMATCH')):
+            result['status']='MISSING';result['error']=trace.failure_type
     except Exception as exc:
         result={'status':'MISSING','job_id':jid,'run_id':run_id,'arm':arm,'spec':spec,'error':type(exc).__name__+': '+str(exc)[:300],'requests':client.records,'wall_seconds':time.time()-started}
     atomic_json(path,result);return result
@@ -105,7 +107,7 @@ def run_batches(specs,root,run_id,bank=None,arms=None,rules=None,workers=8,batch
             p=root/'compilations'/(r['job_id']+'.json')
             if p.exists():return read_json(p)
             c=compile_result(r);atomic_json(p,c);return c
-        with ThreadPoolExecutor(max_workers=workers) as pool:compiled=list(pool.map(compile_saved,results))
+        with ThreadPoolExecutor(max_workers=min(16,max(1,len(results)))) as pool:compiled=list(pool.map(compile_saved,results))
         for a in arms:
             idx=[i for i,r in enumerate(results) if r['arm']==a]
             ev=publish_batch(banks[a],[results[i] for i in idx],[compiled[i] for i in idx])

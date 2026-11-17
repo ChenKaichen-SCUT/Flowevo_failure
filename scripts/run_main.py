@@ -12,18 +12,24 @@ def main():
     for arm,rs in rules.items():
         if arm!='F-T':assert len(rs)<=3
         assert all(r['validation_status']=='VALIDATED' for r in rs)
-    selected=read_json(root/'output/artifacts/task_selection.json')['selected_task_types'];bank=read_json(a.bank);protocol_path=root/'output/artifacts/protocol.json'
+    selection=read_json(root/'output/artifacts/task_selection.json');selected=selection['selected_task_types'];bank=read_json(a.bank);protocol_path=root/'output/artifacts/protocol.json'
     # Open only frozen metadata, not task observations; select every arm identically.
     allrows=[json.loads(l) for l in (root/'data/manifests/test_manifest.private.jsonl').read_text().splitlines()]
     chosen=[]
     for name in selected:chosen+=sorted([r for r in allrows if r['task_name']==name],key=lambda r:r['sort_key'])[:a.test_per_type]
+    controls=[]
+    for name in selection['out_of_scope_controls']:controls+=sorted([r for r in allrows if r['task_name']==name],key=lambda r:r['sort_key'])[:2]
     source_sha=subprocess.check_output(['git','rev-parse','HEAD'],cwd=root/'output',text=True).strip()
     protocol={'source_commit':source_sha,'config':config,'environment':read_json(root/'output/artifacts/environment_manifest.json'),'upstreams':read_json(root/'output/artifacts/upstream_manifest.json'),'rules':rules,'M0_hash':digest(bank),'selected_task_ids':[r['episode_id'] for r in chosen],'order_seeds':[17,29],'arms':['F','F-I','F-T','F-S','F-H'],'analysis':'Primary F-I minus F completion. Repeated-order averaging per task/variation, family hierarchical bootstrap, family/order results. Secondary comparisons descriptive; no best-order selection. Final score is official raw final, not highest.','batch_size':8,'success_learning':'online_batch_barrier','failure_learning':'frozen','test_exposure':'Only completed TEST trajectories may be exported and then count as exposed.'}
     protocol['protocol_sha256']=digest(protocol)
+    protocol['out_of_scope_control_ids']=[r['episode_id'] for r in controls]
+    protocol['control_protocol']='Separate exploratory population: two preregistered successful TRAIN families, two official TEST variations each, five arms, seed 17, independently reset to M0.'
+    del protocol['protocol_sha256'];protocol['protocol_sha256']=digest(protocol)
     if protocol_path.exists() and read_json(protocol_path)!=protocol:raise RuntimeError('Frozen TEST protocol conflict')
     atomic_json(protocol_path,protocol);atomic_json(root/'runs-private/M0.json',bank)
     for seed in (17,29):
         sequence=sorted(chosen,key=lambda r:digest([seed,r['episode_id']]))
         run_batches(sequence,root/'runs-private',f'main-order-{seed}-v1',bank=bank,arms=protocol['arms'],rules=rules,workers=a.workers)
+    run_batches(sorted(controls,key=lambda r:digest([17,r['episode_id']])),root/'runs-private','control-order-17-v1',bank=bank,arms=protocol['arms'],rules=rules,workers=a.workers)
     atomic_json(root/'output/artifacts/main_status.json',{'status':'RUNS_FINISHED_CHECK_COMPLETENESS','protocol_sha256':protocol['protocol_sha256']})
 if __name__=='__main__':main()

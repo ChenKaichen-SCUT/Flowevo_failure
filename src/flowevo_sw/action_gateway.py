@@ -1,5 +1,6 @@
 from .invariant_runtime import check
 from .checkpointing import digest
+from .deepseek_client import ParseError
 
 class Veto(RuntimeError):pass
 
@@ -20,6 +21,9 @@ class ActionGateway:
             verdicts=[check(r,context,action) for r in self.rules]
         elif self.arm=='F-T' and self.rules and not replanned:
             review,_,rid,_=self.client.json('Review the proposed action using these learned rules and PUBLIC state. Return {"decision":"ALLOW|VETO|ABSTAIN","reason":"brief"}. Unknown state must ABSTAIN. Do not invent unseen facts.',{'context':context,'action':action,'rules':self.rules},stage='text_review')
+            review['decision']=str(review.get('decision','')).upper()
+            if review['decision'] not in ('ALLOW','VETO','ABSTAIN'):
+                self.client.parsed(rid,'RULE_REVIEW_PARSE_ERROR');raise ParseError('RULE_REVIEW_PARSE_ERROR')
             verdicts=[dict(review,request_id=rid,rule_id='text_review')]
         self.checks.append({'checkpoint':self.adapter.decisions,'action':action,'source':source,'verdicts':verdicts,'replanned':replanned})
         if any(v.get('decision')=='VETO' for v in verdicts):

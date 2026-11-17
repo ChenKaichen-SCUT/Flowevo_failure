@@ -44,3 +44,16 @@ class BudgetLedger:
     def summary(self):
         with self.db() as c:
             return [dict(x) for x in c.execute('SELECT state,COUNT(*) n,SUM(cost) estimated_peak_usd,SUM(reserved) reserved_original FROM requests GROUP BY state')]
+    def recover_saved(self,private_root):
+        from pathlib import Path
+        with self.db() as c:rows=[dict(r) for r in c.execute("SELECT * FROM requests WHERE state IN ('STARTED','UNKNOWN','RESPONSE_SAVED')")]
+        recovered=[]
+        for row in rows:
+            path=Path(private_root)/'requests'/(row['id']+'.json')
+            if path.exists():
+                data=json.loads(path.read_text())
+                if isinstance(data.get('response'),dict) and 'usage' in data['response']:
+                    self.settle(row['id'],data['response'],path);recovered.append(row['id']);continue
+                if 400<=data.get('status',0)<500:self.rejected(row['id']);continue
+            self.unknown(row['id'])
+        return recovered

@@ -12,6 +12,7 @@ async def build_app(args):
     os.chmod(args.api_key_file,0o600)
     root=Path(args.private_dir);root.mkdir(parents=True,exist_ok=True)
     ledger=BudgetLedger(root/'ledger.sqlite',args.budget)
+    ledger.recover_saved(root)
     semaphore=asyncio.Semaphore(args.concurrency)
     http=httpx.AsyncClient(timeout=httpx.Timeout(300,connect=20),limits=httpx.Limits(max_connections=args.concurrency,max_keepalive_connections=args.concurrency),trust_env=False)
     async def health(req):return web.json_response({'concurrency':args.concurrency,'budget':args.budget,'ledger':ledger.summary()})
@@ -43,6 +44,7 @@ async def build_app(args):
                 body=response.json()
                 atomic_json(path,{'request_id':rid,'response':body,'latency':time.time()-started})
                 ledger.saved(rid,path);ledger.settle(rid,body,path)
+                if body.get('model')!='deepseek-flash':return web.json_response({'error':'FROZEN_MODEL_MISMATCH'},status=502)
                 return web.json_response(body)
             except Exception as exc:
                 ledger.unknown(rid)

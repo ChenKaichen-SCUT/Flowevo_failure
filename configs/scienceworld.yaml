@@ -1,0 +1,12 @@
+simplifications: ''
+episode_limit: 100
+generate_gold_path: false
+solver_gold_access: false
+solver_private_world_state_access: false
+solver_hidden_goal_progress_access: false
+solver_numeric_score_visibility: false
+valid_action_interface: official_valid_action_assisted_all_actions_unfiltered
+success_definition: audited_native_completion_and_full_score
+record_termination_reason: true
+use_official_splits: true
+manifest_seed: 20261117

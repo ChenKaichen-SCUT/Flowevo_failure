@@ -9,7 +9,18 @@ def strip_private(probe,success_only=False):
     branches=probe['branches'][1:] if success_only else probe['branches']
     if success_only and probe.get('independent_public_adjudication',{}).get('recovery_suffix'):
         branches=[{'name':'observed_recovery_suffix','steps':probe['independent_public_adjudication']['recovery_suffix']}]
-    return {'probe_id':probe['probe_id'],'branches':[{'name':b['name'],'steps':b['steps']} for b in branches],'public_evidence':probe['public_evidence']}
+    from flowevo_sw.shared_state import public_facts,action_facts
+    compact=[]
+    for b in branches:
+        steps=[]
+        for s in b['steps']:
+            before={k:s['before'][k] for k in ('goal','look','inventory')}
+            # F-S receives no prior failure observation, verdict, or contrast label.
+            if not success_only:before['observation']=s['before']['observation']
+            before['public_facts']=public_facts(s['before']);before['action_facts']=action_facts(s['before'],s['action'])
+            steps.append({'action':s['action'],'before':before,'feedback':s['after']['observation'],'after':{k:s['after'][k] for k in ('look','inventory')},'syntactically_listed':s['action'] in s['before']['valid_actions']})
+        compact.append({'name':b['name'],'steps':steps})
+    return {'probe_id':probe['probe_id'],'branches':compact}
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--root',default='..');p.add_argument('--probe-index',required=True);p.add_argument('--run-id',default='rules-v1');a=p.parse_args();root=Path(a.root).resolve();probes=read_json(a.probe_index);groups={}

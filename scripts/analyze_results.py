@@ -12,19 +12,37 @@ def analyze(root,run_prefixes):
         d=read_json(f);hashes[f.name]=hashlib.sha256(f.read_bytes()).hexdigest();s=d['spec'];o=d.get('outcome',{});tr=d.get('trace',{})
         verdicts=[v.get('decision') for check in d.get('checks',[]) for v in check['verdicts']]
         row={'job_id':d['job_id'],'run_id':d['run_id'],'arm':d['arm'],'task_name':s['task_name'],'variation_id':s['variation_id'],'split':s['split'],'episode_id':s['episode_id'],'status':d['status'],'success':o.get('success'),'final_score':o.get('final_score'),'highest_score':o.get('highest_score'),'native_completion':o.get('native_completion'),'environment_moves':o.get('environment_moves'),'host_decisions':o.get('host_decisions'),'termination_reason':o.get('termination_reason'),'failure_type':tr.get('failure_type',d.get('error','')),'planning_mode':tr.get('planning_mode'),'retrieval_opportunity':int(d.get('retrieved',{}).get('best_layer') is not None),'template_retrieved':int(bool(d.get('retrieved',{}).get('template'))),'binding_accepted':int(bool(d.get('binding',{}).get('accepted'))) if d.get('binding') else 0,'direct_executions':tr.get('direct_use_count',0),'direct_successes':tr.get('direct_success_count',0),'guided':int(tr.get('skill_seeded',False)),'fallback':int(tr.get('fallback_triggered',False)),'native_holdout':int(tr.get('strategy_holdout',False)),'allow':verdicts.count('ALLOW'),'veto':verdicts.count('VETO'),'abstain':verdicts.count('ABSTAIN'),'gateway_proposals':len(d.get('checks',[])),'actual_actions':len(d.get('steps',[])),'model_calls':len(d.get('requests',[])),'wall_seconds':d.get('wall_seconds')}
+        row['population']='control' if d['run_id'].startswith('control-') else 'train_sensitivity' if d['run_id'].startswith('batch-sensitivity-') else s['split']
         rows.append(row);detailed.append(d)
     out=root/'output/results';out.mkdir(parents=True,exist_ok=True)
+    # Explicit planned denominator, including tasks never started after a stop.
+    existing={r['job_id'] for r in rows}
+    for prefix in run_prefixes:
+        plan_path=root/'runs-private'/(prefix+'.plan.json')
+        if not plan_path.exists():continue
+        plan=read_json(plan_path)
+        for spec in plan['specs']:
+            for arm in plan['arms']:
+                jid=f"{prefix}.{arm}.{spec['episode_id']}"
+                if jid not in existing:
+                    row={k:None for k in rows[0]} if rows else {}
+                    row.update(job_id=jid,run_id=prefix,arm=arm,task_name=spec['task_name'],variation_id=spec['variation_id'],split=spec['split'],episode_id=spec['episode_id'],status='MISSING',failure_type='PLANNED_NOT_STARTED')
+                    row['population']='control' if prefix.startswith('control-') else 'train_sensitivity' if prefix.startswith('batch-sensitivity-') else spec['split']
+                    for k in ('retrieval_opportunity','template_retrieved','binding_accepted','direct_executions','direct_successes','guided','fallback','native_holdout','allow','veto','abstain','gateway_proposals','actual_actions','model_calls'):row[k]=0
+                    rows.append(row)
     if rows:
         with (out/'episodes.csv').open('w',newline='') as f:w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
     grouped={}
-    for split in sorted({r['split'] for r in rows}):
-        for arm in sorted({r['arm'] for r in rows if r['split']==split}):
-            subset=[r for r in rows if r['split']==split and r['arm']==arm];locked=[r for r in subset if r['status']=='EPISODE_LOCKED'];succ=sum(bool(r['success']) for r in locked)
+    for split in sorted({r['population'] for r in rows}):
+        for arm in sorted({r['arm'] for r in rows if r['population']==split}):
+            subset=[r for r in rows if r['population']==split and r['arm']==arm];locked=[r for r in subset if r['status']=='EPISODE_LOCKED'];succ=sum(bool(r['success']) for r in locked)
             families={n:[r for r in locked if r['task_name']==n] for n in sorted({r['task_name'] for r in locked})}
             grouped[split+'/'+arm]={'started_denominator':len(subset),'locked_denominator':len(locked),'missing':len(subset)-len(locked),'successes':succ,'completion_rate':succ/len(locked) if locked else None,'type_equal_score_mean':float(np.mean([np.mean([r['final_score'] for r in v]) for v in families.values()])) if families else None,'by_task':{n:{'n':len(v),'success':sum(bool(r['success']) for r in v),'final_score_mean':float(np.mean([r['final_score'] for r in v]))} for n,v in families.items()},'mechanism_counts':{k:sum(r[k] for r in subset) for k in ('retrieval_opportunity','template_retrieved','binding_accepted','direct_executions','direct_successes','guided','fallback','native_holdout','allow','veto','abstain','actual_actions','model_calls')},'failure_types':dict(collections.Counter(r['failure_type'] for r in subset if r['failure_type']))}
     # Average repeated orders within a task/variation before any resampling.
     comparisons={}
-    test=[r for r in rows if r['split']=='test' and r['status']=='EPISODE_LOCKED']
+    raw_test=[r for r in rows if r['population']=='test' and r['status']=='EPISODE_LOCKED']
+    complete={(r['run_id'],r['episode_id']) for r in raw_test if {x['arm'] for x in raw_test if (x['run_id'],x['episode_id'])==(r['run_id'],r['episode_id'])}=={'F','F-I','F-T','F-S','F-H'}}
+    test=[r for r in raw_test if (r['run_id'],r['episode_id']) in complete]
     for other in ('F','F-T','F-S','F-H'):
         pair=[]
         keys=sorted({(r['task_name'],r['variation_id']) for r in test})

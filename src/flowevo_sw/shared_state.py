@@ -17,7 +17,7 @@ def action_facts(context,action):
     for verb in ('go to','look in','open','close','pick up','focus on'):
         if action.startswith(verb+' '):
             target=action[len(verb)+1:];out.update(action_verb=verb,action_target=target)
-            if verb=='go to':out['target_door_state']=facts['doors'].get(target.removeprefix('door to ').removeprefix('the '))
+            if verb in ('go to','open','close') or target.startswith('door to '):out['target_door_state']=facts['doors'].get(target.removeprefix('door to ').removeprefix('the '))
             out['target_container_state']=facts['containers'].get(target)
             break
     return out
