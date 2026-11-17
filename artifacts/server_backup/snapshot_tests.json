@@ -1,0 +1,11 @@
+{
+  "status": "PASSED",
+  "tests": 5,
+  "coverage": [
+    "authenticated round trip and separate copies",
+    "wrong key rejected before extraction",
+    "tamper rejected despite altered public checksum",
+    "existing destination and traversal rejected",
+    "authentication tag split between parts"
+  ]
+}

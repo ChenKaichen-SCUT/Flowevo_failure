@@ -1,0 +1,22 @@
+{
+  "status": "PASSED",
+  "all_imports_from_restored_snapshot": true,
+  "modules": {
+    "flowevo_sw": "/root/flowevo-retirement-restore/root/flowevo-success-trace/output/src/flowevo_sw/__init__.py",
+    "alfworld_": "/root/flowevo-retirement-restore/root/flowevo-scienceworld/vendor/FlowEvo/src/alfworld_/__init__.py",
+    "scienceworld": "/root/flowevo-retirement-restore/root/flowevo-scienceworld/vendor/ScienceWorld/scienceworld/__init__.py",
+    "py4j": "/root/flowevo-retirement-restore/root/flowevo-scienceworld/.venv/lib/python3.10/site-packages/py4j/__init__.py",
+    "numpy": "/root/flowevo-retirement-restore/root/flowevo-scienceworld/.venv/lib/python3.10/site-packages/numpy/__init__.py"
+  },
+  "ledger_requests": 8941,
+  "ledger_historical_cost": 12.375240827999969,
+  "new_model_calls": 0,
+  "JVM_reset_task": "melt:4 (historical TRAIN)",
+  "JVM_reset_passed": true,
+  "new_environment_actions": 0,
+  "initial_look_sha256": "59bdae7b2b7df7a3e20f8e8472c91381418bc8bf555537dea83396be8912a88c",
+  "network_interfaces": [
+    "lo"
+  ],
+  "python": "3.10.12"
+}

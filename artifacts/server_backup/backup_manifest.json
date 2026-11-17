@@ -1,0 +1,169 @@
+{
+  "ciphertext_sha256": "bdbd9b04f19f376ea6f9d4e13d8cbadcc14ed404ab182e155fd1f854a451f4ea",
+  "created_utc": "2026-11-17T15:08:36Z",
+  "encrypted_bytes": 3256171836,
+  "entries": 145295,
+  "entries_by_root": {
+    "/etc/java-11-openjdk": 31,
+    "/etc/ssl/certs/java": 2,
+    "/root/.cache/pip": 846,
+    "/root/flowevo-engineering": 748,
+    "/root/flowevo-offline-check": 18678,
+    "/root/flowevo-repro-check": 16485,
+    "/root/flowevo-retirement-backup/environment": 8,
+    "/root/flowevo-root-cause": 19403,
+    "/root/flowevo-scienceworld": 69273,
+    "/root/flowevo-success-trace": 19533,
+    "/usr/lib/jvm/java-11-openjdk-amd64": 288
+  },
+  "excluded": "Operating-system disk image, root SSH keys, shell history and unrelated OS/user directories. All files under the enumerated project roots are included.",
+  "files": 135307,
+  "format": "FLOWEVO_AES256GCM_GZIP_DEDUP_V1",
+  "new_model_requests": 0,
+  "parts": [
+    {
+      "name": "flowevo-server-snapshot.part0001",
+      "sha256": "a3136f572dcdbfabadf3b0a3469399fd34dc2a9aaf6e6976ea47a96789de4998",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0002",
+      "sha256": "fab502e732d3324e0a8dbeda5556d97a8f697a20694de250692cbd7b3357db74",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0003",
+      "sha256": "3e7682c568fbabb54f22d4cef41e033e85496a9436388f530087f4be51fd8036",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0004",
+      "sha256": "4f75e2c6ce9216b5d0d89ae9a14f9923c038c193c1f700e7bd64dd0cecc4458d",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0005",
+      "sha256": "bbe7ae86404b69c73a1bc66db5768d068a6615065df5d12e98de8bc37c0d00d8",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0006",
+      "sha256": "4720eef5fb726b380935db4575e3585da34cbc13365107ecb748ea6199f1eabc",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0007",
+      "sha256": "b32c3c19e2a1ad3b8095fcc8a1dee15afac374d758db0d833201bd0aa01e68b3",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0008",
+      "sha256": "641d37f99f51b9aaf8426c02efb62a8a3590bdd47ce638e820ded0a5cd364e0d",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0009",
+      "sha256": "de982169cfa173fdafb8c639a1415902db42e5b47056a1702604789e73595f40",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0010",
+      "sha256": "f13fbfd813647a931128c0354097c69422f22ab30a268ef6907d9a6181039dc9",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0011",
+      "sha256": "0d27513f7f3792ce8a45e6474de503ebccec55fd44706feb756bac84bbedeb3b",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0012",
+      "sha256": "f59c90acc129107bdecd20dc4ec2b49e3a80ab5214d2fbad4741cb9bfa8e7120",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0013",
+      "sha256": "ff7888c35639e6da8e5079836261146daffe4c3db84e39de94d4c5a1f513ad0a",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0014",
+      "sha256": "afe112d7493be5c2480c13b2471d8307be731022812201e5dd1a269ef41b4536",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0015",
+      "sha256": "0615578d1bf4031376f02168911e78c5b22fe613b878bd40ce1a4dd75385bcb6",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0016",
+      "sha256": "64161c1f95747f80b442c578686542462b05519ee3a327058569ea2d8227b7b8",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0017",
+      "sha256": "be75a5eec88e3a589d0378fa95a130a513dfdbc82b6bd24f4c73bdb867299af9",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0018",
+      "sha256": "1e2870db9bf7078aa873028468d1cafc67378df90a22e8956d22f5bcb49bdb91",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0019",
+      "sha256": "1d6bc30357b8481e26a33f508f3e2f84a9bdeb7f89015394367a800b96df4fe1",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0020",
+      "sha256": "967cd8d3a4283dfd9c68968d7ce4dff0ed9b1205d17ccf085b463e4ca8060d34",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0021",
+      "sha256": "cf128bfcb2e28fbb00a3199429208701256673c732d0760dc58aaf2799775c51",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0022",
+      "sha256": "281a857201d38f58fdf92fa2cc1d86be9f294a75e50e2fd9f74aa500d695561d",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0023",
+      "sha256": "2825fee8595f6051aa51695c9219531b6b6c1bfff7ee13e7fb2c972c53b76812",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0024",
+      "sha256": "0767bbd030b2c0c35b05691af6c34a77ac4ed38b2d2134c3dc0d9ce9b8cd91ce",
+      "size": 134217728
+    },
+    {
+      "name": "flowevo-server-snapshot.part0025",
+      "sha256": "b0d7aca588b21a920567734451fa954565f8d3351749b284d6af5bf26daf8f72",
+      "size": 34946364
+    }
+  ],
+  "private_manifest_sha256": "0ba9c52b061146da50e3e69fd3447149b7f3ef21ca81a5011e5daecf977346a2",
+  "roots": [
+    "/root/flowevo-engineering",
+    "/root/flowevo-offline-check",
+    "/root/flowevo-repro-check",
+    "/root/flowevo-root-cause",
+    "/root/flowevo-scienceworld",
+    "/root/flowevo-success-trace",
+    "/usr/lib/jvm/java-11-openjdk-amd64",
+    "/etc/java-11-openjdk",
+    "/etc/ssl/certs/java",
+    "/root/.cache/pip",
+    "/root/flowevo-retirement-backup/environment"
+  ],
+  "source_bytes_rechecked": true,
+  "source_file_bytes": 11660940012,
+  "symlinks": 110,
+  "unique_content_bytes": 7117239167,
+  "unique_content_objects": 74282
+}

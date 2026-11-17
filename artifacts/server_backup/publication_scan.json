@@ -1,0 +1,21 @@
+{
+  "status": "PASSED",
+  "public_files": 13,
+  "recovery_key_not_in_public_files": true,
+  "credential_signature_scan": true,
+  "files": {
+    "RELEASE_NOTES_ZH.md": "f6f905a53645e628623df65544287e1e604361a718e2eb1c653cea693d4f4269",
+    "SERVER_BACKUP_README.md": "5341360a33d16e759652a198596639b35e1e932a0aad9734f30139f1cc48f3e8",
+    "reports/SERVER_RESTORE_ZH.md": "7d203f091e63cc1b127cf84301305a56cedbad0cd643ab51b1a418f5697a6333",
+    "scripts/backup_offline_smoke.py": "bdc6c51efef3e15fe28ab71be70b3184bab845d789ac80f6e9ed230e23decabe",
+    "scripts/download_server_backup.py": "774e4b42da57abcd8024ac28b754b43712b2c521c03050643fd9b558d925946d",
+    "scripts/server_snapshot.py": "a3964789a9aabc822579049e143f05d67673f1983135086aae51da466c1e377b",
+    "scripts/test_server_snapshot.py": "4dd74a32d1f3cd61f30a9f0abe49ce11f7bdac7d85fc551a92ca18df26f6117d",
+    "scripts/verify_restored_server.sh": "da0b0c516098d74682a6d34b7675d70e6dd00c16108abe800782e1ce15abdaa1",
+    "artifacts/server_backup/backup_manifest.json": "03df9c81a2480a67e951c9ae526f268e48667dae2c7c13e389d28904ee2bf605",
+    "artifacts/server_backup/offline_smoke.json": "d17f4328f12f674c87349401a62c90a6558056150153f511d6ee59ab94c53bc9",
+    "artifacts/server_backup/restored_tests.txt": "120507d807f6e24974f4366a126308a102563fecf7a4e17517cca9254d34e027",
+    "artifacts/server_backup/restore_verification.json": "943e734b693eb828af690ce617bf7da99ea20d2de039d1616072230c410d471f",
+    "artifacts/server_backup/snapshot_tests.json": "cd4ade6b328200de835b1faa5a6c907a73d43f7b4df47cd949879e7c7869966a"
+  }
+}
