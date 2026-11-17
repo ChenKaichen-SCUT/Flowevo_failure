@@ -16,7 +16,7 @@ provider:
   allow_other_model_providers: false
   thinking: disabled
   temperature: 0.0
-  action_output_tokens: 2048
+  action_output_tokens: 4096
   learning_output_tokens: 8192
   sdk_automatic_retries: false
   log_auth_headers: false
@@ -68,6 +68,9 @@ flowevo:
   all_actions_through_gateway: true
   gold_in_retry_prompt: false
   hidden_correctness_driven_retry: false
+  native_injection_holdout_rate: 0.2
+  native_holdout_rng_seed: 1337
+  native_audit_interval: 20
 protocol:
   arms:
   - F

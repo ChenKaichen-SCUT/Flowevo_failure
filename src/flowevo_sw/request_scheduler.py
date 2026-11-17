@@ -19,7 +19,7 @@ async def build_app(args):
         d=await req.json();rid=d['request_id']
         if not re.fullmatch(r'[A-Za-z0-9_.-]+',rid):raise web.HTTPBadRequest()
         max_tokens=int(d.get('max_tokens',2048))
-        if max_tokens not in (2048,8192):raise web.HTTPBadRequest(text='unfrozen output cap')
+        if max_tokens not in (4096,8192):raise web.HTTPBadRequest(text='unfrozen output cap')
         payload={'model':'deepseek-flash','messages':d['messages'],'temperature':0,'max_tokens':max_tokens,'thinking':{'type':'disabled'}}
         wire=canonical(payload)
         if key in wire:raise web.HTTPBadRequest(text='Secret detected in payload')

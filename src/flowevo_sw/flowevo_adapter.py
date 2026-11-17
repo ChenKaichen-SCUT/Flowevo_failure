@@ -15,7 +15,7 @@ from .deepseek_client import ParseError,DeliveryError
 from .action_gateway import Veto
 from .checkpointing import digest
 
-ACTION_SYSTEM='''You are operating ScienceWorld, an interactive scientific environment. Complete the given goal using only public observations and normal action feedback. Choose exactly ONE action. The valid-action list is an interface aid, NOT a list of task-correct actions; other syntactically supported commands and numeric ambiguity choices can be used when the environment requests them. Observe scientific processes over time as needed. Use the recent feedback and current look/inventory; old observations may be stale. Return JSON {"reason":"brief reasoning and next subgoal","action":"one exact environment command"}. No fabricated observations.'''
+ACTION_SYSTEM='''You are operating ScienceWorld, an interactive scientific environment. Complete the given goal using only public observations and normal action feedback. Choose exactly ONE action. The valid-action list is an interface aid, NOT a list of task-correct actions; other syntactically supported commands and numeric ambiguity choices can be used when the environment requests them. Observe scientific processes over time as needed. Use the recent feedback and current look/inventory; old observations may be stale. Return JSON {"action":"one exact environment command","reason":"next subgoal in at most 60 words"}. No fabricated observations. Do not emit an extended internal debate.'''
 
 class ScienceGenerator:
     def __init__(self,client,adapter):self.client=client;self.adapter=adapter;self.last=None
