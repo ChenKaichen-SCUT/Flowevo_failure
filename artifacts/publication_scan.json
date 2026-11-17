@@ -1,0 +1,1 @@
+{"status": "PASSED", "head": "05ad11cae6c7ebf89a843fed9f3d75b584c06c8d", "counts": {"worktree_files": 114, "git_blobs": 102, "compressed_bodies": 4}, "actual_key_bytes_scanned": true, "staged_diff_scanned": true, "reachable_history_scanned": true, "decompressed_payloads_scanned": true, "matched_secret_material_printed": false}

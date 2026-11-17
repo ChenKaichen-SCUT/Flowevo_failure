@@ -1,0 +1,156 @@
+{
+  "status": "PASSED",
+  "provider_requests_before": 8941,
+  "provider_requests_after": 8941,
+  "new_provider_calls": 0,
+  "files": {
+    "summary.json": {
+      "sha256": "5962311ae85b3a010636e3e83b5676eb4436c383916dd4b01569e6feb0d58fa4",
+      "byte_identical": true
+    },
+    "episodes.csv": {
+      "sha256": "df419b1004d68d7d8380e74ad79c53d313165c18714a8d38331674ca724c99ae",
+      "byte_identical": true
+    },
+    "costs.csv": {
+      "sha256": "605a96a0d8e853622b4f4a473f007e33007a5bf68ba88bfcb985ebd5fdb7f990",
+      "byte_identical": true
+    }
+  },
+  "real_jvm_saved_action_replay": {
+    "interpretation": "Real environment plus recorded autonomous model actions. Engineering only; neither new DeepSeek decisions nor transfer results.",
+    "records": [
+      {
+        "arm": "F",
+        "direct": 0,
+        "fallback": false,
+        "guided": false,
+        "hashes_match": true,
+        "mode": "dynamic",
+        "outcome": {
+          "environment_moves": 4,
+          "final_score": 100,
+          "highest_score": 100,
+          "host_decisions": 4,
+          "native_completion": true,
+          "success": true,
+          "termination_reason": "SUCCESS",
+          "wrapper_done": true
+        },
+        "source_job": "discovery-v2.F.09ae344822c12738f557",
+        "sources": [
+          "dynamic",
+          "dynamic",
+          "dynamic",
+          "dynamic"
+        ],
+        "success": true
+      },
+      {
+        "arm": "F",
+        "direct": 0,
+        "fallback": false,
+        "guided": true,
+        "hashes_match": true,
+        "mode": "guided",
+        "outcome": {
+          "environment_moves": 4,
+          "final_score": 100,
+          "highest_score": 100,
+          "host_decisions": 4,
+          "native_completion": true,
+          "success": true,
+          "termination_reason": "SUCCESS",
+          "wrapper_done": true
+        },
+        "source_job": "discovery-v2.F.09ae344822c12738f557",
+        "sources": [
+          "skill_guided",
+          "skill_guided",
+          "skill_guided",
+          "skill_guided"
+        ],
+        "success": true
+      },
+      {
+        "arm": "F",
+        "direct": 1,
+        "fallback": false,
+        "guided": false,
+        "hashes_match": true,
+        "mode": "direct",
+        "outcome": {
+          "environment_moves": 4,
+          "final_score": 100,
+          "highest_score": 100,
+          "host_decisions": 4,
+          "native_completion": true,
+          "success": true,
+          "termination_reason": "SUCCESS",
+          "wrapper_done": true
+        },
+        "source_job": "discovery-v2.F.09ae344822c12738f557",
+        "sources": [
+          "direct_skill",
+          "direct_skill",
+          "direct_skill",
+          "direct_skill"
+        ],
+        "success": true
+      },
+      {
+        "arm": "F",
+        "direct": 1,
+        "fallback": true,
+        "guided": true,
+        "hashes_match": true,
+        "mode": "fallback",
+        "outcome": {
+          "environment_moves": 4,
+          "final_score": 100,
+          "highest_score": 100,
+          "host_decisions": 4,
+          "native_completion": true,
+          "success": true,
+          "termination_reason": "SUCCESS",
+          "wrapper_done": true
+        },
+        "source_job": "discovery-v2.F.09ae344822c12738f557",
+        "sources": [
+          "direct_skill",
+          "skill_guided",
+          "skill_guided",
+          "skill_guided"
+        ],
+        "success": true
+      },
+      {
+        "arm": "F-I",
+        "direct": 0,
+        "fallback": false,
+        "guided": false,
+        "hashes_match": true,
+        "mode": "dynamic",
+        "outcome": {
+          "environment_moves": 4,
+          "final_score": 100,
+          "highest_score": 100,
+          "host_decisions": 4,
+          "native_completion": true,
+          "success": true,
+          "termination_reason": "SUCCESS",
+          "wrapper_done": true
+        },
+        "source_job": "discovery-v2.F.09ae344822c12738f557",
+        "sources": [
+          "dynamic",
+          "dynamic",
+          "dynamic",
+          "dynamic"
+        ],
+        "success": true
+      }
+    ]
+  },
+  "note": "Fresh public-only tree, new audit directory, no key. Installed dependencies independently validated in clean_reproduction.json. Original raw-file hashes remain in export_mapping."
+}

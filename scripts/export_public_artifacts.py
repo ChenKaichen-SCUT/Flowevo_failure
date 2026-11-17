@@ -38,7 +38,22 @@ def main():
                 if path.exists():mapping.append({'private_file':'requests/'+path.name,'private_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'public_record_id':rid})
             yield record
     request_hash=write_zst('requests_sanitized.jsonl.zst',requests())
-    atomic_json(out/'export_mapping.json',{'records':mapping,'requests_decompressed_sha256':request_hash,'note':'Completed TEST trajectories are exposed; unused future TEST material excluded. Only own generated logs are exported, not vendor datasets/JARs.'})
+    # Own learning/governance evidence, not vendor data or arbitrary server files.
+    evidence=[]
+    private=root/'runs-private'
+    for directory in ('compilations','banks','diagnoses','probes','dev_local'):
+        evidence.extend(sorted((private/directory).glob('*.json')))
+    for pattern in ('*.plan.json','*.final_bank.json','*.mechanisms.json','*.selection.json','*.index.json','*.superseded.json','*.stop.json','*-source-commit.txt'):
+        evidence.extend(sorted(private.glob(pattern)))
+    evidence.extend(p for p in (private/'M0.json',private/'selected_probes.json',private/'resource_samples.jsonl') if p.exists())
+    def evidence_records():
+        for path in sorted(set(evidence)):
+            data=safe(path.read_bytes());name=str(path.relative_to(private))
+            sha=hashlib.sha256(data).hexdigest()
+            mapping.append({'private_file':name,'private_sha256':sha,'public_record_id':name})
+            yield {'relative_path':name,'private_sha256':sha,'text':data.decode('utf-8')}
+    evidence_hash=write_zst('learning_governance_sanitized.jsonl.zst',evidence_records())
+    atomic_json(out/'export_mapping.json',{'records':mapping,'requests_decompressed_sha256':request_hash,'learning_decompressed_sha256':evidence_hash,'note':'Completed TEST trajectories are exposed; unused future TEST material excluded. Only own generated logs are exported, not vendor datasets/JARs.'})
     # Publish train/dev metadata and split hashes; never the full unused TEST manifest.
     dest=root/'output/data/manifests';dest.mkdir(parents=True,exist_ok=True)
     for name in ('all_tasks.json','train.jsonl','dev.jsonl','exclusions.jsonl','split_hashes.json'):
