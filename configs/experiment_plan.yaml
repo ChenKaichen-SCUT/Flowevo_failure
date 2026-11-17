@@ -1,0 +1,122 @@
+version: scienceworld-failure-invariants-v1
+project:
+  output_repo: https://github.com/ChenKaichen-SCUT/Flowevo_failure
+  branch: feat/scienceworld-failure-invariants
+  report_language: zh-CN
+  run_id: scienceworld-20261117-v1
+  source_commit: PIN_BEFORE_TEST
+  upstream_flowevo_commit: 36e81efd4d1fdbabca7366200b15808ebef157fa
+  upstream_scienceworld_commit: e8216d6044e8e39be9fcb185e3b2dfb602584b52
+  jar_sha256: e77b0fee7d68abe3ca5b12e57d86e2bfe7603f20c5200da0b0f085939faeb465
+provider:
+  vendor: deepseek
+  base_url: https://api.deepseek.com
+  model: deepseek-flash
+  api_key_file: ../secrets/api.txt
+  allow_other_model_providers: false
+  thinking: disabled
+  temperature: 0.0
+  action_output_tokens: 2048
+  learning_output_tokens: 8192
+  sdk_automatic_retries: false
+  log_auth_headers: false
+budget:
+  max_api_cost_usd: 100.0
+  reserve_inflight_cost: true
+  pricing_snapshot: artifacts/provider_pricing_snapshot.json
+  on_unknown: quarantine_request_no_automatic_resend
+  on_exhaustion: finish_reserved_work_then_stop_at_complete_paired_block
+parallel:
+  environment_workers: 8
+  environment_memory_fraction: 0.7
+  separate_jvm_per_worker: true
+  global_api_concurrency_initial: 8
+  global_api_concurrency_ladder:
+  - 8
+  - 16
+  - 32
+  - 64
+  - 128
+  global_api_concurrency_ceiling: 256
+  require_measured_throughput_gain_for_increase: true
+  batch_size: 8
+  commit_order: frozen_task_order
+  publish_memory_at_batch_barrier_only: true
+scienceworld:
+  simplifications: ''
+  episode_limit: 100
+  generate_gold_path: false
+  solver_gold_access: false
+  solver_private_world_state_access: false
+  solver_hidden_goal_progress_access: false
+  solver_numeric_score_visibility: false
+  valid_action_interface: official_valid_action_assisted_all_actions_unfiltered
+  success_definition: audited_native_completion_and_full_score
+  record_termination_reason: true
+  use_official_splits: true
+  manifest_seed: 20261117
+flowevo:
+  success_compilation: true
+  success_library_admission: true
+  retrieval: true
+  direct_skill_execution: true
+  skill_conditioned_generation: true
+  native_dynamic_fallback: true
+  governance: true
+  suppress_harmful_skills_per_original_policy: true
+  disable_entire_success_library_to_create_headroom: false
+  all_actions_through_gateway: true
+  gold_in_retry_prompt: false
+  hidden_correctness_driven_retry: false
+protocol:
+  arms:
+  - F
+  - F-I
+  - F-T
+  - F-S
+  - F-H
+  primary_comparison: F-I_vs_F
+  discovery_train_variations_per_type: 2
+  maximum_selected_task_types: 6
+  selected_train_variations_per_type: 12
+  dev_variations_per_type: 4
+  test_variations_per_type: 6
+  task_order_seeds:
+  - 17
+  - 29
+  max_additional_discovery_rounds: 1
+  select_tasks_using_test_outcomes: false
+  common_warm_start_success_bank: true
+  main_success_learning: online_batch_barrier
+  main_failure_rules: frozen_after_dev
+  independent_memory_per_arm_and_order: true
+  record_frozen_bank_dev_probe_separately: true
+  downscale_before_test_only_if_budget_requires: true
+constraints:
+  representation: declarative_or_isolated_pure_function
+  decisions:
+  - ALLOW
+  - VETO
+  - ABSTAIN
+  unknown_decision: ABSTAIN
+  max_active_rules: 3
+  initial_generations_per_mechanism: 1
+  max_revisions_per_mechanism: 2
+  max_train_counterfactual_branches_per_mechanism: 3
+  max_environment_actions_per_branch: 8
+  max_constraint_replans_per_checkpoint: 1
+  no_task_or_variation_id_predicates: true
+  public_state_extractor_shared_across_arms: true
+  reset_episode_state: true
+  private_evaluator_access: false
+  isolated_python_timeout_seconds: 1
+  isolated_python_memory_mib: 256
+publication:
+  keep_full_private_logs_locally: true
+  export_sanitized_public_logs: true
+  scan_actual_api_key_bytes_before_push: true
+  scan_git_history_before_push: true
+  upload_private_gold_or_future_holdouts: false
+  push_new_branch: true
+  force_push: false
+  auto_merge: false

@@ -1,0 +1,15 @@
+api.txt
+**/api.txt
+.env
+.env.*
+secrets/
+runs-private/
+*.pem
+*.key
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+vendor/
+data/manifests/test_manifest.private.jsonl
