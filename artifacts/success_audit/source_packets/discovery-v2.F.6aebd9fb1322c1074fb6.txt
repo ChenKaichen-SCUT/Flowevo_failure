@@ -1,0 +1,210 @@
+# discovery-v2.F.6aebd9fb1322c1074fb6
+melt | train | variation 4
+Task Description:
+Your task is to melt ice. First, focus on the substance. Then, take actions that will cause it to change its state of matter.
+INITIAL LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] open door to kitchen
+REASON: Ice is likely in the kitchen freezer; open the kitchen door to search for it.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 2 [dynamic] go to kitchen
+REASON: The kitchen door is open; enter the kitchen to find ice to melt.
+FEEDBACK: You move to the kitchen.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 3 [dynamic] focus on ice
+REASON: The goal says to first focus on the substance (ice) before taking melting actions. I need to locate/focus on the ice to proceed.
+FEEDBACK: No known action matches that input.
+
+STEP 4 [dynamic] look around
+REASON: Ice is not visible in the current kitchen view; scan the room to locate the ice before focusing on it.
+FEEDBACK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+STEP 5 [dynamic] open freezer
+REASON: Ice is likely inside the closed freezer; opening it lets me locate and access the ice to melt.
+FEEDBACK: The freezer is now open.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is open. In the freezer is: a substance called ice.
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 6 [dynamic] focus on ice
+REASON: The freezer is open and ice is visible inside; focusing on the ice is the required first step before melting it.
+FEEDBACK: You focus on the ice.
+
+STEP 7 [dynamic] pick up ice
+REASON: The ice is in the open freezer; picking it up lets me move it to a heat source to melt it.
+FEEDBACK: You move the ice to the inventory.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is open. In the freezer is: nothing.
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	a substance called ice
+	an orange
+
+
+STEP 8 [dynamic] move ice to stove
+REASON: The ice is in inventory; placing it on the stove lets me heat it to melt.
+FEEDBACK: You move the ice to the stove.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is open. In the freezer is: nothing.
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: a substance called ice.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 9 [dynamic] activate stove
+REASON: The ice is on the stove; turning the stove on will heat and melt it.
+FEEDBACK: The stove is now activated.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is open. In the freezer is: nothing.
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned on. On the stove is: a substance called water.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+

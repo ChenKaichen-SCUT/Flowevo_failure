@@ -1,0 +1,263 @@
+# discovery-v1.F.279ad8d80a9088c7546b
+change-the-state-of-matter-of | train | variation 12
+Task Description:
+Your task is to change the state of matter of marshmallow. First, focus on the substance. Then, take actions that will cause it to change its state of matter.
+INITIAL LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a book shelf (containing nothing)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a drawing
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] open door to hallway
+REASON: The marshmallow is not visible in the living room or inventory. I need to search other rooms, starting by opening the closed door to the hallway.
+FEEDBACK: The door is now open.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a book shelf (containing nothing)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a drawing
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 2 [dynamic] go to hallway
+REASON: The goal is to change marshmallow's state of matter, but no marshmallow is visible in the living room. I should explore the hallway to locate the marshmallow before acting on it.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 3 [dynamic] open door to kitchen
+REASON: I need to locate the marshmallow, likely in the kitchen. The kitchen door is closed, so I should open it first.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 4 [dynamic] go to kitchen
+REASON: Marshmallow is likely in the kitchen. The kitchen door is now open, so I should go to the kitchen to find the marshmallow.
+FEEDBACK: You move to the kitchen.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 5 [dynamic] look around
+REASON: I am in the kitchen and need to locate the marshmallow before changing its state. Looking around will reveal where the marshmallow is.
+FEEDBACK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+STEP 6 [dynamic] open cupboard
+REASON: Marshmallow is not visible in the kitchen, so I need to locate it. The cupboard is closed and likely contains it; opening the cupboard is the next step to find the marshmallow before changing its state of matter.
+FEEDBACK: The cupboard is now open.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is open. In the cupboard is: a ceramic cup (containing nothing), a drawer, marshmallow, a metal pot (containing nothing), a tin cup (containing nothing).
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 7 [dynamic] focus on marshmallow
+REASON: The cupboard is open and contains the marshmallow. First I must focus on the marshmallow as the task requires, then heat it to change its state.
+FEEDBACK: You focus on the marshmallow.
+
+STEP 8 [dynamic] pick up marshmallow
+REASON: Marshmallow is in the open cupboard. To change its state of matter, I should heat it. First pick it up so I can place it on the stove or in the oven.
+FEEDBACK: You move the marshmallow to the inventory.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is open. In the cupboard is: a ceramic cup (containing nothing), a drawer, a metal pot (containing nothing), a tin cup (containing nothing).
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	marshmallow
+	an orange
+
+
+STEP 9 [dynamic] activate stove
+REASON: Marshmallow is in inventory and focused. To change its state of matter, heat it. The stove is available and turned off; activating it provides a heat source.
+FEEDBACK: The stove is now activated.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is open. In the cupboard is: a ceramic cup (containing nothing), a drawer, a metal pot (containing nothing), a tin cup (containing nothing).
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned on. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 10 [dynamic] move marshmallow to stove
+REASON: The stove is now activated. To change the marshmallow's state of matter (melt it), I should place it on the hot stove.
+FEEDBACK: You move the marshmallow to the stove.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is open. In the cupboard is: a ceramic cup (containing nothing), a drawer, a metal pot (containing nothing), a tin cup (containing nothing).
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned on. On the stove is: marshmallow.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 11 [dynamic] wait
+REASON: The marshmallow is now on the activated stove, which should heat it and change its state (melting). I'll wait for the heating to take effect.
+FEEDBACK: You decide to wait for 10 iterations.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is open. In the cupboard is: a ceramic cup (containing nothing), a drawer, a metal pot (containing nothing), a tin cup (containing nothing).
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned on. On the stove is: liquid marshmallow.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+

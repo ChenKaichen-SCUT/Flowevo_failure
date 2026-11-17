@@ -1,0 +1,14 @@
+{
+  "input": "Existing public archives restored by restore_public_run.py; original server records verified separately",
+  "ledger_before": [
+    8941,
+    12.375240827999969
+  ],
+  "network_interfaces": [
+    "lo"
+  ],
+  "new_api_cost_max": 0,
+  "new_model_requests_max": 0,
+  "parent": "5ae0dcdf80bf81c4f5acd34d24f75501ddda942b",
+  "utc": "2026-11-17T13:26:12.359597+00:00"
+}

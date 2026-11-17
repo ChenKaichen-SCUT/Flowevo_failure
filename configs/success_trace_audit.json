@@ -1,0 +1,19 @@
+{
+  "parent_commit": "5ae0dcdf80bf81c4f5acd34d24f75501ddda942b",
+  "stage": "success_trace_integrity_and_information_fidelity",
+  "new_model_api_calls_max": 0,
+  "new_api_cost_max": 0,
+  "network_interfaces_allowed": ["lo"],
+  "primary_runs": ["discovery-v2", "selected-train-v1", "dev-baseline-v1"],
+  "primary_arm": "F",
+  "primary_splits": ["train", "dev"],
+  "unit": ["task_name", "variation_id"],
+  "repeat_policy": "Keep every successful record; primary representative by the listed run order, then job_id, never by process label or compilation validity. Report within-unit disagreements separately.",
+  "supplementary_train_runs": ["discovery-v1", "batch-sensitivity-1-v1", "batch-sensitivity-8-v1"],
+  "test_policy": "Historical inventory only; no process tuning, skill design, bindings, solves or new task success rates from TEST.",
+  "source_review": "Review source-only public packets and freeze labels before opening corresponding compiler output. Parent reviewer has prior project context; independent assistant reviewer starts without compilation context. Neither is a human or independently sampled scientific annotator.",
+  "labels": ["PROCESS_SUPPORTED", "PARTIALLY_SUPPORTED", "ANSWER_WITHOUT_OBSERVED_SUPPORT", "PROCESS_NOT_REQUIRED", "INSUFFICIENT_EVIDENCE"],
+  "evidence_policy": "Before-decision public observations support selection. Saved reasons can show an asserted decision rule but are not new measurements. Host success establishes eligibility only. Unsupported observed choice is not proof of random guessing.",
+  "fidelity_policy": "Only information evidenced in the source can be lost during compilation. Distinguish compiler input omission, raw output loss, historical runtime serialization loss, and current A2 preservation. L1 templates, L2 exemplars/rules and applicability are assessed separately.",
+  "transfer_policy": "Static structural perturbations of TRAIN/DEV inputs only; no target-score lookup, new skills, runtime edits or admission. Missing physical comparison data stays INSUFFICIENT_EVIDENCE. Synthetic structural tests are not real environment measurements."
+}

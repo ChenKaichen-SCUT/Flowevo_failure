@@ -1,0 +1,260 @@
+# dev-baseline-v1.F.77525ad34ec157f0577b
+inclined-plane-friction-named-surfaces | dev | variation 754
+Task Description:
+Your task is to determine which of the two inclined planes (greenpaint, bronze) has the most friction. After completing your experiment, focus on the inclined plane with the most friction.
+INITIAL LOOK: This room is called the foundry. In it, you see: 
+	the agent
+	a substance called air
+	a blast furnace, which is turned off. The blast furnace door is closed. 
+	a sink, which is turned off. In the sink is: nothing.
+	a table. On the table is: nothing.
+You also see:
+	A door to the outside (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [skill_guided] look around
+REASON: Survey the foundry to locate the inclined planes and any blocks needed for the friction experiment.
+FEEDBACK: This room is called the foundry. In it, you see: 
+	the agent
+	a substance called air
+	a blast furnace, which is turned off. The blast furnace door is closed. 
+	a sink, which is turned off. In the sink is: nothing.
+	a table. On the table is: nothing.
+You also see:
+	A door to the outside (that is closed)
+
+STEP 2 [skill_guided] open door to outside
+REASON: Need to leave the foundry and locate the greenpaint and bronze inclined planes for the friction experiment.
+FEEDBACK: The door is now open.
+LOOK: This room is called the foundry. In it, you see: 
+	the agent
+	a substance called air
+	a blast furnace, which is turned off. The blast furnace door is closed. 
+	a sink, which is turned off. In the sink is: nothing.
+	a table. On the table is: nothing.
+You also see:
+	A door to the outside (that is open)
+
+
+STEP 3 [skill_guided] go to outside
+REASON: The door is open; move outside to locate the inclined planes and blocks for the friction experiment.
+FEEDBACK: You move to the outside.
+LOOK: This outside location is called the outside. Here you see: 
+	the agent
+	a substance called air
+	an axe
+	a fire pit (containing nothing)
+	a fountain (containing a substance called water)
+	the ground
+	a shovel
+	a substance called wood
+You also see:
+	A door to the foundry (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+
+
+STEP 4 [skill_guided] open door to greenhouse
+REASON: Need to enter greenhouse to find the inclined planes (greenpaint, bronze) for the friction experiment.
+FEEDBACK: The door is now open.
+LOOK: This outside location is called the outside. Here you see: 
+	the agent
+	a substance called air
+	an axe
+	a fire pit (containing nothing)
+	a fountain (containing a substance called water)
+	the ground
+	a shovel
+	a substance called wood
+You also see:
+	A door to the foundry (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+
+
+STEP 5 [skill_guided] go to greenhouse
+REASON: Enter the greenhouse to locate the inclined planes (greenpaint and bronze) and begin the friction experiment.
+FEEDBACK: You move to the greenhouse.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is open)
+
+
+STEP 6 [skill_guided] look around
+REASON: Survey the greenhouse to locate the greenpaint and bronze inclined planes and any blocks needed for the friction experiment.
+FEEDBACK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is open)
+
+STEP 7 [skill_guided] look in hallway
+REASON: Need to locate the greenpaint and bronze inclined planes; hallway is the unexplored adjacent room, so inspect it before navigating.
+FEEDBACK: Inside the hallway is: 
+	a substance called air
+	a painting
+
+ You also see: A door to the kitchen (that is closed), A door to the living room (that is closed), A door to the bedroom (that is closed), A door to the workshop (that is closed), A door to the greenhouse (that is closed), A door to the art studio (that is closed).
+
+STEP 8 [skill_guided] open door to hallway
+REASON: Need to leave the greenhouse and search other rooms for the greenpaint and bronze inclined planes.
+FEEDBACK: The door is now open.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+
+
+STEP 9 [skill_guided] go to hallway
+REASON: The hallway door is now open; move there to search for the inclined planes and blocks needed for the friction experiment.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 10 [skill_guided] look around
+REASON: Survey the hallway to locate the inclined planes (greenpaint, bronze) and any blocks needed for the friction experiment.
+FEEDBACK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+STEP 11 [skill_guided] go to greenhouse
+REASON: Greenhouse is likely where inclined planes are; door is open, so move there to survey objects.
+FEEDBACK: You move to the greenhouse.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+
+
+STEP 12 [skill_guided] look around
+REASON: Survey the greenhouse to locate the greenpaint and bronze inclined planes and any blocks needed for the friction experiment.
+FEEDBACK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+
+STEP 13 [skill_guided] look around
+REASON: Survey the greenhouse for inclined planes or experiment objects before navigating elsewhere.
+FEEDBACK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+
+STEP 14 [skill_guided] look around
+REASON: Need to locate the greenpaint and bronze inclined planes; current greenhouse view shows none, so survey the room again before navigating elsewhere.
+FEEDBACK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+
+STEP 15 [skill_guided] go to hallway
+REASON: Need to locate the inclined planes (greenpaint, bronze); hallway connects to other rooms, so explore it next.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 16 [skill_guided] open door to workshop
+REASON: Need to locate the inclined planes (greenpaint, bronze); workshop is a likely room, so open its door to explore.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is open)
+
+
+STEP 17 [skill_guided] go to workshop
+REASON: The workshop door is open; entering lets me survey for the inclined planes (greenpaint, bronze) to compare friction.
+FEEDBACK: You move to the workshop.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	an inclined plane with a bronze surface
+	an inclined plane with a greenpaint surface
+	a steel block
+	a stopwatch, which is deactivated. 
+	a table. On the table is: a battery, a blue wire, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 18 [skill_guided] connect block to inclined plane with a bronze surface
+REASON: Set up the friction experiment on the bronze inclined plane by connecting the steel block to it.
+FEEDBACK: terminal 1 on steel block is now connected to terminal 1 on inclined plane
+
+STEP 19 [skill_guided] focus on inclined plane with a bronze surface
+REASON: Block is connected to the bronze inclined plane; focus on it to observe the friction experiment result.
+FEEDBACK: You focus on the inclined plane with a bronze surface.

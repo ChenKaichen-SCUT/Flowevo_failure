@@ -1,0 +1,101 @@
+{
+  "class_counts_primary": {
+    "A": 1,
+    "B": 1,
+    "C": 18,
+    "D": 11
+  },
+  "compilation_review_b_sha256": "bbfc7854d803b4296d4d5725035e081da961fc24d1a35a3da34e66f7bd880626",
+  "complete_transfers_demonstrated": 0,
+  "conditions_source_consistent_primary": {
+    "false": 1,
+    "null": 1,
+    "true": 29
+  },
+  "core_operations_retained": {
+    "annotated_steps": {
+      "discovery-v2.F.2beaa66b5bcd3db3dc64": [
+        9,
+        14
+      ],
+      "discovery-v2.F.6aebd9fb1322c1074fb6": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "denominator": 2,
+    "numerator": 2
+  },
+  "decision_dependency": {
+    "L1_executable_branch_retained": 0,
+    "denominator": 1,
+    "raw_L2_text_retained": 1,
+    "source_jobs": [
+      "discovery-v2.F.2beaa66b5bcd3db3dc64"
+    ]
+  },
+  "denominator_warning": "Descriptive census of this successful TRAIN/DEV corpus; not a random population sample or new success-rate experiment.",
+  "historical_TEST_metadata_records": 63,
+  "historical_success_records": 102,
+  "insufficient_observed_decision": {
+    "denominator_all_primary": 31,
+    "denominator_comparison_required": 19,
+    "numerator": 18
+  },
+  "manual_review_warning": "Frozen assistant annotations, not independent human accuracy estimates; unknown is not false.",
+  "new_API_cost": 0,
+  "new_model_API_calls": 0,
+  "new_task_success_rates_reported": false,
+  "parameter_roles_primary": {
+    "false": 3,
+    "null": 21,
+    "true": 7
+  },
+  "primary_L2_unobserved_experimental_effect": 9,
+  "primary_cached_source_valid": 13,
+  "primary_units": 31,
+  "process_supported": {
+    "denominator_all_primary": 31,
+    "denominator_inference_or_experiment": 20,
+    "numerator": 2
+  },
+  "required_completion_markers_retained": {
+    "annotated_steps": {
+      "discovery-v2.F.2beaa66b5bcd3db3dc64": [
+        1,
+        9,
+        14,
+        17
+      ],
+      "discovery-v2.F.6aebd9fb1322c1074fb6": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "denominator": 2,
+    "numerator": 1
+  },
+  "roles_and_conditions_joint_primary": {
+    "false": 4,
+    "null": 21,
+    "true": 6
+  },
+  "source_labels_primary": {
+    "ANSWER_WITHOUT_OBSERVED_SUPPORT": 17,
+    "PARTIALLY_SUPPORTED": 2,
+    "PROCESS_NOT_REQUIRED": 10,
+    "PROCESS_SUPPORTED": 2
+  },
+  "source_reviewed_records": 39,
+  "structural_method_candidates": [
+    "discovery-v2.F.6aebd9fb1322c1074fb6"
+  ],
+  "supplementary_new_units": 3,
+  "supplementary_records": 8
+}

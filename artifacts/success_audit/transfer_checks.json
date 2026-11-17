@@ -1,0 +1,866 @@
+{
+  "L1_same_binding_actions_invariant_to_new_temperature": true,
+  "L2_temperature_rule_retained_verbatim": "Choose the destination box by the measured temperature: above 0.0 degrees celsius goes to the blue box, below 0.0 degrees celsius goes to the orange box.",
+  "cases": [
+    {
+      "actions_not_currently_valid_at_this_checkpoint": [],
+      "bindings": {
+        "plane": "inclined plane with a titanium surface"
+      },
+      "checkpoint": 0,
+      "condition_verdict": {
+        "accepted": false,
+        "conditions": [
+          {
+            "condition": "required_room",
+            "evidence": {
+              "observed": "workshop",
+              "required": "workshop"
+            },
+            "value": true
+          },
+          {
+            "condition": "wood_block_visible",
+            "evidence": "current look",
+            "value": true
+          },
+          {
+            "condition": "two_named_planes",
+            "evidence": [
+              "inclined plane with a titanium surface",
+              "inclined plane with a zinc surface"
+            ],
+            "value": true
+          },
+          {
+            "condition": "goal_extremum_matches_condition",
+            "evidence": "literal current goal",
+            "value": true
+          }
+        ],
+        "issues": [
+          "TARGET_SELECTION_UNPROVEN:plane"
+        ],
+        "parameter_roles": {
+          "plane": [
+            "experiment_subject",
+            "goal_choice"
+          ]
+        },
+        "raw_applicability": "Workshop with a wood block and two inclined planes of different surface materials; goal is to compare friction and focus on the lowest-friction plane.",
+        "safety_policy": "Existing source subsequence validation and every-step valid-action guard unchanged",
+        "scope": "This bounded verifier may abstain because of parser coverage; abstention is not proof of non-transferability.",
+        "status": "ABSTAIN_INSUFFICIENT_EVIDENCE"
+      },
+      "full_transfer_demonstrated": false,
+      "instantiated_actions": [
+        "look at inclined plane with a titanium surface",
+        "connect block to inclined plane with a titanium surface",
+        "focus on inclined plane with a titanium surface"
+      ],
+      "kind": "SOURCE_MATERIALS_UNKNOWN_COMPARISON",
+      "membership_check_scope": "Current-checkpoint membership only, not execution of a future multi-step plan; original stepwise guard unchanged",
+      "physical_comparison_evidence": "INSUFFICIENT_EVIDENCE",
+      "source_public_sha256": "bf4904b63e03e6af62e447eb7580193bd23f83fb02ed37ba792cac5f78c3c286",
+      "source_template_job": "selected-train-v1.F.003597b7b9c549df70c6",
+      "split": "train",
+      "state_job": "selected-train-v1.F.003597b7b9c549df70c6",
+      "synthetic": false
+    },
+    {
+      "actions_not_currently_valid_at_this_checkpoint": [],
+      "bindings": {
+        "plane": "inclined plane with a zinc surface"
+      },
+      "checkpoint": 0,
+      "condition_verdict": {
+        "accepted": false,
+        "conditions": [
+          {
+            "condition": "required_room",
+            "evidence": {
+              "observed": "workshop",
+              "required": "workshop"
+            },
+            "value": true
+          },
+          {
+            "condition": "wood_block_visible",
+            "evidence": "current look",
+            "value": true
+          },
+          {
+            "condition": "two_named_planes",
+            "evidence": [
+              "inclined plane with a titanium surface",
+              "inclined plane with a zinc surface"
+            ],
+            "value": true
+          },
+          {
+            "condition": "goal_extremum_matches_condition",
+            "evidence": "literal current goal",
+            "value": true
+          }
+        ],
+        "issues": [
+          "TARGET_SELECTION_UNPROVEN:plane"
+        ],
+        "parameter_roles": {
+          "plane": [
+            "experiment_subject",
+            "goal_choice"
+          ]
+        },
+        "raw_applicability": "Workshop with a wood block and two inclined planes of different surface materials; goal is to compare friction and focus on the lowest-friction plane.",
+        "safety_policy": "Existing source subsequence validation and every-step valid-action guard unchanged",
+        "scope": "This bounded verifier may abstain because of parser coverage; abstention is not proof of non-transferability.",
+        "status": "ABSTAIN_INSUFFICIENT_EVIDENCE"
+      },
+      "full_transfer_demonstrated": false,
+      "instantiated_actions": [
+        "look at inclined plane with a zinc surface",
+        "connect block to inclined plane with a zinc surface",
+        "focus on inclined plane with a zinc surface"
+      ],
+      "kind": "SOURCE_MATERIALS_UNKNOWN_COMPARISON",
+      "membership_check_scope": "Current-checkpoint membership only, not execution of a future multi-step plan; original stepwise guard unchanged",
+      "physical_comparison_evidence": "INSUFFICIENT_EVIDENCE",
+      "source_public_sha256": "bf4904b63e03e6af62e447eb7580193bd23f83fb02ed37ba792cac5f78c3c286",
+      "source_template_job": "selected-train-v1.F.003597b7b9c549df70c6",
+      "split": "train",
+      "state_job": "selected-train-v1.F.003597b7b9c549df70c6",
+      "synthetic": false
+    },
+    {
+      "actions_not_currently_valid_at_this_checkpoint": [
+        "connect block to inclined plane with a rubber surface"
+      ],
+      "bindings": {
+        "plane": "inclined plane with a rubber surface"
+      },
+      "checkpoint": 2,
+      "condition_verdict": {
+        "accepted": false,
+        "conditions": [
+          {
+            "condition": "required_room",
+            "evidence": {
+              "observed": "workshop",
+              "required": "workshop"
+            },
+            "value": true
+          },
+          {
+            "condition": "wood_block_visible",
+            "evidence": "current look",
+            "value": false
+          },
+          {
+            "condition": "two_named_planes",
+            "evidence": [
+              "inclined plane with a rubber surface",
+              "inclined plane with a steel surface"
+            ],
+            "value": true
+          },
+          {
+            "condition": "goal_extremum_matches_condition",
+            "evidence": "literal current goal",
+            "value": true
+          }
+        ],
+        "issues": [
+          "TARGET_SELECTION_UNPROVEN:plane"
+        ],
+        "parameter_roles": {
+          "plane": [
+            "experiment_subject",
+            "goal_choice"
+          ]
+        },
+        "raw_applicability": "Workshop with a wood block and two inclined planes of different surface materials; goal is to compare friction and focus on the lowest-friction plane.",
+        "safety_policy": "Existing source subsequence validation and every-step valid-action guard unchanged",
+        "scope": "This bounded verifier may abstain because of parser coverage; abstention is not proof of non-transferability.",
+        "status": "REJECT_CONDITION_FALSE"
+      },
+      "full_transfer_demonstrated": false,
+      "instantiated_actions": [
+        "look at inclined plane with a rubber surface",
+        "connect block to inclined plane with a rubber surface",
+        "focus on inclined plane with a rubber surface"
+      ],
+      "kind": "STEEL_RUBBER_WITH_BRICK",
+      "membership_check_scope": "Current-checkpoint membership only, not execution of a future multi-step plan; original stepwise guard unchanged",
+      "physical_comparison_evidence": "INSUFFICIENT_EVIDENCE",
+      "source_public_sha256": "3f0fe11eb9680936cfca36a450c36b7ac99837dc37e63c35b83d38158c6eecf1",
+      "source_template_job": "selected-train-v1.F.003597b7b9c549df70c6",
+      "split": "train",
+      "state_job": "selected-train-v1.F.098816d79aa10bdc5eec",
+      "synthetic": false
+    },
+    {
+      "actions_not_currently_valid_at_this_checkpoint": [
+        "connect block to inclined plane with a steel surface"
+      ],
+      "bindings": {
+        "plane": "inclined plane with a steel surface"
+      },
+      "checkpoint": 2,
+      "condition_verdict": {
+        "accepted": false,
+        "conditions": [
+          {
+            "condition": "required_room",
+            "evidence": {
+              "observed": "workshop",
+              "required": "workshop"
+            },
+            "value": true
+          },
+          {
+            "condition": "wood_block_visible",
+            "evidence": "current look",
+            "value": false
+          },
+          {
+            "condition": "two_named_planes",
+            "evidence": [
+              "inclined plane with a rubber surface",
+              "inclined plane with a steel surface"
+            ],
+            "value": true
+          },
+          {
+            "condition": "goal_extremum_matches_condition",
+            "evidence": "literal current goal",
+            "value": true
+          }
+        ],
+        "issues": [
+          "TARGET_SELECTION_UNPROVEN:plane"
+        ],
+        "parameter_roles": {
+          "plane": [
+            "experiment_subject",
+            "goal_choice"
+          ]
+        },
+        "raw_applicability": "Workshop with a wood block and two inclined planes of different surface materials; goal is to compare friction and focus on the lowest-friction plane.",
+        "safety_policy": "Existing source subsequence validation and every-step valid-action guard unchanged",
+        "scope": "This bounded verifier may abstain because of parser coverage; abstention is not proof of non-transferability.",
+        "status": "REJECT_CONDITION_FALSE"
+      },
+      "full_transfer_demonstrated": false,
+      "instantiated_actions": [
+        "look at inclined plane with a steel surface",
+        "connect block to inclined plane with a steel surface",
+        "focus on inclined plane with a steel surface"
+      ],
+      "kind": "STEEL_RUBBER_WITH_BRICK",
+      "membership_check_scope": "Current-checkpoint membership only, not execution of a future multi-step plan; original stepwise guard unchanged",
+      "physical_comparison_evidence": "INSUFFICIENT_EVIDENCE",
+      "source_public_sha256": "3f0fe11eb9680936cfca36a450c36b7ac99837dc37e63c35b83d38158c6eecf1",
+      "source_template_job": "selected-train-v1.F.003597b7b9c549df70c6",
+      "split": "train",
+      "state_job": "selected-train-v1.F.098816d79aa10bdc5eec",
+      "synthetic": false
+    },
+    {
+      "actions_not_currently_valid_at_this_checkpoint": [],
+      "bindings": {
+        "plane": "inclined plane with a titanium surface"
+      },
+      "checkpoint": 0,
+      "condition_verdict": {
+        "accepted": false,
+        "conditions": [
+          {
+            "condition": "required_room",
+            "evidence": {
+              "observed": "workshop",
+              "required": "workshop"
+            },
+            "value": true
+          },
+          {
+            "condition": "wood_block_visible",
+            "evidence": "current look",
+            "value": true
+          },
+          {
+            "condition": "two_named_planes",
+            "evidence": [
+              "inclined plane with a titanium surface",
+              "inclined plane with a zinc surface"
+            ],
+            "value": true
+          },
+          {
+            "condition": "goal_extremum_matches_condition",
+            "evidence": "literal current goal",
+            "value": false
+          }
+        ],
+        "issues": [
+          "TARGET_SELECTION_UNPROVEN:plane"
+        ],
+        "parameter_roles": {
+          "plane": [
+            "experiment_subject",
+            "goal_choice"
+          ]
+        },
+        "raw_applicability": "Workshop with a wood block and two inclined planes of different surface materials; goal is to compare friction and focus on the lowest-friction plane.",
+        "safety_policy": "Existing source subsequence validation and every-step valid-action guard unchanged",
+        "scope": "This bounded verifier may abstain because of parser coverage; abstention is not proof of non-transferability.",
+        "status": "REJECT_CONDITION_FALSE"
+      },
+      "full_transfer_demonstrated": false,
+      "instantiated_actions": [
+        "look at inclined plane with a titanium surface",
+        "connect block to inclined plane with a titanium surface",
+        "focus on inclined plane with a titanium surface"
+      ],
+      "kind": "SYNTHETIC_LEAST_TO_MOST",
+      "membership_check_scope": "Current-checkpoint membership only, not execution of a future multi-step plan; original stepwise guard unchanged",
+      "physical_comparison_evidence": "INSUFFICIENT_EVIDENCE",
+      "source_public_sha256": "bf4904b63e03e6af62e447eb7580193bd23f83fb02ed37ba792cac5f78c3c286",
+      "source_template_job": "selected-train-v1.F.003597b7b9c549df70c6",
+      "split": "train",
+      "state_job": "selected-train-v1.F.003597b7b9c549df70c6",
+      "synthetic": true
+    },
+    {
+      "actions_not_currently_valid_at_this_checkpoint": [],
+      "bindings": {
+        "plane": "inclined plane with a zinc surface"
+      },
+      "checkpoint": 0,
+      "condition_verdict": {
+        "accepted": false,
+        "conditions": [
+          {
+            "condition": "required_room",
+            "evidence": {
+              "observed": "workshop",
+              "required": "workshop"
+            },
+            "value": true
+          },
+          {
+            "condition": "wood_block_visible",
+            "evidence": "current look",
+            "value": true
+          },
+          {
+            "condition": "two_named_planes",
+            "evidence": [
+              "inclined plane with a titanium surface",
+              "inclined plane with a zinc surface"
+            ],
+            "value": true
+          },
+          {
+            "condition": "goal_extremum_matches_condition",
+            "evidence": "literal current goal",
+            "value": false
+          }
+        ],
+        "issues": [
+          "TARGET_SELECTION_UNPROVEN:plane"
+        ],
+        "parameter_roles": {
+          "plane": [
+            "experiment_subject",
+            "goal_choice"
+          ]
+        },
+        "raw_applicability": "Workshop with a wood block and two inclined planes of different surface materials; goal is to compare friction and focus on the lowest-friction plane.",
+        "safety_policy": "Existing source subsequence validation and every-step valid-action guard unchanged",
+        "scope": "This bounded verifier may abstain because of parser coverage; abstention is not proof of non-transferability.",
+        "status": "REJECT_CONDITION_FALSE"
+      },
+      "full_transfer_demonstrated": false,
+      "instantiated_actions": [
+        "look at inclined plane with a zinc surface",
+        "connect block to inclined plane with a zinc surface",
+        "focus on inclined plane with a zinc surface"
+      ],
+      "kind": "SYNTHETIC_LEAST_TO_MOST",
+      "membership_check_scope": "Current-checkpoint membership only, not execution of a future multi-step plan; original stepwise guard unchanged",
+      "physical_comparison_evidence": "INSUFFICIENT_EVIDENCE",
+      "source_public_sha256": "bf4904b63e03e6af62e447eb7580193bd23f83fb02ed37ba792cac5f78c3c286",
+      "source_template_job": "selected-train-v1.F.003597b7b9c549df70c6",
+      "split": "train",
+      "state_job": "selected-train-v1.F.003597b7b9c549df70c6",
+      "synthetic": true
+    },
+    {
+      "actions_not_currently_valid_at_this_checkpoint": [
+        "look at {plane}",
+        "connect block to {plane}",
+        "focus on {plane}"
+      ],
+      "bindings": {},
+      "checkpoint": 0,
+      "condition_verdict": {
+        "accepted": false,
+        "conditions": [
+          {
+            "condition": "required_room",
+            "evidence": {
+              "observed": "living room",
+              "required": "workshop"
+            },
+            "value": false
+          },
+          {
+            "condition": "wood_block_visible",
+            "evidence": "current look",
+            "value": "UNKNOWN"
+          },
+          {
+            "condition": "two_named_planes",
+            "evidence": [],
+            "value": false
+          },
+          {
+            "condition": "goal_extremum_matches_condition",
+            "evidence": "literal current goal",
+            "value": true
+          }
+        ],
+        "issues": [
+          "MISSING_PARAMETER:plane",
+          "TARGET_SELECTION_UNPROVEN:plane",
+          "FIRST_ACTION_NOT_CURRENTLY_VALID"
+        ],
+        "parameter_roles": {
+          "plane": [
+            "experiment_subject",
+            "goal_choice"
+          ]
+        },
+        "raw_applicability": "Workshop with a wood block and two inclined planes of different surface materials; goal is to compare friction and focus on the lowest-friction plane.",
+        "safety_policy": "Existing source subsequence validation and every-step valid-action guard unchanged",
+        "scope": "This bounded verifier may abstain because of parser coverage; abstention is not proof of non-transferability.",
+        "status": "REJECT_CONDITION_FALSE"
+      },
+      "full_transfer_demonstrated": false,
+      "instantiated_actions": [
+        "look at {plane}",
+        "connect block to {plane}",
+        "focus on {plane}"
+      ],
+      "kind": "BEFORE_VISIBILITY",
+      "membership_check_scope": "Current-checkpoint membership only, not execution of a future multi-step plan; original stepwise guard unchanged",
+      "physical_comparison_evidence": "INSUFFICIENT_EVIDENCE",
+      "source_public_sha256": "7d6e6932824602d9e9f2987a7995fa21e88b96d9f5a703ea45c563ec0da0071b",
+      "source_template_job": "selected-train-v1.F.003597b7b9c549df70c6",
+      "split": "dev",
+      "state_job": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+      "synthetic": false
+    },
+    {
+      "actions_not_currently_valid_at_this_checkpoint": [],
+      "bindings": {
+        "plane": "inclined plane with a brass surface"
+      },
+      "checkpoint": 5,
+      "condition_verdict": {
+        "accepted": false,
+        "conditions": [
+          {
+            "condition": "required_room",
+            "evidence": {
+              "observed": "workshop",
+              "required": "workshop"
+            },
+            "value": true
+          },
+          {
+            "condition": "wood_block_visible",
+            "evidence": "current look",
+            "value": true
+          },
+          {
+            "condition": "two_named_planes",
+            "evidence": [
+              "inclined plane with a brass surface",
+              "inclined plane with a glass surface"
+            ],
+            "value": true
+          },
+          {
+            "condition": "goal_extremum_matches_condition",
+            "evidence": "literal current goal",
+            "value": true
+          }
+        ],
+        "issues": [
+          "TARGET_SELECTION_UNPROVEN:plane"
+        ],
+        "parameter_roles": {
+          "plane": [
+            "experiment_subject",
+            "goal_choice"
+          ]
+        },
+        "raw_applicability": "Workshop with a wood block and two inclined planes of different surface materials; goal is to compare friction and focus on the lowest-friction plane.",
+        "safety_policy": "Existing source subsequence validation and every-step valid-action guard unchanged",
+        "scope": "This bounded verifier may abstain because of parser coverage; abstention is not proof of non-transferability.",
+        "status": "ABSTAIN_INSUFFICIENT_EVIDENCE"
+      },
+      "full_transfer_demonstrated": false,
+      "instantiated_actions": [
+        "look at inclined plane with a brass surface",
+        "connect block to inclined plane with a brass surface",
+        "focus on inclined plane with a brass surface"
+      ],
+      "kind": "AFTER_VISIBILITY",
+      "membership_check_scope": "Current-checkpoint membership only, not execution of a future multi-step plan; original stepwise guard unchanged",
+      "physical_comparison_evidence": "INSUFFICIENT_EVIDENCE",
+      "source_public_sha256": "6b9952cee211cb1bfffafc4a779f2640d5b2595cdf494af2099b75a53f70a68b",
+      "source_template_job": "selected-train-v1.F.003597b7b9c549df70c6",
+      "split": "dev",
+      "state_job": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+      "synthetic": false
+    },
+    {
+      "actions_not_currently_valid_at_this_checkpoint": [],
+      "bindings": {
+        "plane": "inclined plane with a glass surface"
+      },
+      "checkpoint": 5,
+      "condition_verdict": {
+        "accepted": false,
+        "conditions": [
+          {
+            "condition": "required_room",
+            "evidence": {
+              "observed": "workshop",
+              "required": "workshop"
+            },
+            "value": true
+          },
+          {
+            "condition": "wood_block_visible",
+            "evidence": "current look",
+            "value": true
+          },
+          {
+            "condition": "two_named_planes",
+            "evidence": [
+              "inclined plane with a brass surface",
+              "inclined plane with a glass surface"
+            ],
+            "value": true
+          },
+          {
+            "condition": "goal_extremum_matches_condition",
+            "evidence": "literal current goal",
+            "value": true
+          }
+        ],
+        "issues": [
+          "TARGET_SELECTION_UNPROVEN:plane"
+        ],
+        "parameter_roles": {
+          "plane": [
+            "experiment_subject",
+            "goal_choice"
+          ]
+        },
+        "raw_applicability": "Workshop with a wood block and two inclined planes of different surface materials; goal is to compare friction and focus on the lowest-friction plane.",
+        "safety_policy": "Existing source subsequence validation and every-step valid-action guard unchanged",
+        "scope": "This bounded verifier may abstain because of parser coverage; abstention is not proof of non-transferability.",
+        "status": "ABSTAIN_INSUFFICIENT_EVIDENCE"
+      },
+      "full_transfer_demonstrated": false,
+      "instantiated_actions": [
+        "look at inclined plane with a glass surface",
+        "connect block to inclined plane with a glass surface",
+        "focus on inclined plane with a glass surface"
+      ],
+      "kind": "AFTER_VISIBILITY",
+      "membership_check_scope": "Current-checkpoint membership only, not execution of a future multi-step plan; original stepwise guard unchanged",
+      "physical_comparison_evidence": "INSUFFICIENT_EVIDENCE",
+      "source_public_sha256": "6b9952cee211cb1bfffafc4a779f2640d5b2595cdf494af2099b75a53f70a68b",
+      "source_template_job": "selected-train-v1.F.003597b7b9c549df70c6",
+      "split": "dev",
+      "state_job": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+      "synthetic": false
+    },
+    {
+      "actions_not_currently_valid_at_this_checkpoint": [
+        "pick up thermometer",
+        "open door to hallway",
+        "open door to living room",
+        "go to living room",
+        "open door to bedroom",
+        "go to bedroom",
+        "move unknown substance to orange box"
+      ],
+      "bindings": {
+        "box": "orange box",
+        "box_room": "bedroom",
+        "door_to_box_room": "door to bedroom",
+        "door_to_substance_room": "door to living room",
+        "door_to_target_room": "door to hallway",
+        "instrument": "thermometer",
+        "intermediate_room": "hallway",
+        "substance": "unknown substance",
+        "substance_room": "living room"
+      },
+      "checkpoint": 9,
+      "condition_verdict": {
+        "accepted": false,
+        "conditions": [
+          {
+            "condition": "raw_applicability_verified",
+            "evidence": "Unsupported natural-language clauses retained verbatim",
+            "value": "UNKNOWN"
+          }
+        ],
+        "issues": [
+          "NO_CURRENT_PUBLIC_REFERENT:door_to_substance_room",
+          "NO_CURRENT_PUBLIC_REFERENT:door_to_box_room"
+        ],
+        "parameter_roles": {
+          "box": [
+            "transfer_destination"
+          ],
+          "box_room": [
+            "navigation_destination"
+          ],
+          "door_to_box_room": [
+            "manipulated_object"
+          ],
+          "door_to_substance_room": [
+            "manipulated_object"
+          ],
+          "door_to_target_room": [
+            "manipulated_object"
+          ],
+          "instrument": [
+            "experiment_subject",
+            "instrument",
+            "manipulated_object"
+          ],
+          "intermediate_room": [
+            "navigation_destination"
+          ],
+          "substance": [
+            "experiment_subject",
+            "manipulated_object"
+          ],
+          "substance_room": [
+            "navigation_destination"
+          ]
+        },
+        "raw_applicability": "The thermometer and target substance are in different rooms reachable through a shared intermediate room; the blue and orange boxes are together in a separate room. The agent must carry the thermometer to the substance, measure it, then carry the substance to the correct box based on whether the reading is above or below 0.0 degrees celsius.",
+        "safety_policy": "Existing source subsequence validation and every-step valid-action guard unchanged",
+        "scope": "This bounded verifier may abstain because of parser coverage; abstention is not proof of non-transferability.",
+        "status": "ABSTAIN_INSUFFICIENT_EVIDENCE"
+      },
+      "full_transfer_demonstrated": false,
+      "instantiated_actions": [
+        "focus on thermometer",
+        "pick up thermometer",
+        "open door to hallway",
+        "go to hallway",
+        "open door to living room",
+        "go to living room",
+        "use thermometer on unknown substance",
+        "pick up unknown substance",
+        "go to hallway",
+        "open door to bedroom",
+        "go to bedroom",
+        "move unknown substance to orange box"
+      ],
+      "kind": "SYNTHETIC_MEASUREMENT_SIGN_CHANGE",
+      "membership_check_scope": "Current-checkpoint membership only, not execution of a future multi-step plan; original stepwise guard unchanged",
+      "physical_comparison_evidence": "SYNTHETIC_PERTURBATION_NOT_ENVIRONMENT_MEASUREMENT",
+      "source_public_sha256": "c0fe8ef1e05873ab47705ef2c18a4740243158f9c6c19f70e233ccf4823dead1",
+      "source_template_job": "discovery-v2.F.2beaa66b5bcd3db3dc64",
+      "split": "train",
+      "state_job": "discovery-v2.F.2beaa66b5bcd3db3dc64",
+      "synthetic": true,
+      "synthetic_reading": -13
+    },
+    {
+      "actions_not_currently_valid_at_this_checkpoint": [
+        "pick up thermometer",
+        "open door to hallway",
+        "open door to living room",
+        "go to living room",
+        "open door to bedroom",
+        "go to bedroom",
+        "move unknown substance to orange box"
+      ],
+      "bindings": {
+        "box": "orange box",
+        "box_room": "bedroom",
+        "door_to_box_room": "door to bedroom",
+        "door_to_substance_room": "door to living room",
+        "door_to_target_room": "door to hallway",
+        "instrument": "thermometer",
+        "intermediate_room": "hallway",
+        "substance": "unknown substance",
+        "substance_room": "living room"
+      },
+      "checkpoint": 9,
+      "condition_verdict": {
+        "accepted": false,
+        "conditions": [
+          {
+            "condition": "raw_applicability_verified",
+            "evidence": "Unsupported natural-language clauses retained verbatim",
+            "value": "UNKNOWN"
+          }
+        ],
+        "issues": [
+          "NO_CURRENT_PUBLIC_REFERENT:door_to_substance_room",
+          "NO_CURRENT_PUBLIC_REFERENT:door_to_box_room"
+        ],
+        "parameter_roles": {
+          "box": [
+            "transfer_destination"
+          ],
+          "box_room": [
+            "navigation_destination"
+          ],
+          "door_to_box_room": [
+            "manipulated_object"
+          ],
+          "door_to_substance_room": [
+            "manipulated_object"
+          ],
+          "door_to_target_room": [
+            "manipulated_object"
+          ],
+          "instrument": [
+            "experiment_subject",
+            "instrument",
+            "manipulated_object"
+          ],
+          "intermediate_room": [
+            "navigation_destination"
+          ],
+          "substance": [
+            "experiment_subject",
+            "manipulated_object"
+          ],
+          "substance_room": [
+            "navigation_destination"
+          ]
+        },
+        "raw_applicability": "The thermometer and target substance are in different rooms reachable through a shared intermediate room; the blue and orange boxes are together in a separate room. The agent must carry the thermometer to the substance, measure it, then carry the substance to the correct box based on whether the reading is above or below 0.0 degrees celsius.",
+        "safety_policy": "Existing source subsequence validation and every-step valid-action guard unchanged",
+        "scope": "This bounded verifier may abstain because of parser coverage; abstention is not proof of non-transferability.",
+        "status": "ABSTAIN_INSUFFICIENT_EVIDENCE"
+      },
+      "full_transfer_demonstrated": false,
+      "instantiated_actions": [
+        "focus on thermometer",
+        "pick up thermometer",
+        "open door to hallway",
+        "go to hallway",
+        "open door to living room",
+        "go to living room",
+        "use thermometer on unknown substance",
+        "pick up unknown substance",
+        "go to hallway",
+        "open door to bedroom",
+        "go to bedroom",
+        "move unknown substance to orange box"
+      ],
+      "kind": "SYNTHETIC_MEASUREMENT_SIGN_CHANGE",
+      "membership_check_scope": "Current-checkpoint membership only, not execution of a future multi-step plan; original stepwise guard unchanged",
+      "physical_comparison_evidence": "SYNTHETIC_PERTURBATION_NOT_ENVIRONMENT_MEASUREMENT",
+      "source_public_sha256": "c0fe8ef1e05873ab47705ef2c18a4740243158f9c6c19f70e233ccf4823dead1",
+      "source_template_job": "discovery-v2.F.2beaa66b5bcd3db3dc64",
+      "split": "train",
+      "state_job": "discovery-v2.F.2beaa66b5bcd3db3dc64",
+      "synthetic": true,
+      "synthetic_reading": 13
+    },
+    {
+      "actions_not_currently_valid_at_this_checkpoint": [
+        "go to kitchen",
+        "open freezer",
+        "focus on ice",
+        "pick up ice",
+        "move ice to stove",
+        "activate stove"
+      ],
+      "bindings": {
+        "container": "freezer",
+        "device": "stove",
+        "room": "kitchen",
+        "substance": "ice"
+      },
+      "checkpoint": 0,
+      "condition_verdict": {
+        "accepted": false,
+        "conditions": [
+          {
+            "condition": "raw_applicability_verified",
+            "evidence": "Unsupported natural-language clauses retained verbatim",
+            "value": "UNKNOWN"
+          }
+        ],
+        "issues": [
+          "NO_CURRENT_PUBLIC_REFERENT:container",
+          "NO_CURRENT_PUBLIC_REFERENT:device"
+        ],
+        "parameter_roles": {
+          "container": [
+            "manipulated_object"
+          ],
+          "device": [
+            "manipulated_object",
+            "transfer_destination"
+          ],
+          "room": [
+            "navigation_destination"
+          ],
+          "substance": [
+            "goal_marker",
+            "manipulated_object"
+          ]
+        },
+        "raw_applicability": "Use when the target substance is stored in a closed cold container in a room that also contains an activatable heat source (e.g., stove). Requires the room to be reachable via an openable door.",
+        "safety_policy": "Existing source subsequence validation and every-step valid-action guard unchanged",
+        "scope": "This bounded verifier may abstain because of parser coverage; abstention is not proof of non-transferability.",
+        "status": "ABSTAIN_INSUFFICIENT_EVIDENCE"
+      },
+      "full_transfer_demonstrated": false,
+      "instantiated_actions": [
+        "open door to kitchen",
+        "go to kitchen",
+        "open freezer",
+        "focus on ice",
+        "pick up ice",
+        "move ice to stove",
+        "activate stove"
+      ],
+      "kind": "MELT_METHOD_CANDIDATE",
+      "membership_check_scope": "Current-checkpoint membership only, not execution of a future multi-step plan; original stepwise guard unchanged",
+      "physical_comparison_evidence": "SOURCE_STATE_CHANGE_ONLY",
+      "source_public_sha256": "565d92cc3b577e11c3be8284f2ccc19ee55d47d58fd0af57857c09cc5b4cdb3c",
+      "source_template_job": "discovery-v2.F.6aebd9fb1322c1074fb6",
+      "split": "train",
+      "state_job": "discovery-v2.F.6aebd9fb1322c1074fb6",
+      "synthetic": false
+    }
+  ],
+  "execution_semantics_ref": "src/flowevo_sw/flowevo_adapter.py#ScienceExecutor._execute_direct",
+  "execution_semantics_sha256": "93b880eb2a65cf6f17a2d377184124e6f41082bcf70cd4c8f835ba0282964577",
+  "limitation": "Full L1 action sequence is instantiated once before execution. A late new measurement does not rebind parameters. L2 model-guided use is a separate untested route. No physical response is inferred from a synthetic state.",
+  "new_JVM_actions": 0,
+  "new_model_calls": 0,
+  "new_skills_generated": 0,
+  "target_score_used": false
+}

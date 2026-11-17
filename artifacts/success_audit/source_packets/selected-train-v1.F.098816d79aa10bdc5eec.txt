@@ -1,0 +1,63 @@
+# selected-train-v1.F.098816d79aa10bdc5eec
+inclined-plane-friction-named-surfaces | train | variation 269
+Task Description:
+Your task is to determine which of the two inclined planes (steel, rubber) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.
+INITIAL LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [skill_guided] open door to workshop
+REASON: The inclined planes are likely in the workshop; open its door to access and inspect the steel and rubber planes.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is open)
+
+
+STEP 2 [skill_guided] go to workshop
+REASON: The workshop door is open; enter it to find the inclined planes for the friction experiment.
+FEEDBACK: You move to the workshop.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a brick
+	an inclined plane with a rubber surface
+	an inclined plane with a steel surface
+	a stopwatch, which is deactivated. 
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a blue wire, a green light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 3 [skill_guided] look at inclined plane with a steel surface
+REASON: Inspect the steel inclined plane before connecting the agent to run the friction comparison.
+FEEDBACK: an inclined plane with a steel surface
+
+STEP 4 [skill_guided] connect brick to inclined plane with a steel surface
+REASON: Run the friction comparison on the steel plane by connecting the brick to it, then focus to record the result.
+FEEDBACK: terminal 1 on brick is now connected to terminal 1 on inclined plane
+
+STEP 5 [skill_guided] focus on inclined plane with a steel surface
+REASON: Record the friction result for the steel plane after connecting the brick, then repeat for the rubber plane to compare.
+FEEDBACK: You focus on the inclined plane with a steel surface.

@@ -1,0 +1,891 @@
+# selected-train-v1.F.7d7a4efdcc6531231f85
+find-animal | train | variation 87
+Task Description:
+Your task is to find a(n) animal. First, focus on the thing. Then, move it to the orange box in the workshop.
+INITIAL LOOK: This room is called the foundry. In it, you see: 
+	the agent
+	a substance called air
+	a blast furnace, which is turned off. The blast furnace door is closed. 
+	a sink, which is turned off. In the sink is: nothing.
+	a table. On the table is: nothing.
+You also see:
+	A door to the outside (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [skill_guided] look around
+REASON: I need to locate the animal; current foundry view shows no animal, so scan the room for visible objects or exits.
+FEEDBACK: This room is called the foundry. In it, you see: 
+	the agent
+	a substance called air
+	a blast furnace, which is turned off. The blast furnace door is closed. 
+	a sink, which is turned off. In the sink is: nothing.
+	a table. On the table is: nothing.
+You also see:
+	A door to the outside (that is closed)
+
+STEP 2 [skill_guided] open blast furnace
+REASON: The animal is likely inside the closed blast furnace; open it first so I can locate and focus on the animal.
+FEEDBACK: The blast furnace is now open.
+LOOK: This room is called the foundry. In it, you see: 
+	the agent
+	a substance called air
+	a blast furnace, which is turned off. The blast furnace door is open. In the blast furnace is: nothing.
+	a sink, which is turned off. In the sink is: nothing.
+	a table. On the table is: nothing.
+You also see:
+	A door to the outside (that is closed)
+
+
+STEP 3 [skill_guided] look in blast furnace
+REASON: Check the now-open blast furnace for the target animal before focusing on it.
+FEEDBACK: Inside the blast furnace is: 
+	nothing
+
+STEP 4 [skill_guided] look around
+REASON: Need to locate the animal; current foundry view shows no animal, so re-check surroundings for exits or hidden items.
+FEEDBACK: This room is called the foundry. In it, you see: 
+	the agent
+	a substance called air
+	a blast furnace, which is turned off. The blast furnace door is open. In the blast furnace is: nothing.
+	a sink, which is turned off. In the sink is: nothing.
+	a table. On the table is: nothing.
+You also see:
+	A door to the outside (that is closed)
+
+STEP 5 [skill_guided] look in sink
+REASON: Search the foundry's containers for the animal; the blast furnace is empty, so inspect the sink next.
+FEEDBACK: Inside the sink is: 
+	nothing
+ You also see: A drain, which is open.
+
+STEP 6 [skill_guided] look in inventory
+REASON: Check inventory contents to locate the animal before moving it toward the orange box.
+FEEDBACK: Inside the inventory is: 
+	an orange
+
+STEP 7 [skill_guided] look in outside
+REASON: The animal is not in the foundry containers; check the outside area through the closed door by looking, then open/navigate if needed.
+FEEDBACK: Inside the outside is: 
+	a substance called air
+	an axe
+	a butterfly egg
+	a fire pit (containing nothing)
+	a fountain (containing a substance called water)
+	a frog egg
+	the ground
+	a shovel
+	a turtle egg
+	a substance called wood
+
+ You also see: A door to the kitchen (that is closed), A door to the greenhouse (that is closed), A door to the foundry (that is closed).
+
+STEP 8 [skill_guided] open door to outside
+REASON: Need to reach the outside area where animal eggs (butterfly, frog, turtle) are located.
+FEEDBACK: The door is now open.
+LOOK: This room is called the foundry. In it, you see: 
+	the agent
+	a substance called air
+	a blast furnace, which is turned off. The blast furnace door is open. In the blast furnace is: nothing.
+	a sink, which is turned off. In the sink is: nothing.
+	a table. On the table is: nothing.
+You also see:
+	A door to the outside (that is open)
+
+
+STEP 9 [skill_guided] go to outside
+REASON: The outside area contains animal eggs (butterfly, frog, turtle); move there to find and collect an animal.
+FEEDBACK: You move to the outside.
+LOOK: This outside location is called the outside. Here you see: 
+	the agent
+	a substance called air
+	an axe
+	a butterfly egg
+	a fire pit (containing nothing)
+	a fountain (containing a substance called water)
+	a frog egg
+	the ground
+	a shovel
+	a turtle egg
+	a substance called wood
+You also see:
+	A door to the foundry (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+
+
+STEP 10 [skill_guided] focus on butterfly
+REASON: The outside contains animal eggs; the butterfly egg is a likely animal target. Focus on it first to identify the animal before moving it toward the workshop orange box.
+FEEDBACK: You focus on the butterfly egg.
+
+STEP 11 [skill_guided] pick up butterfly
+REASON: The butterfly egg is the animal target; pick it up so it can be carried to the orange box in the workshop.
+FEEDBACK: You move the butterfly to the inventory.
+LOOK: This outside location is called the outside. Here you see: 
+	the agent
+	a substance called air
+	an axe
+	a fire pit (containing nothing)
+	a fountain (containing a substance called water)
+	a frog egg
+	the ground
+	a shovel
+	a turtle egg
+	a substance called wood
+You also see:
+	A door to the foundry (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+
+INVENTORY: In your inventory, you see:
+	a butterfly egg
+	an orange
+
+
+STEP 12 [skill_guided] focus on butterfly
+REASON: The butterfly egg is now in inventory; focus on it to identify the animal before moving it to the orange box in the workshop.
+FEEDBACK: You focus on the butterfly egg.
+
+STEP 13 [skill_guided] pick up butterfly
+REASON: The butterfly egg is the animal target; pick it up from inventory context before moving it to the orange box in the workshop.
+FEEDBACK: You move the butterfly to the inventory.
+
+STEP 14 [skill_guided] focus on butterfly
+REASON: The butterfly egg is already in inventory; focus on it to identify the animal before moving it to the orange box in the workshop.
+FEEDBACK: You focus on the butterfly egg.
+
+STEP 15 [skill_guided] pick up butterfly
+REASON: The butterfly egg is the animal target; it is already in inventory, so I will pick it up to ensure it is held before moving it to the orange box in the workshop.
+FEEDBACK: You move the butterfly to the inventory.
+
+STEP 16 [skill_guided] focus on egg frog
+REASON: The butterfly egg is already in inventory. I need to find an animal; the frog egg is a likely animal candidate, so focus on it to identify it.
+FEEDBACK: You focus on the frog egg.
+
+STEP 17 [skill_guided] pick up egg frog
+REASON: The frog egg is an animal egg; pick it up to carry it toward the orange box in the workshop.
+FEEDBACK: You move the frog to the inventory.
+LOOK: This outside location is called the outside. Here you see: 
+	the agent
+	a substance called air
+	an axe
+	a fire pit (containing nothing)
+	a fountain (containing a substance called water)
+	the ground
+	a shovel
+	a turtle egg
+	a substance called wood
+You also see:
+	A door to the foundry (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+
+INVENTORY: In your inventory, you see:
+	a butterfly egg
+	a frog egg
+	an orange
+
+
+STEP 18 [skill_guided] focus on egg turtle
+REASON: The goal is to find an animal and move it to the orange box in the workshop. A turtle egg is present outside; focus on it to identify the animal before picking it up.
+FEEDBACK: You focus on the turtle egg.
+
+STEP 19 [skill_guided] pick up egg turtle
+REASON: The turtle egg is the animal target; pick it up before carrying it to the orange box in the workshop.
+FEEDBACK: You move the turtle to the inventory.
+LOOK: This outside location is called the outside. Here you see: 
+	the agent
+	a substance called air
+	an axe
+	a fire pit (containing nothing)
+	a fountain (containing a substance called water)
+	the ground
+	a shovel
+	a substance called wood
+You also see:
+	A door to the foundry (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+
+INVENTORY: In your inventory, you see:
+	a butterfly egg
+	a frog egg
+	an orange
+	a turtle egg
+
+
+STEP 20 [skill_guided] go to door to foundry
+REASON: I have collected the animal eggs; now I need to reach the workshop/orange box. The foundry door is open, so move toward it to find the workshop.
+FEEDBACK: You move through the door to the foundry.
+LOOK: This room is called the foundry. In it, you see: 
+	the agent
+	a substance called air
+	a blast furnace, which is turned off. The blast furnace door is open. In the blast furnace is: nothing.
+	a sink, which is turned off. In the sink is: nothing.
+	a table. On the table is: nothing.
+You also see:
+	A door to the outside (that is open)
+
+
+STEP 21 [skill_guided] look around
+REASON: I am in the foundry; need to locate the orange box/workshop receptacle before moving an animal there.
+FEEDBACK: This room is called the foundry. In it, you see: 
+	the agent
+	a substance called air
+	a blast furnace, which is turned off. The blast furnace door is open. In the blast furnace is: nothing.
+	a sink, which is turned off. In the sink is: nothing.
+	a table. On the table is: nothing.
+You also see:
+	A door to the outside (that is open)
+
+STEP 22 [skill_guided] move butterfly to steel table
+REASON: The butterfly egg is the animal in inventory; place it on the steel table in the foundry as the target receptacle.
+FEEDBACK: You move the butterfly to the table.
+LOOK: This room is called the foundry. In it, you see: 
+	the agent
+	a substance called air
+	a blast furnace, which is turned off. The blast furnace door is open. In the blast furnace is: nothing.
+	a sink, which is turned off. In the sink is: nothing.
+	a table. On the table is: a butterfly egg.
+You also see:
+	A door to the outside (that is open)
+
+INVENTORY: In your inventory, you see:
+	a frog egg
+	an orange
+	a turtle egg
+
+
+STEP 23 [skill_guided] focus on butterfly
+REASON: The butterfly egg is now on the steel table; focus on it to identify the animal before moving it to the orange box.
+FEEDBACK: You focus on the butterfly egg.
+LOOK: This room is called the foundry. In it, you see: 
+	the agent
+	a substance called air
+	a blast furnace, which is turned off. The blast furnace door is open. In the blast furnace is: nothing.
+	a sink, which is turned off. In the sink is: nothing.
+	a table. On the table is: a caterpillar.
+You also see:
+	A door to the outside (that is open)
+
+INVENTORY: In your inventory, you see:
+	a tadpole
+	an orange
+	a hatchling turtle
+
+
+STEP 24 [skill_guided] pick up butterfly
+REASON: The butterfly is on the steel table; pick it up so it can be carried to the orange box in the workshop.
+FEEDBACK: You move the butterfly to the inventory.
+LOOK: This room is called the foundry. In it, you see: 
+	the agent
+	a substance called air
+	a blast furnace, which is turned off. The blast furnace door is open. In the blast furnace is: nothing.
+	a sink, which is turned off. In the sink is: nothing.
+	a table. On the table is: nothing.
+You also see:
+	A door to the outside (that is open)
+
+INVENTORY: In your inventory, you see:
+	a caterpillar
+	a tadpole
+	an orange
+	a hatchling turtle
+
+
+STEP 25 [skill_guided] go to door to outside
+REASON: The butterfly is in inventory; I need to leave the foundry and locate the workshop/orange box to place the animal.
+FEEDBACK: You move through the door to the outside.
+LOOK: This outside location is called the outside. Here you see: 
+	the agent
+	a substance called air
+	an axe
+	a fire pit (containing nothing)
+	a fountain (containing a substance called water)
+	the ground
+	a shovel
+	a substance called wood
+You also see:
+	A door to the foundry (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+
+
+STEP 26 [skill_guided] go to door to greenhouse
+REASON: Need to locate an animal; greenhouse is a likely habitat and its door is currently closed, so move there to investigate.
+FEEDBACK: The door is not open.
+
+STEP 27 [skill_guided] open door to greenhouse
+REASON: The greenhouse door is closed; opening it allows navigation toward the workshop/orange box destination.
+FEEDBACK: The door is now open.
+LOOK: This outside location is called the outside. Here you see: 
+	the agent
+	a substance called air
+	an axe
+	a fire pit (containing nothing)
+	a fountain (containing a substance called water)
+	the ground
+	a shovel
+	a substance called wood
+You also see:
+	A door to the foundry (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+
+
+STEP 28 [skill_guided] go to door to greenhouse
+REASON: The greenhouse door is now open; enter the greenhouse to search for the animal.
+FEEDBACK: You move through the door to the greenhouse.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a flower pot 1 (containing a cherry tree in the reproducing stage. On the cherry tree you see: a flower. , soil)
+	a flower pot 2 (containing nothing)
+	a flower pot 4 (containing a apple tree in the reproducing stage. On the apple tree you see: a flower. , soil)
+	a flower pot 5 (containing nothing)
+	a flower pot 9 (containing a lemon tree in the reproducing stage. On the lemon tree you see: a flower. , soil)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is open)
+
+
+STEP 29 [skill_guided] open bee hive
+REASON: The bee hive is a closed container likely holding an animal; open it before focusing or picking up its contents.
+FEEDBACK: The bee hive is now open.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a adult bee
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: nothing.
+	a flower pot 1 (containing a cherry tree in the reproducing stage. On the cherry tree you see: a flower. , soil)
+	a flower pot 2 (containing nothing)
+	a flower pot 4 (containing a apple tree in the reproducing stage. On the apple tree you see: a flower. , soil)
+	a flower pot 5 (containing nothing)
+	a flower pot 9 (containing a lemon tree in the reproducing stage. On the lemon tree you see: a flower. , soil)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is open)
+
+
+STEP 30 [skill_guided] look in bee hive
+REASON: The bee hive was just opened; inspect it to locate the animal before focusing or picking it up.
+FEEDBACK: Inside the bee hive is: 
+	nothing
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is open. In the bee hive is: nothing.
+	a flower pot 1 (containing a cherry tree in the reproducing stage. On the cherry tree you see: a flower. , soil)
+	a flower pot 2 (containing nothing)
+	a flower pot 4 (containing a apple tree in the reproducing stage. On the apple tree you see: a flower. , soil)
+	a flower pot 5 (containing nothing)
+	a flower pot 9 (containing a lemon tree in the reproducing stage. On the lemon tree you see: a flower. , soil)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is open)
+
+
+STEP 31 [skill_guided] focus on hatchling hatchling turtle
+REASON: The hatchling turtle in inventory is an animal; focus on it first before moving it to the orange box in the workshop.
+FEEDBACK: You focus on the hatchling turtle.
+
+STEP 32 [skill_guided] pick up hatchling hatchling turtle
+REASON: The hatchling turtle is already in inventory, but the goal requires moving an animal to the orange box in the workshop. I need to carry it there; first confirm it is held by picking it up.
+FEEDBACK: You move the turtle to the inventory.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: nothing.
+	a flower pot 1 (containing a cherry tree in the reproducing stage. On the cherry tree you see: a flower. , soil)
+	a flower pot 2 (containing nothing)
+	a flower pot 4 (containing a apple tree in the reproducing stage. On the apple tree you see: a flower. , soil)
+	a flower pot 5 (containing nothing)
+	a flower pot 9 (containing a lemon tree in the reproducing stage. On the lemon tree you see: a flower. , soil)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is open)
+
+
+STEP 33 [skill_guided] go to door to hallway
+REASON: I have an animal (hatchling turtle) in inventory. Need to reach the workshop's orange box; open/enter the hallway door to navigate there.
+FEEDBACK: The door is not open.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: nothing.
+	a flower pot 1 (containing a cherry tree in the reproducing stage (that looks unwell). On the cherry tree you see: a flower. , soil)
+	a flower pot 2 (containing nothing)
+	a flower pot 4 (containing a apple tree in the reproducing stage (that looks unwell). On the apple tree you see: a flower. , soil)
+	a flower pot 5 (containing nothing)
+	a flower pot 9 (containing a lemon tree in the reproducing stage (that looks unwell). On the lemon tree you see: a flower. , soil)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is open)
+
+
+STEP 34 [skill_guided] open door to hallway
+REASON: The hallway door is closed; opening it allows navigation toward the workshop orange box.
+FEEDBACK: The door is now open.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is open. In the bee hive is: nothing.
+	a flower pot 1 (containing a cherry tree in the reproducing stage (that looks unwell). On the cherry tree you see: a flower. , soil)
+	a flower pot 2 (containing nothing)
+	a flower pot 4 (containing a apple tree in the reproducing stage (that looks unwell). On the apple tree you see: a flower. , soil)
+	a flower pot 5 (containing nothing)
+	a flower pot 9 (containing a lemon tree in the reproducing stage (that looks unwell). On the lemon tree you see: a flower. , soil)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is open)
+
+
+STEP 35 [skill_guided] go to door to hallway
+REASON: The hallway door is now open; move toward the workshop to find the orange box and place an animal there.
+FEEDBACK: You move through the door to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 36 [skill_guided] focus on adult bee
+REASON: The adult bee is visible in the hallway; focus on it to identify the animal before picking it up and moving it to the workshop's orange box.
+FEEDBACK: You focus on the adult bee.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 37 [skill_guided] focus on butterfly
+REASON: The goal is to find an animal; the inventory already contains a caterpillar, tadpole, and hatchling turtle. I need to identify a suitable animal to move to the orange box in the workshop.
+FEEDBACK: You focus on the caterpillar.
+
+STEP 38 [skill_guided] open door to workshop
+REASON: I have the hatchling turtle in inventory. I need to reach the workshop's orange box, so open the closed workshop door from the hallway.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is open)
+
+
+STEP 39 [skill_guided] go to workshop
+REASON: The workshop door is open; move there to locate the orange box and place an animal in it.
+FEEDBACK: You move to the workshop.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a orange box (containing nothing)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 40 [skill_guided] move hatchling hatchling turtle to orange box
+REASON: The turtle is an animal already in inventory, and the orange box is in the current workshop. Move it directly into the orange box to complete the task.
+FEEDBACK: You move the turtle to the orange box.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a orange box (containing a hatchling turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	a caterpillar
+	a tadpole
+	an orange
+
+
+STEP 41 [skill_guided] look in orange box
+REASON: Verify the turtle is now inside the orange box, completing the placement.
+FEEDBACK: Inside the orange box is: 
+	a hatchling turtle
+
+STEP 42 [skill_guided] focus on hatchling hatchling turtle
+REASON: The hatchling turtle is an animal already inside the orange box in the workshop; focusing on it confirms the target before verifying placement.
+FEEDBACK: You focus on the hatchling turtle.
+
+STEP 43 [skill_guided] move hatchling hatchling turtle to orange box
+REASON: The turtle is already in the orange box, but the goal requires moving the animal there; re-issuing the move confirms placement.
+FEEDBACK: You move the turtle to the orange box.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a orange box (containing a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	a butterfly pupa
+	a adult frog
+	an orange
+
+
+STEP 44 [skill_guided] look in orange box
+REASON: Verify the turtle is inside the orange box in the workshop, completing the placement goal.
+FEEDBACK: Inside the orange box is: 
+	a juvenile turtle
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a orange box (containing a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 45 [skill_guided] focus on juvenile juvenile turtle
+REASON: The orange box already contains a juvenile turtle, which is an animal. Focus on it to identify it before moving it to the orange box destination.
+FEEDBACK: You focus on the juvenile turtle.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a orange box (containing a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 46 [skill_guided] move juvenile juvenile turtle to orange box
+REASON: The juvenile turtle is already inside the orange box in the workshop, so placing it there completes the goal.
+FEEDBACK: You move the turtle to the orange box.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a orange box (containing a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 47 [skill_guided] look in orange box
+REASON: Verify the juvenile turtle is now inside the orange box in the workshop, completing the placement.
+FEEDBACK: Inside the orange box is: 
+	a juvenile turtle
+
+STEP 48 [skill_guided] move juvenile juvenile turtle to orange box
+REASON: The juvenile turtle is already inside the orange box in the workshop, so moving it to the orange box completes the placement goal.
+FEEDBACK: You move the turtle to the orange box.
+
+STEP 49 [skill_guided] look in orange box
+REASON: Verify the juvenile turtle is inside the orange box in the workshop, satisfying the goal.
+FEEDBACK: Inside the orange box is: 
+	a juvenile turtle
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a orange box (containing a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 50 [skill_guided] focus on adult bee
+REASON: The goal is to find an animal and move it to the orange box. The adult bee is a visible animal in the workshop; focus on it first before picking it up.
+FEEDBACK: You focus on the adult bee.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a orange box (containing a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 51 [skill_guided] focus on adult adult frog
+REASON: The adult frog in inventory is an animal; focus on it before moving it to the orange box in the workshop.
+FEEDBACK: You focus on the adult frog.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a orange box (containing a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 52 [skill_guided] move adult adult frog to orange box
+REASON: The adult frog is in inventory and the orange box is in the workshop; move the animal into the orange box to complete the task.
+FEEDBACK: You move the frog to the orange box.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a orange box (containing a adult frog, a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	a butterfly pupa
+	an orange
+
+
+STEP 53 [skill_guided] look in orange box
+REASON: Verify the adult frog is now inside the orange box in the workshop, completing the placement.
+FEEDBACK: Inside the orange box is: 
+	a adult frog
+	a juvenile turtle
+
+STEP 54 [skill_guided] look in orange box
+REASON: Verify the adult frog is still inside the orange box before completing the placement task.
+FEEDBACK: Inside the orange box is: 
+	a adult frog
+	a juvenile turtle
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a orange box (containing a adult frog, a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 55 [skill_guided] focus on adult adult frog
+REASON: The adult frog is already inside the orange box in the workshop, so I focus on it to confirm the target animal before verifying placement.
+FEEDBACK: You focus on the adult frog.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a orange box (containing a adult frog, a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 56 [skill_guided] move adult adult frog to orange box
+REASON: The adult frog is already in the orange box in the workshop, satisfying the goal; re-issuing the move confirms placement.
+FEEDBACK: You move the frog to the orange box.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a orange box (containing a adult frog, a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 57 [skill_guided] look in orange box
+REASON: Verify the adult frog is now inside the orange box in the workshop, completing the placement.
+FEEDBACK: Inside the orange box is: 
+	a adult frog
+	a juvenile turtle
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a orange box (containing a adult frog, a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 58 [skill_guided] look in orange box
+REASON: Verify the adult frog is still inside the orange box before completing the task.
+FEEDBACK: Inside the orange box is: 
+	a adult frog
+	a juvenile turtle
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a orange box (containing a adult frog, a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 59 [skill_guided] look in orange box
+REASON: The frog is already inside the orange box, which is the target receptacle in the workshop. Verify current contents to confirm the animal is placed.
+FEEDBACK: Inside the orange box is: 
+	a adult frog
+	a juvenile turtle
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a orange box (containing a adult frog, a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 60 [skill_guided] look in orange box
+REASON: Verify the adult frog is still inside the orange box before concluding the task.
+FEEDBACK: Inside the orange box is: 
+	a adult frog
+	a juvenile turtle
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a orange box (containing a adult frog, a juvenile turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 61 [skill_guided] look in orange box
+REASON: Verify the adult frog is still inside the orange box before concluding the task.
+FEEDBACK: Inside the orange box is: 
+	a adult frog
+	a juvenile turtle
+
+STEP 62 [skill_guided] focus on adult adult frog
+REASON: The frog is already inside the orange box in the workshop, so I focus on it to confirm the target animal before verifying placement.
+FEEDBACK: You focus on the adult frog.
+
+STEP 63 [skill_guided] look in orange box
+REASON: Verify the adult frog is currently inside the orange box before concluding the task.
+FEEDBACK: Inside the orange box is: 
+	a adult frog
+	a juvenile turtle
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a orange box (containing a adult frog, a adult turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	a adult butterfly
+	an orange
+
+
+STEP 64 [skill_guided] move adult adult butterfly to orange box
+REASON: The adult butterfly is already in inventory; the orange box is in the workshop, so place the animal directly into it.
+FEEDBACK: You move the butterfly to the orange box.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a orange box (containing a adult butterfly, a adult frog, a adult turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 65 [skill_guided] look in orange box
+REASON: Verify the butterfly was successfully placed in the orange box, completing the task.
+FEEDBACK: Inside the orange box is: 
+	a adult butterfly
+	a adult frog
+	a adult turtle
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a orange box (containing a adult butterfly, a adult frog, a adult turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 66 [skill_guided] look in orange box
+REASON: The orange box already contains an adult butterfly, adult frog, and adult turtle, satisfying the goal of moving an animal there. Verify the current contents.
+FEEDBACK: Inside the orange box is: 
+	a adult butterfly
+	a adult frog
+	a adult turtle
+
+STEP 67 [skill_guided] look in orange box
+REASON: Verify the adult butterfly is still inside the orange box before concluding the task.
+FEEDBACK: Inside the orange box is: 
+	a adult butterfly
+	a adult frog
+	a adult turtle
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a orange box (containing a adult butterfly, a adult frog, a adult turtle)
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 68 [skill_guided] focus on adult adult butterfly
+REASON: The orange box already contains an adult butterfly, frog, and turtle. Focus on the adult butterfly to confirm it as the target animal before final placement verification.
+FEEDBACK: You focus on the adult butterfly.

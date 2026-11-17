@@ -1,0 +1,557 @@
+# discovery-v1.F.1b4703786cd7f2ff0592
+find-animal | train | variation 42
+Task Description:
+Your task is to find a(n) animal. First, focus on the thing. Then, move it to the red box in the living room.
+INITIAL LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a book shelf (containing A book (Pride and Prejudice) titled Pride and Prejudice by Jane Austen, A book (Sherlock Holmes) titled Sherlock Holmes by Arthur Conan Doyle)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a drawing
+	a red box (containing nothing)
+You also see:
+	A door to the hallway (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] open door to hallway
+REASON: The living room has no animal visible. I need to explore the hallway to find an animal, so I will open the closed door to the hallway.
+FEEDBACK: The door is now open.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a book shelf (containing A book (Pride and Prejudice) titled Pride and Prejudice by Jane Austen, A book (Sherlock Holmes) titled Sherlock Holmes by Arthur Conan Doyle)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a drawing
+	a red box (containing nothing)
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 2 [dynamic] go to hallway
+REASON: The living room has no visible animal. The open door leads to the hallway, so I should go there to search for an animal.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 3 [dynamic] look in living room
+REASON: I am in the hallway and need to find an animal. The living room door is open, so I will look in the living room first to search for the animal.
+FEEDBACK: Inside the living room is: 
+	a substance called air
+	a book shelf (containing A book (Pride and Prejudice) titled Pride and Prejudice by Jane Austen, A book (Sherlock Holmes) titled Sherlock Holmes by Arthur Conan Doyle)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a drawing
+	a red box (containing nothing)
+
+ You also see: A door to the hallway (that is open).
+
+STEP 4 [dynamic] open door to kitchen
+REASON: The living room contains the red box but no visible animal. I need to search other rooms for an animal, starting with the adjacent closed doors. The kitchen is a likely place, so I will open the door to the kitchen from the hallway.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 5 [dynamic] go to kitchen
+REASON: The goal is to find an animal and move it to the red box in the living room. I haven't located an animal yet. The kitchen door is now open; I should explore the kitchen to look for an animal.
+FEEDBACK: You move to the kitchen.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 6 [dynamic] open fridge
+REASON: The goal is to find an animal and move it to the red box in the living room. The kitchen bowl contains a red apple, banana, orange, and potato—none are animals. I should search other containers/rooms for an animal. First, check the fridge/freezer or cupboard in the kitchen, since animals might be stored there. I'll open the fridge to look inside.
+FEEDBACK: The fridge is now open.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is open. In the fridge is: a wood cup (containing orange juice).
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 7 [dynamic] look in fridge
+REASON: The goal is to find an animal and move it to the red box in the living room. I need to search containers for an animal. The fridge is now open; I should look inside it to check for an animal.
+FEEDBACK: Inside the fridge is: 
+	a wood cup (containing orange juice)
+
+STEP 8 [dynamic] open cupboard
+REASON: The goal is to find an animal and move it to the red box in the living room. The kitchen bowl contains a red apple, banana, orange, and potato—none are animals. I should search other containers/rooms for an animal. The cupboard is closed and unexplored; opening it may reveal an animal.
+FEEDBACK: The cupboard is now open.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is open. In the cupboard is: a ceramic cup (containing nothing), a drawer, a metal pot (containing nothing), a tin cup (containing nothing).
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is open. In the fridge is: a wood cup (containing orange juice).
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 9 [dynamic] open door to bathroom
+REASON: The goal is to find an animal and move it to the red box in the living room. I have not yet located any animal. The kitchen has been explored; I should check other rooms. The bathroom door is closed, so I'll open it to search there for an animal.
+FEEDBACK: The door is now open.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is open. In the cupboard is: a ceramic cup (containing nothing), a drawer, a metal pot (containing nothing), a tin cup (containing nothing).
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is open. In the fridge is: a wood cup (containing orange juice).
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is open)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 10 [dynamic] go to bathroom
+REASON: The goal is to find an animal and move it to the red box in the living room. I have not yet located an animal; the kitchen contains food items but no animal. I should search other rooms, starting with the bathroom which is accessible via the open door.
+FEEDBACK: You move to the bathroom.
+LOOK: This room is called the bathroom. In it, you see: 
+	the agent
+	a substance called air
+	a bathtub, which is turned off. In the bathtub is: nothing.
+	a glass cup (containing nothing)
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a toilet. In the toilet is: A drain, which is closed, a substance called water.
+You also see:
+	A door to the kitchen (that is open)
+
+
+STEP 11 [dynamic] look in toilet
+REASON: I need to find an animal. The bathroom has a toilet with water and a drain; animals are often hidden in containers. I'll inspect the toilet contents first.
+FEEDBACK: Inside the toilet is: 
+	a substance called water
+
+ You also see: A drain, which is closed.
+
+STEP 12 [dynamic] go to kitchen
+REASON: The goal is to find an animal and move it to the red box in the living room. I haven't located an animal yet; the bathroom contains no animal. I should check the kitchen, which I haven't fully explored, for an animal.
+FEEDBACK: You move to the kitchen.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is open. In the cupboard is: a ceramic cup (containing nothing), a drawer, a metal pot (containing nothing), a tin cup (containing nothing).
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is open. In the fridge is: a wood cup (containing orange juice).
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is open)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 13 [dynamic] go to hallway
+REASON: The goal is to find an animal and move it to the red box in the living room. I haven't located an animal yet. The kitchen has been explored; the living room was seen earlier but not fully searched. I should look around the living room for an animal, but first I need to get there. I'll go to the hallway to reach the living room.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 14 [dynamic] open door to art studio
+REASON: Need to locate an animal; unexplored rooms include the art studio, bedroom, greenhouse, and workshop. The living room red box is already known. Start by checking the art studio through its closed door.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 15 [dynamic] go to art studio
+REASON: Need to locate an animal; hallway shows no animal, so explore the open art studio next.
+FEEDBACK: You move to the art studio.
+LOOK: This room is called the art studio. In it, you see: 
+	the agent
+	a substance called air
+	a large cupboard. The large cupboard door is closed. 
+	a table. On the table is: a jug (containing nothing).
+	a wood cup (containing red paint)
+	a wood cup (containing blue paint)
+	a wood cup (containing yellow paint)
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 16 [dynamic] open cupboard
+REASON: I need to locate an animal. The art studio has a closed cupboard that may contain one; opening it is the next step.
+FEEDBACK: The large cupboard is now open.
+LOOK: This room is called the art studio. In it, you see: 
+	the agent
+	a substance called air
+	a large cupboard. The large cupboard door is open. In the large cupboard is: a drawer, a wood cup (containing red paint), a wood cup (containing blue paint), a wood cup (containing yellow paint).
+	a table. On the table is: a jug (containing nothing).
+	a wood cup (containing red paint)
+	a wood cup (containing blue paint)
+	a wood cup (containing yellow paint)
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 17 [dynamic] look in cupboard
+REASON: I need to find an animal. The art studio has no animal visible; the living room red box is the destination. I should search other rooms, starting by checking the cupboard contents or moving to the hallway to explore. First, look in the cupboard for any animal.
+FEEDBACK: Inside the large cupboard is: 
+	a drawer
+	a wood cup (containing red paint)
+	a wood cup (containing blue paint)
+	a wood cup (containing yellow paint)
+
+STEP 18 [dynamic] open drawer
+REASON: I need to locate an animal. The art studio contains paint cups and a jug but no animal visible. The drawer in the cupboard may contain something; opening it is a reasonable next step to search for an animal.
+FEEDBACK: The drawer is now open.
+
+STEP 19 [dynamic] look in drawer
+REASON: The drawer is open; I should inspect its contents to look for an animal before moving it to the red box in the living room.
+FEEDBACK: Inside the drawer is: 
+	nothing
+
+STEP 20 [dynamic] go to hallway
+REASON: The art studio and cupboard contain only paint supplies, no animal. I need to search other rooms, starting by moving through the open door to the hallway.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 21 [dynamic] open door to bedroom
+REASON: Need to locate an animal; hallway has closed doors to bedroom, greenhouse, and workshop. Open the bedroom door first to search there.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 22 [dynamic] go to bedroom
+REASON: I need to locate an animal. The bedroom door is now open, so I will search the bedroom next.
+FEEDBACK: You move to the bedroom.
+LOOK: This room is called the bedroom. In it, you see: 
+	the agent
+	a substance called air
+	a bed. On the bed is: a mattress. On the mattress is: a white pillow..
+	a closet. The closet door is closed. 
+	a drawing
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 23 [dynamic] open closet
+REASON: I need to locate an animal. The bedroom has a closed closet that may contain one, so I will open it to inspect.
+FEEDBACK: The closet is now open.
+LOOK: This room is called the bedroom. In it, you see: 
+	the agent
+	a substance called air
+	a bed. On the bed is: a mattress. On the mattress is: a white pillow..
+	a closet. The closet door is open. In the closet is: nothing.
+	a drawing
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 24 [dynamic] look in closet
+REASON: The goal is to find an animal. The bedroom has a bed, closet, drawing, and table but no visible animal. I should search the closet since it is now open, as animals may be hidden inside.
+FEEDBACK: Inside the closet is: 
+	nothing
+
+STEP 25 [dynamic] go to hallway
+REASON: The closet is empty, so the animal is likely elsewhere. I should search the living room, which is also the destination for the red box.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 26 [dynamic] open door to greenhouse
+REASON: I need to locate an animal. The hallway has closed doors to the greenhouse and workshop, which are unexplored and likely places for an animal. I'll open the door to the greenhouse first.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 27 [dynamic] go to greenhouse
+REASON: The goal is to find an animal. I've checked the art studio, bedroom, kitchen, and bathroom without success. The greenhouse is a likely place for an animal, and its door is now open. Next I'll go to the greenhouse to search.
+FEEDBACK: You move to the greenhouse.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a flower pot 4 (containing a banana tree in the reproducing stage. On the banana tree you see: a flower. , soil)
+	a flower pot 6 (containing a peach tree in the reproducing stage. On the peach tree you see: a flower. , soil)
+	a flower pot 7 (containing nothing)
+	a flower pot 8 (containing nothing)
+	a flower pot 9 (containing a pea plant in the reproducing stage with a tall height. On the pea plant you see: a white flower. , soil)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 28 [dynamic] open bee hive
+REASON: The goal is to find an animal and move it to the red box in the living room. The greenhouse contains a bee hive (closed) and bees are animals. I should open the bee hive to access a bee.
+FEEDBACK: The bee hive is now open.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: a adult bee, a adult bee.
+	a flower pot 4 (containing a banana tree in the reproducing stage. On the banana tree you see: a flower. , soil)
+	a flower pot 6 (containing a peach tree in the reproducing stage. On the peach tree you see: a flower. , soil)
+	a flower pot 7 (containing nothing)
+	a flower pot 8 (containing nothing)
+	a flower pot 9 (containing a pea plant in the reproducing stage with a tall height. On the pea plant you see: a white flower. , soil)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 29 [dynamic] focus on bee 0
+REASON: The bee hive is open and contains bees, which are animals. I need to focus on a bee first, then move it to the red box in the living room.
+FEEDBACK: You focus on the adult bee.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is open. In the bee hive is: a adult bee, a adult bee.
+	a flower pot 4 (containing a banana tree in the reproducing stage. On the banana tree you see: a flower. , soil)
+	a flower pot 6 (containing a peach tree in the reproducing stage. On the peach tree you see: a flower. , soil)
+	a flower pot 7 (containing nothing)
+	a flower pot 8 (containing nothing)
+	a flower pot 9 (containing a pea plant in the reproducing stage with a tall height. On the pea plant you see: a white flower. , soil)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 30 [dynamic] pick up bee 0
+REASON: The goal is to find an animal and move it to the red box in the living room. The bee hive contains adult bees, which are animals. I should pick up a bee to carry it.
+FEEDBACK: You move the bee 0 to the inventory.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: a adult bee, a adult bee.
+	a flower pot 4 (containing a banana tree in the reproducing stage (that looks unwell). On the banana tree you see: a flower. , soil)
+	a flower pot 6 (containing a peach tree in the reproducing stage (that looks unwell). On the peach tree you see: a flower. , soil)
+	a flower pot 7 (containing nothing)
+	a flower pot 8 (containing nothing)
+	a flower pot 9 (containing a pea plant in the reproducing stage with a tall height (that looks unwell). On the pea plant you see: a white flower. , soil)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	a adult bee
+	an orange
+
+
+STEP 31 [dynamic] go to door to hallway
+REASON: I have an adult bee in inventory. The goal is to move an animal to the red box in the living room. I need to go to the living room, so first move to the hallway from the greenhouse.
+FEEDBACK: You move through the door to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a painting
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 32 [dynamic] go to living room
+REASON: I already have an adult bee in inventory. The goal is to move an animal to the red box in the living room, so I should go to the living room next.
+FEEDBACK: You move to the living room.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a book shelf (containing A book (Pride and Prejudice) titled Pride and Prejudice by Jane Austen, A book (Sherlock Holmes) titled Sherlock Holmes by Arthur Conan Doyle)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a drawing
+	a red box (containing nothing)
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 33 [dynamic] move adult bee in inventory to red box
+REASON: The adult bee is already in inventory and the red box is in the living room. I should move the bee into the red box to complete the task.
+FEEDBACK: You move the bee 0 to the red box.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a book shelf (containing A book (Pride and Prejudice) titled Pride and Prejudice by Jane Austen, A book (Sherlock Holmes) titled Sherlock Holmes by Arthur Conan Doyle)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a drawing
+	a red box (containing a adult bee)
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	an orange
+

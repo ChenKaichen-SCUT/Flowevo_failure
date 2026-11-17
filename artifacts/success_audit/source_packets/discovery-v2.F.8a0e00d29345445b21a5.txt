@@ -1,0 +1,72 @@
+# discovery-v2.F.8a0e00d29345445b21a5
+lifespan-longest-lived-then-shortest-lived | train | variation 56
+Task Description:
+Your task is to find the animal with the longest life span, then the shortest life span. First, focus on the animal with the longest life span.  Then, focus on the animal with the shortest life span. The animals are in the 'outside' location.
+INITIAL LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] open door to outside
+REASON: The animals are in the outside location; I need to open the door to outside to reach them.
+FEEDBACK: The door is now open.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is open)
+
+
+STEP 2 [dynamic] go to outside
+REASON: The animals are in the outside location; move there to observe them and compare lifespans.
+FEEDBACK: You move to the outside.
+LOOK: This outside location is called the outside. Here you see: 
+	the agent
+	a substance called air
+	an axe
+	a frog egg
+	a fire pit (containing nothing)
+	a fountain (containing a substance called water)
+	a giant tortoise egg
+	the ground
+	a baby mouse
+	a shovel
+	a substance called wood
+You also see:
+	A door to the foundry (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+
+
+STEP 3 [dynamic] look at baby baby mouse
+REASON: Identify the animals present outside and inspect the baby mouse first to compare lifespans.
+FEEDBACK: a baby mouse
+
+STEP 4 [dynamic] look at egg giant tortoise
+REASON: Need to inspect the giant tortoise egg, likely the longest-lived animal, before focusing on it.
+FEEDBACK: a giant tortoise egg
+
+STEP 5 [dynamic] look at common toad
+REASON: Need to inspect animals in outside to compare lifespans; common toad is listed as a valid target though not currently visible, so check it.
+FEEDBACK: a frog egg
+
+STEP 6 [dynamic] focus on egg giant tortoise
+REASON: The giant tortoise egg likely represents the longest-lived animal; focus on it first as required by the task.
+FEEDBACK: You focus on the giant tortoise egg.
+
+STEP 7 [dynamic] focus on baby baby mouse
+REASON: Need to compare animals' lifespans; focusing on the baby mouse after the giant tortoise egg will reveal its lifespan for comparison.
+FEEDBACK: You focus on the baby mouse.

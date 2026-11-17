@@ -1,0 +1,57 @@
+# discovery-v2.F.09ae344822c12738f557
+lifespan-shortest-lived | train | variation 16
+Task Description:
+Your task is to find the animal with the shortest life span.  The animals are in the 'outside' location.  Focus on the animal with the shortest life span.
+INITIAL LOOK: This outside location is called the outside. Here you see: 
+	the agent
+	a substance called air
+	an axe
+	a baby brown bear
+	a fire pit (containing nothing)
+	a fountain (containing nothing)
+	the ground
+	a baby hedgehog
+	a baby rabbit
+	a shovel
+	a substance called wood
+You also see:
+	A door to the foundry (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [skill_guided] look at baby baby hedgehog
+REASON: Inspect the first candidate animal to compare lifespans; hedgehogs are typically short-lived.
+FEEDBACK: a baby hedgehog
+LOOK: This outside location is called the outside. Here you see: 
+	the agent
+	a substance called air
+	an axe
+	a baby brown bear
+	a fire pit (containing nothing)
+	a fountain (containing a substance called water)
+	the ground
+	a baby hedgehog
+	a baby rabbit
+	a shovel
+	a substance called wood
+You also see:
+	A door to the foundry (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+
+
+STEP 2 [skill_guided] look at baby baby rabbit
+REASON: Inspect another candidate animal in the outside location to compare lifespans before focusing on the shortest-lived one.
+FEEDBACK: a baby rabbit
+
+STEP 3 [skill_guided] look at baby baby brown bear
+REASON: Inspect the remaining candidate animal to compare lifespans before focusing on the shortest-lived one.
+FEEDBACK: a baby brown bear
+
+STEP 4 [skill_guided] focus on baby baby hedgehog
+REASON: Hedgehogs typically have a shorter lifespan than brown bears or rabbits, so focus on the baby hedgehog as the shortest-lived animal.
+FEEDBACK: You focus on the baby hedgehog.

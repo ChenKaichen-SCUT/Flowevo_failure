@@ -1,0 +1,251 @@
+# discovery-v2.F.def63cb9dcbcef266a65
+find-animal | train | variation 94
+Task Description:
+Your task is to find a(n) animal. First, focus on the thing. Then, move it to the yellow box in the kitchen.
+INITIAL LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a flower pot 1 (containing a banana tree in the adult stage, soil)
+	a flower pot 3 (containing a lemon tree in the adult stage, soil)
+	a flower pot 5 (containing nothing)
+	a flower pot 6 (containing nothing)
+	a flower pot 9 (containing a cherry tree in the adult stage, soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] open bee hive
+REASON: The bee hive likely contains an animal (bees). Opening it is the first step to access and move the animal to the yellow box in the kitchen.
+FEEDBACK: The bee hive is now open.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: a adult bee, a adult bee, a adult bee.
+	a flower pot 1 (containing a banana tree in the adult stage, soil)
+	a flower pot 3 (containing a lemon tree in the adult stage, soil)
+	a flower pot 5 (containing nothing)
+	a flower pot 6 (containing nothing)
+	a flower pot 9 (containing a cherry tree in the adult stage, soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+
+STEP 2 [dynamic] focus on bee 0
+REASON: The goal requires finding an animal; bees are animals. Focus on a bee to identify and then move it to the yellow box in the kitchen.
+FEEDBACK: You focus on the adult bee.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: a adult bee, a adult bee.
+	a flower pot 1 (containing a banana tree in the adult stage, soil)
+	a flower pot 3 (containing a lemon tree in the adult stage, soil)
+	a flower pot 5 (containing nothing)
+	a flower pot 6 (containing nothing)
+	a flower pot 9 (containing a cherry tree in the adult stage, soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+
+STEP 3 [dynamic] pick up bee 0
+REASON: The goal requires finding an animal and moving it to the yellow box in the kitchen. The adult bee is an animal; pick it up to carry it toward the kitchen.
+FEEDBACK: You move the bee 0 to the inventory.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a adult bee
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: nothing.
+	a flower pot 1 (containing a banana tree in the adult stage, soil)
+	a flower pot 3 (containing a lemon tree in the adult stage, soil)
+	a flower pot 5 (containing nothing)
+	a flower pot 6 (containing nothing)
+	a flower pot 9 (containing a cherry tree in the adult stage, soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+
+STEP 4 [dynamic] open door to hallway
+REASON: Bee 0 is in inventory. Need to reach the kitchen yellow box, so open the hallway door to leave the greenhouse.
+FEEDBACK: The door is now open.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: nothing.
+	a flower pot 1 (containing a banana tree in the adult stage, soil)
+	a flower pot 3 (containing a lemon tree in the adult stage, soil)
+	a flower pot 5 (containing nothing)
+	a flower pot 6 (containing nothing)
+	a flower pot 9 (containing a cherry tree in the adult stage, soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 5 [dynamic] go to hallway
+REASON: I have a bee in inventory; next I need to reach the kitchen, likely through the hallway.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 6 [dynamic] move bee 0 to kitchen
+REASON: The bee is already in inventory; move it to the kitchen, then place it in the yellow box there.
+FEEDBACK: You move the bee 0 to the kitchen.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 7 [dynamic] go to door to kitchen
+REASON: The bee has been moved to the kitchen; I need to enter the kitchen to place it in the yellow box.
+FEEDBACK: The door is not open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 8 [dynamic] open door to kitchen
+REASON: The kitchen door is closed; open it so I can enter and move the bee to the yellow box.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 9 [dynamic] go to kitchen
+REASON: The bee was already moved to the kitchen; I need to enter the kitchen to place it in the yellow box.
+FEEDBACK: You move to the kitchen.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+	a yellow box (containing nothing)
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 10 [dynamic] pick up bee 0
+REASON: The goal is to move an animal to the yellow box. A bee is an animal; pick up bee 0 so it can be moved to the yellow box in the kitchen.
+FEEDBACK: You move the bee 0 to the inventory.
+
+STEP 11 [dynamic] move bee 0 to yellow box
+REASON: The bee is in inventory and the yellow box is in the kitchen; move the animal into the box to complete the goal.
+FEEDBACK: You move the bee 0 to the yellow box.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+	a yellow box (containing a adult bee)
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+

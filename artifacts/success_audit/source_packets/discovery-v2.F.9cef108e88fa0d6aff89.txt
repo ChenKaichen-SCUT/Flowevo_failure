@@ -1,0 +1,106 @@
+# discovery-v2.F.9cef108e88fa0d6aff89
+inclined-plane-friction-unnamed-surfaces | train | variation 32
+Task Description:
+Your task is to determine which of the two inclined planes (unknown material E, unknown material C) has the most friction. After completing your experiment, focus on the inclined plane with the most friction.
+INITIAL LOOK: This room is called the art studio. In it, you see: 
+	the agent
+	a substance called air
+	a large cupboard. The large cupboard door is closed. 
+	a table. On the table is: a bowl (containing nothing).
+	a wood cup (containing red paint)
+	a wood cup (containing blue paint)
+	a wood cup (containing yellow paint)
+You also see:
+	A door to the hallway (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] open door to hallway
+REASON: Need to explore beyond the art studio to find the inclined planes (materials E and C) for the friction experiment.
+FEEDBACK: The door is now open.
+LOOK: This room is called the art studio. In it, you see: 
+	the agent
+	a substance called air
+	a large cupboard. The large cupboard door is closed. 
+	a table. On the table is: a bowl (containing nothing).
+	a wood cup (containing red paint)
+	a wood cup (containing blue paint)
+	a wood cup (containing yellow paint)
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 2 [dynamic] look around
+REASON: I need to locate the two inclined planes (materials E and C) before comparing friction; current view of the art studio does not show them.
+FEEDBACK: This room is called the art studio. In it, you see: 
+	the agent
+	a substance called air
+	a large cupboard. The large cupboard door is closed. 
+	a table. On the table is: a bowl (containing nothing).
+	a wood cup (containing red paint)
+	a wood cup (containing blue paint)
+	a wood cup (containing yellow paint)
+You also see:
+	A door to the hallway (that is open)
+
+STEP 3 [dynamic] go to hallway
+REASON: Need to locate the two inclined planes (materials E and C); they are not in the art studio, so move to the hallway to search.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 4 [dynamic] open door to workshop
+REASON: Need to locate the inclined planes (materials E and C), likely in the workshop; open its door to explore.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is open)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is open)
+
+
+STEP 5 [dynamic] go to workshop
+REASON: The workshop is likely where the inclined planes (materials E and C) are located; entering it lets me inspect and run the friction experiment.
+FEEDBACK: You move to the workshop.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a brick
+	an inclined plane with a unknown material C surface
+	an inclined plane with a unknown material E surface
+	a stopwatch, which is deactivated. 
+	a table. On the table is: a battery, a black wire, a blue wire, a green wire, a red light bulb, which is off, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 6 [dynamic] look at inclined plane with a unknown material c surface
+REASON: Inspect the first inclined plane to learn its properties before comparing friction.
+FEEDBACK: an inclined plane with a unknown material C surface
+
+STEP 7 [dynamic] look at inclined plane with a unknown material e surface
+REASON: Inspect the E inclined plane to compare its surface with C before testing friction.
+FEEDBACK: an inclined plane with a unknown material E surface
+
+STEP 8 [dynamic] focus on inclined plane with a unknown material c surface
+REASON: Inspect the C inclined plane to begin comparing friction between the two surfaces.
+FEEDBACK: You focus on the inclined plane with a unknown material C surface.

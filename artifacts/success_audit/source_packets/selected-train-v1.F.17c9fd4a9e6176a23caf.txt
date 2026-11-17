@@ -1,0 +1,120 @@
+# selected-train-v1.F.17c9fd4a9e6176a23caf
+inclined-plane-friction-named-surfaces | train | variation 341
+Task Description:
+Your task is to determine which of the two inclined planes (plastic, platinum) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.
+INITIAL LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a finger painting
+You also see:
+	A door to the hallway (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [skill_guided] look around
+REASON: Need to locate the plastic and platinum inclined planes; current living room view shows none, so inspect surroundings before experimenting.
+FEEDBACK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a finger painting
+You also see:
+	A door to the hallway (that is closed)
+
+STEP 2 [skill_guided] open door to hallway
+REASON: The inclined planes are not in the living room; open the hallway door to search other rooms for the plastic and platinum planes.
+FEEDBACK: The door is now open.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a finger painting
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 3 [skill_guided] go to hallway
+REASON: The inclined planes are likely in the hallway; move there to inspect the plastic and platinum planes.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 4 [skill_guided] look in workshop
+REASON: Need to locate the plastic and platinum inclined planes; workshop is a likely room, so inspect it first.
+FEEDBACK: Inside the workshop is: 
+	a substance called air
+	a brick
+	an inclined plane with a platinum surface
+	an inclined plane with a plastic surface
+	a stopwatch, which is deactivated. 
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a blue wire, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+
+ You also see: A door to the hallway (that is closed).
+
+STEP 5 [skill_guided] open door to workshop
+REASON: Need to enter the workshop to access and compare the two inclined planes.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+
+
+STEP 6 [skill_guided] go to workshop
+REASON: Enter the workshop to inspect the inclined planes and begin the friction comparison.
+FEEDBACK: You move to the workshop.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a brick
+	an inclined plane with a platinum surface
+	an inclined plane with a plastic surface
+	a stopwatch, which is deactivated. 
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a blue wire, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 7 [skill_guided] look at inclined plane with a plastic surface
+REASON: Inspect the plastic inclined plane before testing friction, per the comparison procedure.
+FEEDBACK: an inclined plane with a plastic surface
+
+STEP 8 [skill_guided] look at inclined plane with a platinum surface
+REASON: Inspect the platinum plane before running the friction comparison, per the procedure.
+FEEDBACK: an inclined plane with a platinum surface
+
+STEP 9 [skill_guided] connect brick to inclined plane with a plastic surface
+REASON: Run the friction comparison by connecting the brick to the plastic inclined plane first, then observe the result.
+FEEDBACK: terminal 1 on brick is now connected to terminal 1 on inclined plane
+
+STEP 10 [skill_guided] focus on inclined plane with a plastic surface
+REASON: The brick is connected to the plastic plane; focus on it to observe/record its friction result before testing the platinum plane.
+FEEDBACK: You focus on the inclined plane with a plastic surface.

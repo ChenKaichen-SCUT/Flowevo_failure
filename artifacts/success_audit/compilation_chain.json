@@ -1,0 +1,4087 @@
+[
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 12,
+    "compiler_request_id": "batch-sensitivity-1-v1.F.1421639dc7e19fcaab35.compile.success_compile.0001",
+    "compiler_request_original_sha256": "dee722af5cc1b37b73fbf69de71dbc7190d248eea9d43ad4c5f7f17b24fc2a5a",
+    "compiler_request_ref": "requests/batch-sensitivity-1-v1.F.1421639dc7e19fcaab35.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "49882045e4526207ce18598f01ab0a00b8bc1214cdfd6f73d9473a9e79c71f04",
+    "compiler_response_ref": "requests/batch-sensitivity-1-v1.F.1421639dc7e19fcaab35.compile.success_compile.0001.json",
+    "compiler_response_sha256": "f48e1b3454ae601d02d240aab54134685ddc844b9677f7e635289c0073882441",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_8c18f471908c202e",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to determine which of the two inclined planes (cloth, steel) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+      "rules": [
+        "Open the connecting door before moving between rooms; navigation requires an open door.",
+        "Survey each room with look around after entering to identify available objects and exits.",
+        "Locate the target inclined planes in the workshop by looking at and focusing on the plane of interest.",
+        "Focus on the inclined plane with the least friction once the comparison experiment identifies it.",
+        "Keep observation steps (look around, look at) between movements to confirm state changes."
+      ],
+      "source_task_id": "1421639dc7e19fcaab35",
+      "source_trace_id": "batch-sensitivity-1-v1.F.1421639dc7e19fcaab35",
+      "task_type": "inclined-plane-friction-named-surfaces"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "batch-sensitivity-1-v1.F.1421639dc7e19fcaab35",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "look around",
+        "go to {room}",
+        "look around",
+        "open {door}",
+        "go to {room}",
+        "look at {inclined_plane}",
+        "focus on {inclined_plane}"
+      ],
+      "applicability": "Agent is in a room with closed doors leading to other rooms; the target inclined planes are in a reachable room (workshop) accessible through an open door.",
+      "example_bindings": {
+        "door": "door to workshop",
+        "inclined_plane": "inclined plane with a cloth surface",
+        "room": "workshop"
+      },
+      "parameters": [
+        "door",
+        "room",
+        "inclined_plane"
+      ],
+      "rules": [
+        "Open the connecting door before moving between rooms; navigation requires an open door.",
+        "Survey each room with look around after entering to identify available objects and exits.",
+        "Locate the target inclined planes in the workshop by looking at and focusing on the plane of interest.",
+        "Focus on the inclined plane with the least friction once the comparison experiment identifies it.",
+        "Keep observation steps (look around, look at) between movements to confirm state changes."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "SUPPLEMENTARY_TRAIN_VERSION",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "inclined-plane-friction-named-surfaces",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "inclined-plane-friction-named-surfaces:25"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 9,
+    "compiler_request_id": "batch-sensitivity-8-v1.F.1421639dc7e19fcaab35.compile.success_compile.0001",
+    "compiler_request_original_sha256": "f97ed62e9fa7e82167fb7c5382c1cd4020aa88786547ca617b7f0e0a97275a80",
+    "compiler_request_ref": "requests/batch-sensitivity-8-v1.F.1421639dc7e19fcaab35.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "28744c3eeeb920979532b66e84f43f52b964fef6946e0b8ee0c37f5644d5b93f",
+    "compiler_response_ref": "requests/batch-sensitivity-8-v1.F.1421639dc7e19fcaab35.compile.success_compile.0001.json",
+    "compiler_response_sha256": "e16cf87f7790d1a2d4c4357c61abfa5c8c55126f450cc47f2de0d9aebeae7e6f",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_d62e2f73af54ba7f",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to determine which of the two inclined planes (cloth, steel) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+      "rules": [
+        "Navigate through closed doors by opening them before moving to the target room.",
+        "Survey the current room with look around to identify available objects and exits.",
+        "Inspect a candidate object with look at before focusing on it.",
+        "Focus on the object of interest to complete the observation step.",
+        "Repeat the open-move-survey-inspect-focus sequence for each candidate location or object to compare."
+      ],
+      "source_task_id": "1421639dc7e19fcaab35",
+      "source_trace_id": "batch-sensitivity-8-v1.F.1421639dc7e19fcaab35",
+      "task_type": "inclined-plane-friction-named-surfaces"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "batch-sensitivity-8-v1.F.1421639dc7e19fcaab35",
+    "loose_source_alignment_count_capped_at_2": 1,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "look around",
+        "look at {object}",
+        "focus on {object}"
+      ],
+      "applicability": "Agent is in a room with closed doors leading to other rooms; target objects are located in a reachable room and can be inspected and focused on.",
+      "example_bindings": {
+        "object": "inclined plane with a cloth surface",
+        "room": "workshop"
+      },
+      "parameters": [
+        "room",
+        "object"
+      ],
+      "rules": [
+        "Navigate through closed doors by opening them before moving to the target room.",
+        "Survey the current room with look around to identify available objects and exits.",
+        "Inspect a candidate object with look at before focusing on it.",
+        "Focus on the object of interest to complete the observation step.",
+        "Repeat the open-move-survey-inspect-focus sequence for each candidate location or object to compare."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "SUPPLEMENTARY_TRAIN_VERSION",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "inclined-plane-friction-named-surfaces",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "inclined-plane-friction-named-surfaces:25"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 48,
+    "compiler_request_id": "batch-sensitivity-8-v1.F.ddde1cdd88f20265f732.compile.success_compile.0001",
+    "compiler_request_original_sha256": "e0b0d9b7f8f249cf26b4c183a53e5dd2159c6e95618d0624e22fa26b14cc6c67",
+    "compiler_request_ref": "requests/batch-sensitivity-8-v1.F.ddde1cdd88f20265f732.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "fa91becd55cf10646a3b29be7a54e914725bbbb7487e63861442c6b3395ea0c1",
+    "compiler_response_ref": "requests/batch-sensitivity-8-v1.F.ddde1cdd88f20265f732.compile.success_compile.0001.json",
+    "compiler_response_sha256": "cb3e7d5b1f2b4d5f2d93f942760bab6f7988428bd2699227179da4359510920f",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_285ade5e11ee6e8c",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find a(n) animal. First, focus on the thing. Then, move it to the blue box in the living room.",
+      "rules": [
+        "Open closed containers and doors before attempting to look inside or move through them.",
+        "Search candidate rooms by moving through the hallway and opening each closed door to reveal new locations.",
+        "Once the target animal is found inside an open container, focus on it before picking it up.",
+        "Carry the animal through intermediate rooms back to the destination room containing the target receptacle.",
+        "Move the carried animal into the specified target container to complete the transfer."
+      ],
+      "source_task_id": "ddde1cdd88f20265f732",
+      "source_trace_id": "batch-sensitivity-8-v1.F.ddde1cdd88f20265f732",
+      "task_type": "find-animal"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "batch-sensitivity-8-v1.F.ddde1cdd88f20265f732",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open {container}",
+        "look in {container}",
+        "go to {room}",
+        "open {door}",
+        "go to {room}",
+        "focus on {animal} in {container}",
+        "pick up {animal} in {container}",
+        "go to {room}",
+        "go to {room}",
+        "move {animal} to {target_container}"
+      ],
+      "applicability": "Use when the goal is to locate a movable animal in a closed container within some room and deliver it to a named container in another room, with navigation through a central hallway and doors that may start closed.",
+      "example_bindings": {
+        "animal": "adult bee",
+        "container": "bee hive",
+        "door": "door to greenhouse",
+        "room": "hallway",
+        "target_container": "blue box"
+      },
+      "parameters": [
+        "container",
+        "room",
+        "door",
+        "animal",
+        "target_container"
+      ],
+      "rules": [
+        "Open closed containers and doors before attempting to look inside or move through them.",
+        "Search candidate rooms by moving through the hallway and opening each closed door to reveal new locations.",
+        "Once the target animal is found inside an open container, focus on it before picking it up.",
+        "Carry the animal through intermediate rooms back to the destination room containing the target receptacle.",
+        "Move the carried animal into the specified target container to complete the transfer."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "SUPPLEMENTARY_TRAIN_VERSION",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "find-animal",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "find-animal:74"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 7,
+    "compiler_request_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a.compile.success_compile.0001",
+    "compiler_request_original_sha256": "545b4a432f744fbec5191c7cb76b206142f8a385fbc05a86d5fbadbbf17b43ab",
+    "compiler_request_ref": "requests/dev-baseline-v1.F.3ea7c55db1ecffae3c8a.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "5f85c1330e83abd0e323a900c04cab5d19de315f4b60f48e69567822c98041b9",
+    "compiler_response_ref": "requests/dev-baseline-v1.F.3ea7c55db1ecffae3c8a.compile.success_compile.0001.json",
+    "compiler_response_sha256": "50b6f1f575ae050cf5354c8489976be54f0c18089ae65c4041a2bdd7eccbbb1f",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "look around",
+        "open {target_door}",
+        "go to {target_room}",
+        "connect {block} to {inclined_plane}",
+        "focus on {inclined_plane}"
+      ],
+      "applicability": "Agent is in a room with a closed door leading toward a workshop containing two inclined planes (glass and brass surfaces), a movable block, and a stopwatch; the task requires comparing friction by connecting the block to each inclined plane and focusing on it.",
+      "example_bindings": {
+        "block": "block",
+        "door": "door to hallway",
+        "inclined_plane": "inclined plane with a glass surface",
+        "room": "hallway",
+        "target_door": "door to workshop",
+        "target_room": "workshop"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "block": [
+          "experiment_subject"
+        ],
+        "door": [
+          "manipulated_object"
+        ],
+        "inclined_plane": [
+          "experiment_subject",
+          "goal_choice"
+        ],
+        "room": [
+          "navigation_destination"
+        ],
+        "target_door": [
+          "manipulated_object"
+        ],
+        "target_room": [
+          "navigation_destination"
+        ]
+      },
+      "parameters": [
+        "door",
+        "room",
+        "target_door",
+        "target_room",
+        "block",
+        "inclined_plane"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to determine which of the two inclined planes (glass, brass) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "3ea7c55db1ecffae3c8a",
+      "source_trace_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+      "success_count": 1,
+      "task_type": "inclined-plane-friction-named-surfaces",
+      "template_id": "sw_4a8445e085163685"
+    },
+    "exact_source_alignment_1based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_afa412323e307797",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to determine which of the two inclined planes (glass, brass) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+      "rules": [
+        "Open the door blocking access to the current room before moving through it.",
+        "Navigate through intermediate rooms by opening the next door and moving to the target room.",
+        "Use look around to confirm the presence and state of doors and objects in a new room.",
+        "Connect the movable block to one inclined plane, then focus on that inclined plane to observe the friction result.",
+        "Repeat the connect-and-focus procedure for each candidate inclined plane before selecting the one with least friction."
+      ],
+      "source_task_id": "3ea7c55db1ecffae3c8a",
+      "source_trace_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+      "task_type": "inclined-plane-friction-named-surfaces"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "look around",
+        "open {target_door}",
+        "go to {target_room}",
+        "connect {block} to {inclined_plane}",
+        "focus on {inclined_plane}"
+      ],
+      "example_bindings": {
+        "block": "block",
+        "door": "door to hallway",
+        "inclined_plane": "inclined plane with a glass surface",
+        "room": "hallway",
+        "target_door": "door to workshop",
+        "target_room": "workshop"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "door",
+        "room",
+        "target_door",
+        "target_room",
+        "block",
+        "inclined_plane"
+      ],
+      "source_task_id": "3ea7c55db1ecffae3c8a",
+      "source_trace_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+      "success_count": 1,
+      "task_type": "inclined-plane-friction-named-surfaces",
+      "template_id": "sw_4a8445e085163685"
+    },
+    "job_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+    "loose_source_alignment_count_capped_at_2": 1,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "look around",
+        "open {target_door}",
+        "go to {target_room}",
+        "connect {block} to {inclined_plane}",
+        "focus on {inclined_plane}"
+      ],
+      "applicability": "Agent is in a room with a closed door leading toward a workshop containing two inclined planes (glass and brass surfaces), a movable block, and a stopwatch; the task requires comparing friction by connecting the block to each inclined plane and focusing on it.",
+      "example_bindings": {
+        "block": "block",
+        "door": "door to hallway",
+        "inclined_plane": "inclined plane with a glass surface",
+        "room": "hallway",
+        "target_door": "door to workshop",
+        "target_room": "workshop"
+      },
+      "parameters": [
+        "door",
+        "room",
+        "target_door",
+        "target_room",
+        "block",
+        "inclined_plane"
+      ],
+      "rules": [
+        "Open the door blocking access to the current room before moving through it.",
+        "Navigate through intermediate rooms by opening the next door and moving to the target room.",
+        "Use look around to confirm the presence and state of doors and objects in a new room.",
+        "Connect the movable block to one inclined plane, then focus on that inclined plane to observe the friction result.",
+        "Repeat the connect-and-focus procedure for each candidate inclined plane before selecting the one with least friction."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "dev",
+    "task": "inclined-plane-friction-named-surfaces",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "inclined-plane-friction-named-surfaces:1011"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 16,
+    "compiler_request_id": "dev-baseline-v1.F.722d467db63128d43cf2.compile.success_compile.0001",
+    "compiler_request_original_sha256": "f4cd9e8678cff9a58120e69d7439b21fe835b2157c3dcdbbb5aa9e284c352aae",
+    "compiler_request_ref": "requests/dev-baseline-v1.F.722d467db63128d43cf2.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "b38161920cba3b04efd7333b9e22e6aca97982ad1309dc67962331e8605d5526",
+    "compiler_response_ref": "requests/dev-baseline-v1.F.722d467db63128d43cf2.compile.success_compile.0001.json",
+    "compiler_response_sha256": "489bbd85f8f6cc84d6e32ea23e519fe1fea07fbf36fbbffc036b5dd6dd739af7",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "connect brick to {inclined_plane}",
+        "focus on {inclined_plane}"
+      ],
+      "applicability": "Agent is in a building with connected rooms and doors; the target room contains a brick and multiple inclined planes with different surface materials.",
+      "example_bindings": {
+        "door": "door to workshop",
+        "inclined_plane": "inclined plane with a glass surface",
+        "room": "workshop"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "door": [
+          "manipulated_object"
+        ],
+        "inclined_plane": [
+          "experiment_subject",
+          "goal_choice"
+        ],
+        "room": [
+          "navigation_destination"
+        ]
+      },
+      "parameters": [
+        "door",
+        "room",
+        "inclined_plane"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to determine which of the two inclined planes (glass, steel) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "722d467db63128d43cf2",
+      "source_trace_id": "dev-baseline-v1.F.722d467db63128d43cf2",
+      "success_count": 1,
+      "task_type": "inclined-plane-friction-named-surfaces",
+      "template_id": "sw_d54821640b406de5"
+    },
+    "exact_source_alignment_1based": [
+      12,
+      13,
+      15,
+      16
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_180c952528eeb062",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to determine which of the two inclined planes (glass, steel) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+      "rules": [
+        "Open each closed door along the route before moving through it.",
+        "Navigate through connected rooms until reaching the location containing the inclined planes.",
+        "Connect the brick to one inclined plane, then focus on that inclined plane to observe its friction behavior.",
+        "Repeat the connect-and-focus procedure for each candidate inclined plane to compare friction.",
+        "After comparing, focus on the inclined plane determined to have the least friction."
+      ],
+      "source_task_id": "722d467db63128d43cf2",
+      "source_trace_id": "dev-baseline-v1.F.722d467db63128d43cf2",
+      "task_type": "inclined-plane-friction-named-surfaces"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "connect brick to {inclined_plane}",
+        "focus on {inclined_plane}"
+      ],
+      "example_bindings": {
+        "door": "door to workshop",
+        "inclined_plane": "inclined plane with a glass surface",
+        "room": "workshop"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "door",
+        "room",
+        "inclined_plane"
+      ],
+      "source_task_id": "722d467db63128d43cf2",
+      "source_trace_id": "dev-baseline-v1.F.722d467db63128d43cf2",
+      "success_count": 1,
+      "task_type": "inclined-plane-friction-named-surfaces",
+      "template_id": "sw_d54821640b406de5"
+    },
+    "job_id": "dev-baseline-v1.F.722d467db63128d43cf2",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "connect brick to {inclined_plane}",
+        "focus on {inclined_plane}"
+      ],
+      "applicability": "Agent is in a building with connected rooms and doors; the target room contains a brick and multiple inclined planes with different surface materials.",
+      "example_bindings": {
+        "door": "door to workshop",
+        "inclined_plane": "inclined plane with a glass surface",
+        "room": "workshop"
+      },
+      "parameters": [
+        "door",
+        "room",
+        "inclined_plane"
+      ],
+      "rules": [
+        "Open each closed door along the route before moving through it.",
+        "Navigate through connected rooms until reaching the location containing the inclined planes.",
+        "Connect the brick to one inclined plane, then focus on that inclined plane to observe its friction behavior.",
+        "Repeat the connect-and-focus procedure for each candidate inclined plane to compare friction.",
+        "After comparing, focus on the inclined plane determined to have the least friction."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "dev",
+    "task": "inclined-plane-friction-named-surfaces",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "inclined-plane-friction-named-surfaces:989"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 19,
+    "compiler_request_id": "dev-baseline-v1.F.77525ad34ec157f0577b.compile.success_compile.0001",
+    "compiler_request_original_sha256": "dbf4270be311d3530c604bdea23c86917ba7e137bd8288834664cfea81d5fd5f",
+    "compiler_request_ref": "requests/dev-baseline-v1.F.77525ad34ec157f0577b.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "754b1e8af3548d25c7727cc7f57a5f2a7ef2a33932f86709ba4ef5939ed418a6",
+    "compiler_response_ref": "requests/dev-baseline-v1.F.77525ad34ec157f0577b.compile.success_compile.0001.json",
+    "compiler_response_sha256": "18d449f20a2491e3639175340248b1d46da73d016db83a5d11d2b2d416bb3080",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_9d1986bee6a76cbb",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to determine which of the two inclined planes (greenpaint, bronze) has the most friction. After completing your experiment, focus on the inclined plane with the most friction.",
+      "rules": [
+        "Open closed doors before moving through them to reach the target room.",
+        "Navigate through intermediate rooms by opening the connecting door and then going to the next room.",
+        "Look around upon entering a new room to confirm the presence of the inclined planes and steel block.",
+        "Connect the steel block to one inclined plane surface before focusing on that plane to run the friction comparison.",
+        "Focus on the inclined plane whose surface was tested to complete the friction determination."
+      ],
+      "source_task_id": "77525ad34ec157f0577b",
+      "source_trace_id": "dev-baseline-v1.F.77525ad34ec157f0577b",
+      "task_type": "inclined-plane-friction-named-surfaces"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "dev-baseline-v1.F.77525ad34ec157f0577b",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "look around",
+        "connect block to inclined plane with a {surface} surface",
+        "focus on inclined plane with a {surface} surface"
+      ],
+      "applicability": "Agent is in a building with connected rooms and needs to reach a workshop containing inclined planes with different surfaces and a steel block; doors along the route may be closed and must be opened first.",
+      "example_bindings": {
+        "room": "workshop",
+        "surface": "bronze"
+      },
+      "parameters": [
+        "room",
+        "surface"
+      ],
+      "rules": [
+        "Open closed doors before moving through them to reach the target room.",
+        "Navigate through intermediate rooms by opening the connecting door and then going to the next room.",
+        "Look around upon entering a new room to confirm the presence of the inclined planes and steel block.",
+        "Connect the steel block to one inclined plane surface before focusing on that plane to run the friction comparison.",
+        "Focus on the inclined plane whose surface was tested to complete the friction determination."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "dev",
+    "task": "inclined-plane-friction-named-surfaces",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "inclined-plane-friction-named-surfaces:754"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 77,
+    "compiler_request_id": "dev-baseline-v1.F.cfcb5065ead3594fa047.compile.success_compile.0001",
+    "compiler_request_original_sha256": "3b0d3d14f9d87ed066f85775ac7c2443c92be7192a6b4f1eace342e114730372",
+    "compiler_request_ref": "requests/dev-baseline-v1.F.cfcb5065ead3594fa047.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "3497bdf73bab77696986f57aacc2c91977cd6b894d4d70f8c34103929ce8afbc",
+    "compiler_response_ref": "requests/dev-baseline-v1.F.cfcb5065ead3594fa047.compile.success_compile.0001.json",
+    "compiler_response_sha256": "de4c28b60fe0363bca12817d551d5c46dccbd5a59885901b9743c5e81514db84",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "open {container}",
+        "focus on {animal}",
+        "pick up {animal}",
+        "open {door}",
+        "go to {room}",
+        "move {animal} to {receptacle}",
+        "look in {receptacle}"
+      ],
+      "applicability": "Agent is in a room containing a closed container with an animal inside; the destination receptacle is in another room reachable through closed doors.",
+      "example_bindings": {
+        "animal": "bee 0",
+        "container": "bee hive",
+        "door": "door to hallway",
+        "receptacle": "red box",
+        "room": "hallway"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "animal": [
+          "goal_marker",
+          "manipulated_object"
+        ],
+        "container": [
+          "manipulated_object"
+        ],
+        "door": [
+          "manipulated_object"
+        ],
+        "receptacle": [
+          "manipulated_object",
+          "transfer_destination"
+        ],
+        "room": [
+          "navigation_destination"
+        ]
+      },
+      "parameters": [
+        "container",
+        "animal",
+        "door",
+        "room",
+        "receptacle"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to find a(n) animal. First, focus on the thing. Then, move it to the red box in the living room.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "cfcb5065ead3594fa047",
+      "source_trace_id": "dev-baseline-v1.F.cfcb5065ead3594fa047",
+      "success_count": 1,
+      "task_type": "find-animal",
+      "template_id": "sw_ad91c21cdf9f9a40"
+    },
+    "exact_source_alignment_1based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      67,
+      68
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_d4b3863f71474bc3",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find a(n) animal. First, focus on the thing. Then, move it to the red box in the living room.",
+      "rules": [
+        "Open the container holding the animal before attempting to focus on or pick it up.",
+        "Focus on the target animal, then pick it up to transfer it into inventory.",
+        "Open intervening doors and navigate room-by-room toward the destination room containing the receptacle.",
+        "Place the carried animal into the receptacle with a move action, then verify by looking in the receptacle.",
+        "If the animal is not in inventory when at the destination, return to where it was seen and pick it up again before moving it."
+      ],
+      "source_task_id": "cfcb5065ead3594fa047",
+      "source_trace_id": "dev-baseline-v1.F.cfcb5065ead3594fa047",
+      "task_type": "find-animal"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "open {container}",
+        "focus on {animal}",
+        "pick up {animal}",
+        "open {door}",
+        "go to {room}",
+        "move {animal} to {receptacle}",
+        "look in {receptacle}"
+      ],
+      "example_bindings": {
+        "animal": "bee 0",
+        "container": "bee hive",
+        "door": "door to hallway",
+        "receptacle": "red box",
+        "room": "hallway"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "container",
+        "animal",
+        "door",
+        "room",
+        "receptacle"
+      ],
+      "source_task_id": "cfcb5065ead3594fa047",
+      "source_trace_id": "dev-baseline-v1.F.cfcb5065ead3594fa047",
+      "success_count": 1,
+      "task_type": "find-animal",
+      "template_id": "sw_ad91c21cdf9f9a40"
+    },
+    "job_id": "dev-baseline-v1.F.cfcb5065ead3594fa047",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "open {container}",
+        "focus on {animal}",
+        "pick up {animal}",
+        "open {door}",
+        "go to {room}",
+        "move {animal} to {receptacle}",
+        "look in {receptacle}"
+      ],
+      "applicability": "Agent is in a room containing a closed container with an animal inside; the destination receptacle is in another room reachable through closed doors.",
+      "example_bindings": {
+        "animal": "bee 0",
+        "container": "bee hive",
+        "door": "door to hallway",
+        "receptacle": "red box",
+        "room": "hallway"
+      },
+      "parameters": [
+        "container",
+        "animal",
+        "door",
+        "room",
+        "receptacle"
+      ],
+      "rules": [
+        "Open the container holding the animal before attempting to focus on or pick it up.",
+        "Focus on the target animal, then pick it up to transfer it into inventory.",
+        "Open intervening doors and navigate room-by-room toward the destination room containing the receptacle.",
+        "Place the carried animal into the receptacle with a move action, then verify by looking in the receptacle.",
+        "If the animal is not in inventory when at the destination, return to where it was seen and pick it up again before moving it."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "dev",
+    "task": "find-animal",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "find-animal:162"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 33,
+    "compiler_request_id": "discovery-v1.F.1b4703786cd7f2ff0592.compile.success_compile.0001",
+    "compiler_request_original_sha256": "f051bcf437b08b506573122bcab4e0c6841defbe6ecca90c05edb409b42f7a3c",
+    "compiler_request_ref": "requests/discovery-v1.F.1b4703786cd7f2ff0592.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "99e75c560183e4fec9157750de96ab12afbaf825394cc40aecf8a63e7ccef73e",
+    "compiler_response_ref": "requests/discovery-v1.F.1b4703786cd7f2ff0592.compile.success_compile.0001.json",
+    "compiler_response_sha256": "4b0991a4bf410207e354b877d543491dd9b3ac9a10ef80e803d03fac0deb3fc9",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_bdf0d5bb373b22ea",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find a(n) animal. First, focus on the thing. Then, move it to the red box in the living room.",
+      "rules": [
+        "Open doors and containers before searching them; inspect a container's contents with a look action before concluding it is empty.",
+        "Search rooms systematically by opening each closed door from the hallway, entering, and checking containers for the target object.",
+        "Once the target animal is found, focus on it, pick it up into inventory, then navigate back through the hallway to the destination room.",
+        "Move the carried animal from inventory into the specified target container to complete the task."
+      ],
+      "source_task_id": "1b4703786cd7f2ff0592",
+      "source_trace_id": "discovery-v1.F.1b4703786cd7f2ff0592",
+      "task_type": "find-animal"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "discovery-v1.F.1b4703786cd7f2ff0592",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "look in {container}",
+        "focus on {animal}",
+        "pick up {animal}",
+        "go to {target_room}",
+        "move {animal} in inventory to {target_container}"
+      ],
+      "applicability": "Agent is in a multi-room building with closed doors and containers; target object is an animal located inside a container in some room; destination is a named container in another room.",
+      "example_bindings": {
+        "animal": "bee 0",
+        "container": "bee hive",
+        "door": "door to greenhouse",
+        "room": "greenhouse",
+        "target_container": "red box",
+        "target_room": "living room"
+      },
+      "parameters": [
+        "door",
+        "room",
+        "container",
+        "animal",
+        "target_room",
+        "target_container"
+      ],
+      "rules": [
+        "Open doors and containers before searching them; inspect a container's contents with a look action before concluding it is empty.",
+        "Search rooms systematically by opening each closed door from the hallway, entering, and checking containers for the target object.",
+        "Once the target animal is found, focus on it, pick it up into inventory, then navigate back through the hallway to the destination room.",
+        "Move the carried animal from inventory into the specified target container to complete the task."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "SUPPLEMENTARY_TRAIN_VERSION",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "find-animal",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "find-animal:42"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 11,
+    "compiler_request_id": "discovery-v1.F.279ad8d80a9088c7546b.compile.success_compile.0001",
+    "compiler_request_original_sha256": "ca1257c2acea817ca32bb9783753541b9789a1496238510d4f709d5ecfe7a709",
+    "compiler_request_ref": "requests/discovery-v1.F.279ad8d80a9088c7546b.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "82ae011bcaaf82bd2f576347fd379c25636dd62289349519854b09035ad78eae",
+    "compiler_response_ref": "requests/discovery-v1.F.279ad8d80a9088c7546b.compile.success_compile.0001.json",
+    "compiler_response_sha256": "23506a461f794ac964d4326f7fb525bf0721f9fd14c3ebf92de4c99ddb890504",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "open {container}",
+        "focus on {substance}",
+        "pick up {substance}",
+        "activate {heat_source}",
+        "move {substance} to {heat_source}",
+        "wait"
+      ],
+      "applicability": "Agent must be able to reach a room containing the target substance and a heat source (e.g., stove) that can be activated; doors along the path may need opening.",
+      "example_bindings": {
+        "container": "cupboard",
+        "door": "door to hallway",
+        "heat_source": "stove",
+        "room": "hallway",
+        "substance": "marshmallow"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "container": [
+          "manipulated_object"
+        ],
+        "door": [
+          "manipulated_object"
+        ],
+        "heat_source": [
+          "manipulated_object",
+          "transfer_destination"
+        ],
+        "room": [
+          "navigation_destination"
+        ],
+        "substance": [
+          "goal_marker",
+          "manipulated_object"
+        ]
+      },
+      "parameters": [
+        "door",
+        "room",
+        "container",
+        "substance",
+        "heat_source"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to change the state of matter of marshmallow. First, focus on the substance. Then, take actions that will cause it to change its state of matter.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "279ad8d80a9088c7546b",
+      "source_trace_id": "discovery-v1.F.279ad8d80a9088c7546b",
+      "success_count": 1,
+      "task_type": "change-the-state-of-matter-of",
+      "template_id": "sw_db1c995535c560ef"
+    },
+    "exact_source_alignment_1based": [
+      1,
+      2,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_c9318ca7170258d9",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to change the state of matter of marshmallow. First, focus on the substance. Then, take actions that will cause it to change its state of matter.",
+      "rules": [
+        "Open intervening doors and navigate through rooms until reaching a location containing the target substance.",
+        "Open the container holding the target substance, focus on it, then pick it up into inventory.",
+        "Activate a heat source in the same room, then move the target substance onto it.",
+        "Wait for the heat source to change the substance's state of matter before concluding."
+      ],
+      "source_task_id": "279ad8d80a9088c7546b",
+      "source_trace_id": "discovery-v1.F.279ad8d80a9088c7546b",
+      "task_type": "change-the-state-of-matter-of"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "open {container}",
+        "focus on {substance}",
+        "pick up {substance}",
+        "activate {heat_source}",
+        "move {substance} to {heat_source}",
+        "wait"
+      ],
+      "example_bindings": {
+        "container": "cupboard",
+        "door": "door to hallway",
+        "heat_source": "stove",
+        "room": "hallway",
+        "substance": "marshmallow"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "door",
+        "room",
+        "container",
+        "substance",
+        "heat_source"
+      ],
+      "source_task_id": "279ad8d80a9088c7546b",
+      "source_trace_id": "discovery-v1.F.279ad8d80a9088c7546b",
+      "success_count": 1,
+      "task_type": "change-the-state-of-matter-of",
+      "template_id": "sw_db1c995535c560ef"
+    },
+    "job_id": "discovery-v1.F.279ad8d80a9088c7546b",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "open {container}",
+        "focus on {substance}",
+        "pick up {substance}",
+        "activate {heat_source}",
+        "move {substance} to {heat_source}",
+        "wait"
+      ],
+      "applicability": "Agent must be able to reach a room containing the target substance and a heat source (e.g., stove) that can be activated; doors along the path may need opening.",
+      "example_bindings": {
+        "container": "cupboard",
+        "door": "door to hallway",
+        "heat_source": "stove",
+        "room": "hallway",
+        "substance": "marshmallow"
+      },
+      "parameters": [
+        "door",
+        "room",
+        "container",
+        "substance",
+        "heat_source"
+      ],
+      "rules": [
+        "Open intervening doors and navigate through rooms until reaching a location containing the target substance.",
+        "Open the container holding the target substance, focus on it, then pick it up into inventory.",
+        "Activate a heat source in the same room, then move the target substance onto it.",
+        "Wait for the heat source to change the substance's state of matter before concluding."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "SUPPLEMENTARY_TRAIN_VERSION",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "change-the-state-of-matter-of",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "change-the-state-of-matter-of:12"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 9,
+    "compiler_request_id": "discovery-v1.F.965d4f1df81ea937ed3b.compile.success_compile.0001",
+    "compiler_request_original_sha256": "fae13ffdf75f711ddff133784b2f2f5a9177e6699f00fcb6fcc96a685c30e257",
+    "compiler_request_ref": "requests/discovery-v1.F.965d4f1df81ea937ed3b.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "683cc67856b9189619df6803063daaca6849e001b51573d9fcc3cb87ce006d43",
+    "compiler_response_ref": "requests/discovery-v1.F.965d4f1df81ea937ed3b.compile.success_compile.0001.json",
+    "compiler_response_sha256": "8d9b454d8696795b6e37463190e196425414e5ac6991279c3e9b06a23bb35cf4",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": false,
+    "historical_exemplar": null,
+    "historical_rejection": null,
+    "historical_template": null,
+    "job_id": "discovery-v1.F.965d4f1df81ea937ed3b",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "focus on {plant}",
+        "pick up living thing in {container}",
+        "go to {room}",
+        "go to {room}",
+        "move living thing to {box}"
+      ],
+      "applicability": "Use when the goal is to find a plant in a room reachable through a hallway and move it to a box in another room. Requires the plant to be in a container and the destination box to be accessible in the starting room.",
+      "example_bindings": {
+        "box": "purple box",
+        "container": "flower pot 9",
+        "plant": "adult pea plant",
+        "room": "hallway"
+      },
+      "parameters": [
+        "room",
+        "plant",
+        "container",
+        "box"
+      ],
+      "rules": [
+        "Open the connecting door before moving between rooms, and navigate through intermediate rooms to reach the target location.",
+        "In the target room, focus on the desired plant before attempting to pick it up.",
+        "Pick up the plant from its container using the 'pick up living thing in <container>' action.",
+        "Return through the same rooms to the destination room containing the target box.",
+        "Move the carried plant into the specified box to complete the task."
+      ]
+    },
+    "raw_rules_equal_historical_L2": null,
+    "scope": "SUPPLEMENTARY_TRAIN_VERSION",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "find-plant",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "find-plant:59"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 5,
+    "compiler_request_id": "discovery-v1.F.d9797b94d94a3a12ea4b.compile.success_compile.0001",
+    "compiler_request_original_sha256": "94b38211bcc7c715f153931d8995666549ed80c8a0658d927f776283ea3e2484",
+    "compiler_request_ref": "requests/discovery-v1.F.d9797b94d94a3a12ea4b.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "cbdc64e74ecc5b2252257f13ce19f8259ee19769da13e920ce5919947b885fdc",
+    "compiler_response_ref": "requests/discovery-v1.F.d9797b94d94a3a12ea4b.compile.success_compile.0001.json",
+    "compiler_response_sha256": "476685c24781ba87fa86d56680fb0215ae332f9b978fc8c9b7288eae86e45324",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "focus on {object}",
+        "pick up {object}",
+        "open door to {room}",
+        "go to {room}",
+        "move {object} to {container}"
+      ],
+      "applicability": "Agent is in a room with a visible non-living object and a closed door leading to a room that contains the target container.",
+      "example_bindings": {
+        "container": "red box",
+        "object": "drawing",
+        "room": "bedroom"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "container": [
+          "transfer_destination"
+        ],
+        "object": [
+          "goal_marker",
+          "manipulated_object"
+        ],
+        "room": [
+          "navigation_destination"
+        ]
+      },
+      "parameters": [
+        "object",
+        "room",
+        "container"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to find a(n) non-living thing. First, focus on the thing. Then, move it to the red box in the bedroom.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "d9797b94d94a3a12ea4b",
+      "source_trace_id": "discovery-v1.F.d9797b94d94a3a12ea4b",
+      "success_count": 1,
+      "task_type": "find-non-living-thing",
+      "template_id": "sw_6296a249dc29538e"
+    },
+    "exact_source_alignment_1based": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_fcd4de0365d38f5c",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find a(n) non-living thing. First, focus on the thing. Then, move it to the red box in the bedroom.",
+      "rules": [
+        "Focus on the target object before picking it up.",
+        "Pick up the target object to place it in inventory.",
+        "Open the door to the destination room before moving there.",
+        "Move to the destination room containing the target container.",
+        "Move the carried object from inventory into the specified container."
+      ],
+      "source_task_id": "d9797b94d94a3a12ea4b",
+      "source_trace_id": "discovery-v1.F.d9797b94d94a3a12ea4b",
+      "task_type": "find-non-living-thing"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "focus on {object}",
+        "pick up {object}",
+        "open door to {room}",
+        "go to {room}",
+        "move {object} to {container}"
+      ],
+      "example_bindings": {
+        "container": "red box",
+        "object": "drawing",
+        "room": "bedroom"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "object",
+        "room",
+        "container"
+      ],
+      "source_task_id": "d9797b94d94a3a12ea4b",
+      "source_trace_id": "discovery-v1.F.d9797b94d94a3a12ea4b",
+      "success_count": 1,
+      "task_type": "find-non-living-thing",
+      "template_id": "sw_6296a249dc29538e"
+    },
+    "job_id": "discovery-v1.F.d9797b94d94a3a12ea4b",
+    "loose_source_alignment_count_capped_at_2": 1,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "focus on {object}",
+        "pick up {object}",
+        "open door to {room}",
+        "go to {room}",
+        "move {object} to {container}"
+      ],
+      "applicability": "Agent is in a room with a visible non-living object and a closed door leading to a room that contains the target container.",
+      "example_bindings": {
+        "container": "red box",
+        "object": "drawing",
+        "room": "bedroom"
+      },
+      "parameters": [
+        "object",
+        "room",
+        "container"
+      ],
+      "rules": [
+        "Focus on the target object before picking it up.",
+        "Pick up the target object to place it in inventory.",
+        "Open the door to the destination room before moving there.",
+        "Move to the destination room containing the target container.",
+        "Move the carried object from inventory into the specified container."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "SUPPLEMENTARY_TRAIN_VERSION",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "find-non-living-thing",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "find-non-living-thing:18"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 13,
+    "compiler_request_id": "discovery-v1.F.e1913f9868b6d9fe9f61.compile.success_compile.0001",
+    "compiler_request_original_sha256": "607f6d5e8506297ccc8e58117f21a2d127f93ca430d18307d8d6699a31d5ac8d",
+    "compiler_request_ref": "requests/discovery-v1.F.e1913f9868b6d9fe9f61.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "9441689a19c77aff1a8432ca42d2de82a3fe88989c6983b5516ebd6282b1c90a",
+    "compiler_response_ref": "requests/discovery-v1.F.e1913f9868b6d9fe9f61.compile.success_compile.0001.json",
+    "compiler_response_sha256": "e12c723a27a5cd238f601b78aa000a4f923569786dfcd3b54568f9af81dddee2",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": false,
+    "historical_exemplar": null,
+    "historical_rejection": null,
+    "historical_template": null,
+    "job_id": "discovery-v1.F.e1913f9868b6d9fe9f61",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "look around",
+        "open door to {room}",
+        "go to {room}",
+        "look at {inclined_plane}",
+        "look at {inclined_plane}",
+        "look at {inclined_plane}",
+        "look in {inclined_plane}",
+        "look at {inclined_plane}",
+        "focus on {inclined_plane}"
+      ],
+      "applicability": "Agent is in a room with closed doors leading toward a workshop containing two or more inclined planes to compare.",
+      "example_bindings": {
+        "inclined_plane": "inclined plane c",
+        "room": "workshop"
+      },
+      "parameters": [
+        "room",
+        "inclined_plane"
+      ],
+      "rules": [
+        "Navigate through connected rooms by opening closed doors and moving to the target room where the inclined planes are located.",
+        "Inspect each candidate inclined plane with look at actions to compare their descriptions.",
+        "Use look in on an inclined plane to check its contents before deciding.",
+        "After comparing, focus on the inclined plane identified as having the steepest angle.",
+        "Keep observation steps (look around, look at, look in) before the final focus action."
+      ]
+    },
+    "raw_rules_equal_historical_L2": null,
+    "scope": "SUPPLEMENTARY_TRAIN_VERSION",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "inclined-plane-determine-angle",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "inclined-plane-determine-angle:23"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 4,
+    "compiler_request_id": "discovery-v2.F.09ae344822c12738f557.compile.success_compile.0001",
+    "compiler_request_original_sha256": "326bc36046eacafdeb8dd7e6191456c011f73d0f4e6f2a5f75a32d163ab3b8d5",
+    "compiler_request_ref": "requests/discovery-v2.F.09ae344822c12738f557.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "2319658aae1fab1b634cadf4a10d46070b85a05dd9896384e056382f8424782b",
+    "compiler_response_ref": "requests/discovery-v2.F.09ae344822c12738f557.compile.success_compile.0001.json",
+    "compiler_response_sha256": "a786ee471e94e526e2dd34b038a39236573a1b2443eb241fbb585aadd2448fe2",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "look at {animal}",
+        "focus on {animal}"
+      ],
+      "applicability": "The agent is in a location containing multiple candidate animals and the task is to identify and focus on the animal with the shortest life span.",
+      "example_bindings": {
+        "animal": "baby baby hedgehog"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "animal": [
+          "experiment_subject",
+          "goal_choice"
+        ]
+      },
+      "parameters": [
+        "animal"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to find the animal with the shortest life span.  The animals are in the 'outside' location.  Focus on the animal with the shortest life span.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "09ae344822c12738f557",
+      "source_trace_id": "discovery-v2.F.09ae344822c12738f557",
+      "success_count": 1,
+      "task_type": "lifespan-shortest-lived",
+      "template_id": "sw_2b4358949f26470f"
+    },
+    "exact_source_alignment_1based": [
+      1,
+      4
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_bb59a194e29ea0c0",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find the animal with the shortest life span.  The animals are in the 'outside' location.  Focus on the animal with the shortest life span.",
+      "rules": [
+        "Inspect each candidate animal in the location with 'look at' to identify it before choosing.",
+        "Compare the inspected animals' life spans and select the one with the shortest life span.",
+        "After identifying the target, apply 'focus on' to that animal to complete the task.",
+        "Keep the inspection and focus actions in the same location where the animals are present."
+      ],
+      "source_task_id": "09ae344822c12738f557",
+      "source_trace_id": "discovery-v2.F.09ae344822c12738f557",
+      "task_type": "lifespan-shortest-lived"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "look at {animal}",
+        "focus on {animal}"
+      ],
+      "example_bindings": {
+        "animal": "baby baby hedgehog"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "animal"
+      ],
+      "source_task_id": "09ae344822c12738f557",
+      "source_trace_id": "discovery-v2.F.09ae344822c12738f557",
+      "success_count": 1,
+      "task_type": "lifespan-shortest-lived",
+      "template_id": "sw_2b4358949f26470f"
+    },
+    "job_id": "discovery-v2.F.09ae344822c12738f557",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "look at {animal}",
+        "focus on {animal}"
+      ],
+      "applicability": "The agent is in a location containing multiple candidate animals and the task is to identify and focus on the animal with the shortest life span.",
+      "example_bindings": {
+        "animal": "baby baby hedgehog"
+      },
+      "parameters": [
+        "animal"
+      ],
+      "rules": [
+        "Inspect each candidate animal in the location with 'look at' to identify it before choosing.",
+        "Compare the inspected animals' life spans and select the one with the shortest life span.",
+        "After identifying the target, apply 'focus on' to that animal to complete the task.",
+        "Keep the inspection and focus actions in the same location where the animals are present."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "lifespan-shortest-lived",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "lifespan-shortest-lived:16"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 17,
+    "compiler_request_id": "discovery-v2.F.2beaa66b5bcd3db3dc64.compile.success_compile.0001",
+    "compiler_request_original_sha256": "19d19ccd89022a6ff315c54767d6c4ba49f23eacb69caa2fde932a2223a4f634",
+    "compiler_request_ref": "requests/discovery-v2.F.2beaa66b5bcd3db3dc64.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "9f12e1ad814f6604b619e985a09e2cdda4acb8f510bd5376bff950fe042354a9",
+    "compiler_response_ref": "requests/discovery-v2.F.2beaa66b5bcd3db3dc64.compile.success_compile.0001.json",
+    "compiler_response_sha256": "27e78c20d048a701da7a3f27da6931c560f3ca6e9b5abf0b70cc19814c1456a5",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "focus on {instrument}",
+        "pick up {instrument}",
+        "open {door_to_target_room}",
+        "go to {intermediate_room}",
+        "open {door_to_substance_room}",
+        "go to {substance_room}",
+        "use {instrument} on {substance}",
+        "pick up {substance}",
+        "go to {intermediate_room}",
+        "open {door_to_box_room}",
+        "go to {box_room}",
+        "move {substance} to {box}"
+      ],
+      "applicability": "The thermometer and target substance are in different rooms reachable through a shared intermediate room; the blue and orange boxes are together in a separate room. The agent must carry the thermometer to the substance, measure it, then carry the substance to the correct box based on whether the reading is above or below 0.0 degrees celsius.",
+      "example_bindings": {
+        "box": "orange box",
+        "box_room": "bedroom",
+        "door_to_box_room": "door to bedroom",
+        "door_to_substance_room": "door to living room",
+        "door_to_target_room": "door to hallway",
+        "instrument": "thermometer",
+        "intermediate_room": "hallway",
+        "substance": "unknown substance",
+        "substance_room": "living room"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "box": [
+          "transfer_destination"
+        ],
+        "box_room": [
+          "navigation_destination"
+        ],
+        "door_to_box_room": [
+          "manipulated_object"
+        ],
+        "door_to_substance_room": [
+          "manipulated_object"
+        ],
+        "door_to_target_room": [
+          "manipulated_object"
+        ],
+        "instrument": [
+          "experiment_subject",
+          "instrument",
+          "manipulated_object"
+        ],
+        "intermediate_room": [
+          "navigation_destination"
+        ],
+        "substance": [
+          "experiment_subject",
+          "manipulated_object"
+        ],
+        "substance_room": [
+          "navigation_destination"
+        ]
+      },
+      "parameters": [
+        "instrument",
+        "door_to_target_room",
+        "intermediate_room",
+        "door_to_substance_room",
+        "substance_room",
+        "substance",
+        "door_to_box_room",
+        "box_room",
+        "box"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to measure the temperature of unknown substance B, which is located around the living room. First, focus on the thermometer. Next, focus on the unknown substance B. If the unknown substance B temperature is above 0.0 degrees celsius, place it in the blue box. If the unknown substance B temperature is below 0.0 degrees celsius, place it in the orange box. The boxes are located around the bedroom.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "2beaa66b5bcd3db3dc64",
+      "source_trace_id": "discovery-v2.F.2beaa66b5bcd3db3dc64",
+      "success_count": 1,
+      "task_type": "use-thermometer",
+      "template_id": "sw_91f1f70cfb01313c"
+    },
+    "exact_source_alignment_1based": [
+      1,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_b0c7e3facb57214e",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to measure the temperature of unknown substance B, which is located around the living room. First, focus on the thermometer. Next, focus on the unknown substance B. If the unknown substance B temperature is above 0.0 degrees celsius, place it in the blue box. If the unknown substance B temperature is below 0.0 degrees celsius, place it in the orange box. The boxes are located around the bedroom.",
+      "rules": [
+        "Focus on the thermometer before picking it up so it is available for measurement.",
+        "Use the thermometer on the target substance to read its temperature, then pick up the substance.",
+        "Choose the destination box by the measured temperature: above 0.0 degrees celsius goes to the blue box, below 0.0 degrees celsius goes to the orange box.",
+        "Open each closed door along the route before moving through it, and traverse rooms via the hallway when needed.",
+        "Place the substance into the selected box in the bedroom to complete the task."
+      ],
+      "source_task_id": "2beaa66b5bcd3db3dc64",
+      "source_trace_id": "discovery-v2.F.2beaa66b5bcd3db3dc64",
+      "task_type": "use-thermometer"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "focus on {instrument}",
+        "pick up {instrument}",
+        "open {door_to_target_room}",
+        "go to {intermediate_room}",
+        "open {door_to_substance_room}",
+        "go to {substance_room}",
+        "use {instrument} on {substance}",
+        "pick up {substance}",
+        "go to {intermediate_room}",
+        "open {door_to_box_room}",
+        "go to {box_room}",
+        "move {substance} to {box}"
+      ],
+      "example_bindings": {
+        "box": "orange box",
+        "box_room": "bedroom",
+        "door_to_box_room": "door to bedroom",
+        "door_to_substance_room": "door to living room",
+        "door_to_target_room": "door to hallway",
+        "instrument": "thermometer",
+        "intermediate_room": "hallway",
+        "substance": "unknown substance",
+        "substance_room": "living room"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "instrument",
+        "door_to_target_room",
+        "intermediate_room",
+        "door_to_substance_room",
+        "substance_room",
+        "substance",
+        "door_to_box_room",
+        "box_room",
+        "box"
+      ],
+      "source_task_id": "2beaa66b5bcd3db3dc64",
+      "source_trace_id": "discovery-v2.F.2beaa66b5bcd3db3dc64",
+      "success_count": 1,
+      "task_type": "use-thermometer",
+      "template_id": "sw_91f1f70cfb01313c"
+    },
+    "job_id": "discovery-v2.F.2beaa66b5bcd3db3dc64",
+    "loose_source_alignment_count_capped_at_2": 1,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "focus on {instrument}",
+        "pick up {instrument}",
+        "open {door_to_target_room}",
+        "go to {intermediate_room}",
+        "open {door_to_substance_room}",
+        "go to {substance_room}",
+        "use {instrument} on {substance}",
+        "pick up {substance}",
+        "go to {intermediate_room}",
+        "open {door_to_box_room}",
+        "go to {box_room}",
+        "move {substance} to {box}"
+      ],
+      "applicability": "The thermometer and target substance are in different rooms reachable through a shared intermediate room; the blue and orange boxes are together in a separate room. The agent must carry the thermometer to the substance, measure it, then carry the substance to the correct box based on whether the reading is above or below 0.0 degrees celsius.",
+      "example_bindings": {
+        "box": "orange box",
+        "box_room": "bedroom",
+        "door_to_box_room": "door to bedroom",
+        "door_to_substance_room": "door to living room",
+        "door_to_target_room": "door to hallway",
+        "instrument": "thermometer",
+        "intermediate_room": "hallway",
+        "substance": "unknown substance",
+        "substance_room": "living room"
+      },
+      "parameters": [
+        "instrument",
+        "door_to_target_room",
+        "intermediate_room",
+        "door_to_substance_room",
+        "substance_room",
+        "substance",
+        "door_to_box_room",
+        "box_room",
+        "box"
+      ],
+      "rules": [
+        "Focus on the thermometer before picking it up so it is available for measurement.",
+        "Use the thermometer on the target substance to read its temperature, then pick up the substance.",
+        "Choose the destination box by the measured temperature: above 0.0 degrees celsius goes to the blue box, below 0.0 degrees celsius goes to the orange box.",
+        "Open each closed door along the route before moving through it, and traverse rooms via the hallway when needed.",
+        "Place the substance into the selected box in the bedroom to complete the task."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "use-thermometer",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "use-thermometer:151"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 8,
+    "compiler_request_id": "discovery-v2.F.2dcdca293d9b16367852.compile.success_compile.0001",
+    "compiler_request_original_sha256": "1c8fd8acd676518a81e7db5bc17b1a10b31295c4b0cd91c5965f53999b821faf",
+    "compiler_request_ref": "requests/discovery-v2.F.2dcdca293d9b16367852.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "a71385e1cd0796f4d314bc4d1c5c9d895d2c8c8cc984748deceb63c1cc4693a0",
+    "compiler_response_ref": "requests/discovery-v2.F.2dcdca293d9b16367852.compile.success_compile.0001.json",
+    "compiler_response_sha256": "0a7d97e71bd81998468cee4ec280133c98e727921ce1b38b7699c2e887a5a9d9",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_a577d177d3d6fa33",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find the animal with the longest life span.  The animals are in the 'outside' location.  Focus on the animal with the longest life span.",
+      "rules": [
+        "Open each closed door encountered along the path before moving through it.",
+        "Navigate room by room toward the target location where the animals are found.",
+        "Inspect candidate animals with look at to identify them before focusing.",
+        "Focus on the animal judged to have the longest life span to complete the task.",
+        "Keep the sequence of door-opening and room traversal steps in order; do not skip intermediate rooms."
+      ],
+      "source_task_id": "2dcdca293d9b16367852",
+      "source_trace_id": "discovery-v2.F.2dcdca293d9b16367852",
+      "task_type": "lifespan-longest-lived"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "discovery-v2.F.2dcdca293d9b16367852",
+    "loose_source_alignment_count_capped_at_2": 1,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "open {door}",
+        "go to {room}",
+        "open {door}",
+        "go to {room}",
+        "look at {animal}",
+        "focus on {animal}"
+      ],
+      "applicability": "Agent starts indoors in a room with a closed door; target animals are located in an outdoor area reachable through a sequence of rooms and doors.",
+      "example_bindings": {
+        "animal": "giant tortoise egg",
+        "door": "door to hallway",
+        "room": "hallway"
+      },
+      "parameters": [
+        "door",
+        "room",
+        "animal"
+      ],
+      "rules": [
+        "Open each closed door encountered along the path before moving through it.",
+        "Navigate room by room toward the target location where the animals are found.",
+        "Inspect candidate animals with look at to identify them before focusing.",
+        "Focus on the animal judged to have the longest life span to complete the task.",
+        "Keep the sequence of door-opening and room traversal steps in order; do not skip intermediate rooms."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "lifespan-longest-lived",
+    "unique_alignment_multivalue_parameters": {
+      "animal": [
+        "egg giant tortoise",
+        "giant tortoise egg"
+      ],
+      "door": [
+        "door to greenhouse",
+        "door to hallway",
+        "door to outside"
+      ],
+      "room": [
+        "greenhouse",
+        "hallway",
+        "outside"
+      ]
+    },
+    "unit": "lifespan-longest-lived:22"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 7,
+    "compiler_request_id": "discovery-v2.F.31452f59c48bc5d93974.compile.success_compile.0001",
+    "compiler_request_original_sha256": "ff32a913c73f5e9f881bead72d577d2466a42c3b25c630ab3e90c51c0259c460",
+    "compiler_request_ref": "requests/discovery-v2.F.31452f59c48bc5d93974.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "189611d27a87a631edd601645ad27af9ac9d33c733aee02110cc26094f3469c3",
+    "compiler_response_ref": "requests/discovery-v2.F.31452f59c48bc5d93974.compile.success_compile.0001.json",
+    "compiler_response_sha256": "79a81e102856d81b07dcf0b06925ca0f7ae49f17e0d6932e5e3a38b1e3cc736b",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_d4871321fcae558b",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find the animal with the longest life span, then the shortest life span. First, focus on the animal with the longest life span.  Then, focus on the animal with the shortest life span. The animals are in the 'outside' location.",
+      "rules": [
+        "Open the door to the target location before attempting to move there.",
+        "Move to the location containing the animals to be compared.",
+        "Inspect each candidate animal with a look action to identify it.",
+        "Focus on the animal selected as the current target to satisfy the focus requirement.",
+        "Repeat inspection and focus for each animal in the required order (longest lifespan first, then shortest)."
+      ],
+      "source_task_id": "31452f59c48bc5d93974",
+      "source_trace_id": "discovery-v2.F.31452f59c48bc5d93974",
+      "task_type": "lifespan-longest-lived-then-shortest-lived"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "discovery-v2.F.31452f59c48bc5d93974",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open door to {location}",
+        "go to {location}",
+        "look at {animal}",
+        "focus on {animal}"
+      ],
+      "applicability": "Agent is in an indoor room with a closed door leading to the location that contains the animals; the target location is reachable after opening that door.",
+      "example_bindings": {
+        "animal": "giant tortoise egg",
+        "location": "outside"
+      },
+      "parameters": [
+        "location",
+        "animal"
+      ],
+      "rules": [
+        "Open the door to the target location before attempting to move there.",
+        "Move to the location containing the animals to be compared.",
+        "Inspect each candidate animal with a look action to identify it.",
+        "Focus on the animal selected as the current target to satisfy the focus requirement.",
+        "Repeat inspection and focus for each animal in the required order (longest lifespan first, then shortest)."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "lifespan-longest-lived-then-shortest-lived",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "lifespan-longest-lived-then-shortest-lived:6"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 6,
+    "compiler_request_id": "discovery-v2.F.3fbe681bf784f2d76d21.compile.success_compile.0001",
+    "compiler_request_original_sha256": "9a09d15c73f521e2ace33c2d29fff81f48437e040c92c4b815f1f447c12dbdb3",
+    "compiler_request_ref": "requests/discovery-v2.F.3fbe681bf784f2d76d21.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "c25323bd384223880578eba115098c339e6073f197f55e600d025c8e9280c9f6",
+    "compiler_response_ref": "requests/discovery-v2.F.3fbe681bf784f2d76d21.compile.success_compile.0001.json",
+    "compiler_response_sha256": "a6311039d49037755d6aa7c5b60d3fee0e946a87bed0203d00bcd2ff9d9da3a8",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "focus on thermometer",
+        "focus on {substance}",
+        "use thermometer on {substance}",
+        "focus on {box}"
+      ],
+      "applicability": "The unknown substance and thermometer are co-located in a room reachable through a closed door; the candidate boxes are in the same room.",
+      "example_bindings": {
+        "box": "orange box",
+        "room": "kitchen",
+        "substance": "solid unknown substance c"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "box": [
+          "goal_choice"
+        ],
+        "room": [
+          "navigation_destination"
+        ],
+        "substance": [
+          "experiment_subject",
+          "goal_marker"
+        ]
+      },
+      "parameters": [
+        "room",
+        "substance",
+        "box"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to measure the melting point of solid unknown substance C, which is located around the kitchen. First, focus on the thermometer. Next, focus on the solid unknown substance C. If the melting point of solid unknown substance C is above 10.0 degrees celsius, focus on the orange box. If the melting point of solid unknown substance C is below 10.0 degrees celsius, focus on the yellow box. The boxes are located around the kitchen.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "3fbe681bf784f2d76d21",
+      "source_trace_id": "discovery-v2.F.3fbe681bf784f2d76d21",
+      "success_count": 1,
+      "task_type": "measure-melting-point-unknown-substance",
+      "template_id": "sw_375909cbdb878b28"
+    },
+    "exact_source_alignment_1based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_1167c85e5c4c1708",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to measure the melting point of solid unknown substance C, which is located around the kitchen. First, focus on the thermometer. Next, focus on the solid unknown substance C. If the melting point of solid unknown substance C is above 10.0 degrees celsius, focus on the orange box. If the melting point of solid unknown substance C is below 10.0 degrees celsius, focus on the yellow box. The boxes are located around the kitchen.",
+      "rules": [
+        "Open the door to the target room before moving into it.",
+        "Focus on the thermometer, then focus on the unknown substance before measuring.",
+        "Use the thermometer on the substance to obtain its melting-point temperature reading.",
+        "Compare the measured temperature to the threshold and focus on the box matching the above/below condition."
+      ],
+      "source_task_id": "3fbe681bf784f2d76d21",
+      "source_trace_id": "discovery-v2.F.3fbe681bf784f2d76d21",
+      "task_type": "measure-melting-point-unknown-substance"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "focus on thermometer",
+        "focus on {substance}",
+        "use thermometer on {substance}",
+        "focus on {box}"
+      ],
+      "example_bindings": {
+        "box": "orange box",
+        "room": "kitchen",
+        "substance": "solid unknown substance c"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "room",
+        "substance",
+        "box"
+      ],
+      "source_task_id": "3fbe681bf784f2d76d21",
+      "source_trace_id": "discovery-v2.F.3fbe681bf784f2d76d21",
+      "success_count": 1,
+      "task_type": "measure-melting-point-unknown-substance",
+      "template_id": "sw_375909cbdb878b28"
+    },
+    "job_id": "discovery-v2.F.3fbe681bf784f2d76d21",
+    "loose_source_alignment_count_capped_at_2": 1,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "focus on thermometer",
+        "focus on {substance}",
+        "use thermometer on {substance}",
+        "focus on {box}"
+      ],
+      "applicability": "The unknown substance and thermometer are co-located in a room reachable through a closed door; the candidate boxes are in the same room.",
+      "example_bindings": {
+        "box": "orange box",
+        "room": "kitchen",
+        "substance": "solid unknown substance c"
+      },
+      "parameters": [
+        "room",
+        "substance",
+        "box"
+      ],
+      "rules": [
+        "Open the door to the target room before moving into it.",
+        "Focus on the thermometer, then focus on the unknown substance before measuring.",
+        "Use the thermometer on the substance to obtain its melting-point temperature reading.",
+        "Compare the measured temperature to the threshold and focus on the box matching the above/below condition."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "measure-melting-point-unknown-substance",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "measure-melting-point-unknown-substance:110"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 31,
+    "compiler_request_id": "discovery-v2.F.5338a5b7b1763d020e75.compile.success_compile.0001",
+    "compiler_request_original_sha256": "0de96c85742288d5d4167afead93dcdd06068e5fd2288c64c9ca5bdebc02c1f6",
+    "compiler_request_ref": "requests/discovery-v2.F.5338a5b7b1763d020e75.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "0f8dc1dad2db437427391240ad814a89514a9e5e48f449271185984b5cd0dbbd",
+    "compiler_response_ref": "requests/discovery-v2.F.5338a5b7b1763d020e75.compile.success_compile.0001.json",
+    "compiler_response_sha256": "2e5b92aef8e781e7e1d3c2c0932cf5c92e3a3ef31a45591fb331bdb8450ed06d",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_f376cf432e5d5ed5",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to determine whether short plant height is a dominant or recessive trait in the pea plant. If the trait is dominant, focus on the blue box. If the trait is recessive, focus on the orange box.",
+      "rules": [
+        "Open the door to the target room before moving into it.",
+        "Inspect the seed container to identify the available seeds, then pick up one seed into inventory.",
+        "Inspect both candidate boxes to confirm their contents before deciding which to focus on.",
+        "Focus on the box corresponding to the inferred trait category (blue for dominant, orange for recessive)."
+      ],
+      "source_task_id": "5338a5b7b1763d020e75",
+      "source_trace_id": "discovery-v2.F.5338a5b7b1763d020e75",
+      "task_type": "mendelian-genetics-known-plant"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "discovery-v2.F.5338a5b7b1763d020e75",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "look at {seed_container}",
+        "look in {seed_container}",
+        "pick up {seed}",
+        "look in {box}",
+        "focus on {box}"
+      ],
+      "applicability": "Agent starts in a hallway with closed doors and an inventory item; the greenhouse contains a seed jar with pea seeds, multiple soil-filled flower pots, and empty blue and orange boxes.",
+      "example_bindings": {
+        "box": "orange box",
+        "room": "greenhouse",
+        "seed": "pea seed",
+        "seed_container": "seed jar"
+      },
+      "parameters": [
+        "room",
+        "seed_container",
+        "seed",
+        "box"
+      ],
+      "rules": [
+        "Open the door to the target room before moving into it.",
+        "Inspect the seed container to identify the available seeds, then pick up one seed into inventory.",
+        "Inspect both candidate boxes to confirm their contents before deciding which to focus on.",
+        "Focus on the box corresponding to the inferred trait category (blue for dominant, orange for recessive)."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "mendelian-genetics-known-plant",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "mendelian-genetics-known-plant:20"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 13,
+    "compiler_request_id": "discovery-v2.F.5bfedeb6e825464e626d.compile.success_compile.0001",
+    "compiler_request_original_sha256": "f43c175448bb665984cd6a81ee7944d88aefff1b0e090f44f88d60c2d851a21e",
+    "compiler_request_ref": "requests/discovery-v2.F.5bfedeb6e825464e626d.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "5ee12316c4965c23aca6ae7a2d59dbbf5c31c796f22652cf1b494a9f635791cf",
+    "compiler_response_ref": "requests/discovery-v2.F.5bfedeb6e825464e626d.compile.success_compile.0001.json",
+    "compiler_response_sha256": "fac2c0ef226686beca507e3ed57bee825ad430b53e38152e7b654c500df86ab3",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "open {container}",
+        "look in {container}",
+        "open {door}",
+        "go to {room}",
+        "look around",
+        "look at {surface_object}",
+        "focus on {surface_object}"
+      ],
+      "applicability": "Agent is in a room with closed containers/doors and must explore connected rooms to locate and select a target object among similar candidates.",
+      "example_bindings": {
+        "container": "drawer",
+        "door": "door to hallway",
+        "room": "hallway",
+        "surface_object": "inclined plane with a soapy water surface"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "container": [
+          "manipulated_object"
+        ],
+        "door": [
+          "manipulated_object"
+        ],
+        "room": [
+          "navigation_destination"
+        ],
+        "surface_object": [
+          "experiment_subject",
+          "goal_choice"
+        ]
+      },
+      "parameters": [
+        "container",
+        "door",
+        "room",
+        "surface_object"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to determine which of the two inclined planes (soapy water, rubber) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "5bfedeb6e825464e626d",
+      "source_trace_id": "discovery-v2.F.5bfedeb6e825464e626d",
+      "success_count": 1,
+      "task_type": "inclined-plane-friction-named-surfaces",
+      "template_id": "sw_341aba094c300a92"
+    },
+    "exact_source_alignment_1based": [
+      2,
+      3,
+      5,
+      6,
+      7,
+      11,
+      13
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_d78812d58207316a",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to determine which of the two inclined planes (soapy water, rubber) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+      "rules": [
+        "Open closed containers or doors before attempting to look inside or move through them.",
+        "Navigate room by room through opened doors, using look around to discover exits and objects in each new room.",
+        "Inspect candidate objects with look at, then use focus on the chosen object to complete the selection step.",
+        "Keep observation steps (look in, look around, look at) between actions to confirm state changes."
+      ],
+      "source_task_id": "5bfedeb6e825464e626d",
+      "source_trace_id": "discovery-v2.F.5bfedeb6e825464e626d",
+      "task_type": "inclined-plane-friction-named-surfaces"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "open {container}",
+        "look in {container}",
+        "open {door}",
+        "go to {room}",
+        "look around",
+        "look at {surface_object}",
+        "focus on {surface_object}"
+      ],
+      "example_bindings": {
+        "container": "drawer",
+        "door": "door to hallway",
+        "room": "hallway",
+        "surface_object": "inclined plane with a soapy water surface"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "container",
+        "door",
+        "room",
+        "surface_object"
+      ],
+      "source_task_id": "5bfedeb6e825464e626d",
+      "source_trace_id": "discovery-v2.F.5bfedeb6e825464e626d",
+      "success_count": 1,
+      "task_type": "inclined-plane-friction-named-surfaces",
+      "template_id": "sw_341aba094c300a92"
+    },
+    "job_id": "discovery-v2.F.5bfedeb6e825464e626d",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "open {container}",
+        "look in {container}",
+        "open {door}",
+        "go to {room}",
+        "look around",
+        "look at {surface_object}",
+        "focus on {surface_object}"
+      ],
+      "applicability": "Agent is in a room with closed containers/doors and must explore connected rooms to locate and select a target object among similar candidates.",
+      "example_bindings": {
+        "container": "drawer",
+        "door": "door to hallway",
+        "room": "hallway",
+        "surface_object": "inclined plane with a soapy water surface"
+      },
+      "parameters": [
+        "container",
+        "door",
+        "room",
+        "surface_object"
+      ],
+      "rules": [
+        "Open closed containers or doors before attempting to look inside or move through them.",
+        "Navigate room by room through opened doors, using look around to discover exits and objects in each new room.",
+        "Inspect candidate objects with look at, then use focus on the chosen object to complete the selection step.",
+        "Keep observation steps (look in, look around, look at) between actions to confirm state changes."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "inclined-plane-friction-named-surfaces",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "inclined-plane-friction-named-surfaces:281"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 9,
+    "compiler_request_id": "discovery-v2.F.6aebd9fb1322c1074fb6.compile.success_compile.0001",
+    "compiler_request_original_sha256": "83b7b687d623d30eb6e13a5879ecad0ce7a9246cbcbd2530c52cb924fbc2ed32",
+    "compiler_request_ref": "requests/discovery-v2.F.6aebd9fb1322c1074fb6.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "7950a0dc65ec75e9866154d62c4769a88fc84cc4d52fbc84ede17bf6b381b16b",
+    "compiler_response_ref": "requests/discovery-v2.F.6aebd9fb1322c1074fb6.compile.success_compile.0001.json",
+    "compiler_response_sha256": "d844d548b2d30da1888ebc19f1fb277a4e75784685e306a11c01cd4dee70f626",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "open {container}",
+        "focus on {substance}",
+        "pick up {substance}",
+        "move {substance} to {device}",
+        "activate {device}"
+      ],
+      "applicability": "Use when the target substance is stored in a closed cold container in a room that also contains an activatable heat source (e.g., stove). Requires the room to be reachable via an openable door.",
+      "example_bindings": {
+        "container": "freezer",
+        "device": "stove",
+        "room": "kitchen",
+        "substance": "ice"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "container": [
+          "manipulated_object"
+        ],
+        "device": [
+          "manipulated_object",
+          "transfer_destination"
+        ],
+        "room": [
+          "navigation_destination"
+        ],
+        "substance": [
+          "goal_marker",
+          "manipulated_object"
+        ]
+      },
+      "parameters": [
+        "room",
+        "container",
+        "substance",
+        "device"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to melt ice. First, focus on the substance. Then, take actions that will cause it to change its state of matter.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "6aebd9fb1322c1074fb6",
+      "source_trace_id": "discovery-v2.F.6aebd9fb1322c1074fb6",
+      "success_count": 1,
+      "task_type": "melt",
+      "template_id": "sw_760a5887e0fce35a"
+    },
+    "exact_source_alignment_1based": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_161eafa0cdaf8ed9",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to melt ice. First, focus on the substance. Then, take actions that will cause it to change its state of matter.",
+      "rules": [
+        "Navigate to a room containing a heat source and a cold-storage container before acting on the target substance.",
+        "Open the container holding the target substance, then focus on it before picking it up.",
+        "Transfer the substance from inventory onto a heat-producing device, then activate that device to change its state.",
+        "Confirm state change by observing the substance's description after activation."
+      ],
+      "source_task_id": "6aebd9fb1322c1074fb6",
+      "source_trace_id": "discovery-v2.F.6aebd9fb1322c1074fb6",
+      "task_type": "melt"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "open {container}",
+        "focus on {substance}",
+        "pick up {substance}",
+        "move {substance} to {device}",
+        "activate {device}"
+      ],
+      "example_bindings": {
+        "container": "freezer",
+        "device": "stove",
+        "room": "kitchen",
+        "substance": "ice"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "room",
+        "container",
+        "substance",
+        "device"
+      ],
+      "source_task_id": "6aebd9fb1322c1074fb6",
+      "source_trace_id": "discovery-v2.F.6aebd9fb1322c1074fb6",
+      "success_count": 1,
+      "task_type": "melt",
+      "template_id": "sw_760a5887e0fce35a"
+    },
+    "job_id": "discovery-v2.F.6aebd9fb1322c1074fb6",
+    "loose_source_alignment_count_capped_at_2": 1,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "open {container}",
+        "focus on {substance}",
+        "pick up {substance}",
+        "move {substance} to {device}",
+        "activate {device}"
+      ],
+      "applicability": "Use when the target substance is stored in a closed cold container in a room that also contains an activatable heat source (e.g., stove). Requires the room to be reachable via an openable door.",
+      "example_bindings": {
+        "container": "freezer",
+        "device": "stove",
+        "room": "kitchen",
+        "substance": "ice"
+      },
+      "parameters": [
+        "room",
+        "container",
+        "substance",
+        "device"
+      ],
+      "rules": [
+        "Navigate to a room containing a heat source and a cold-storage container before acting on the target substance.",
+        "Open the container holding the target substance, then focus on it before picking it up.",
+        "Transfer the substance from inventory onto a heat-producing device, then activate that device to change its state.",
+        "Confirm state change by observing the substance's description after activation."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "melt",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "melt:4"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 5,
+    "compiler_request_id": "discovery-v2.F.7ac4185e5f00f742931e.compile.success_compile.0001",
+    "compiler_request_original_sha256": "fa8b6f3522dcfcabe042e86363a41fd59a122d1fd33807f46294c5d156ffff69",
+    "compiler_request_ref": "requests/discovery-v2.F.7ac4185e5f00f742931e.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "7e66872db0cc1d0350d4b78c7c8caea53dacbeb709c176fad6a87229435d377b",
+    "compiler_response_ref": "requests/discovery-v2.F.7ac4185e5f00f742931e.compile.success_compile.0001.json",
+    "compiler_response_sha256": "fc6529dc27a1bd651faf93854d817ad5aa4810acb126878dec9bd7f49072bfe2",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "focus on {object}",
+        "pick up {object}",
+        "open door to {room}",
+        "go to {room}",
+        "move {object} to {container}"
+      ],
+      "applicability": "Agent starts in a room with a movable non-living object and closed doors; the destination room contains an open or accessible container.",
+      "example_bindings": {
+        "container": "yellow box",
+        "object": "picture",
+        "room": "bedroom"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "container": [
+          "transfer_destination"
+        ],
+        "object": [
+          "goal_marker",
+          "manipulated_object"
+        ],
+        "room": [
+          "navigation_destination"
+        ]
+      },
+      "parameters": [
+        "object",
+        "room",
+        "container"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to find a(n) non-living thing. First, focus on the thing. Then, move it to the yellow box in the bedroom.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "7ac4185e5f00f742931e",
+      "source_trace_id": "discovery-v2.F.7ac4185e5f00f742931e",
+      "success_count": 1,
+      "task_type": "find-non-living-thing",
+      "template_id": "sw_a5b58ef22fe2c009"
+    },
+    "exact_source_alignment_1based": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_8bcbcc387f54e994",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find a(n) non-living thing. First, focus on the thing. Then, move it to the yellow box in the bedroom.",
+      "rules": [
+        "Focus on the target object before picking it up.",
+        "Pick up the focused object to place it in inventory.",
+        "Open the door to the destination room before moving there.",
+        "Move to the destination room containing the target container.",
+        "Move the carried object from inventory into the target container."
+      ],
+      "source_task_id": "7ac4185e5f00f742931e",
+      "source_trace_id": "discovery-v2.F.7ac4185e5f00f742931e",
+      "task_type": "find-non-living-thing"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "focus on {object}",
+        "pick up {object}",
+        "open door to {room}",
+        "go to {room}",
+        "move {object} to {container}"
+      ],
+      "example_bindings": {
+        "container": "yellow box",
+        "object": "picture",
+        "room": "bedroom"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "object",
+        "room",
+        "container"
+      ],
+      "source_task_id": "7ac4185e5f00f742931e",
+      "source_trace_id": "discovery-v2.F.7ac4185e5f00f742931e",
+      "success_count": 1,
+      "task_type": "find-non-living-thing",
+      "template_id": "sw_a5b58ef22fe2c009"
+    },
+    "job_id": "discovery-v2.F.7ac4185e5f00f742931e",
+    "loose_source_alignment_count_capped_at_2": 1,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "focus on {object}",
+        "pick up {object}",
+        "open door to {room}",
+        "go to {room}",
+        "move {object} to {container}"
+      ],
+      "applicability": "Agent starts in a room with a movable non-living object and closed doors; the destination room contains an open or accessible container.",
+      "example_bindings": {
+        "container": "yellow box",
+        "object": "picture",
+        "room": "bedroom"
+      },
+      "parameters": [
+        "object",
+        "room",
+        "container"
+      ],
+      "rules": [
+        "Focus on the target object before picking it up.",
+        "Pick up the focused object to place it in inventory.",
+        "Open the door to the destination room before moving there.",
+        "Move to the destination room containing the target container.",
+        "Move the carried object from inventory into the target container."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "find-non-living-thing",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "find-non-living-thing:142"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 7,
+    "compiler_request_id": "discovery-v2.F.8a0e00d29345445b21a5.compile.success_compile.0001",
+    "compiler_request_original_sha256": "e029e705985b69142028d363d6bb1eb18c7ae595fbe3e7937efbe34d5c21fb5d",
+    "compiler_request_ref": "requests/discovery-v2.F.8a0e00d29345445b21a5.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "b436fb46073472c91c4873aa69b7cca127152d2a3753eb9cea5d4466af766471",
+    "compiler_response_ref": "requests/discovery-v2.F.8a0e00d29345445b21a5.compile.success_compile.0001.json",
+    "compiler_response_sha256": "29aea0ab4738e21856461fe50ea2cbddee341ecb056bc47742f14d23cb46384f",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_ad680b4c98d934dc",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find the animal with the longest life span, then the shortest life span. First, focus on the animal with the longest life span.  Then, focus on the animal with the shortest life span. The animals are in the 'outside' location.",
+      "rules": [
+        "Open the door to the target location before attempting to move there.",
+        "Move to the location where the animals are found.",
+        "Inspect each candidate animal with look at to identify it.",
+        "Focus on the animal with the longest life span first, then focus on the animal with the shortest life span."
+      ],
+      "source_task_id": "8a0e00d29345445b21a5",
+      "source_trace_id": "discovery-v2.F.8a0e00d29345445b21a5",
+      "task_type": "lifespan-longest-lived-then-shortest-lived"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "discovery-v2.F.8a0e00d29345445b21a5",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open door to {location}",
+        "go to {location}",
+        "look at {animal}",
+        "focus on {animal}"
+      ],
+      "applicability": "Use when the task requires identifying and focusing on animals located in another room that is initially behind a closed door.",
+      "example_bindings": {
+        "animal": "giant tortoise egg",
+        "location": "outside"
+      },
+      "parameters": [
+        "location",
+        "animal"
+      ],
+      "rules": [
+        "Open the door to the target location before attempting to move there.",
+        "Move to the location where the animals are found.",
+        "Inspect each candidate animal with look at to identify it.",
+        "Focus on the animal with the longest life span first, then focus on the animal with the shortest life span."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "lifespan-longest-lived-then-shortest-lived",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "lifespan-longest-lived-then-shortest-lived:56"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 8,
+    "compiler_request_id": "discovery-v2.F.8c8a122797c51e4659c6.compile.success_compile.0001",
+    "compiler_request_original_sha256": "ea58b4894985cfececc24bb3c6c486304f30af323a6aeff1c1895083882cc0bb",
+    "compiler_request_ref": "requests/discovery-v2.F.8c8a122797c51e4659c6.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "cedcbaf80c7638c5b84cd499de410ae88c33b89c92bcd2a7378568f441bcae85",
+    "compiler_response_ref": "requests/discovery-v2.F.8c8a122797c51e4659c6.compile.success_compile.0001.json",
+    "compiler_response_sha256": "d51cb7483de772c045f3b768fed56c6d59336143f1f132c7e37e1ab276c98e87",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "look at {animal}",
+        "focus on {animal}"
+      ],
+      "applicability": "Agent starts in an indoor room with a closed door leading toward the target location; candidate animals are present in the destination room and can be inspected and focused on.",
+      "example_bindings": {
+        "animal": "chameleon egg",
+        "room": "outside"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "animal": [
+          "experiment_subject",
+          "goal_choice"
+        ],
+        "room": [
+          "navigation_destination"
+        ]
+      },
+      "parameters": [
+        "room",
+        "animal"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to find the animal with the shortest life span.  The animals are in the 'outside' location.  Focus on the animal with the shortest life span.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "8c8a122797c51e4659c6",
+      "source_trace_id": "discovery-v2.F.8c8a122797c51e4659c6",
+      "success_count": 1,
+      "task_type": "lifespan-shortest-lived",
+      "template_id": "sw_61eb0da7d3cc263c"
+    },
+    "exact_source_alignment_1based": [
+      3,
+      4,
+      5,
+      8
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_54db6ac2b5878a36",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find the animal with the shortest life span.  The animals are in the 'outside' location.  Focus on the animal with the shortest life span.",
+      "rules": [
+        "Open the connecting door before moving to a new room.",
+        "Move through the opened door to reach the location containing the candidate animals.",
+        "Inspect each candidate animal with look at to identify it.",
+        "Select the animal with the shortest life span and apply focus on to it."
+      ],
+      "source_task_id": "8c8a122797c51e4659c6",
+      "source_trace_id": "discovery-v2.F.8c8a122797c51e4659c6",
+      "task_type": "lifespan-shortest-lived"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "look at {animal}",
+        "focus on {animal}"
+      ],
+      "example_bindings": {
+        "animal": "chameleon egg",
+        "room": "outside"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "room",
+        "animal"
+      ],
+      "source_task_id": "8c8a122797c51e4659c6",
+      "source_trace_id": "discovery-v2.F.8c8a122797c51e4659c6",
+      "success_count": 1,
+      "task_type": "lifespan-shortest-lived",
+      "template_id": "sw_61eb0da7d3cc263c"
+    },
+    "job_id": "discovery-v2.F.8c8a122797c51e4659c6",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "look at {animal}",
+        "focus on {animal}"
+      ],
+      "applicability": "Agent starts in an indoor room with a closed door leading toward the target location; candidate animals are present in the destination room and can be inspected and focused on.",
+      "example_bindings": {
+        "animal": "chameleon egg",
+        "room": "outside"
+      },
+      "parameters": [
+        "room",
+        "animal"
+      ],
+      "rules": [
+        "Open the connecting door before moving to a new room.",
+        "Move through the opened door to reach the location containing the candidate animals.",
+        "Inspect each candidate animal with look at to identify it.",
+        "Select the animal with the shortest life span and apply focus on to it."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "lifespan-shortest-lived",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "lifespan-shortest-lived:51"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 14,
+    "compiler_request_id": "discovery-v2.F.965d4f1df81ea937ed3b.compile.success_compile.0001",
+    "compiler_request_original_sha256": "47abed69b66e9b5093189fbc2b95c14d28282366c066acea7b11cade65308b18",
+    "compiler_request_ref": "requests/discovery-v2.F.965d4f1df81ea937ed3b.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "5d7f345201a0d467b094731c6e04b745cc79506375a1f4ac8cd12c4b83db0e90",
+    "compiler_response_ref": "requests/discovery-v2.F.965d4f1df81ea937ed3b.compile.success_compile.0001.json",
+    "compiler_response_sha256": "56ec7432aff2d2682b42e7726a199aebe56f898069150ef0415edc593feb85ab",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_fa833f07c10a1600",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find a(n) plant. First, focus on the thing. Then, move it to the purple box in the workshop.",
+      "rules": [
+        "Open the door to the target room before attempting to travel there.",
+        "Travel to the room containing the plant, then pick up the living thing from its flower pot.",
+        "Return to the room containing the destination container and move the living thing into it.",
+        "After placing the plant, focus on the living thing to satisfy the focus requirement.",
+        "Use look/inventory observations to confirm the plant is in the container before focusing."
+      ],
+      "source_task_id": "965d4f1df81ea937ed3b",
+      "source_trace_id": "discovery-v2.F.965d4f1df81ea937ed3b",
+      "task_type": "find-plant"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "discovery-v2.F.965d4f1df81ea937ed3b",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "pick up living thing in {pot}",
+        "go to {room}",
+        "move living thing to {container}",
+        "focus on living thing"
+      ],
+      "applicability": "Use when the goal is to find a plant and move it to a specified container in another room; requires an openable door between rooms and a plant growing in a flower pot.",
+      "example_bindings": {
+        "container": "purple box",
+        "door": "door to greenhouse",
+        "pot": "flower pot 9",
+        "room": "greenhouse"
+      },
+      "parameters": [
+        "door",
+        "room",
+        "pot",
+        "container"
+      ],
+      "rules": [
+        "Open the door to the target room before attempting to travel there.",
+        "Travel to the room containing the plant, then pick up the living thing from its flower pot.",
+        "Return to the room containing the destination container and move the living thing into it.",
+        "After placing the plant, focus on the living thing to satisfy the focus requirement.",
+        "Use look/inventory observations to confirm the plant is in the container before focusing."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "find-plant",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "find-plant:59"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 8,
+    "compiler_request_id": "discovery-v2.F.9cef108e88fa0d6aff89.compile.success_compile.0001",
+    "compiler_request_original_sha256": "a0692a7848f8893cd92f1d3b3eb2abab6c100b9d47301314bba3831f779592d3",
+    "compiler_request_ref": "requests/discovery-v2.F.9cef108e88fa0d6aff89.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "e99ba9255ef6d4991f9e66453b7b1e3eafebea1672a64b9f64ab6776cd4028bc",
+    "compiler_response_ref": "requests/discovery-v2.F.9cef108e88fa0d6aff89.compile.success_compile.0001.json",
+    "compiler_response_sha256": "dc5a42288480f6130257251431a6e305cceadbf598dd6511af9bc4f6386e108c",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_68e114ee282b02a5",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to determine which of the two inclined planes (unknown material E, unknown material C) has the most friction. After completing your experiment, focus on the inclined plane with the most friction.",
+      "rules": [
+        "Open the door to the target room before attempting to move into it.",
+        "Move through the hallway to reach the room containing the inclined planes.",
+        "Survey the room with look around to identify the inclined planes and other objects.",
+        "Examine each inclined plane with look at and focus on to compare their surfaces.",
+        "Focus on the inclined plane determined to have the most friction."
+      ],
+      "source_task_id": "9cef108e88fa0d6aff89",
+      "source_trace_id": "discovery-v2.F.9cef108e88fa0d6aff89",
+      "task_type": "inclined-plane-friction-unnamed-surfaces"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "discovery-v2.F.9cef108e88fa0d6aff89",
+    "loose_source_alignment_count_capped_at_2": 0,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "look around",
+        "look at {object}",
+        "focus on {object}"
+      ],
+      "applicability": "Agent is in a room with a closed door leading to a hallway; the target room contains two inclined planes of unknown materials and is reachable through the hallway.",
+      "example_bindings": {
+        "object": "inclined plane with a unknown material c surface",
+        "room": "workshop"
+      },
+      "parameters": [
+        "room",
+        "object"
+      ],
+      "rules": [
+        "Open the door to the target room before attempting to move into it.",
+        "Move through the hallway to reach the room containing the inclined planes.",
+        "Survey the room with look around to identify the inclined planes and other objects.",
+        "Examine each inclined plane with look at and focus on to compare their surfaces.",
+        "Focus on the inclined plane determined to have the most friction."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "inclined-plane-friction-unnamed-surfaces",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "inclined-plane-friction-unnamed-surfaces:32"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 10,
+    "compiler_request_id": "discovery-v2.F.ae8d0d5850873ad49924.compile.success_compile.0001",
+    "compiler_request_original_sha256": "6101393cb62441e944da5b1d94016aa34dabeb8166d42d4ab98ce15de50b746a",
+    "compiler_request_ref": "requests/discovery-v2.F.ae8d0d5850873ad49924.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "0c71b1f1e881149ce38205cd96af20d275a7bccaa3481c317acec8104e98007f",
+    "compiler_response_ref": "requests/discovery-v2.F.ae8d0d5850873ad49924.compile.success_compile.0001.json",
+    "compiler_response_sha256": "24e9588cdb7194e317b71ed251ccb93791391740224864a80838256e0af9de20",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_2e452e35ea630523",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to determine whether tall plant height is a dominant or recessive trait in the pea plant. If the trait is dominant, focus on the red box. If the trait is recessive, focus on the green box.",
+      "rules": [
+        "Open the door to the target room before moving into it.",
+        "Inspect candidate containers to locate the required seed or material before picking it up.",
+        "Pick up the needed seed from its container so it is in inventory.",
+        "Determine the trait status from the task, then focus on the corresponding colored box (red for dominant, green for recessive)."
+      ],
+      "source_task_id": "ae8d0d5850873ad49924",
+      "source_trace_id": "discovery-v2.F.ae8d0d5850873ad49924",
+      "task_type": "mendelian-genetics-known-plant"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "discovery-v2.F.ae8d0d5850873ad49924",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "look in {container}",
+        "pick up {seed}",
+        "focus on {target_box}"
+      ],
+      "applicability": "Use in greenhouse environments where a seed jar and colored boxes are present and the task asks to classify a plant trait as dominant or recessive by focusing on the matching colored box.",
+      "example_bindings": {
+        "container": "seed jar",
+        "room": "greenhouse",
+        "seed": "pea seed",
+        "target_box": "red box"
+      },
+      "parameters": [
+        "room",
+        "container",
+        "seed",
+        "target_box"
+      ],
+      "rules": [
+        "Open the door to the target room before moving into it.",
+        "Inspect candidate containers to locate the required seed or material before picking it up.",
+        "Pick up the needed seed from its container so it is in inventory.",
+        "Determine the trait status from the task, then focus on the corresponding colored box (red for dominant, green for recessive)."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "mendelian-genetics-known-plant",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "mendelian-genetics-known-plant:3"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 7,
+    "compiler_request_id": "discovery-v2.F.b305a2703799b76c3a98.compile.success_compile.0001",
+    "compiler_request_original_sha256": "2b944d0f723f3748e4e814a7e38a19f1ad4326ab15124b66f45952ff65d0d63d",
+    "compiler_request_ref": "requests/discovery-v2.F.b305a2703799b76c3a98.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "8854e3709a2f3514fddd486d99a2706cdb5349888481169bc611a9ec96960682",
+    "compiler_response_ref": "requests/discovery-v2.F.b305a2703799b76c3a98.compile.success_compile.0001.json",
+    "compiler_response_sha256": "d225566fc95c2463493eca19a8aac533546ad1a39d97a24ee5398f6bcfba4015",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_55d35b2b95ac2c7d",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find a(n) living thing. First, focus on the thing. Then, move it to the green box in the bedroom.",
+      "rules": [
+        "Focus on the target living thing before attempting to pick it up.",
+        "Pick up the focused living thing so it enters inventory, then open the door leading out of the current room.",
+        "Traverse rooms by going through opened doors in sequence toward the destination room.",
+        "Open the destination room's door before entering it.",
+        "Move the carried living thing from inventory into the specified green box in the destination room."
+      ],
+      "source_task_id": "b305a2703799b76c3a98",
+      "source_trace_id": "discovery-v2.F.b305a2703799b76c3a98",
+      "task_type": "find-living-thing"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "discovery-v2.F.b305a2703799b76c3a98",
+    "loose_source_alignment_count_capped_at_2": 1,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "focus on {living_thing}",
+        "pick up {living_thing}",
+        "open {door_to_hallway}",
+        "go to {hallway}",
+        "open {door_to_bedroom}",
+        "go to {bedroom}",
+        "move {living_thing} to {green_box}"
+      ],
+      "applicability": "Use when a living thing must be located in a room, focused on, carried through connected rooms, and deposited into a green box located in a different room; requires doors between rooms to be opened before traversal.",
+      "example_bindings": {
+        "bedroom": "bedroom",
+        "door_to_bedroom": "door to bedroom",
+        "door_to_hallway": "door to hallway",
+        "green_box": "green box",
+        "hallway": "hallway",
+        "living_thing": "adult pea plant"
+      },
+      "parameters": [
+        "living_thing",
+        "door_to_hallway",
+        "hallway",
+        "door_to_bedroom",
+        "bedroom",
+        "green_box"
+      ],
+      "rules": [
+        "Focus on the target living thing before attempting to pick it up.",
+        "Pick up the focused living thing so it enters inventory, then open the door leading out of the current room.",
+        "Traverse rooms by going through opened doors in sequence toward the destination room.",
+        "Open the destination room's door before entering it.",
+        "Move the carried living thing from inventory into the specified green box in the destination room."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "find-living-thing",
+    "unique_alignment_multivalue_parameters": {
+      "living_thing": [
+        "adult pea plant",
+        "dead pea plant"
+      ]
+    },
+    "unit": "find-living-thing:19"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 5,
+    "compiler_request_id": "discovery-v2.F.d9797b94d94a3a12ea4b.compile.success_compile.0001",
+    "compiler_request_original_sha256": "4d4e3a022ee0a7303952c0b1cb3f980a4bca6ea66703e13ba228203584bf0844",
+    "compiler_request_ref": "requests/discovery-v2.F.d9797b94d94a3a12ea4b.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "50758ab1d575076d38a5850801df278dfce29a7636138ee5ae43238752e4d278",
+    "compiler_response_ref": "requests/discovery-v2.F.d9797b94d94a3a12ea4b.compile.success_compile.0001.json",
+    "compiler_response_sha256": "373ce39acf2e5ae769d00ecfeacd8752f0a868b08fb64dee2a85e88aefe091dd",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "focus on {object}",
+        "pick up {object}",
+        "open door to {room}",
+        "go to {room}",
+        "move {object} to {container}"
+      ],
+      "applicability": "Agent is in a room with a portable non-living object and a closed door leading to the room containing the target container.",
+      "example_bindings": {
+        "container": "red box",
+        "object": "drawing",
+        "room": "bedroom"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "container": [
+          "transfer_destination"
+        ],
+        "object": [
+          "goal_marker",
+          "manipulated_object"
+        ],
+        "room": [
+          "navigation_destination"
+        ]
+      },
+      "parameters": [
+        "object",
+        "room",
+        "container"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to find a(n) non-living thing. First, focus on the thing. Then, move it to the red box in the bedroom.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "d9797b94d94a3a12ea4b",
+      "source_trace_id": "discovery-v2.F.d9797b94d94a3a12ea4b",
+      "success_count": 1,
+      "task_type": "find-non-living-thing",
+      "template_id": "sw_f0d63aa276833af1"
+    },
+    "exact_source_alignment_1based": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_e0782186f069cb70",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find a(n) non-living thing. First, focus on the thing. Then, move it to the red box in the bedroom.",
+      "rules": [
+        "Focus on the target object before picking it up.",
+        "Pick up the target object to place it in inventory.",
+        "Open the door to the destination room before moving there.",
+        "Move to the destination room, then move the carried object into the specified container.",
+        "Choose a non-living portable object visible in the current room as the target."
+      ],
+      "source_task_id": "d9797b94d94a3a12ea4b",
+      "source_trace_id": "discovery-v2.F.d9797b94d94a3a12ea4b",
+      "task_type": "find-non-living-thing"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "focus on {object}",
+        "pick up {object}",
+        "open door to {room}",
+        "go to {room}",
+        "move {object} to {container}"
+      ],
+      "example_bindings": {
+        "container": "red box",
+        "object": "drawing",
+        "room": "bedroom"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "object",
+        "room",
+        "container"
+      ],
+      "source_task_id": "d9797b94d94a3a12ea4b",
+      "source_trace_id": "discovery-v2.F.d9797b94d94a3a12ea4b",
+      "success_count": 1,
+      "task_type": "find-non-living-thing",
+      "template_id": "sw_f0d63aa276833af1"
+    },
+    "job_id": "discovery-v2.F.d9797b94d94a3a12ea4b",
+    "loose_source_alignment_count_capped_at_2": 1,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "focus on {object}",
+        "pick up {object}",
+        "open door to {room}",
+        "go to {room}",
+        "move {object} to {container}"
+      ],
+      "applicability": "Agent is in a room with a portable non-living object and a closed door leading to the room containing the target container.",
+      "example_bindings": {
+        "container": "red box",
+        "object": "drawing",
+        "room": "bedroom"
+      },
+      "parameters": [
+        "object",
+        "room",
+        "container"
+      ],
+      "rules": [
+        "Focus on the target object before picking it up.",
+        "Pick up the target object to place it in inventory.",
+        "Open the door to the destination room before moving there.",
+        "Move to the destination room, then move the carried object into the specified container.",
+        "Choose a non-living portable object visible in the current room as the target."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "find-non-living-thing",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "find-non-living-thing:18"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 11,
+    "compiler_request_id": "discovery-v2.F.def63cb9dcbcef266a65.compile.success_compile.0001",
+    "compiler_request_original_sha256": "05ea4e27a4f9136b15dad345c38f3111523a3157d1808fcf937e879a3c2753d7",
+    "compiler_request_ref": "requests/discovery-v2.F.def63cb9dcbcef266a65.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "ccf2a9920e3991aca3b2c481bde6d770007d0c20940b14b8ee46c0acff1d61f3",
+    "compiler_response_ref": "requests/discovery-v2.F.def63cb9dcbcef266a65.compile.success_compile.0001.json",
+    "compiler_response_sha256": "802f8ebd4c54da52e803a9846899701a13e993977b425729cc441166e05bcb6b",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_1b243a9e7840b3dd",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find a(n) animal. First, focus on the thing. Then, move it to the yellow box in the kitchen.",
+      "rules": [
+        "Open the container holding the target animal before attempting to focus on or pick it up.",
+        "Focus on the specific animal instance, then pick it up to place it in inventory.",
+        "Open intervening doors before moving between rooms, and re-pick the animal after arriving if it was dropped during transit.",
+        "Move the animal to the destination container once in the target room to complete the placement."
+      ],
+      "source_task_id": "def63cb9dcbcef266a65",
+      "source_trace_id": "discovery-v2.F.def63cb9dcbcef266a65",
+      "task_type": "find-animal"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "discovery-v2.F.def63cb9dcbcef266a65",
+    "loose_source_alignment_count_capped_at_2": 1,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open {container}",
+        "focus on {animal}",
+        "pick up {animal}",
+        "open {door}",
+        "go to {room}",
+        "move {animal} to {destination}",
+        "go to {door}",
+        "open {door}",
+        "go to {room}",
+        "pick up {animal}",
+        "move {animal} to {destination}"
+      ],
+      "applicability": "Agent must locate an animal inside a closed container in a room, then transport it through connected rooms to a target container in another room.",
+      "example_bindings": {
+        "animal": "bee 0",
+        "container": "bee hive",
+        "destination": "kitchen",
+        "door": "door to hallway",
+        "room": "hallway"
+      },
+      "parameters": [
+        "container",
+        "animal",
+        "door",
+        "room",
+        "destination"
+      ],
+      "rules": [
+        "Open the container holding the target animal before attempting to focus on or pick it up.",
+        "Focus on the specific animal instance, then pick it up to place it in inventory.",
+        "Open intervening doors before moving between rooms, and re-pick the animal after arriving if it was dropped during transit.",
+        "Move the animal to the destination container once in the target room to complete the placement."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "find-animal",
+    "unique_alignment_multivalue_parameters": {
+      "destination": [
+        "kitchen",
+        "yellow box"
+      ],
+      "door": [
+        "door to hallway",
+        "door to kitchen"
+      ],
+      "room": [
+        "hallway",
+        "kitchen"
+      ]
+    },
+    "unit": "find-animal:94"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 5,
+    "compiler_request_id": "selected-train-v1.F.003597b7b9c549df70c6.compile.success_compile.0001",
+    "compiler_request_original_sha256": "1df9b8a4ba4a07a24c53f3f7624320b33f058a317c03df9e64b0985dc0b96b5c",
+    "compiler_request_ref": "requests/selected-train-v1.F.003597b7b9c549df70c6.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "f7dce9b7365aeb01b992dca38431fe1ab8f71c47cf5d9e56fef71277e1361ba4",
+    "compiler_response_ref": "requests/selected-train-v1.F.003597b7b9c549df70c6.compile.success_compile.0001.json",
+    "compiler_response_sha256": "8daa796b6fcd8dd3b24813fbc285d25b6d33aefd91d42229cef1ca52d2bca693",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "look at {plane}",
+        "connect block to {plane}",
+        "focus on {plane}"
+      ],
+      "applicability": "Workshop with a wood block and two inclined planes of different surface materials; goal is to compare friction and focus on the lowest-friction plane.",
+      "example_bindings": {
+        "plane": "inclined plane with a titanium surface"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "plane": [
+          "experiment_subject",
+          "goal_choice"
+        ]
+      },
+      "parameters": [
+        "plane"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to determine which of the two inclined planes (titanium, zinc) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "003597b7b9c549df70c6",
+      "source_trace_id": "selected-train-v1.F.003597b7b9c549df70c6",
+      "success_count": 1,
+      "task_type": "inclined-plane-friction-named-surfaces",
+      "template_id": "sw_9b4527b829af33c8"
+    },
+    "exact_source_alignment_1based": [
+      1,
+      3,
+      5
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_dbc7b64f9b24e487",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to determine which of the two inclined planes (titanium, zinc) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+      "rules": [
+        "Inspect each candidate inclined plane with 'look at' before connecting the wood block to it.",
+        "Connect the wood block to a plane to run the friction comparison, then focus on that plane to record the result.",
+        "Repeat the look/connect/focus sequence for each candidate plane so their friction can be compared.",
+        "After comparing, focus on the plane identified as having the least friction."
+      ],
+      "source_task_id": "003597b7b9c549df70c6",
+      "source_trace_id": "selected-train-v1.F.003597b7b9c549df70c6",
+      "task_type": "inclined-plane-friction-named-surfaces"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "look at {plane}",
+        "connect block to {plane}",
+        "focus on {plane}"
+      ],
+      "example_bindings": {
+        "plane": "inclined plane with a titanium surface"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "plane"
+      ],
+      "source_task_id": "003597b7b9c549df70c6",
+      "source_trace_id": "selected-train-v1.F.003597b7b9c549df70c6",
+      "success_count": 1,
+      "task_type": "inclined-plane-friction-named-surfaces",
+      "template_id": "sw_9b4527b829af33c8"
+    },
+    "job_id": "selected-train-v1.F.003597b7b9c549df70c6",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "look at {plane}",
+        "connect block to {plane}",
+        "focus on {plane}"
+      ],
+      "applicability": "Workshop with a wood block and two inclined planes of different surface materials; goal is to compare friction and focus on the lowest-friction plane.",
+      "example_bindings": {
+        "plane": "inclined plane with a titanium surface"
+      },
+      "parameters": [
+        "plane"
+      ],
+      "rules": [
+        "Inspect each candidate inclined plane with 'look at' before connecting the wood block to it.",
+        "Connect the wood block to a plane to run the friction comparison, then focus on that plane to record the result.",
+        "Repeat the look/connect/focus sequence for each candidate plane so their friction can be compared.",
+        "After comparing, focus on the plane identified as having the least friction."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "inclined-plane-friction-named-surfaces",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "inclined-plane-friction-named-surfaces:423"
+  },
+  {
+    "A2_applicability_preserved": true,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 5,
+    "compiler_request_id": "selected-train-v1.F.098816d79aa10bdc5eec.compile.success_compile.0001",
+    "compiler_request_original_sha256": "b72388c7e73c018983074386d51ea42637c17d229e450981c9d5ac877cd39ceb",
+    "compiler_request_ref": "requests/selected-train-v1.F.098816d79aa10bdc5eec.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "326cc457d4579b06acaf1af4b3995e956cbc6035a0c1dab56f0b56d8029243f9",
+    "compiler_response_ref": "requests/selected-train-v1.F.098816d79aa10bdc5eec.compile.success_compile.0001.json",
+    "compiler_response_sha256": "158cb623e1eacb8be1927a30814ece7786fbfe28ff5342574cd1dddcc0b40969",
+    "current_cached_rejection": null,
+    "current_cached_source_validation": true,
+    "current_cached_template": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "look at {plane}",
+        "connect {object} to {plane}",
+        "focus on {plane}"
+      ],
+      "applicability": "Agent is in a room with closed doors; the target room contains two inclined planes with different surfaces and a movable object; the agent can open doors, move between rooms, connect objects to planes, and focus on planes.",
+      "example_bindings": {
+        "object": "brick",
+        "plane": "inclined plane with a steel surface",
+        "room": "workshop"
+      },
+      "failure_count": 0,
+      "parameter_roles": {
+        "object": [
+          "experiment_subject"
+        ],
+        "plane": [
+          "experiment_subject",
+          "goal_choice"
+        ],
+        "room": [
+          "navigation_destination"
+        ]
+      },
+      "parameters": [
+        "room",
+        "plane",
+        "object"
+      ],
+      "source_contract": {
+        "source_goal": "Task Description:\nYour task is to determine which of the two inclined planes (steel, rubber) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+        "source_validation": "exact ordered action subsequence"
+      },
+      "source_task_id": "098816d79aa10bdc5eec",
+      "source_trace_id": "selected-train-v1.F.098816d79aa10bdc5eec",
+      "success_count": 1,
+      "task_type": "inclined-plane-friction-named-surfaces",
+      "template_id": "sw_c2a8b5165cf2c32c"
+    },
+    "exact_source_alignment_1based": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_cc7b44196b0c476a",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to determine which of the two inclined planes (steel, rubber) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+      "rules": [
+        "Open the door to the target room before moving into it.",
+        "Move to the room containing the inclined planes and the object to be tested.",
+        "Inspect the inclined plane to confirm its surface before connecting the object.",
+        "Connect the object to the inclined plane, then focus on that plane to complete the friction comparison for that surface.",
+        "Repeat the connect-and-focus procedure for each candidate inclined plane, then focus on the plane with the least friction."
+      ],
+      "source_task_id": "098816d79aa10bdc5eec",
+      "source_trace_id": "selected-train-v1.F.098816d79aa10bdc5eec",
+      "task_type": "inclined-plane-friction-named-surfaces"
+    },
+    "historical_rejection": null,
+    "historical_template": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "look at {plane}",
+        "connect {object} to {plane}",
+        "focus on {plane}"
+      ],
+      "example_bindings": {
+        "object": "brick",
+        "plane": "inclined plane with a steel surface",
+        "room": "workshop"
+      },
+      "failure_count": 0,
+      "parameters": [
+        "room",
+        "plane",
+        "object"
+      ],
+      "source_task_id": "098816d79aa10bdc5eec",
+      "source_trace_id": "selected-train-v1.F.098816d79aa10bdc5eec",
+      "success_count": 1,
+      "task_type": "inclined-plane-friction-named-surfaces",
+      "template_id": "sw_c2a8b5165cf2c32c"
+    },
+    "job_id": "selected-train-v1.F.098816d79aa10bdc5eec",
+    "loose_source_alignment_count_capped_at_2": 1,
+    "original_applicability_in_historical_L1": false,
+    "raw": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "look at {plane}",
+        "connect {object} to {plane}",
+        "focus on {plane}"
+      ],
+      "applicability": "Agent is in a room with closed doors; the target room contains two inclined planes with different surfaces and a movable object; the agent can open doors, move between rooms, connect objects to planes, and focus on planes.",
+      "example_bindings": {
+        "object": "brick",
+        "plane": "inclined plane with a steel surface",
+        "room": "workshop"
+      },
+      "parameters": [
+        "room",
+        "plane",
+        "object"
+      ],
+      "rules": [
+        "Open the door to the target room before moving into it.",
+        "Move to the room containing the inclined planes and the object to be tested.",
+        "Inspect the inclined plane to confirm its surface before connecting the object.",
+        "Connect the object to the inclined plane, then focus on that plane to complete the friction comparison for that surface.",
+        "Repeat the connect-and-focus procedure for each candidate inclined plane, then focus on the plane with the least friction."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "inclined-plane-friction-named-surfaces",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "inclined-plane-friction-named-surfaces:269"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 8,
+    "compiler_request_id": "selected-train-v1.F.1421639dc7e19fcaab35.compile.success_compile.0001",
+    "compiler_request_original_sha256": "a30c68ea0214be08618b9d9358e466acd80b676bc4b25e04e569bad875e843af",
+    "compiler_request_ref": "requests/selected-train-v1.F.1421639dc7e19fcaab35.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "d6cdc7af5be2ecf5d6d75e742566e4c3512cda2481ec2473e602551927648fb2",
+    "compiler_response_ref": "requests/selected-train-v1.F.1421639dc7e19fcaab35.compile.success_compile.0001.json",
+    "compiler_response_sha256": "81f1468b80d48b0be3c6cc6c0e1dbc5f19602a3406ad6fbfc70954edfb7ba0fd",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_5609b6c8ee6b570b",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to determine which of the two inclined planes (cloth, steel) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+      "rules": [
+        "Open the door to a target room before moving into it.",
+        "Move through the hallway to reach rooms that are not directly accessible from the starting room.",
+        "Inspect a room with 'look in' before entering to identify the inclined planes and other objects present.",
+        "Examine and then focus on each inclined plane surface to compare friction.",
+        "After comparing, focus on the inclined plane with the least friction."
+      ],
+      "source_task_id": "1421639dc7e19fcaab35",
+      "source_trace_id": "selected-train-v1.F.1421639dc7e19fcaab35",
+      "task_type": "inclined-plane-friction-named-surfaces"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "selected-train-v1.F.1421639dc7e19fcaab35",
+    "loose_source_alignment_count_capped_at_2": 1,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "look in {room}",
+        "open door to {room}",
+        "go to {room}",
+        "look at {surface}",
+        "focus on {surface}"
+      ],
+      "applicability": "Use when the agent starts in a room with closed doors and must travel through a hallway to a workshop containing two inclined planes with different surfaces (cloth and steel) and a steel block for a friction comparison experiment.",
+      "example_bindings": {
+        "room": "workshop",
+        "surface": "inclined plane with a cloth surface"
+      },
+      "parameters": [
+        "room",
+        "surface"
+      ],
+      "rules": [
+        "Open the door to a target room before moving into it.",
+        "Move through the hallway to reach rooms that are not directly accessible from the starting room.",
+        "Inspect a room with 'look in' before entering to identify the inclined planes and other objects present.",
+        "Examine and then focus on each inclined plane surface to compare friction.",
+        "After comparing, focus on the inclined plane with the least friction."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "inclined-plane-friction-named-surfaces",
+    "unique_alignment_multivalue_parameters": {
+      "room": [
+        "hallway",
+        "workshop"
+      ]
+    },
+    "unit": "inclined-plane-friction-named-surfaces:25"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 10,
+    "compiler_request_id": "selected-train-v1.F.17c9fd4a9e6176a23caf.compile.success_compile.0001",
+    "compiler_request_original_sha256": "6b9890f9aab7f3957795e1c3b565e82ac5b06c0d3981d5223116047a001f156a",
+    "compiler_request_ref": "requests/selected-train-v1.F.17c9fd4a9e6176a23caf.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "1b3d5f4213d2e4536c4596fbf719bf2bf1e863f43c4e316542dc148a32fefaf5",
+    "compiler_response_ref": "requests/selected-train-v1.F.17c9fd4a9e6176a23caf.compile.success_compile.0001.json",
+    "compiler_response_sha256": "23b96a75c8978e2977c6c47117bb1bee9c5e9ca018ec2ee2b58a24103ca32ce4",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_57887191431fe586",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to determine which of the two inclined planes (plastic, platinum) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.",
+      "rules": [
+        "Open the door leading to the room containing the inclined planes before attempting to enter.",
+        "Inspect the target room and each candidate inclined plane before running the friction experiment.",
+        "Connect the test object to one inclined plane, then focus on that plane to observe the friction result.",
+        "Repeat the connect-and-focus procedure for each candidate plane to compare friction.",
+        "After comparing, focus on the inclined plane that exhibited the least friction."
+      ],
+      "source_task_id": "17c9fd4a9e6176a23caf",
+      "source_trace_id": "selected-train-v1.F.17c9fd4a9e6176a23caf",
+      "task_type": "inclined-plane-friction-named-surfaces"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "selected-train-v1.F.17c9fd4a9e6176a23caf",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "look in {room}",
+        "look at {plane}",
+        "connect {object} to {plane}",
+        "focus on {plane}"
+      ],
+      "applicability": "Agent is in a room with a closed door to another room; the target room contains two or more inclined planes with different surface materials and a movable test object.",
+      "example_bindings": {
+        "door": "door to workshop",
+        "object": "brick",
+        "plane": "inclined plane with a plastic surface",
+        "room": "workshop"
+      },
+      "parameters": [
+        "door",
+        "room",
+        "plane",
+        "object"
+      ],
+      "rules": [
+        "Open the door leading to the room containing the inclined planes before attempting to enter.",
+        "Inspect the target room and each candidate inclined plane before running the friction experiment.",
+        "Connect the test object to one inclined plane, then focus on that plane to observe the friction result.",
+        "Repeat the connect-and-focus procedure for each candidate plane to compare friction.",
+        "After comparing, focus on the inclined plane that exhibited the least friction."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "inclined-plane-friction-named-surfaces",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "inclined-plane-friction-named-surfaces:341"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 56,
+    "compiler_request_id": "selected-train-v1.F.34085a7755ec1e593502.compile.success_compile.0001",
+    "compiler_request_original_sha256": "b30d2e680e9a779932f80b4b8fd0bb9e76c32261d06f26f05486c2cf16119289",
+    "compiler_request_ref": "requests/selected-train-v1.F.34085a7755ec1e593502.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "6924b604572e03ae25f16c445c81d929efa00d5a893e8c1542452f8dcb4ccd68",
+    "compiler_response_ref": "requests/selected-train-v1.F.34085a7755ec1e593502.compile.success_compile.0001.json",
+    "compiler_response_sha256": "12b42bf1e664edb3e2d016376996a0c8caa24e05e06a8aedeb983c3432b33aa5",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_c959052577d0136d",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find a(n) animal. First, focus on the thing. Then, move it to the red box in the kitchen.",
+      "rules": [
+        "Open the container holding the target animal before attempting to focus on or pick it up.",
+        "Focus on the animal to identify it, then pick it up into inventory.",
+        "Open intervening doors and navigate room-by-room toward the destination room containing the receptacle.",
+        "Move the carried animal from inventory into the target receptacle to complete placement.",
+        "Verify placement by looking in the receptacle after moving the animal."
+      ],
+      "source_task_id": "34085a7755ec1e593502",
+      "source_trace_id": "selected-train-v1.F.34085a7755ec1e593502",
+      "task_type": "find-animal"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "selected-train-v1.F.34085a7755ec1e593502",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open {container}",
+        "focus on {animal}",
+        "pick up {animal}",
+        "open {door}",
+        "go to {room}",
+        "move {animal} to {receptacle}"
+      ],
+      "applicability": "Agent is in a room containing a closed container with an animal inside; the target receptacle is in another room reachable through closed doors.",
+      "example_bindings": {
+        "animal": "adult bee",
+        "container": "bee hive",
+        "door": "door to hallway",
+        "receptacle": "red box",
+        "room": "hallway"
+      },
+      "parameters": [
+        "container",
+        "animal",
+        "door",
+        "room",
+        "receptacle"
+      ],
+      "rules": [
+        "Open the container holding the target animal before attempting to focus on or pick it up.",
+        "Focus on the animal to identify it, then pick it up into inventory.",
+        "Open intervening doors and navigate room-by-room toward the destination room containing the receptacle.",
+        "Move the carried animal from inventory into the target receptacle to complete placement.",
+        "Verify placement by looking in the receptacle after moving the animal."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "find-animal",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "find-animal:120"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 53,
+    "compiler_request_id": "selected-train-v1.F.47673143391e75c3cf13.compile.success_compile.0001",
+    "compiler_request_original_sha256": "3e8b18f3e007cdcdeb544db6fee0b2401df712bd3c087571934dfb9adc5e3bbe",
+    "compiler_request_ref": "requests/selected-train-v1.F.47673143391e75c3cf13.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "65ce2cfd26d0e17a1575af630b62c496ce8e55523f9b542f3116ca2f08bc0fc9",
+    "compiler_response_ref": "requests/selected-train-v1.F.47673143391e75c3cf13.compile.success_compile.0001.json",
+    "compiler_response_sha256": "70d72dc03725122433a9bae857f64ad5a91c2f83a5342f8396c1bd9976f1faac",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_1380bcfc106bfbd9",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find a(n) animal. First, focus on the thing. Then, move it to the orange box in the workshop.",
+      "rules": [
+        "Open closed containers and doors before attempting to look inside or move through them.",
+        "Search candidate rooms by opening doors, entering, and looking in containers until the target object is found.",
+        "Focus on the target object before picking it up.",
+        "Carry the picked-up object through connecting rooms to the destination container.",
+        "Move the carried object into the specified destination container to complete the task."
+      ],
+      "source_task_id": "47673143391e75c3cf13",
+      "source_trace_id": "selected-train-v1.F.47673143391e75c3cf13",
+      "task_type": "find-animal"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "selected-train-v1.F.47673143391e75c3cf13",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open {container}",
+        "look in {container}",
+        "go to {room}",
+        "open {door}",
+        "go to {room}",
+        "open {animal_container}",
+        "focus on {animal}",
+        "pick up {animal} in {room}",
+        "go to {door}",
+        "go to {target_room}",
+        "move {animal} to {target_container}"
+      ],
+      "applicability": "Agent must locate a movable target object in a closed container or room, then transport it to a specified container in another room; doors and containers along the route may be closed and must be opened first.",
+      "example_bindings": {
+        "animal": "adult bee",
+        "animal_container": "bee hive",
+        "container": "cupboard",
+        "door": "door to workshop",
+        "room": "hallway",
+        "target_container": "orange box",
+        "target_room": "workshop"
+      },
+      "parameters": [
+        "container",
+        "room",
+        "door",
+        "animal_container",
+        "animal",
+        "target_room",
+        "target_container"
+      ],
+      "rules": [
+        "Open closed containers and doors before attempting to look inside or move through them.",
+        "Search candidate rooms by opening doors, entering, and looking in containers until the target object is found.",
+        "Focus on the target object before picking it up.",
+        "Carry the picked-up object through connecting rooms to the destination container.",
+        "Move the carried object into the specified destination container to complete the task."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "find-animal",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "find-animal:27"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 18,
+    "compiler_request_id": "selected-train-v1.F.68edb4b7a582dbbbf477.compile.success_compile.0001",
+    "compiler_request_original_sha256": "b010a1056b6c3ac12419d9db1a930074f504628a738b305fa6095eed26a4cb3a",
+    "compiler_request_ref": "requests/selected-train-v1.F.68edb4b7a582dbbbf477.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "b22f06aae7d52608588ceaebde91fb89aa930764f45eaa7c487e03ea6afd1449",
+    "compiler_response_ref": "requests/selected-train-v1.F.68edb4b7a582dbbbf477.compile.success_compile.0001.json",
+    "compiler_response_sha256": "8797d66c01edc9cd91a455f636d57d01547950d351f305c6cb75c03e11ef54a1",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_b9ff2ae06a356daa",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find a(n) animal. First, focus on the thing. Then, move it to the green box in the living room.",
+      "rules": [
+        "Open the door to a room before moving into it, and open any closed container before attempting to pick up an animal from it.",
+        "Pick up the target animal from its source container, then navigate back through the connected rooms to the destination room.",
+        "Move the carried animal into the specified green box, then focus on the animal in the box to complete the task.",
+        "Use look/inventory observations to confirm the animal is in the box before focusing on it."
+      ],
+      "source_task_id": "68edb4b7a582dbbbf477",
+      "source_trace_id": "selected-train-v1.F.68edb4b7a582dbbbf477",
+      "task_type": "find-animal"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "selected-train-v1.F.68edb4b7a582dbbbf477",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open door to {room}",
+        "go to {room}",
+        "open {container}",
+        "pick up {animal}",
+        "go to {room}",
+        "go to {room}",
+        "move {animal} to {box}",
+        "focus on {animal} in {box}"
+      ],
+      "applicability": "Agent starts in a room with closed doors and an inventory item; target animal is inside a closed container in another room; destination is a green box in a reachable room.",
+      "example_bindings": {
+        "animal": "bee 0",
+        "box": "green box",
+        "container": "bee hive",
+        "room": "living room"
+      },
+      "parameters": [
+        "room",
+        "container",
+        "animal",
+        "box"
+      ],
+      "rules": [
+        "Open the door to a room before moving into it, and open any closed container before attempting to pick up an animal from it.",
+        "Pick up the target animal from its source container, then navigate back through the connected rooms to the destination room.",
+        "Move the carried animal into the specified green box, then focus on the animal in the box to complete the task.",
+        "Use look/inventory observations to confirm the animal is in the box before focusing on it."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "find-animal",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "find-animal:73"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 68,
+    "compiler_request_id": "selected-train-v1.F.7d7a4efdcc6531231f85.compile.success_compile.0001",
+    "compiler_request_original_sha256": "7cb34d3805329c2f4d9aca8b4506caf1ec53d572a68a68e4d99ce854d82f7499",
+    "compiler_request_ref": "requests/selected-train-v1.F.7d7a4efdcc6531231f85.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "5ddd30510c1dff35c4acd0bee49afd6bd59dac28c8e9cefb82647c9d7287b72c",
+    "compiler_response_ref": "requests/selected-train-v1.F.7d7a4efdcc6531231f85.compile.success_compile.0001.json",
+    "compiler_response_sha256": "ef6ffe93df91660655894232deba466014149f357a50aae86920d66986fe126b",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_6501e79d1510296c",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find a(n) animal. First, focus on the thing. Then, move it to the orange box in the workshop.",
+      "rules": [
+        "Open closed doors before attempting to move through them.",
+        "Focus on a target animal before picking it up or moving it.",
+        "Pick up the animal to place it in inventory, then move it from inventory to the destination container.",
+        "Navigate through intermediate rooms and open any closed doors along the path to the destination.",
+        "Verify placement by looking in the destination container after moving the animal."
+      ],
+      "source_task_id": "7d7a4efdcc6531231f85",
+      "source_trace_id": "selected-train-v1.F.7d7a4efdcc6531231f85",
+      "task_type": "find-animal"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "selected-train-v1.F.7d7a4efdcc6531231f85",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open {door}",
+        "go to {location}",
+        "focus on {animal}",
+        "pick up {animal}",
+        "move {animal} to {container}"
+      ],
+      "applicability": "Agent starts in a room with a closed door leading to an area containing animals; goal is to find an animal and move it to a container in another room reachable through connected doors.",
+      "example_bindings": {
+        "animal": "butterfly",
+        "container": "orange box",
+        "door": "door to outside",
+        "location": "outside"
+      },
+      "parameters": [
+        "door",
+        "location",
+        "animal",
+        "container"
+      ],
+      "rules": [
+        "Open closed doors before attempting to move through them.",
+        "Focus on a target animal before picking it up or moving it.",
+        "Pick up the animal to place it in inventory, then move it from inventory to the destination container.",
+        "Navigate through intermediate rooms and open any closed doors along the path to the destination.",
+        "Verify placement by looking in the destination container after moving the animal."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "find-animal",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "find-animal:87"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 19,
+    "compiler_request_id": "selected-train-v1.F.8658e75cca5cffee5b04.compile.success_compile.0001",
+    "compiler_request_original_sha256": "c765f4d720acf61d3415c340fba9df3453a91a2579fa6f30c4651e7053cd1b9a",
+    "compiler_request_ref": "requests/selected-train-v1.F.8658e75cca5cffee5b04.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "9c18963ca65670987fc057d4e97cfa9e2c028cca2f003006cd70194c20498215",
+    "compiler_response_ref": "requests/selected-train-v1.F.8658e75cca5cffee5b04.compile.success_compile.0001.json",
+    "compiler_response_sha256": "658eb8bab4d1e3fcab3aab5297595fa8f5de32bab8ac81e46f74ca4254802d70",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_6ad000f977cf35c3",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to determine which of the two inclined planes (glass, caesium) has the most friction. After completing your experiment, focus on the inclined plane with the most friction.",
+      "rules": [
+        "Open the door to a room before attempting to go to that room.",
+        "Navigate through connected rooms by opening doors and moving to the target room.",
+        "Use look around to survey the current room and identify objects such as inclined planes and blocks.",
+        "Connect the block to the inclined plane to set up the friction experiment.",
+        "Focus on the inclined plane to complete the observation of the friction experiment."
+      ],
+      "source_task_id": "8658e75cca5cffee5b04",
+      "source_trace_id": "selected-train-v1.F.8658e75cca5cffee5b04",
+      "task_type": "inclined-plane-friction-named-surfaces"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "selected-train-v1.F.8658e75cca5cffee5b04",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open {door}",
+        "go to {room}",
+        "look around",
+        "connect {block} to {inclined_plane}",
+        "focus on {inclined_plane}"
+      ],
+      "applicability": "Agent is in a location with closed doors leading to rooms containing inclined planes and a block; the task requires comparing friction on inclined planes.",
+      "example_bindings": {
+        "block": "steel block",
+        "door": "door to foundry",
+        "inclined_plane": "inclined plane with a caesium surface",
+        "room": "foundry"
+      },
+      "parameters": [
+        "door",
+        "room",
+        "block",
+        "inclined_plane"
+      ],
+      "rules": [
+        "Open the door to a room before attempting to go to that room.",
+        "Navigate through connected rooms by opening doors and moving to the target room.",
+        "Use look around to survey the current room and identify objects such as inclined planes and blocks.",
+        "Connect the block to the inclined plane to set up the friction experiment.",
+        "Focus on the inclined plane to complete the observation of the friction experiment."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "inclined-plane-friction-named-surfaces",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "inclined-plane-friction-named-surfaces:472"
+  },
+  {
+    "A2_applicability_preserved": null,
+    "candidate_admitted_this_audit": false,
+    "compiler_input_equal_to_all_public_steps": true,
+    "compiler_input_steps": 84,
+    "compiler_request_id": "selected-train-v1.F.ddde1cdd88f20265f732.compile.success_compile.0001",
+    "compiler_request_original_sha256": "29fe1717e5f224f908f586f99da9d50a87e2eccf2fbb1da9cdcf17d69cb7cbd0",
+    "compiler_request_ref": "requests/selected-train-v1.F.ddde1cdd88f20265f732.compile.success_compile.0001.request.json",
+    "compiler_request_sha256": "7386351d0a5e736d0a8bca30553838a11e29309439ec3a5a4e254a37c684c7e1",
+    "compiler_response_ref": "requests/selected-train-v1.F.ddde1cdd88f20265f732.compile.success_compile.0001.json",
+    "compiler_response_sha256": "82c0c58cafee919cc9c92c127b73ed75de7ba73750b4939fee7c343002554184",
+    "current_cached_rejection": "not an observed action subsequence",
+    "current_cached_source_validation": false,
+    "current_cached_template": null,
+    "exact_source_alignment_1based": null,
+    "historical_compilation_file_present": true,
+    "historical_exemplar": {
+      "exemplar_id": "swguide_4fb33f7c8a079b82",
+      "extraction_tokens": 0,
+      "goal": "Task Description:\nYour task is to find a(n) animal. First, focus on the thing. Then, move it to the blue box in the living room.",
+      "rules": [
+        "Open and inspect containers in the starting room before leaving, then traverse through the connecting hallway to reach the target room.",
+        "Open doors along the route to the target room and open the container that holds the animal before attempting to focus on or pick it up.",
+        "Focus on the animal before picking it up, then carry it through the hallway to the target room.",
+        "In the target room, move the carried animal to the specified target container; repeat focus/pick-up/move if additional animals are needed."
+      ],
+      "source_task_id": "ddde1cdd88f20265f732",
+      "source_trace_id": "selected-train-v1.F.ddde1cdd88f20265f732",
+      "task_type": "find-animal"
+    },
+    "historical_rejection": "not an observed action subsequence",
+    "historical_template": null,
+    "job_id": "selected-train-v1.F.ddde1cdd88f20265f732",
+    "loose_source_alignment_count_capped_at_2": 2,
+    "original_applicability_in_historical_L1": null,
+    "raw": {
+      "action_template": [
+        "open {container}",
+        "look in {container}",
+        "go to {room}",
+        "open {door}",
+        "go to {room}",
+        "focus on {animal}",
+        "pick up {animal}",
+        "go to {room}",
+        "go to {room}",
+        "move {animal} to {target_container}"
+      ],
+      "applicability": "Agent starts in a room with closed containers and a closed door to a hallway; the animal is inside a closed container in another room reachable via the hallway, and the target container is in a further room.",
+      "example_bindings": {
+        "animal": "adult bee in bee hive",
+        "container": "freezer",
+        "door": "door to living room",
+        "room": "hallway",
+        "target_container": "blue box"
+      },
+      "parameters": [
+        "container",
+        "room",
+        "door",
+        "animal",
+        "target_container"
+      ],
+      "rules": [
+        "Open and inspect containers in the starting room before leaving, then traverse through the connecting hallway to reach the target room.",
+        "Open doors along the route to the target room and open the container that holds the animal before attempting to focus on or pick it up.",
+        "Focus on the animal before picking it up, then carry it through the hallway to the target room.",
+        "In the target room, move the carried animal to the specified target container; repeat focus/pick-up/move if additional animals are needed."
+      ]
+    },
+    "raw_rules_equal_historical_L2": true,
+    "scope": "PRIMARY_TRAIN_DEV",
+    "source_reason_sent_to_compiler": false,
+    "source_validation_scope": "Revalidate cached output only. No new model output, semantic correctness or complete-goal verification implied.",
+    "split": "train",
+    "task": "find-animal",
+    "unique_alignment_multivalue_parameters": {},
+    "unit": "find-animal:74"
+  }
+]

@@ -1,0 +1,90 @@
+# discovery-v2.F.7ac4185e5f00f742931e
+find-non-living-thing | train | variation 142
+Task Description:
+Your task is to find a(n) non-living thing. First, focus on the thing. Then, move it to the yellow box in the bedroom.
+INITIAL LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [direct_skill] focus on picture
+REASON: 
+FEEDBACK: You focus on the picture.
+
+STEP 2 [direct_skill] pick up picture
+REASON: 
+FEEDBACK: You move the picture to the inventory.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+	a picture of a chicken.  The artist is listed as Owen. 
+
+
+STEP 3 [direct_skill] open door to bedroom
+REASON: 
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 4 [direct_skill] go to bedroom
+REASON: 
+FEEDBACK: You move to the bedroom.
+LOOK: This room is called the bedroom. In it, you see: 
+	the agent
+	a substance called air
+	a bed. On the bed is: a mattress. On the mattress is: a white pillow..
+	a closet. The closet door is closed. 
+	a finger painting
+	a table. On the table is: nothing.
+	a yellow box (containing nothing)
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 5 [direct_skill] move picture to yellow box
+REASON: 
+FEEDBACK: You move the picture to the yellow box.
+LOOK: This room is called the bedroom. In it, you see: 
+	the agent
+	a substance called air
+	a bed. On the bed is: a mattress. On the mattress is: a white pillow..
+	a closet. The closet door is closed. 
+	a finger painting
+	a table. On the table is: nothing.
+	a yellow box (containing a picture)
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	an orange
+

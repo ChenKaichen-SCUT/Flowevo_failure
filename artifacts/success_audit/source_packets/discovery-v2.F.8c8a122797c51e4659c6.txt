@@ -1,0 +1,123 @@
+# discovery-v2.F.8c8a122797c51e4659c6
+lifespan-shortest-lived | train | variation 51
+Task Description:
+Your task is to find the animal with the shortest life span.  The animals are in the 'outside' location.  Focus on the animal with the shortest life span.
+INITIAL LOOK: This room is called the bathroom. In it, you see: 
+	the agent
+	a substance called air
+	a bathtub, which is turned off. In the bathtub is: nothing.
+	a finger painting
+	a glass cup (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a toilet. In the toilet is: A drain, which is open, a substance called water.
+You also see:
+	A door to the kitchen (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] open door to kitchen
+REASON: The animals are outside; I need to leave the bathroom and reach the outside location, starting by opening the door to the kitchen.
+FEEDBACK: The door is now open.
+LOOK: This room is called the bathroom. In it, you see: 
+	the agent
+	a substance called air
+	a bathtub, which is turned off. In the bathtub is: nothing.
+	a finger painting
+	a glass cup (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a toilet. In the toilet is: A drain, which is closed, a substance called water.
+You also see:
+	A door to the kitchen (that is open)
+
+
+STEP 2 [dynamic] go to kitchen
+REASON: The goal says the animals are outside; the open door leads to the kitchen, so move there to find a route outside.
+FEEDBACK: You move to the kitchen.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is open)
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+
+STEP 3 [dynamic] open door to outside
+REASON: The animals are in the outside location. I need to open the door to outside so I can go there and inspect the animals.
+FEEDBACK: The door is now open.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is open)
+	A door to the hallway (that is closed)
+	A door to the outside (that is open)
+
+
+STEP 4 [dynamic] go to outside
+REASON: The door to outside is open; I need to enter the outside location to find and compare the animals' life spans.
+FEEDBACK: You move to the outside.
+LOOK: This outside location is called the outside. Here you see: 
+	the agent
+	a substance called air
+	an axe
+	a chameleon egg
+	a fire pit (containing nothing)
+	a fountain (containing a substance called water)
+	a giant tortoise egg
+	the ground
+	a baby wolf
+	a substance called wood
+You also see:
+	A door to the foundry (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+
+
+STEP 5 [dynamic] look at chameleon egg
+REASON: Need to inspect the animals in the outside location to compare their life spans; start with the chameleon egg.
+FEEDBACK: a chameleon egg
+
+STEP 6 [dynamic] look at baby baby wolf
+REASON: Need to inspect animals outside to compare lifespans; start with the baby wolf.
+FEEDBACK: a baby wolf
+
+STEP 7 [dynamic] look at giant tortoise egg
+REASON: Need to inspect each animal's lifespan; chameleon and wolf already seen, now check the giant tortoise egg.
+FEEDBACK: a giant tortoise egg
+
+STEP 8 [dynamic] focus on chameleon egg
+REASON: Need to compare lifespans of the animals; focusing on the chameleon egg may reveal its lifespan info.
+FEEDBACK: You focus on the chameleon egg.

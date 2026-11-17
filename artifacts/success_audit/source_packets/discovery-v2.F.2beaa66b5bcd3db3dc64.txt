@@ -1,0 +1,310 @@
+# discovery-v2.F.2beaa66b5bcd3db3dc64
+use-thermometer | train | variation 151
+Task Description:
+Your task is to measure the temperature of unknown substance B, which is located around the living room. First, focus on the thermometer. Next, focus on the unknown substance B. If the unknown substance B temperature is above 0.0 degrees celsius, place it in the blue box. If the unknown substance B temperature is below 0.0 degrees celsius, place it in the orange box. The boxes are located around the bedroom.
+INITIAL LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] focus on thermometer
+REASON: The task says to first focus on the thermometer; it is visible in the kitchen reading 10°C.
+FEEDBACK: You focus on the thermometer.
+
+STEP 2 [dynamic] look around
+REASON: I need to locate unknown substance B in the living room, but I am currently in the kitchen. Looking around will reveal available exits and objects.
+FEEDBACK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+STEP 3 [dynamic] pick up thermometer
+REASON: I need the thermometer in inventory to measure unknown substance B's temperature.
+FEEDBACK: You move the thermometer to the inventory.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+	a thermometer, currently reading a temperature of 10 degrees celsius
+
+
+STEP 4 [dynamic] look around
+REASON: Thermometer is in inventory; I need to locate unknown substance B in the living room, which is likely through the hallway door.
+FEEDBACK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+STEP 5 [dynamic] open door to hallway
+REASON: Need to reach the living room to find unknown substance B; the hallway door is the likely route.
+FEEDBACK: The door is now open.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 6 [dynamic] go to hallway
+REASON: Need to reach the living room to find unknown substance B; the hallway door is now open.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a finger painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 7 [dynamic] open door to living room
+REASON: Need to reach the living room to find unknown substance B, then measure its temperature with the thermometer.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a finger painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 8 [dynamic] go to living room
+REASON: I need to enter the living room to locate unknown substance B and measure its temperature with the thermometer.
+FEEDBACK: You move to the living room.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a book shelf (containing A book (Moby Dick) titled Moby Dick by Herman Melville)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a picture
+	unknown substance B
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 9 [dynamic] use thermometer on unknown substance
+REASON: Thermometer is in inventory and unknown substance B is in the living room; measure its temperature next.
+FEEDBACK: the thermometer measures a temperature of -13 degrees celsius
+
+STEP 10 [dynamic] pick up unknown substance
+REASON: Temperature is -13°C, below 0, so it must go in the orange box in the bedroom. First pick it up.
+FEEDBACK: You move the unknown substance B to the inventory.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a book shelf (containing A book (Moby Dick) titled Moby Dick by Herman Melville)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a picture
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	an orange
+	a thermometer, currently reading a temperature of 8 degrees celsius
+	unknown substance B
+
+
+STEP 11 [dynamic] go to hallway
+REASON: Unknown substance B is -13°C, below 0°C, so it must go to the orange box in the bedroom. I need to travel through the hallway toward the bedroom.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a finger painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+	a thermometer, currently reading a temperature of 6 degrees celsius
+	unknown substance B
+
+
+STEP 12 [dynamic] open door to bedroom
+REASON: Unknown substance B measured -13°C, so it must go in the orange box in the bedroom. I'm in the hallway; open the bedroom door to proceed.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a finger painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+	a thermometer, currently reading a temperature of 5 degrees celsius
+	unknown substance B
+
+
+STEP 13 [dynamic] go to bedroom
+REASON: Unknown substance B measured -13°C, below 0°C, so it must go in the orange box in the bedroom. I am in the hallway with the bedroom door open; next move to the bedroom.
+FEEDBACK: You move to the bedroom.
+LOOK: This room is called the bedroom. In it, you see: 
+	the agent
+	a substance called air
+	a bed. On the bed is: a mattress. On the mattress is: a white pillow..
+	a blue box (containing nothing)
+	a book shelf (containing A book (Pride and Prejudice) titled Pride and Prejudice by Jane Austen)
+	a closet. The closet door is closed. 
+	a drawing
+	a orange box (containing nothing)
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	an orange
+	a thermometer, currently reading a temperature of 4 degrees celsius
+	unknown substance B
+
+
+STEP 14 [dynamic] move unknown substance to orange box
+REASON: Thermometer measured unknown substance B at -13°C, below 0°C, so it belongs in the orange box in the bedroom.
+FEEDBACK: You move the unknown substance B to the orange box.
+LOOK: This room is called the bedroom. In it, you see: 
+	the agent
+	a substance called air
+	a bed. On the bed is: a mattress. On the mattress is: a white pillow..
+	a blue box (containing nothing)
+	a book shelf (containing A book (Pride and Prejudice) titled Pride and Prejudice by Jane Austen)
+	a closet. The closet door is closed. 
+	a drawing
+	a orange box (containing unknown substance B)
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	an orange
+	a thermometer, currently reading a temperature of 4 degrees celsius
+
+
+STEP 15 [dynamic] look in orange box
+REASON: Verify unknown substance B is now in the orange box after the move.
+FEEDBACK: Inside the orange box is: 
+	unknown substance B
+
+STEP 16 [dynamic] task
+REASON: Verify the task is complete: unknown substance B measured at -13°C and placed in the orange box as required.
+FEEDBACK: Task description:
+Your task is to measure the temperature of unknown substance B, which is located around the living room. First, focus on the thermometer. Next, focus on the unknown substance B. If the unknown substance B temperature is above 0.0 degrees celsius, place it in the blue box. If the unknown substance B temperature is below 0.0 degrees celsius, place it in the orange box. The boxes are located around the bedroom.
+
+STEP 17 [dynamic] focus on unknown substance
+REASON: The task requires focusing on the thermometer (done) and then on unknown substance B. It is already placed in the orange box since its temperature was -13°C, below 0.0°C.
+FEEDBACK: You focus on the unknown substance B.

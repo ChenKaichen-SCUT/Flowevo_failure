@@ -1,0 +1,1431 @@
+
+## batch-sensitivity-1-v1.F.1421639dc7e19fcaab35
+{
+  "raw": {
+    "action_template": [
+      "open {door}",
+      "go to {room}",
+      "look around",
+      "go to {room}",
+      "look around",
+      "open {door}",
+      "go to {room}",
+      "look at {inclined_plane}",
+      "focus on {inclined_plane}"
+    ],
+    "parameters": [
+      "door",
+      "room",
+      "inclined_plane"
+    ],
+    "example_bindings": {
+      "door": "door to workshop",
+      "room": "workshop",
+      "inclined_plane": "inclined plane with a cloth surface"
+    },
+    "rules": [
+      "Open the connecting door before moving between rooms; navigation requires an open door.",
+      "Survey each room with look around after entering to identify available objects and exits.",
+      "Locate the target inclined planes in the workshop by looking at and focusing on the plane of interest.",
+      "Focus on the inclined plane with the least friction once the comparison experiment identifies it.",
+      "Keep observation steps (look around, look at) between movements to confirm state changes."
+    ],
+    "applicability": "Agent is in a room with closed doors leading to other rooms; the target inclined planes are in a reachable room (workshop) accessible through an open door."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## batch-sensitivity-8-v1.F.1421639dc7e19fcaab35
+{
+  "raw": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "look around",
+      "look at {object}",
+      "focus on {object}"
+    ],
+    "parameters": [
+      "room",
+      "object"
+    ],
+    "example_bindings": {
+      "room": "workshop",
+      "object": "inclined plane with a cloth surface"
+    },
+    "rules": [
+      "Navigate through closed doors by opening them before moving to the target room.",
+      "Survey the current room with look around to identify available objects and exits.",
+      "Inspect a candidate object with look at before focusing on it.",
+      "Focus on the object of interest to complete the observation step.",
+      "Repeat the open-move-survey-inspect-focus sequence for each candidate location or object to compare."
+    ],
+    "applicability": "Agent is in a room with closed doors leading to other rooms; target objects are located in a reachable room and can be inspected and focused on."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## batch-sensitivity-8-v1.F.ddde1cdd88f20265f732
+{
+  "raw": {
+    "action_template": [
+      "open {container}",
+      "look in {container}",
+      "go to {room}",
+      "open {door}",
+      "go to {room}",
+      "focus on {animal} in {container}",
+      "pick up {animal} in {container}",
+      "go to {room}",
+      "go to {room}",
+      "move {animal} to {target_container}"
+    ],
+    "parameters": [
+      "container",
+      "room",
+      "door",
+      "animal",
+      "target_container"
+    ],
+    "example_bindings": {
+      "container": "bee hive",
+      "room": "hallway",
+      "door": "door to greenhouse",
+      "animal": "adult bee",
+      "target_container": "blue box"
+    },
+    "rules": [
+      "Open closed containers and doors before attempting to look inside or move through them.",
+      "Search candidate rooms by moving through the hallway and opening each closed door to reveal new locations.",
+      "Once the target animal is found inside an open container, focus on it before picking it up.",
+      "Carry the animal through intermediate rooms back to the destination room containing the target receptacle.",
+      "Move the carried animal into the specified target container to complete the transfer."
+    ],
+    "applicability": "Use when the goal is to locate a movable animal in a closed container within some room and deliver it to a named container in another room, with navigation through a central hallway and doors that may start closed."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "PROCESS_NOT_REQUIRED"
+}
+
+## dev-baseline-v1.F.3ea7c55db1ecffae3c8a
+{
+  "raw": {
+    "action_template": [
+      "open {door}",
+      "go to {room}",
+      "look around",
+      "open {target_door}",
+      "go to {target_room}",
+      "connect {block} to {inclined_plane}",
+      "focus on {inclined_plane}"
+    ],
+    "parameters": [
+      "door",
+      "room",
+      "target_door",
+      "target_room",
+      "block",
+      "inclined_plane"
+    ],
+    "example_bindings": {
+      "door": "door to hallway",
+      "room": "hallway",
+      "target_door": "door to workshop",
+      "target_room": "workshop",
+      "block": "block",
+      "inclined_plane": "inclined plane with a glass surface"
+    },
+    "rules": [
+      "Open the door blocking access to the current room before moving through it.",
+      "Navigate through intermediate rooms by opening the next door and moving to the target room.",
+      "Use look around to confirm the presence and state of doors and objects in a new room.",
+      "Connect the movable block to one inclined plane, then focus on that inclined plane to observe the friction result.",
+      "Repeat the connect-and-focus procedure for each candidate inclined plane before selecting the one with least friction."
+    ],
+    "applicability": "Agent is in a room with a closed door leading toward a workshop containing two inclined planes (glass and brass surfaces), a movable block, and a stopwatch; the task requires comparing friction by connecting the block to each inclined plane and focusing on it."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## dev-baseline-v1.F.722d467db63128d43cf2
+{
+  "raw": {
+    "action_template": [
+      "open {door}",
+      "go to {room}",
+      "connect brick to {inclined_plane}",
+      "focus on {inclined_plane}"
+    ],
+    "parameters": [
+      "door",
+      "room",
+      "inclined_plane"
+    ],
+    "example_bindings": {
+      "door": "door to workshop",
+      "room": "workshop",
+      "inclined_plane": "inclined plane with a glass surface"
+    },
+    "rules": [
+      "Open each closed door along the route before moving through it.",
+      "Navigate through connected rooms until reaching the location containing the inclined planes.",
+      "Connect the brick to one inclined plane, then focus on that inclined plane to observe its friction behavior.",
+      "Repeat the connect-and-focus procedure for each candidate inclined plane to compare friction.",
+      "After comparing, focus on the inclined plane determined to have the least friction."
+    ],
+    "applicability": "Agent is in a building with connected rooms and doors; the target room contains a brick and multiple inclined planes with different surface materials."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## dev-baseline-v1.F.77525ad34ec157f0577b
+{
+  "raw": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "look around",
+      "connect block to inclined plane with a {surface} surface",
+      "focus on inclined plane with a {surface} surface"
+    ],
+    "parameters": [
+      "room",
+      "surface"
+    ],
+    "example_bindings": {
+      "room": "workshop",
+      "surface": "bronze"
+    },
+    "rules": [
+      "Open closed doors before moving through them to reach the target room.",
+      "Navigate through intermediate rooms by opening the connecting door and then going to the next room.",
+      "Look around upon entering a new room to confirm the presence of the inclined planes and steel block.",
+      "Connect the steel block to one inclined plane surface before focusing on that plane to run the friction comparison.",
+      "Focus on the inclined plane whose surface was tested to complete the friction determination."
+    ],
+    "applicability": "Agent is in a building with connected rooms and needs to reach a workshop containing inclined planes with different surfaces and a steel block; doors along the route may be closed and must be opened first."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## dev-baseline-v1.F.cfcb5065ead3594fa047
+{
+  "raw": {
+    "action_template": [
+      "open {container}",
+      "focus on {animal}",
+      "pick up {animal}",
+      "open {door}",
+      "go to {room}",
+      "move {animal} to {receptacle}",
+      "look in {receptacle}"
+    ],
+    "parameters": [
+      "container",
+      "animal",
+      "door",
+      "room",
+      "receptacle"
+    ],
+    "example_bindings": {
+      "container": "bee hive",
+      "animal": "bee 0",
+      "door": "door to hallway",
+      "room": "hallway",
+      "receptacle": "red box"
+    },
+    "rules": [
+      "Open the container holding the animal before attempting to focus on or pick it up.",
+      "Focus on the target animal, then pick it up to transfer it into inventory.",
+      "Open intervening doors and navigate room-by-room toward the destination room containing the receptacle.",
+      "Place the carried animal into the receptacle with a move action, then verify by looking in the receptacle.",
+      "If the animal is not in inventory when at the destination, return to where it was seen and pick it up again before moving it."
+    ],
+    "applicability": "Agent is in a room containing a closed container with an animal inside; the destination receptacle is in another room reachable through closed doors."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "PROCESS_NOT_REQUIRED"
+}
+
+## discovery-v1.F.1b4703786cd7f2ff0592
+{
+  "raw": {
+    "action_template": [
+      "open {door}",
+      "go to {room}",
+      "look in {container}",
+      "focus on {animal}",
+      "pick up {animal}",
+      "go to {target_room}",
+      "move {animal} in inventory to {target_container}"
+    ],
+    "parameters": [
+      "door",
+      "room",
+      "container",
+      "animal",
+      "target_room",
+      "target_container"
+    ],
+    "example_bindings": {
+      "door": "door to greenhouse",
+      "room": "greenhouse",
+      "container": "bee hive",
+      "animal": "bee 0",
+      "target_room": "living room",
+      "target_container": "red box"
+    },
+    "rules": [
+      "Open doors and containers before searching them; inspect a container's contents with a look action before concluding it is empty.",
+      "Search rooms systematically by opening each closed door from the hallway, entering, and checking containers for the target object.",
+      "Once the target animal is found, focus on it, pick it up into inventory, then navigate back through the hallway to the destination room.",
+      "Move the carried animal from inventory into the specified target container to complete the task."
+    ],
+    "applicability": "Agent is in a multi-room building with closed doors and containers; target object is an animal located inside a container in some room; destination is a named container in another room."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "PROCESS_NOT_REQUIRED"
+}
+
+## discovery-v1.F.279ad8d80a9088c7546b
+{
+  "raw": {
+    "action_template": [
+      "open {door}",
+      "go to {room}",
+      "open {container}",
+      "focus on {substance}",
+      "pick up {substance}",
+      "activate {heat_source}",
+      "move {substance} to {heat_source}",
+      "wait"
+    ],
+    "parameters": [
+      "door",
+      "room",
+      "container",
+      "substance",
+      "heat_source"
+    ],
+    "example_bindings": {
+      "door": "door to hallway",
+      "room": "hallway",
+      "container": "cupboard",
+      "substance": "marshmallow",
+      "heat_source": "stove"
+    },
+    "rules": [
+      "Open intervening doors and navigate through rooms until reaching a location containing the target substance.",
+      "Open the container holding the target substance, focus on it, then pick it up into inventory.",
+      "Activate a heat source in the same room, then move the target substance onto it.",
+      "Wait for the heat source to change the substance's state of matter before concluding."
+    ],
+    "applicability": "Agent must be able to reach a room containing the target substance and a heat source (e.g., stove) that can be activated; doors along the path may need opening."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "PROCESS_SUPPORTED"
+}
+
+## discovery-v1.F.965d4f1df81ea937ed3b
+{
+  "raw": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "focus on {plant}",
+      "pick up living thing in {container}",
+      "go to {room}",
+      "go to {room}",
+      "move living thing to {box}"
+    ],
+    "parameters": [
+      "room",
+      "plant",
+      "container",
+      "box"
+    ],
+    "example_bindings": {
+      "room": "hallway",
+      "plant": "adult pea plant",
+      "container": "flower pot 9",
+      "box": "purple box"
+    },
+    "rules": [
+      "Open the connecting door before moving between rooms, and navigate through intermediate rooms to reach the target location.",
+      "In the target room, focus on the desired plant before attempting to pick it up.",
+      "Pick up the plant from its container using the 'pick up living thing in <container>' action.",
+      "Return through the same rooms to the destination room containing the target box.",
+      "Move the carried plant into the specified box to complete the task."
+    ],
+    "applicability": "Use when the goal is to find a plant in a room reachable through a hallway and move it to a box in another room. Requires the plant to be in a container and the destination box to be accessible in the starting room."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "PROCESS_NOT_REQUIRED"
+}
+
+## discovery-v1.F.d9797b94d94a3a12ea4b
+{
+  "raw": {
+    "action_template": [
+      "focus on {object}",
+      "pick up {object}",
+      "open door to {room}",
+      "go to {room}",
+      "move {object} to {container}"
+    ],
+    "parameters": [
+      "object",
+      "room",
+      "container"
+    ],
+    "example_bindings": {
+      "object": "drawing",
+      "room": "bedroom",
+      "container": "red box"
+    },
+    "rules": [
+      "Focus on the target object before picking it up.",
+      "Pick up the target object to place it in inventory.",
+      "Open the door to the destination room before moving there.",
+      "Move to the destination room containing the target container.",
+      "Move the carried object from inventory into the specified container."
+    ],
+    "applicability": "Agent is in a room with a visible non-living object and a closed door leading to a room that contains the target container."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "PROCESS_NOT_REQUIRED"
+}
+
+## discovery-v1.F.e1913f9868b6d9fe9f61
+{
+  "raw": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "look around",
+      "open door to {room}",
+      "go to {room}",
+      "look at {inclined_plane}",
+      "look at {inclined_plane}",
+      "look at {inclined_plane}",
+      "look in {inclined_plane}",
+      "look at {inclined_plane}",
+      "focus on {inclined_plane}"
+    ],
+    "parameters": [
+      "room",
+      "inclined_plane"
+    ],
+    "example_bindings": {
+      "room": "workshop",
+      "inclined_plane": "inclined plane c"
+    },
+    "rules": [
+      "Navigate through connected rooms by opening closed doors and moving to the target room where the inclined planes are located.",
+      "Inspect each candidate inclined plane with look at actions to compare their descriptions.",
+      "Use look in on an inclined plane to check its contents before deciding.",
+      "After comparing, focus on the inclined plane identified as having the steepest angle.",
+      "Keep observation steps (look around, look at, look in) before the final focus action."
+    ],
+    "applicability": "Agent is in a room with closed doors leading toward a workshop containing two or more inclined planes to compare."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## discovery-v2.F.09ae344822c12738f557
+{
+  "raw": {
+    "action_template": [
+      "look at {animal}",
+      "focus on {animal}"
+    ],
+    "parameters": [
+      "animal"
+    ],
+    "example_bindings": {
+      "animal": "baby baby hedgehog"
+    },
+    "rules": [
+      "Inspect each candidate animal in the location with 'look at' to identify it before choosing.",
+      "Compare the inspected animals' life spans and select the one with the shortest life span.",
+      "After identifying the target, apply 'focus on' to that animal to complete the task.",
+      "Keep the inspection and focus actions in the same location where the animals are present."
+    ],
+    "applicability": "The agent is in a location containing multiple candidate animals and the task is to identify and focus on the animal with the shortest life span."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## discovery-v2.F.2beaa66b5bcd3db3dc64
+{
+  "raw": {
+    "action_template": [
+      "focus on {instrument}",
+      "pick up {instrument}",
+      "open {door_to_target_room}",
+      "go to {intermediate_room}",
+      "open {door_to_substance_room}",
+      "go to {substance_room}",
+      "use {instrument} on {substance}",
+      "pick up {substance}",
+      "go to {intermediate_room}",
+      "open {door_to_box_room}",
+      "go to {box_room}",
+      "move {substance} to {box}"
+    ],
+    "parameters": [
+      "instrument",
+      "door_to_target_room",
+      "intermediate_room",
+      "door_to_substance_room",
+      "substance_room",
+      "substance",
+      "door_to_box_room",
+      "box_room",
+      "box"
+    ],
+    "example_bindings": {
+      "instrument": "thermometer",
+      "door_to_target_room": "door to hallway",
+      "intermediate_room": "hallway",
+      "door_to_substance_room": "door to living room",
+      "substance_room": "living room",
+      "substance": "unknown substance",
+      "door_to_box_room": "door to bedroom",
+      "box_room": "bedroom",
+      "box": "orange box"
+    },
+    "rules": [
+      "Focus on the thermometer before picking it up so it is available for measurement.",
+      "Use the thermometer on the target substance to read its temperature, then pick up the substance.",
+      "Choose the destination box by the measured temperature: above 0.0 degrees celsius goes to the blue box, below 0.0 degrees celsius goes to the orange box.",
+      "Open each closed door along the route before moving through it, and traverse rooms via the hallway when needed.",
+      "Place the substance into the selected box in the bedroom to complete the task."
+    ],
+    "applicability": "The thermometer and target substance are in different rooms reachable through a shared intermediate room; the blue and orange boxes are together in a separate room. The agent must carry the thermometer to the substance, measure it, then carry the substance to the correct box based on whether the reading is above or below 0.0 degrees celsius."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "PROCESS_SUPPORTED"
+}
+
+## discovery-v2.F.2dcdca293d9b16367852
+{
+  "raw": {
+    "action_template": [
+      "open {door}",
+      "go to {room}",
+      "open {door}",
+      "go to {room}",
+      "open {door}",
+      "go to {room}",
+      "look at {animal}",
+      "focus on {animal}"
+    ],
+    "parameters": [
+      "door",
+      "room",
+      "animal"
+    ],
+    "example_bindings": {
+      "door": "door to hallway",
+      "room": "hallway",
+      "animal": "giant tortoise egg"
+    },
+    "rules": [
+      "Open each closed door encountered along the path before moving through it.",
+      "Navigate room by room toward the target location where the animals are found.",
+      "Inspect candidate animals with look at to identify them before focusing.",
+      "Focus on the animal judged to have the longest life span to complete the task.",
+      "Keep the sequence of door-opening and room traversal steps in order; do not skip intermediate rooms."
+    ],
+    "applicability": "Agent starts indoors in a room with a closed door; target animals are located in an outdoor area reachable through a sequence of rooms and doors."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## discovery-v2.F.31452f59c48bc5d93974
+{
+  "raw": {
+    "action_template": [
+      "open door to {location}",
+      "go to {location}",
+      "look at {animal}",
+      "focus on {animal}"
+    ],
+    "parameters": [
+      "location",
+      "animal"
+    ],
+    "example_bindings": {
+      "location": "outside",
+      "animal": "giant tortoise egg"
+    },
+    "rules": [
+      "Open the door to the target location before attempting to move there.",
+      "Move to the location containing the animals to be compared.",
+      "Inspect each candidate animal with a look action to identify it.",
+      "Focus on the animal selected as the current target to satisfy the focus requirement.",
+      "Repeat inspection and focus for each animal in the required order (longest lifespan first, then shortest)."
+    ],
+    "applicability": "Agent is in an indoor room with a closed door leading to the location that contains the animals; the target location is reachable after opening that door."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## discovery-v2.F.3fbe681bf784f2d76d21
+{
+  "raw": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "focus on thermometer",
+      "focus on {substance}",
+      "use thermometer on {substance}",
+      "focus on {box}"
+    ],
+    "parameters": [
+      "room",
+      "substance",
+      "box"
+    ],
+    "example_bindings": {
+      "room": "kitchen",
+      "substance": "solid unknown substance c",
+      "box": "orange box"
+    },
+    "rules": [
+      "Open the door to the target room before moving into it.",
+      "Focus on the thermometer, then focus on the unknown substance before measuring.",
+      "Use the thermometer on the substance to obtain its melting-point temperature reading.",
+      "Compare the measured temperature to the threshold and focus on the box matching the above/below condition."
+    ],
+    "applicability": "The unknown substance and thermometer are co-located in a room reachable through a closed door; the candidate boxes are in the same room."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "PARTIALLY_SUPPORTED"
+}
+
+## discovery-v2.F.5338a5b7b1763d020e75
+{
+  "raw": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "look at {seed_container}",
+      "look in {seed_container}",
+      "pick up {seed}",
+      "look in {box}",
+      "focus on {box}"
+    ],
+    "parameters": [
+      "room",
+      "seed_container",
+      "seed",
+      "box"
+    ],
+    "example_bindings": {
+      "room": "greenhouse",
+      "seed_container": "seed jar",
+      "seed": "pea seed",
+      "box": "orange box"
+    },
+    "rules": [
+      "Open the door to the target room before moving into it.",
+      "Inspect the seed container to identify the available seeds, then pick up one seed into inventory.",
+      "Inspect both candidate boxes to confirm their contents before deciding which to focus on.",
+      "Focus on the box corresponding to the inferred trait category (blue for dominant, orange for recessive)."
+    ],
+    "applicability": "Agent starts in a hallway with closed doors and an inventory item; the greenhouse contains a seed jar with pea seeds, multiple soil-filled flower pots, and empty blue and orange boxes."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## discovery-v2.F.5bfedeb6e825464e626d
+{
+  "raw": {
+    "action_template": [
+      "open {container}",
+      "look in {container}",
+      "open {door}",
+      "go to {room}",
+      "look around",
+      "look at {surface_object}",
+      "focus on {surface_object}"
+    ],
+    "parameters": [
+      "container",
+      "door",
+      "room",
+      "surface_object"
+    ],
+    "example_bindings": {
+      "container": "drawer",
+      "door": "door to hallway",
+      "room": "hallway",
+      "surface_object": "inclined plane with a soapy water surface"
+    },
+    "rules": [
+      "Open closed containers or doors before attempting to look inside or move through them.",
+      "Navigate room by room through opened doors, using look around to discover exits and objects in each new room.",
+      "Inspect candidate objects with look at, then use focus on the chosen object to complete the selection step.",
+      "Keep observation steps (look in, look around, look at) between actions to confirm state changes."
+    ],
+    "applicability": "Agent is in a room with closed containers/doors and must explore connected rooms to locate and select a target object among similar candidates."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## discovery-v2.F.6aebd9fb1322c1074fb6
+{
+  "raw": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "open {container}",
+      "focus on {substance}",
+      "pick up {substance}",
+      "move {substance} to {device}",
+      "activate {device}"
+    ],
+    "parameters": [
+      "room",
+      "container",
+      "substance",
+      "device"
+    ],
+    "example_bindings": {
+      "room": "kitchen",
+      "container": "freezer",
+      "substance": "ice",
+      "device": "stove"
+    },
+    "rules": [
+      "Navigate to a room containing a heat source and a cold-storage container before acting on the target substance.",
+      "Open the container holding the target substance, then focus on it before picking it up.",
+      "Transfer the substance from inventory onto a heat-producing device, then activate that device to change its state.",
+      "Confirm state change by observing the substance's description after activation."
+    ],
+    "applicability": "Use when the target substance is stored in a closed cold container in a room that also contains an activatable heat source (e.g., stove). Requires the room to be reachable via an openable door."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "PROCESS_SUPPORTED"
+}
+
+## discovery-v2.F.7ac4185e5f00f742931e
+{
+  "raw": {
+    "action_template": [
+      "focus on {object}",
+      "pick up {object}",
+      "open door to {room}",
+      "go to {room}",
+      "move {object} to {container}"
+    ],
+    "parameters": [
+      "object",
+      "room",
+      "container"
+    ],
+    "example_bindings": {
+      "object": "picture",
+      "room": "bedroom",
+      "container": "yellow box"
+    },
+    "rules": [
+      "Focus on the target object before picking it up.",
+      "Pick up the focused object to place it in inventory.",
+      "Open the door to the destination room before moving there.",
+      "Move to the destination room containing the target container.",
+      "Move the carried object from inventory into the target container."
+    ],
+    "applicability": "Agent starts in a room with a movable non-living object and closed doors; the destination room contains an open or accessible container."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "PROCESS_NOT_REQUIRED"
+}
+
+## discovery-v2.F.8a0e00d29345445b21a5
+{
+  "raw": {
+    "action_template": [
+      "open door to {location}",
+      "go to {location}",
+      "look at {animal}",
+      "focus on {animal}"
+    ],
+    "parameters": [
+      "location",
+      "animal"
+    ],
+    "example_bindings": {
+      "location": "outside",
+      "animal": "giant tortoise egg"
+    },
+    "rules": [
+      "Open the door to the target location before attempting to move there.",
+      "Move to the location where the animals are found.",
+      "Inspect each candidate animal with look at to identify it.",
+      "Focus on the animal with the longest life span first, then focus on the animal with the shortest life span."
+    ],
+    "applicability": "Use when the task requires identifying and focusing on animals located in another room that is initially behind a closed door."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## discovery-v2.F.8c8a122797c51e4659c6
+{
+  "raw": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "look at {animal}",
+      "focus on {animal}"
+    ],
+    "parameters": [
+      "room",
+      "animal"
+    ],
+    "example_bindings": {
+      "room": "outside",
+      "animal": "chameleon egg"
+    },
+    "rules": [
+      "Open the connecting door before moving to a new room.",
+      "Move through the opened door to reach the location containing the candidate animals.",
+      "Inspect each candidate animal with look at to identify it.",
+      "Select the animal with the shortest life span and apply focus on to it."
+    ],
+    "applicability": "Agent starts in an indoor room with a closed door leading toward the target location; candidate animals are present in the destination room and can be inspected and focused on."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## discovery-v2.F.965d4f1df81ea937ed3b
+{
+  "raw": {
+    "action_template": [
+      "open {door}",
+      "go to {room}",
+      "pick up living thing in {pot}",
+      "go to {room}",
+      "move living thing to {container}",
+      "focus on living thing"
+    ],
+    "parameters": [
+      "door",
+      "room",
+      "pot",
+      "container"
+    ],
+    "example_bindings": {
+      "door": "door to greenhouse",
+      "room": "greenhouse",
+      "pot": "flower pot 9",
+      "container": "purple box"
+    },
+    "rules": [
+      "Open the door to the target room before attempting to travel there.",
+      "Travel to the room containing the plant, then pick up the living thing from its flower pot.",
+      "Return to the room containing the destination container and move the living thing into it.",
+      "After placing the plant, focus on the living thing to satisfy the focus requirement.",
+      "Use look/inventory observations to confirm the plant is in the container before focusing."
+    ],
+    "applicability": "Use when the goal is to find a plant and move it to a specified container in another room; requires an openable door between rooms and a plant growing in a flower pot."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "PROCESS_NOT_REQUIRED"
+}
+
+## discovery-v2.F.9cef108e88fa0d6aff89
+{
+  "raw": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "look around",
+      "look at {object}",
+      "focus on {object}"
+    ],
+    "parameters": [
+      "room",
+      "object"
+    ],
+    "example_bindings": {
+      "room": "workshop",
+      "object": "inclined plane with a unknown material c surface"
+    },
+    "rules": [
+      "Open the door to the target room before attempting to move into it.",
+      "Move through the hallway to reach the room containing the inclined planes.",
+      "Survey the room with look around to identify the inclined planes and other objects.",
+      "Examine each inclined plane with look at and focus on to compare their surfaces.",
+      "Focus on the inclined plane determined to have the most friction."
+    ],
+    "applicability": "Agent is in a room with a closed door leading to a hallway; the target room contains two inclined planes of unknown materials and is reachable through the hallway."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## discovery-v2.F.ae8d0d5850873ad49924
+{
+  "raw": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "look in {container}",
+      "pick up {seed}",
+      "focus on {target_box}"
+    ],
+    "parameters": [
+      "room",
+      "container",
+      "seed",
+      "target_box"
+    ],
+    "example_bindings": {
+      "room": "greenhouse",
+      "container": "seed jar",
+      "seed": "pea seed",
+      "target_box": "red box"
+    },
+    "rules": [
+      "Open the door to the target room before moving into it.",
+      "Inspect candidate containers to locate the required seed or material before picking it up.",
+      "Pick up the needed seed from its container so it is in inventory.",
+      "Determine the trait status from the task, then focus on the corresponding colored box (red for dominant, green for recessive)."
+    ],
+    "applicability": "Use in greenhouse environments where a seed jar and colored boxes are present and the task asks to classify a plant trait as dominant or recessive by focusing on the matching colored box."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## discovery-v2.F.b305a2703799b76c3a98
+{
+  "raw": {
+    "action_template": [
+      "focus on {living_thing}",
+      "pick up {living_thing}",
+      "open {door_to_hallway}",
+      "go to {hallway}",
+      "open {door_to_bedroom}",
+      "go to {bedroom}",
+      "move {living_thing} to {green_box}"
+    ],
+    "parameters": [
+      "living_thing",
+      "door_to_hallway",
+      "hallway",
+      "door_to_bedroom",
+      "bedroom",
+      "green_box"
+    ],
+    "example_bindings": {
+      "living_thing": "adult pea plant",
+      "door_to_hallway": "door to hallway",
+      "hallway": "hallway",
+      "door_to_bedroom": "door to bedroom",
+      "bedroom": "bedroom",
+      "green_box": "green box"
+    },
+    "rules": [
+      "Focus on the target living thing before attempting to pick it up.",
+      "Pick up the focused living thing so it enters inventory, then open the door leading out of the current room.",
+      "Traverse rooms by going through opened doors in sequence toward the destination room.",
+      "Open the destination room's door before entering it.",
+      "Move the carried living thing from inventory into the specified green box in the destination room."
+    ],
+    "applicability": "Use when a living thing must be located in a room, focused on, carried through connected rooms, and deposited into a green box located in a different room; requires doors between rooms to be opened before traversal."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "PARTIALLY_SUPPORTED"
+}
+
+## discovery-v2.F.d9797b94d94a3a12ea4b
+{
+  "raw": {
+    "action_template": [
+      "focus on {object}",
+      "pick up {object}",
+      "open door to {room}",
+      "go to {room}",
+      "move {object} to {container}"
+    ],
+    "parameters": [
+      "object",
+      "room",
+      "container"
+    ],
+    "example_bindings": {
+      "object": "drawing",
+      "room": "bedroom",
+      "container": "red box"
+    },
+    "rules": [
+      "Focus on the target object before picking it up.",
+      "Pick up the target object to place it in inventory.",
+      "Open the door to the destination room before moving there.",
+      "Move to the destination room, then move the carried object into the specified container.",
+      "Choose a non-living portable object visible in the current room as the target."
+    ],
+    "applicability": "Agent is in a room with a portable non-living object and a closed door leading to the room containing the target container."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "PROCESS_NOT_REQUIRED"
+}
+
+## discovery-v2.F.def63cb9dcbcef266a65
+{
+  "raw": {
+    "action_template": [
+      "open {container}",
+      "focus on {animal}",
+      "pick up {animal}",
+      "open {door}",
+      "go to {room}",
+      "move {animal} to {destination}",
+      "go to {door}",
+      "open {door}",
+      "go to {room}",
+      "pick up {animal}",
+      "move {animal} to {destination}"
+    ],
+    "parameters": [
+      "container",
+      "animal",
+      "door",
+      "room",
+      "destination"
+    ],
+    "example_bindings": {
+      "container": "bee hive",
+      "animal": "bee 0",
+      "door": "door to hallway",
+      "room": "hallway",
+      "destination": "kitchen"
+    },
+    "rules": [
+      "Open the container holding the target animal before attempting to focus on or pick it up.",
+      "Focus on the specific animal instance, then pick it up to place it in inventory.",
+      "Open intervening doors before moving between rooms, and re-pick the animal after arriving if it was dropped during transit.",
+      "Move the animal to the destination container once in the target room to complete the placement."
+    ],
+    "applicability": "Agent must locate an animal inside a closed container in a room, then transport it through connected rooms to a target container in another room."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "PROCESS_NOT_REQUIRED"
+}
+
+## selected-train-v1.F.003597b7b9c549df70c6
+{
+  "raw": {
+    "action_template": [
+      "look at {plane}",
+      "connect block to {plane}",
+      "focus on {plane}"
+    ],
+    "parameters": [
+      "plane"
+    ],
+    "example_bindings": {
+      "plane": "inclined plane with a titanium surface"
+    },
+    "rules": [
+      "Inspect each candidate inclined plane with 'look at' before connecting the wood block to it.",
+      "Connect the wood block to a plane to run the friction comparison, then focus on that plane to record the result.",
+      "Repeat the look/connect/focus sequence for each candidate plane so their friction can be compared.",
+      "After comparing, focus on the plane identified as having the least friction."
+    ],
+    "applicability": "Workshop with a wood block and two inclined planes of different surface materials; goal is to compare friction and focus on the lowest-friction plane."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## selected-train-v1.F.098816d79aa10bdc5eec
+{
+  "raw": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "look at {plane}",
+      "connect {object} to {plane}",
+      "focus on {plane}"
+    ],
+    "parameters": [
+      "room",
+      "plane",
+      "object"
+    ],
+    "example_bindings": {
+      "room": "workshop",
+      "plane": "inclined plane with a steel surface",
+      "object": "brick"
+    },
+    "rules": [
+      "Open the door to the target room before moving into it.",
+      "Move to the room containing the inclined planes and the object to be tested.",
+      "Inspect the inclined plane to confirm its surface before connecting the object.",
+      "Connect the object to the inclined plane, then focus on that plane to complete the friction comparison for that surface.",
+      "Repeat the connect-and-focus procedure for each candidate inclined plane, then focus on the plane with the least friction."
+    ],
+    "applicability": "Agent is in a room with closed doors; the target room contains two inclined planes with different surfaces and a movable object; the agent can open doors, move between rooms, connect objects to planes, and focus on planes."
+  },
+  "source_validation": true,
+  "rejection": null,
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## selected-train-v1.F.1421639dc7e19fcaab35
+{
+  "raw": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "look in {room}",
+      "open door to {room}",
+      "go to {room}",
+      "look at {surface}",
+      "focus on {surface}"
+    ],
+    "parameters": [
+      "room",
+      "surface"
+    ],
+    "example_bindings": {
+      "room": "workshop",
+      "surface": "inclined plane with a cloth surface"
+    },
+    "rules": [
+      "Open the door to a target room before moving into it.",
+      "Move through the hallway to reach rooms that are not directly accessible from the starting room.",
+      "Inspect a room with 'look in' before entering to identify the inclined planes and other objects present.",
+      "Examine and then focus on each inclined plane surface to compare friction.",
+      "After comparing, focus on the inclined plane with the least friction."
+    ],
+    "applicability": "Use when the agent starts in a room with closed doors and must travel through a hallway to a workshop containing two inclined planes with different surfaces (cloth and steel) and a steel block for a friction comparison experiment."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## selected-train-v1.F.17c9fd4a9e6176a23caf
+{
+  "raw": {
+    "action_template": [
+      "open {door}",
+      "go to {room}",
+      "look in {room}",
+      "look at {plane}",
+      "connect {object} to {plane}",
+      "focus on {plane}"
+    ],
+    "parameters": [
+      "door",
+      "room",
+      "plane",
+      "object"
+    ],
+    "example_bindings": {
+      "door": "door to workshop",
+      "room": "workshop",
+      "plane": "inclined plane with a plastic surface",
+      "object": "brick"
+    },
+    "rules": [
+      "Open the door leading to the room containing the inclined planes before attempting to enter.",
+      "Inspect the target room and each candidate inclined plane before running the friction experiment.",
+      "Connect the test object to one inclined plane, then focus on that plane to observe the friction result.",
+      "Repeat the connect-and-focus procedure for each candidate plane to compare friction.",
+      "After comparing, focus on the inclined plane that exhibited the least friction."
+    ],
+    "applicability": "Agent is in a room with a closed door to another room; the target room contains two or more inclined planes with different surface materials and a movable test object."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## selected-train-v1.F.34085a7755ec1e593502
+{
+  "raw": {
+    "action_template": [
+      "open {container}",
+      "focus on {animal}",
+      "pick up {animal}",
+      "open {door}",
+      "go to {room}",
+      "move {animal} to {receptacle}"
+    ],
+    "parameters": [
+      "container",
+      "animal",
+      "door",
+      "room",
+      "receptacle"
+    ],
+    "example_bindings": {
+      "container": "bee hive",
+      "animal": "adult bee",
+      "door": "door to hallway",
+      "room": "hallway",
+      "receptacle": "red box"
+    },
+    "rules": [
+      "Open the container holding the target animal before attempting to focus on or pick it up.",
+      "Focus on the animal to identify it, then pick it up into inventory.",
+      "Open intervening doors and navigate room-by-room toward the destination room containing the receptacle.",
+      "Move the carried animal from inventory into the target receptacle to complete placement.",
+      "Verify placement by looking in the receptacle after moving the animal."
+    ],
+    "applicability": "Agent is in a room containing a closed container with an animal inside; the target receptacle is in another room reachable through closed doors."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "PROCESS_NOT_REQUIRED"
+}
+
+## selected-train-v1.F.47673143391e75c3cf13
+{
+  "raw": {
+    "action_template": [
+      "open {container}",
+      "look in {container}",
+      "go to {room}",
+      "open {door}",
+      "go to {room}",
+      "open {animal_container}",
+      "focus on {animal}",
+      "pick up {animal} in {room}",
+      "go to {door}",
+      "go to {target_room}",
+      "move {animal} to {target_container}"
+    ],
+    "parameters": [
+      "container",
+      "room",
+      "door",
+      "animal_container",
+      "animal",
+      "target_room",
+      "target_container"
+    ],
+    "example_bindings": {
+      "container": "cupboard",
+      "room": "hallway",
+      "door": "door to workshop",
+      "animal_container": "bee hive",
+      "animal": "adult bee",
+      "target_room": "workshop",
+      "target_container": "orange box"
+    },
+    "rules": [
+      "Open closed containers and doors before attempting to look inside or move through them.",
+      "Search candidate rooms by opening doors, entering, and looking in containers until the target object is found.",
+      "Focus on the target object before picking it up.",
+      "Carry the picked-up object through connecting rooms to the destination container.",
+      "Move the carried object into the specified destination container to complete the task."
+    ],
+    "applicability": "Agent must locate a movable target object in a closed container or room, then transport it to a specified container in another room; doors and containers along the route may be closed and must be opened first."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "PROCESS_NOT_REQUIRED"
+}
+
+## selected-train-v1.F.68edb4b7a582dbbbf477
+{
+  "raw": {
+    "action_template": [
+      "open door to {room}",
+      "go to {room}",
+      "open {container}",
+      "pick up {animal}",
+      "go to {room}",
+      "go to {room}",
+      "move {animal} to {box}",
+      "focus on {animal} in {box}"
+    ],
+    "parameters": [
+      "room",
+      "container",
+      "animal",
+      "box"
+    ],
+    "example_bindings": {
+      "room": "living room",
+      "container": "bee hive",
+      "animal": "bee 0",
+      "box": "green box"
+    },
+    "rules": [
+      "Open the door to a room before moving into it, and open any closed container before attempting to pick up an animal from it.",
+      "Pick up the target animal from its source container, then navigate back through the connected rooms to the destination room.",
+      "Move the carried animal into the specified green box, then focus on the animal in the box to complete the task.",
+      "Use look/inventory observations to confirm the animal is in the box before focusing on it."
+    ],
+    "applicability": "Agent starts in a room with closed doors and an inventory item; target animal is inside a closed container in another room; destination is a green box in a reachable room."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "PROCESS_NOT_REQUIRED"
+}
+
+## selected-train-v1.F.7d7a4efdcc6531231f85
+{
+  "raw": {
+    "action_template": [
+      "open {door}",
+      "go to {location}",
+      "focus on {animal}",
+      "pick up {animal}",
+      "move {animal} to {container}"
+    ],
+    "parameters": [
+      "door",
+      "location",
+      "animal",
+      "container"
+    ],
+    "example_bindings": {
+      "door": "door to outside",
+      "location": "outside",
+      "animal": "butterfly",
+      "container": "orange box"
+    },
+    "rules": [
+      "Open closed doors before attempting to move through them.",
+      "Focus on a target animal before picking it up or moving it.",
+      "Pick up the animal to place it in inventory, then move it from inventory to the destination container.",
+      "Navigate through intermediate rooms and open any closed doors along the path to the destination.",
+      "Verify placement by looking in the destination container after moving the animal."
+    ],
+    "applicability": "Agent starts in a room with a closed door leading to an area containing animals; goal is to find an animal and move it to a container in another room reachable through connected doors."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "PROCESS_NOT_REQUIRED"
+}
+
+## selected-train-v1.F.8658e75cca5cffee5b04
+{
+  "raw": {
+    "action_template": [
+      "open {door}",
+      "go to {room}",
+      "look around",
+      "connect {block} to {inclined_plane}",
+      "focus on {inclined_plane}"
+    ],
+    "parameters": [
+      "door",
+      "room",
+      "block",
+      "inclined_plane"
+    ],
+    "example_bindings": {
+      "door": "door to foundry",
+      "room": "foundry",
+      "block": "steel block",
+      "inclined_plane": "inclined plane with a caesium surface"
+    },
+    "rules": [
+      "Open the door to a room before attempting to go to that room.",
+      "Navigate through connected rooms by opening doors and moving to the target room.",
+      "Use look around to survey the current room and identify objects such as inclined planes and blocks.",
+      "Connect the block to the inclined plane to set up the friction experiment.",
+      "Focus on the inclined plane to complete the observation of the friction experiment."
+    ],
+    "applicability": "Agent is in a location with closed doors leading to rooms containing inclined planes and a block; the task requires comparing friction on inclined planes."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "ANSWER_WITHOUT_OBSERVED_SUPPORT"
+}
+
+## selected-train-v1.F.ddde1cdd88f20265f732
+{
+  "raw": {
+    "action_template": [
+      "open {container}",
+      "look in {container}",
+      "go to {room}",
+      "open {door}",
+      "go to {room}",
+      "focus on {animal}",
+      "pick up {animal}",
+      "go to {room}",
+      "go to {room}",
+      "move {animal} to {target_container}"
+    ],
+    "parameters": [
+      "container",
+      "room",
+      "door",
+      "animal",
+      "target_container"
+    ],
+    "example_bindings": {
+      "container": "freezer",
+      "room": "hallway",
+      "door": "door to living room",
+      "animal": "adult bee in bee hive",
+      "target_container": "blue box"
+    },
+    "rules": [
+      "Open and inspect containers in the starting room before leaving, then traverse through the connecting hallway to reach the target room.",
+      "Open doors along the route to the target room and open the container that holds the animal before attempting to focus on or pick it up.",
+      "Focus on the animal before picking it up, then carry it through the hallway to the target room.",
+      "In the target room, move the carried animal to the specified target container; repeat focus/pick-up/move if additional animals are needed."
+    ],
+    "applicability": "Agent starts in a room with closed containers and a closed door to a hallway; the animal is inside a closed container in another room reachable via the hallway, and the target container is in a further room."
+  },
+  "source_validation": false,
+  "rejection": "not an observed action subsequence",
+  "source_label": "PROCESS_NOT_REQUIRED"
+}

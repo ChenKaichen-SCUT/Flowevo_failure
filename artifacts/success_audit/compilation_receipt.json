@@ -1,0 +1,16 @@
+{
+  "all_compiler_public_inputs_complete": true,
+  "cached_compiler_outputs_revalidated": 39,
+  "current_source_valid": 15,
+  "historical_success_inventory": 102,
+  "new_candidates_admitted": 0,
+  "new_model_calls": 0,
+  "recovered_responses_without_compilation_file": [
+    "discovery-v1.F.965d4f1df81ea937ed3b",
+    "discovery-v1.F.e1913f9868b6d9fe9f61"
+  ],
+  "review_freeze_sha256": "15dbe82eb564c41835a0ca8d1789ccda8b1a28792868afd514ec81671e99c107",
+  "saved_compilation_files": 37,
+  "source_only_records": 39,
+  "source_reasons_not_in_input": 39
+}

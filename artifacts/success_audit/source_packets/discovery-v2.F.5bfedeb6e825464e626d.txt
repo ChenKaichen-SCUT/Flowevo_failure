@@ -1,0 +1,137 @@
+# discovery-v2.F.5bfedeb6e825464e626d
+inclined-plane-friction-named-surfaces | train | variation 281
+Task Description:
+Your task is to determine which of the two inclined planes (soapy water, rubber) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.
+INITIAL LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a book shelf (containing nothing)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a painting
+You also see:
+	A door to the hallway (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] look in drawer
+REASON: Need to find inclined plane objects; drawer is the only unexplored container likely holding experiment materials.
+FEEDBACK: The drawer isn't open, so you can't see inside.
+
+STEP 2 [dynamic] open drawer
+REASON: The drawer is closed; opening it will reveal its contents, which may include the inclined plane materials needed for the friction experiment.
+FEEDBACK: The drawer is now open.
+
+STEP 3 [dynamic] look in drawer
+REASON: The drawer is now open; inspect its contents to find materials for the inclined-plane friction experiment.
+FEEDBACK: Inside the drawer is: 
+	nothing
+
+STEP 4 [dynamic] look around
+REASON: Need to locate the two inclined planes (soapy water and rubber) to begin the friction experiment; current view shows only living room furniture.
+FEEDBACK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a book shelf (containing nothing)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a painting
+You also see:
+	A door to the hallway (that is closed)
+
+STEP 5 [dynamic] open door to hallway
+REASON: Need to explore beyond the living room to find the inclined planes for the friction experiment.
+FEEDBACK: The door is now open.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a book shelf (containing nothing)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a painting
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 6 [dynamic] go to hallway
+REASON: The living room lacks the inclined planes; move to the hallway to locate the soapy water and rubber ramps for the friction experiment.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a finger painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 7 [dynamic] look around
+REASON: Survey the hallway to locate the inclined planes and any relevant objects before starting the friction experiment.
+FEEDBACK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a finger painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+STEP 8 [dynamic] open door to workshop
+REASON: The inclined-plane experiment likely uses workshop materials; open the workshop door to access it.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a finger painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+
+
+STEP 9 [dynamic] go to workshop
+REASON: Enter the workshop to find the inclined planes and friction experiment materials.
+FEEDBACK: You move to the workshop.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a brick
+	an inclined plane with a rubber surface
+	an inclined plane with a soapy water surface
+	a stopwatch, which is deactivated. 
+	a table. On the table is: a battery, a green light bulb, which is off, a green wire, a orange wire, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 10 [dynamic] look at inclined plane with a rubber surface
+REASON: Inspect the rubber inclined plane to understand its setup before comparing friction with the soapy water plane.
+FEEDBACK: an inclined plane with a rubber surface
+
+STEP 11 [dynamic] look at inclined plane with a soapy water surface
+REASON: Inspect the soapy water inclined plane to compare its surface with the rubber one before testing friction.
+FEEDBACK: an inclined plane with a soapy water surface
+
+STEP 12 [dynamic] look at inclined plane with a soapy water surface
+REASON: Inspect the soapy water inclined plane to understand its setup before comparing friction with the rubber plane.
+FEEDBACK: an inclined plane with a soapy water surface
+
+STEP 13 [dynamic] focus on inclined plane with a soapy water surface
+REASON: Examine the soapy water inclined plane to begin comparing friction between the two planes.
+FEEDBACK: You focus on the inclined plane with a soapy water surface.

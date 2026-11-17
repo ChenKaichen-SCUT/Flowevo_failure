@@ -13,3 +13,6 @@ __pycache__/
 *.egg-info/
 vendor/
 data/manifests/test_manifest.private.jsonl
+# Reconstructed source-only JSON is redundant with the frozen public archives.
+# Readable packets, their semantic hashes and the reconstruction script are kept.
+artifacts/success_audit/source_packets/*.json

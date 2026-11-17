@@ -1,0 +1,90 @@
+# discovery-v1.F.d9797b94d94a3a12ea4b
+find-non-living-thing | train | variation 18
+Task Description:
+Your task is to find a(n) non-living thing. First, focus on the thing. Then, move it to the red box in the bedroom.
+INITIAL LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] focus on drawing
+REASON: The drawing in the hallway is a non-living thing. I should focus on it first, then move it to the red box in the bedroom.
+FEEDBACK: You focus on the drawing.
+
+STEP 2 [dynamic] pick up drawing
+REASON: The drawing is a non-living thing and is in the hallway. I need to pick it up, then move it to the red box in the bedroom.
+FEEDBACK: You move the drawing to the inventory.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+INVENTORY: In your inventory, you see:
+	a drawing of a cow.  The artist is listed as Owen. 
+	an orange
+
+
+STEP 3 [dynamic] open door to bedroom
+REASON: The drawing is a non-living thing and is already in inventory. Next, I need to reach the bedroom to place it in the red box, so I should open the bedroom door from the hallway.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 4 [dynamic] go to bedroom
+REASON: I have a drawing (non-living) in inventory and the bedroom door is open. Next, go to the bedroom to reach the red box.
+FEEDBACK: You move to the bedroom.
+LOOK: This room is called the bedroom. In it, you see: 
+	the agent
+	a substance called air
+	a bed. On the bed is: a mattress. On the mattress is: a white pillow..
+	a closet. The closet door is closed. 
+	a finger painting
+	a red box (containing nothing)
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 5 [dynamic] move drawing to red box
+REASON: I am in the bedroom with the drawing (a non-living thing) in inventory. The red box is here, so I should move the drawing into the red box to complete the task.
+FEEDBACK: You move the drawing to the red box.
+LOOK: This room is called the bedroom. In it, you see: 
+	the agent
+	a substance called air
+	a bed. On the bed is: a mattress. On the mattress is: a white pillow..
+	a closet. The closet door is closed. 
+	a finger painting
+	a red box (containing a drawing)
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	an orange
+

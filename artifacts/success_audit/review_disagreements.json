@@ -1,0 +1,15 @@
+{
+  "disagreements": [
+    {
+      "final": "PARTIALLY_SUPPORTED",
+      "job_id": "discovery-v2.F.3fbe681bf784f2d76d21",
+      "resolution_zh": "采纳较保守的部分支持：已有一次相关测量，尚未测到所需物理量；两位审阅者均判最终选择缺充分依据。",
+      "review_a": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+      "review_b": "PARTIALLY_SUPPORTED"
+    }
+  ],
+  "label_agreement_count": 38,
+  "measurement_vs_comparison_index_note": "温度例B标9为比较证据来源，A标10/14为运用比较的reason；裁定保留9为测量、10/14为应用关系，非标签分歧。",
+  "reviewer_limit": "Two assistant review passes, not two humans or a measured independent annotation accuracy. Parent had prior project context; second pass read source packets only.",
+  "source_only_records": 39
+}

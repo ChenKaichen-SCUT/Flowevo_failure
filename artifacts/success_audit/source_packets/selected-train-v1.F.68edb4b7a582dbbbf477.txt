@@ -1,0 +1,258 @@
+# selected-train-v1.F.68edb4b7a582dbbbf477
+find-animal | train | variation 73
+Task Description:
+Your task is to find a(n) animal. First, focus on the thing. Then, move it to the green box in the living room.
+INITIAL LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] open door to living room
+REASON: Need to reach the living room to find the green box; the door is currently closed.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 2 [dynamic] go to living room
+REASON: The living room door is open; enter it to locate the green box and any animal.
+FEEDBACK: You move to the living room.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a book shelf (containing A book (Moby Dick) titled Moby Dick by Herman Melville, A book (Moby Dick) titled Moby Dick by Herman Melville)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a drawing
+	a green box (containing nothing)
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 3 [dynamic] look in green box
+REASON: Check whether the green box already contains the animal before searching elsewhere.
+FEEDBACK: Inside the green box is: 
+	nothing
+
+STEP 4 [dynamic] look around
+REASON: Need to locate an animal in the living room before moving it to the green box.
+FEEDBACK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a book shelf (containing A book (Moby Dick) titled Moby Dick by Herman Melville, A book (Moby Dick) titled Moby Dick by Herman Melville)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a drawing
+	a green box (containing nothing)
+You also see:
+	A door to the hallway (that is open)
+
+STEP 5 [dynamic] look in drawer
+REASON: Need to locate an animal; the drawer is an unsearched container in the living room.
+FEEDBACK: The drawer isn't open, so you can't see inside.
+
+STEP 6 [dynamic] open drawer
+REASON: The drawer may contain the animal; opening it lets me inspect its contents.
+FEEDBACK: The drawer is now open.
+
+STEP 7 [dynamic] look in drawer
+REASON: The drawer is now open; inspect its contents to find the animal.
+FEEDBACK: Inside the drawer is: 
+	nothing
+
+STEP 8 [dynamic] go to hallway
+REASON: No animal is visible in the living room; search the hallway next for the animal.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 9 [dynamic] open door to greenhouse
+REASON: Need to search rooms for an animal; greenhouse is a likely location and its door is closed.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 10 [dynamic] go to greenhouse
+REASON: The greenhouse door is open; search there for an animal to move to the living room green box.
+FEEDBACK: You move to the greenhouse.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a flower pot 1 (containing nothing)
+	a flower pot 2 (containing nothing)
+	a flower pot 3 (containing a lemon tree in the reproducing stage, soil)
+	a flower pot 4 (containing a apple tree in the reproducing stage, soil)
+	a flower pot 8 (containing a cherry tree in the reproducing stage, soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 11 [dynamic] open bee hive
+REASON: The bee hive is a likely animal source; open it to reveal bees, then move one to the green box in the living room.
+FEEDBACK: The bee hive is now open.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: a adult bee, a adult bee.
+	a flower pot 1 (containing nothing)
+	a flower pot 2 (containing nothing)
+	a flower pot 3 (containing a lemon tree in the reproducing stage. On the lemon tree you see: a flower. , soil)
+	a flower pot 4 (containing a apple tree in the reproducing stage. On the apple tree you see: a flower. , soil)
+	a flower pot 8 (containing a cherry tree in the reproducing stage. On the cherry tree you see: a flower. , soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 12 [dynamic] pick up bee 0
+REASON: The bee hive is open and bees are present; pick up an animal (bee) to carry it to the green box in the living room.
+FEEDBACK: You move the bee 0 to the inventory.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: a adult bee.
+	a flower pot 1 (containing nothing)
+	a flower pot 2 (containing nothing)
+	a flower pot 3 (containing a lemon tree in the reproducing stage. On the lemon tree you see: a flower. , soil)
+	a flower pot 4 (containing a apple tree in the reproducing stage. On the apple tree you see: a flower. , soil)
+	a flower pot 8 (containing a cherry tree in the reproducing stage. On the cherry tree you see: a flower. , soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 13 [dynamic] go to hallway
+REASON: Bee 0 is in inventory; now travel toward the living room to place it in the green box.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 14 [dynamic] go to living room
+REASON: The adult bee is in inventory; move to the living room to place it in the green box.
+FEEDBACK: You move to the living room.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a book shelf (containing A book (Moby Dick) titled Moby Dick by Herman Melville, A book (Moby Dick) titled Moby Dick by Herman Melville)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a drawing
+	a green box (containing nothing)
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 15 [dynamic] move bee 0 to green box
+REASON: The bee is the animal in inventory; place it into the green box in the living room to complete the task.
+FEEDBACK: You move the bee 0 to the green box.
+
+STEP 16 [dynamic] move bee 4 to green box
+REASON: Bee 0 is already in the green box; the goal requires an animal, and bee 4 is another animal present in the living room. Move it into the green box to complete the task.
+FEEDBACK: You move the bee 4 to the green box.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a book shelf (containing A book (Moby Dick) titled Moby Dick by Herman Melville, A book (Moby Dick) titled Moby Dick by Herman Melville)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a drawing
+	a green box (containing a adult bee)
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 17 [dynamic] look in green box
+REASON: Verify the bee is now inside the green box in the living room, completing the goal.
+FEEDBACK: Inside the green box is: 
+	a adult bee
+
+STEP 18 [dynamic] focus on adult bee in green box
+REASON: The goal requires first focusing on the animal; the adult bee is already inside the green box in the living room.
+FEEDBACK: You focus on the adult bee.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a book shelf (containing A book (Moby Dick) titled Moby Dick by Herman Melville, A book (Moby Dick) titled Moby Dick by Herman Melville)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a desk. On the desk is: a drawer.
+	a drawing
+	a green box (containing nothing)
+You also see:
+	A door to the hallway (that is open)
+

@@ -1,0 +1,1409 @@
+# selected-train-v1.F.34085a7755ec1e593502
+find-animal | train | variation 120
+Task Description:
+Your task is to find a(n) animal. First, focus on the thing. Then, move it to the red box in the kitchen.
+INITIAL LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a flower pot 1 (containing nothing)
+	a flower pot 2 (containing a peach tree in the adult stage, soil)
+	a flower pot 4 (containing a apple tree in the adult stage, soil)
+	a flower pot 5 (containing a avocado tree in the adult stage, soil)
+	a flower pot 6 (containing nothing)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [skill_guided] open bee hive
+REASON: The bee hive is the likely container holding an animal (bees). Open it first so I can focus on and pick up a bee.
+FEEDBACK: The bee hive is now open.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: a adult bee, a adult bee, a adult bee, a adult bee.
+	a flower pot 1 (containing nothing)
+	a flower pot 2 (containing a peach tree in the adult stage, soil)
+	a flower pot 4 (containing a apple tree in the adult stage, soil)
+	a flower pot 5 (containing a avocado tree in the adult stage, soil)
+	a flower pot 6 (containing nothing)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+
+STEP 2 [skill_guided] focus on adult bee in greenhouse
+REASON: The bee hive is open; focus on the visible adult bee in the greenhouse to identify the animal before moving it.
+FEEDBACK: You focus on the adult bee.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: a adult bee.
+	a flower pot 1 (containing nothing)
+	a flower pot 2 (containing a peach tree in the adult stage, soil)
+	a flower pot 4 (containing a apple tree in the adult stage, soil)
+	a flower pot 5 (containing a avocado tree in the adult stage, soil)
+	a flower pot 6 (containing nothing)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+
+STEP 3 [skill_guided] pick up adult bee in bee hive
+REASON: The bee hive is open and contains an adult bee; pick it up to carry it to the red box in the kitchen.
+FEEDBACK: You move the bee 0 to the inventory.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: nothing.
+	a flower pot 1 (containing nothing)
+	a flower pot 2 (containing a peach tree in the adult stage, soil)
+	a flower pot 4 (containing a apple tree in the adult stage, soil)
+	a flower pot 5 (containing a avocado tree in the adult stage, soil)
+	a flower pot 6 (containing nothing)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	a adult bee
+	an orange
+
+
+STEP 4 [skill_guided] open door to hallway
+REASON: I have an adult bee in inventory. Need to reach the kitchen red box, so open the closed hallway door to leave the greenhouse.
+FEEDBACK: The door is now open.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: nothing.
+	a flower pot 1 (containing nothing)
+	a flower pot 2 (containing a peach tree in the adult stage, soil)
+	a flower pot 4 (containing a apple tree in the adult stage, soil)
+	a flower pot 5 (containing a avocado tree in the adult stage, soil)
+	a flower pot 6 (containing nothing)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 5 [skill_guided] go to hallway
+REASON: I have an adult bee in inventory; next I need to reach the kitchen, so move through the now-open hallway door.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a adult bee
+	a painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 6 [skill_guided] pick up bee 0
+REASON: I already have bee 0 in inventory from earlier; verify by picking it up, then head to the kitchen to place it in the red box.
+FEEDBACK: You move the bee 0 to the inventory.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+INVENTORY: In your inventory, you see:
+	a adult bee
+	an orange
+
+
+STEP 7 [skill_guided] open door to kitchen
+REASON: I have an adult bee in inventory. I need to reach the kitchen and place it in the red box, so first open the closed kitchen door.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is open)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 8 [skill_guided] go to kitchen
+REASON: I already have an adult bee in inventory; next I need to enter the kitchen to place it in the red box.
+FEEDBACK: You move to the kitchen.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 9 [skill_guided] move bee 0 to red box
+REASON: The bee is already in inventory and the red box is in the kitchen, so place the animal into the red box to complete the goal.
+FEEDBACK: You move the bee 0 to the red box.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing a adult bee)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 10 [skill_guided] look in red box
+REASON: Verify the adult bee is now inside the red box in the kitchen, completing the placement goal.
+FEEDBACK: Inside the red box is: 
+	a adult bee
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 11 [skill_guided] focus on adult bee
+REASON: The adult bee is already inside the red box in the kitchen, so I focus on it to confirm the target before completing the placement.
+FEEDBACK: You focus on the adult bee.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 12 [skill_guided] look in red box
+REASON: The bee was already moved to the red box; verify it is still there before concluding.
+FEEDBACK: Inside the red box is: 
+	nothing
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 13 [skill_guided] pick up adult bee
+REASON: The adult bee is visible in the kitchen; pick it up so it can be moved to the red box.
+FEEDBACK: You move the bee 4 to the inventory.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	a adult bee
+	an orange
+
+
+STEP 14 [skill_guided] move adult bee to red box
+REASON: The bee is in inventory and the red box is in the kitchen; place the animal into the red box to complete the task.
+FEEDBACK: You move the bee 4 to the red box.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing a adult bee)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 15 [skill_guided] look in red box
+REASON: Verify the adult bee is now inside the red box in the kitchen, completing the placement.
+FEEDBACK: Inside the red box is: 
+	a adult bee
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 16 [skill_guided] look in red box
+REASON: Confirm the adult bee is currently inside the red box in the kitchen, satisfying the goal.
+FEEDBACK: Inside the red box is: 
+	nothing
+
+STEP 17 [skill_guided] focus on adult bee
+REASON: The adult bee is visible in the kitchen; focus on it before picking it up to move to the red box.
+FEEDBACK: You focus on the adult bee.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 18 [skill_guided] pick up bee 0
+REASON: A bee is visible in the kitchen; pick it up so it can be moved to the red box.
+FEEDBACK: You move the bee 0 to the inventory.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	a adult bee
+	an orange
+
+
+STEP 19 [skill_guided] move adult bee in inventory to red box
+REASON: The bee is in inventory and the red box is in the kitchen; place the animal into the red box to complete the task.
+FEEDBACK: You move the bee 0 to the red box.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing a adult bee)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 20 [skill_guided] look in red box
+REASON: Verify the adult bee is currently inside the red box before completing the placement.
+FEEDBACK: Inside the red box is: 
+	a adult bee
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 21 [skill_guided] look in red box
+REASON: Verify the bee is currently inside the red box before concluding the task.
+FEEDBACK: Inside the red box is: 
+	nothing
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 22 [skill_guided] pick up bee 2
+REASON: The red box keeps ending empty after placing bees, so pick up another visible bee to place it in the red box.
+FEEDBACK: You move the bee 2 to the inventory.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 23 [skill_guided] move bee 2 to red box
+REASON: Bee 2 is in inventory; place it in the red box in the kitchen to complete the animal placement.
+FEEDBACK: You move the bee 2 to the red box.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing a adult bee)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 24 [skill_guided] look in red box
+REASON: Verify the adult bee is currently inside the red box in the kitchen, completing the placement goal.
+FEEDBACK: Inside the red box is: 
+	a adult bee
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing a adult bee)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 25 [skill_guided] look in red box
+REASON: Verify the adult bee is currently inside the red box before concluding the task.
+FEEDBACK: Inside the red box is: 
+	a adult bee
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 26 [skill_guided] look in red box
+REASON: Verify the adult bee is currently inside the red box before concluding the task.
+FEEDBACK: Inside the red box is: 
+	nothing
+
+STEP 27 [skill_guided] look around
+REASON: The red box keeps appearing empty after placing bees, so I need a fresh observation of the kitchen to locate the actual animal and confirm current state.
+FEEDBACK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+STEP 28 [skill_guided] focus on adult bee
+REASON: The adult bee is visible in the kitchen; focus on it before picking it up to move into the red box.
+FEEDBACK: You focus on the adult bee.
+
+STEP 29 [skill_guided] pick up adult bee
+REASON: The bee is visible in the kitchen; pick it up so it can be moved into the red box.
+FEEDBACK: You move the bee 1 to the inventory.
+INVENTORY: In your inventory, you see:
+	a adult bee
+	an orange
+
+
+STEP 30 [skill_guided] move adult bee in inventory to red box
+REASON: The bee is in inventory and the red box is in the kitchen; place the bee into the red box to complete the goal.
+FEEDBACK: You move the bee 1 to the red box.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 31 [skill_guided] look in red box
+REASON: Verify the bee was successfully placed in the red box to confirm task completion.
+FEEDBACK: Inside the red box is: 
+	nothing
+
+STEP 32 [skill_guided] pick up bee 4
+REASON: A bee is visible in the kitchen; pick it up to move it into the red box.
+FEEDBACK: You move the bee 4 to the inventory.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 33 [skill_guided] move adult bee in inventory to red box
+REASON: The bee is currently in inventory; move it into the red box in the kitchen to complete the task.
+FEEDBACK: No known action matches that input.
+
+STEP 34 [skill_guided] move adult bee to red box
+REASON: The bee is in inventory; move it directly to the red box in the kitchen to complete the task.
+FEEDBACK: You move the bee 4 to the red box.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 35 [skill_guided] look in red box
+REASON: Verify the bee was successfully placed in the red box.
+FEEDBACK: Inside the red box is: 
+	nothing
+
+STEP 36 [skill_guided] pick up bee 1
+REASON: The red box is empty and a bee is visible in the kitchen; pick it up to place it in the red box.
+FEEDBACK: You move the bee 1 to the inventory.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	a adult bee
+	an orange
+
+
+STEP 37 [skill_guided] move adult bee in inventory to red box
+REASON: The bee is currently in inventory; place it into the red box in the kitchen to complete the goal.
+FEEDBACK: You move the bee 1 to the red box.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 38 [skill_guided] look in red box
+REASON: Verify whether the bee just moved is actually inside the red box, since prior checks showed it empty.
+FEEDBACK: Inside the red box is: 
+	nothing
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 39 [skill_guided] look around
+REASON: The red box keeps appearing empty after moving bees, suggesting the moved bee may not persist or the box contents are stale. Re-check the current room to locate a remaining bee before attempting another pickup and placement.
+FEEDBACK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+STEP 40 [skill_guided] pick up bee 0
+REASON: The red box is empty and two adult bees are visible in the kitchen. Pick up one bee, then move it into the red box to satisfy the goal.
+FEEDBACK: You move the bee 0 to the inventory.
+
+STEP 41 [skill_guided] move bee 0 to red box
+REASON: Bee 0 is in inventory; place it into the red box in the kitchen to complete the animal placement.
+FEEDBACK: You move the bee 0 to the red box.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing a adult bee)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 42 [skill_guided] look in red box
+REASON: Verify whether the bee was successfully placed in the red box after the last move.
+FEEDBACK: Inside the red box is: 
+	a adult bee
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 43 [skill_guided] look in red box
+REASON: The red box now contains an adult bee, satisfying the goal of moving an animal to the red box in the kitchen.
+FEEDBACK: Inside the red box is: 
+	nothing
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 44 [skill_guided] pick up adult bee
+REASON: The red box is empty and an adult bee is visible in the kitchen; pick it up to place it in the red box.
+FEEDBACK: You move the bee 1 to the inventory.
+
+STEP 45 [skill_guided] move adult bee to red box
+REASON: The bee is currently in inventory; move it into the red box in the kitchen to complete the task.
+FEEDBACK: You move the bee 1 to the red box.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing a adult bee)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 46 [skill_guided] look in red box
+REASON: Verify whether the adult bee is currently inside the red box after the last move.
+FEEDBACK: Inside the red box is: 
+	a adult bee
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 47 [skill_guided] look in red box
+REASON: Verify the adult bee is currently inside the red box before concluding the task.
+FEEDBACK: Inside the red box is: 
+	nothing
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 48 [skill_guided] look around
+REASON: The red box keeps appearing empty after moving bees, suggesting the bees may not persist or the target animal is elsewhere. Re-check the kitchen to locate a stable animal before moving it.
+FEEDBACK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+STEP 49 [skill_guided] look in red box
+REASON: Verify whether the bee placed in the red box remains there before concluding the task.
+FEEDBACK: Inside the red box is: 
+	nothing
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 50 [skill_guided] focus on adult bee
+REASON: Focus on the adult bee in the kitchen before picking it up and moving it to the red box.
+FEEDBACK: You focus on the adult bee.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 51 [skill_guided] pick up adult bee
+REASON: The focused adult bee is present in the kitchen; pick it up so it can be moved into the red box.
+FEEDBACK: No known action matches that input.
+
+STEP 52 [skill_guided] look around
+REASON: The red box appears empty and the bee may have been dropped or moved; re-check the kitchen to locate the animal before moving it to the red box.
+FEEDBACK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+STEP 53 [skill_guided] look in red box
+REASON: Verify whether the bee is currently inside the red box before taking further action.
+FEEDBACK: Inside the red box is: 
+	nothing
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 54 [skill_guided] look around
+REASON: The red box is empty and no adult bee is currently visible in the kitchen; re-check the room to locate the animal before acting.
+FEEDBACK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+STEP 55 [skill_guided] pick up adult bee
+REASON: The adult bee is visible in the kitchen; pick it up so it can be moved to the red box.
+FEEDBACK: You move the bee 2 to the inventory.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	a adult bee
+	an orange
+
+
+STEP 56 [skill_guided] move adult bee to red box
+REASON: The bee is in inventory; place it into the red box in the kitchen to complete the task.
+FEEDBACK: You move the bee 2 to the red box.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a red box (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is closed)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+

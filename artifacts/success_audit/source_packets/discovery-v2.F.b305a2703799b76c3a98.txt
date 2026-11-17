@@ -1,0 +1,144 @@
+# discovery-v2.F.b305a2703799b76c3a98
+find-living-thing | train | variation 19
+Task Description:
+Your task is to find a(n) living thing. First, focus on the thing. Then, move it to the green box in the bedroom.
+INITIAL LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a flower pot 1 (containing a cherry tree in the adult stage, soil)
+	a flower pot 2 (containing a pea plant in the adult stage with a tall height, soil)
+	a flower pot 3 (containing nothing)
+	a flower pot 4 (containing nothing)
+	a flower pot 8 (containing a apple tree in the adult stage, soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] focus on adult pea plant
+REASON: The goal requires first focusing on a living thing; the adult pea plant is a living organism in the greenhouse.
+FEEDBACK: You focus on the pea.
+
+STEP 2 [dynamic] pick up adult pea plant
+REASON: The adult pea plant is a living thing; pick it up so it can be moved to the green box in the bedroom.
+FEEDBACK: You move the pea plant to the inventory.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a flower pot 1 (containing a cherry tree in the adult stage, soil)
+	a flower pot 2 (containing soil)
+	a flower pot 3 (containing nothing)
+	a flower pot 4 (containing nothing)
+	a flower pot 8 (containing a apple tree in the adult stage, soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+	a pea plant in the adult stage with a tall height
+
+
+STEP 3 [dynamic] open door to hallway
+REASON: I have the living pea plant in inventory. I need to reach the bedroom, so I must open the hallway door to leave the greenhouse.
+FEEDBACK: The door is now open.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a flower pot 1 (containing a cherry tree in the adult stage, soil)
+	a flower pot 2 (containing soil)
+	a flower pot 3 (containing nothing)
+	a flower pot 4 (containing nothing)
+	a flower pot 8 (containing a apple tree in the adult stage, soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+	a pea plant in the adult stage with a tall height (that looks unwell)
+
+
+STEP 4 [dynamic] go to hallway
+REASON: I have the living pea plant in inventory; next I need to reach the bedroom via the hallway to place it in the green box.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a finger painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 5 [dynamic] open door to bedroom
+REASON: I have the living pea plant in inventory. I need to reach the bedroom to place it in the green box, so I open the closed bedroom door from the hallway.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a finger painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 6 [dynamic] go to bedroom
+REASON: The pea plant is a living thing already in inventory; I need to move it to the green box in the bedroom, so go there now.
+FEEDBACK: You move to the bedroom.
+LOOK: This room is called the bedroom. In it, you see: 
+	the agent
+	a substance called air
+	a bed. On the bed is: a mattress. On the mattress is: a white pillow..
+	a closet. The closet door is closed. 
+	a finger painting
+	a green box (containing nothing)
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	an orange
+	a pea plant in the dead stage (that looks unwell)
+
+
+STEP 7 [dynamic] move dead pea plant to green box
+REASON: The pea plant is the living thing in inventory; move it into the green box in the bedroom.
+FEEDBACK: You move the pea plant to the green box.
+LOOK: This room is called the bedroom. In it, you see: 
+	the agent
+	a substance called air
+	a bed. On the bed is: a mattress. On the mattress is: a white pillow..
+	a closet. The closet door is closed. 
+	a finger painting
+	a green box (containing a dead pea plant)
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	an orange
+

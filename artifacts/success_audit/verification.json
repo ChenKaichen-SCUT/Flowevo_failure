@@ -1,0 +1,51 @@
+{
+  "TEST_design_rows": 0,
+  "api_key_read": false,
+  "historical_task_outcomes_unchanged": true,
+  "ledger_after": [
+    8941,
+    12.375240827999969
+  ],
+  "ledger_before": [
+    8941,
+    12.375240827999969
+  ],
+  "matrix_records": 102,
+  "network_interfaces": [
+    "lo"
+  ],
+  "new_API_cost": 0,
+  "new_JVM_runs": 0,
+  "new_TEST_solves": 0,
+  "new_model_API_calls": 0,
+  "original_files_verified": 18793,
+  "original_public_success_records_equal": 102,
+  "output_sha256": {
+    "artifacts/success_audit/summary.json": "1c567811ea3f791891b200b31a7a4fd85e0e38b088c157b1ce3774c5bd01647f",
+    "reports/COMPILATION_INFORMATION_LOSS_ZH.md": "f404fde7e4dd3a41d7e0c5d52a48505bc98598f49b4f3c99234a6a573c32bbbd",
+    "reports/SUCCESS_TRACE_INTEGRITY_ZH.md": "bfecd1a38196c86cf27ca31677c63d0c978c91bf51207189bab5c0299886170e",
+    "results/skill_information_loss.csv": "1a1dc229d6a3776801bf49a8a9a1b0b7ebf8ca1add5b78d05dca9fab0dd007c1",
+    "results/success_trace_audit.csv": "e27884e7a670cb1b5ebc2e6ab170818ba6dec6eac5c02d9d006d0bd2bed2289d"
+  },
+  "parent": "5ae0dcdf80bf81c4f5acd34d24f75501ddda942b",
+  "primary_units": 31,
+  "runtime_code_unchanged": true,
+  "scheduler_started": false,
+  "source_packets_and_csv_join_verified": true,
+  "source_review_frozen": true,
+  "source_reviewed_records": 39,
+  "source_sha256": {
+    "configs/success_trace_audit.json": "83c79692e84214aaa17f8c3a68d97650e130866df490d7677fbe07a3832b8e7e",
+    "scripts/success_audit_adjudicate.py": "81f9069137c14877b31f6b0ae0e67f4b71ac4db1698300e941ae4781ba499552",
+    "scripts/success_audit_compile.py": "b7d9f13309189c3b665da2ea8dc3aeac6d9bd0bf4a614a92d8e07251a8d348e5",
+    "scripts/success_audit_prepare.py": "b8817f45fd5e149d46f0ef1a057664d800299401c06f4f1a50ed211bbaf97621",
+    "scripts/success_audit_read.py": "a665c1fc2d79244d2c7e2533ff8b34c2a078f2ad09387fb4d24f708156243052",
+    "scripts/success_audit_reports.py": "a866f4fea6b75411e673ad855fdf2879f9a5d7e9eee808d0dca0c8d8a35c1aeb",
+    "scripts/success_audit_transfer.py": "d3e526bd4998abc5b99c9ca1fb26d1f483372d99f3d6bfa649623be356d0b94e",
+    "scripts/success_audit_verify.py": "d6e3035c19d0cb873e4d7e578ae105724e46c18e19a98375ea216ecbbb623d3b"
+  },
+  "static_transfer_cases": 12,
+  "status": "PASSED",
+  "tests": "........................................................                 [100%]\n56 passed in 0.25s",
+  "utc": "2026-11-17T13:53:52.373784+00:00"
+}

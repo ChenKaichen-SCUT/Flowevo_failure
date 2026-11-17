@@ -1,0 +1,101 @@
+# dev-baseline-v1.F.3ea7c55db1ecffae3c8a
+inclined-plane-friction-named-surfaces | dev | variation 1011
+Task Description:
+Your task is to determine which of the two inclined planes (glass, brass) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.
+INITIAL LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [skill_guided] open door to hallway
+REASON: Need to leave the living room and search other rooms for the glass and brass inclined planes.
+FEEDBACK: The door is now open.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 2 [skill_guided] go to hallway
+REASON: Door is open; move to the hallway to locate the inclined planes and blocks for the friction experiment.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+
+STEP 3 [skill_guided] look around
+REASON: Survey the hallway to locate inclined planes or relevant objects before proceeding.
+FEEDBACK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is closed)
+
+STEP 4 [skill_guided] open door to workshop
+REASON: Need to explore rooms to find the glass and brass inclined planes; workshop is a likely location, so open its door first.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+
+
+STEP 5 [skill_guided] go to workshop
+REASON: The workshop door is open; entering lets me survey for the inclined planes and blocks needed for the friction experiment.
+FEEDBACK: You move to the workshop.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	an inclined plane with a glass surface
+	an inclined plane with a brass surface
+	a stopwatch, which is deactivated. 
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a green light bulb, which is off, a green wire, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+	a wood block
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 6 [skill_guided] connect block to inclined plane with a glass surface
+REASON: Set up the friction experiment on the glass inclined plane by connecting the block to it, then observe the result.
+FEEDBACK: terminal 1 on wood block is now connected to terminal 1 on inclined plane
+
+STEP 7 [skill_guided] focus on inclined plane with a glass surface
+REASON: Block is connected to the glass inclined plane; focus on it to observe the friction experiment result.
+FEEDBACK: You focus on the inclined plane with a glass surface.

@@ -1,0 +1,185 @@
+# discovery-v1.F.e1913f9868b6d9fe9f61
+inclined-plane-determine-angle | train | variation 23
+Task Description:
+Your task is to determine which of the two inclined planes (C, B) has the steepest angle. After completing your experiment, focus on the inclined plane with the steepest angle.
+INITIAL LOOK: This room is called the bathroom. In it, you see: 
+	the agent
+	a substance called air
+	a bathtub, which is turned off. In the bathtub is: nothing.
+	a drawing
+	a glass cup (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a toilet. In the toilet is: A drain, which is open, a substance called water.
+You also see:
+	A door to the kitchen (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] open door to kitchen
+REASON: I need to locate the inclined planes C and B, which are likely in the kitchen. The door to the kitchen is closed, so I should open it first.
+FEEDBACK: The door is now open.
+LOOK: This room is called the bathroom. In it, you see: 
+	the agent
+	a substance called air
+	a bathtub, which is turned off. In the bathtub is: nothing.
+	a drawing
+	a glass cup (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+	a toilet. In the toilet is: A drain, which is closed, a substance called water.
+You also see:
+	A door to the kitchen (that is open)
+
+
+STEP 2 [dynamic] go to kitchen
+REASON: The task involves inclined planes C and B, which are likely in the kitchen. The door is now open, so I should move to the kitchen to locate them.
+FEEDBACK: You move to the kitchen.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is open)
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+
+STEP 3 [dynamic] look around
+REASON: I need to locate the two inclined planes (C and B) to compare their angles. They are not visible in the current kitchen view, so I should look around to find them.
+FEEDBACK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is open)
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+STEP 4 [dynamic] open door to hallway
+REASON: The inclined planes C and B are not visible in the kitchen; they are likely in the hallway or another room. I should explore by opening the closed door to the hallway.
+FEEDBACK: The door is now open.
+LOOK: This room is called the kitchen. In it, you see: 
+	the agent
+	a substance called air
+	a chair. On the chair is: nothing.
+	a counter. On the counter is: a bowl (containing a red apple, a banana, an orange, a potato), a drawer.
+	a cupboard. The cupboard door is closed. 
+	a freezer. The freezer door is closed. 
+	a fridge. The fridge door is closed. 
+	a glass jar (containing a substance called sodium chloride)
+	a lighter
+	a oven, which is turned off. The oven door is closed. 
+	a painting
+	a sink, which is turned off. In the sink is: nothing.
+	a substance called soap
+	a stopwatch, which is deactivated. 
+	a stove, which is turned off. On the stove is: nothing.
+	a table. On the table is: a glass cup (containing nothing).
+	a thermometer, currently reading a temperature of 10 degrees celsius
+You also see:
+	A door to the bathroom (that is open)
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 5 [dynamic] go to hallway
+REASON: The inclined planes C and B are likely in the hallway, so I should move there to inspect them.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a finger painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 6 [dynamic] open door to workshop
+REASON: The inclined planes C and B are likely in the workshop or another room; I need to explore. The workshop door is closed, so I'll open it to search for the inclined planes.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a finger painting
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is open)
+	A door to the living room (that is closed)
+	A door to the workshop (that is open)
+
+
+STEP 7 [dynamic] go to workshop
+REASON: The inclined planes C and B are likely in the workshop, whose door is now open. Next, move to the workshop to inspect them.
+FEEDBACK: You move to the workshop.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a brick
+	an inclined plane C
+	an inclined plane B
+	a stopwatch, which is deactivated. 
+	a table. On the table is: a battery, a black wire, a blue wire, a orange light bulb, which is off, a orange wire, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 8 [dynamic] look at inclined plane c
+REASON: I am in the workshop with inclined planes B and C visible. To compare their steepness, I should inspect each plane's angle. First, look at inclined plane C.
+FEEDBACK: an inclined plane C
+
+STEP 9 [dynamic] look at inclined plane c
+REASON: I need to compare the steepness of inclined planes C and B. First inspect inclined plane C's angle, then B's.
+FEEDBACK: an inclined plane C
+
+STEP 10 [dynamic] look at inclined plane b
+REASON: Need to compare the two inclined planes' steepness. Looking at plane C gave no angle info, so inspect plane B next for comparison.
+FEEDBACK: an inclined plane B
+
+STEP 11 [dynamic] look in inclined plane b
+REASON: I need to compare the steepness of inclined planes B and C. Looking at them only gives names, so I should inspect each plane's contents/properties. Start by looking in inclined plane B.
+FEEDBACK: Inside the inclined plane is: 
+	nothing
+
+STEP 12 [dynamic] look at inclined plane c
+REASON: I need to compare the steepness of inclined planes B and C. Looking at each plane may reveal angle information; I already looked at B's interior. Let me look at inclined plane C to inspect its angle.
+FEEDBACK: an inclined plane C
+
+STEP 13 [dynamic] focus on inclined plane c
+REASON: I need to compare the steepness of inclined planes B and C. Looking at them only gives names, so I should focus on one plane to inspect its angle property.
+FEEDBACK: You focus on the inclined plane C.

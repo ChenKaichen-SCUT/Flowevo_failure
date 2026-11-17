@@ -1,0 +1,980 @@
+[
+  {
+    "job_id": "batch-sensitivity-1-v1.F.1421639dc7e19fcaab35",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      12
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      10,
+      11,
+      12
+    ],
+    "reason_zh": "仅见两种材料名称；look反馈没有摩擦比较，最终focus被当成inspect。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "batch-sensitivity-8-v1.F.1421639dc7e19fcaab35",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      9
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      7,
+      8,
+      9
+    ],
+    "reason_zh": "只观察cloth名称即focus；没有摩擦结果。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "batch-sensitivity-8-v1.F.ddde1cdd88f20265f732",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      44,
+      48
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "reason_zh": "公开蜂身份、focus、拾取、导航与容器内蜂均有证据。前期搜索冗长不构成实验推断。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      7
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      5,
+      6,
+      7
+    ],
+    "reason_zh": "连接反馈是端子连接，未测摩擦；focus声称用于观察实验结果。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "dev-baseline-v1.F.722d467db63128d43cf2",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      16
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      13,
+      14,
+      15,
+      16
+    ],
+    "reason_zh": "玻璃斜面仅名称和brick端子连接反馈；focus前无与steel的比较证据。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "dev-baseline-v1.F.77525ad34ec157f0577b",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      19
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      17,
+      18,
+      19
+    ],
+    "reason_zh": "连接bronze后直接focus，缺少与greenpaint的摩擦比较。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "dev-baseline-v1.F.cfcb5065ead3594fa047",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      2,
+      75,
+      77
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      75,
+      76,
+      77
+    ],
+    "reason_zh": "蜂多次离开容器，来源包含公开检查与重新拾取/放置；末段75放置、76看见蜂、77focus。简单任务仍有状态变化。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v1.F.1b4703786cd7f2ff0592",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      29,
+      33
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "reason_zh": "找到蜂后focus并搬入red box，末状态确认蜂在盒内。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v1.F.279ad8d80a9088c7546b",
+    "label": "PROCESS_SUPPORTED",
+    "requires_inference_or_experiment": true,
+    "comparison_required": false,
+    "measurement_evidence_steps": [
+      11
+    ],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      7
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "reason_zh": "激活炉灶、放置棉花糖并等待；第11步公开look出现liquid marshmallow，支持状态变化。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v1.F.965d4f1df81ea937ed3b",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      5,
+      9
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason_zh": "公开植物身份与搬入容器有证据；运输中unwell，但此任务要求plant而非持续健康。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v1.F.d9797b94d94a3a12ea4b",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      1,
+      5
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason_zh": "drawing是公开可见普通非生物物件，focus并搬入指定盒。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v1.F.e1913f9868b6d9fe9f61",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      13
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      7,
+      8,
+      10,
+      11,
+      12,
+      13
+    ],
+    "reason_zh": "plane B/C只返回名称或空内容，未见角度或比较读数；focus被用于查看角度。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.09ae344822c12738f557",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      4
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason_zh": "观察确认三种动物身份；reason明确援引一般寿命排序，但公开反馈没有寿命属性可核对。属于未验证先验，不证明随机猜测。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.2beaa66b5bcd3db3dc64",
+    "label": "PROCESS_SUPPORTED",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [
+      9
+    ],
+    "comparison_evidence_steps": [
+      10,
+      14
+    ],
+    "selection_steps": [
+      14,
+      17
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      1,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      17
+    ],
+    "reason_zh": "第9步明确测得-13摄氏度，第10/14步依据小于0选择orange box，移动反馈确认；最后补focus未知物。测量对象读数不同于随后温度计环境读数。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.2dcdca293d9b16367852",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      8
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      6,
+      7,
+      8
+    ],
+    "reason_zh": "看到tortoise/frog/hedgehog身份，reason称tortoise likely longest；缺少可从公开环境核验的寿命排序。先验可能有用但本审计不替来源补知识证明。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.31452f59c48bc5d93974",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      6,
+      7
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason_zh": "三种身份已观察，未见寿命数据；两次focus后完成不构成事前排序证据，第7步reason仍声称在检查身份。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.3fbe681bf784f2d76d21",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [
+      5
+    ],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      6
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason_zh": "测得当前温度10，并未加热或观察熔化；不能当作熔点。等于阈值也不支持above分支，reason承认等值仍选orange。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.5338a5b7b1763d020e75",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      31
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      3,
+      5,
+      15,
+      20,
+      24,
+      30,
+      31
+    ],
+    "reason_zh": "仅种子外观/空盆/空盒以及拾种，未种植、杂交或观察后代；focus orange声称用于检查性状。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.5bfedeb6e825464e626d",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      13
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "reason_zh": "检查rubber/soapy water仅返回名称，未实验或摩擦比较就focus。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.6aebd9fb1322c1074fb6",
+    "label": "PROCESS_SUPPORTED",
+    "requires_inference_or_experiment": true,
+    "comparison_required": false,
+    "measurement_evidence_steps": [
+      9
+    ],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      6
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason_zh": "ice从freezer取出放到stove，激活后公开look由ice变water。第3步无效focus不应保留为必要步骤。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.7ac4185e5f00f742931e",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      1,
+      5
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason_zh": "实际direct_skill五动作，公开picture身份、门状态和yellow box内picture支持简单搬运。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.8a0e00d29345445b21a5",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      6,
+      7
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason_zh": "身份观察充分但无寿命信息；最后focus mouse被声称能揭示寿命，不能用完成状态倒推依据。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.8c8a122797c51e4659c6",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      8
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason_zh": "三种身份检查无寿命反馈；focus chameleon被当作信息获取。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.965d4f1df81ea937ed3b",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      12,
+      14
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      14
+    ],
+    "reason_zh": "植物身份与搬入盒有公开证据；focus在搬运后补做，与first措辞不同，末状态变dead。任务仍是plant，不由此推翻宿主成功。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.9cef108e88fa0d6aff89",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      8
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason_zh": "匿名材料E/C仅返回名称，无法从材料常识推断摩擦；focus用作inspect。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.ae8d0d5850873ad49924",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      10
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      10
+    ],
+    "reason_zh": "只见种子外观与空盒；未获得显隐性证据，按dominant分支直接focus。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.b305a2703799b76c3a98",
+    "label": "PARTIALLY_SUPPORTED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      1,
+      7
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "reason_zh": "起初adult pea plant满足living thing；运输中unwell，第6步变dead，第7步仍按living thing搬运。宿主成功与持续存活条件不能混同。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.d9797b94d94a3a12ea4b",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      1,
+      5
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason_zh": "非生物drawing的身份、focus和搬入red box均有公开依据。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "discovery-v2.F.def63cb9dcbcef266a65",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      2,
+      11
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11
+    ],
+    "reason_zh": "蜂身份和最终yellow box内蜂可见；中间closed door错误后正常反馈修复。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "selected-train-v1.F.003597b7b9c549df70c6",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      5
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason_zh": "两个斜面的look只有名称，两次connect只有terminal反馈，最终focus不是测量；无可核验摩擦排序。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "selected-train-v1.F.098816d79aa10bdc5eec",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      5
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason_zh": "只连接steel与brick后focus，尚未观察rubber实验或任何摩擦结果。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "selected-train-v1.F.1421639dc7e19fcaab35",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      8
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason_zh": "仅cloth名称即focus，无摩擦结果。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "selected-train-v1.F.17c9fd4a9e6176a23caf",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      10
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      4,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reason_zh": "两种名称和plastic端子连接不能支持摩擦比较；focus声称观察结果。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "selected-train-v1.F.34085a7755ec1e593502",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      2,
+      56
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      12,
+      39,
+      55,
+      56
+    ],
+    "reason_zh": "多次公开发现蜂离开箱子并重新拾取放置；末动作确认move但刷新look为空。可证简单搬移动作，不证明持续留在盒中。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "selected-train-v1.F.47673143391e75c3cf13",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      49,
+      53
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53
+    ],
+    "reason_zh": "公开蜂身份与move反馈支持简单搬运；拾取bee3与最终bee0不同且末look为空，需单列身份/持久性限制。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "selected-train-v1.F.68edb4b7a582dbbbf477",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      16,
+      18
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18
+    ],
+    "reason_zh": "green box曾公开包含蜂，focus后又为空；focus是补做而非先做。状态持久性未证明。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "selected-train-v1.F.7d7a4efdcc6531231f85",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      10,
+      16,
+      18,
+      64,
+      68
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      7,
+      10,
+      11,
+      26,
+      27,
+      28,
+      33,
+      34,
+      35,
+      38,
+      39,
+      64,
+      65,
+      68
+    ],
+    "reason_zh": "身份随生命周期改变但公开可见；最终蝶、蛙、龟在目标盒。大量重复动作不能等于实验比较。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "selected-train-v1.F.8658e75cca5cffee5b04",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      19
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      15,
+      17,
+      18,
+      19
+    ],
+    "reason_zh": "caesium连接steel block后立即focus，未比较glass摩擦。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_a"
+  },
+  {
+    "job_id": "selected-train-v1.F.ddde1cdd88f20265f732",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_steps": [
+      35,
+      81,
+      84
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      81,
+      82,
+      83,
+      84
+    ],
+    "reason_zh": "曾将pillow误作object，后公开反馈纠正并看到盒内蜂；最终focus后蜂再次离开。可观察重查，不保证持续位置。",
+    "uncertainties_zh": "观察不足不等于随机猜测；简单任务标签不证明策略高效或任意状态可迁移。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_a"
+  }
+]

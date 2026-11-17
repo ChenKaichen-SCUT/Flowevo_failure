@@ -1,0 +1,127 @@
+# batch-sensitivity-8-v1.F.1421639dc7e19fcaab35
+inclined-plane-friction-named-surfaces | train | variation 25
+Task Description:
+Your task is to determine which of the two inclined planes (cloth, steel) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.
+INITIAL LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [skill_guided] look around
+REASON: I need to locate the inclined planes (cloth and steel) and determine the room layout before experimenting.
+FEEDBACK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+	A door to the outside (that is closed)
+
+STEP 2 [skill_guided] open door to hallway
+REASON: Need to leave the greenhouse and explore rooms to find the cloth and steel inclined planes for the friction comparison.
+FEEDBACK: The door is now open.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 3 [skill_guided] go to hallway
+REASON: Need to explore rooms to find the cloth and steel inclined planes for the friction experiment.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+
+STEP 4 [skill_guided] look in greenhouse
+REASON: Need to locate the cloth and steel inclined planes; greenhouse is accessible and likely contains experiment materials.
+FEEDBACK: Inside the greenhouse is: 
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+
+ You also see: A door to the hallway (that is open), A door to the outside (that is closed).
+
+STEP 5 [skill_guided] look around
+REASON: I need to locate the inclined planes (cloth and steel) and any relevant objects; current hallway view shows only air and a drawing, so re-check surroundings before exploring other rooms.
+FEEDBACK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is closed)
+
+STEP 6 [skill_guided] open door to workshop
+REASON: Need to explore rooms to find the cloth and steel inclined planes; workshop is a likely location, so open its closed door.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is open)
+
+
+STEP 7 [skill_guided] go to workshop
+REASON: The workshop door is open; entering it should reveal the inclined planes needed to compare friction.
+FEEDBACK: You move to the workshop.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	an inclined plane with a cloth surface
+	an inclined plane with a steel surface
+	a steel block
+	a stopwatch, which is deactivated. 
+	a table. On the table is: a battery, a green wire, a orange light bulb, which is off, a orange wire, a red light bulb, which is off, a switch, which is off, a yellow light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 8 [skill_guided] look at inclined plane with a cloth surface
+REASON: Inspect the cloth inclined plane to learn how to run the friction experiment.
+FEEDBACK: an inclined plane with a cloth surface
+
+STEP 9 [skill_guided] focus on inclined plane with a cloth surface
+REASON: The goal requires comparing friction on both inclined planes; focusing on the cloth plane first begins the selection step.
+FEEDBACK: You focus on the inclined plane with a cloth surface.

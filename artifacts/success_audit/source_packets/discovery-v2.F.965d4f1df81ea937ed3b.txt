@@ -1,0 +1,209 @@
+# discovery-v2.F.965d4f1df81ea937ed3b
+find-plant | train | variation 59
+Task Description:
+Your task is to find a(n) plant. First, focus on the thing. Then, move it to the purple box in the workshop.
+INITIAL LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a purple box (containing nothing)
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a red light bulb, which is off, a red wire, a switch, which is off, a violet light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] open freezer
+REASON: The plant is likely inside the ultra low temperature freezer; open it to check contents.
+FEEDBACK: The ultra low temperature freezer is now open.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a purple box (containing nothing)
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a red light bulb, which is off, a red wire, a switch, which is off, a violet light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is open. In the ultra low temperature freezer is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+
+
+STEP 2 [dynamic] look in freezer
+REASON: The freezer is open; check its contents for a plant before searching elsewhere.
+FEEDBACK: Inside the ultra low temperature freezer is: 
+	nothing
+
+STEP 3 [dynamic] look around
+REASON: Need to locate a plant; current workshop view shows no plant, so scan the room for other objects or exits.
+FEEDBACK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a purple box (containing nothing)
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a red light bulb, which is off, a red wire, a switch, which is off, a violet light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is open. In the ultra low temperature freezer is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+
+STEP 4 [dynamic] look in hallway
+REASON: The plant is not in the workshop; check the hallway for it.
+FEEDBACK: Inside the hallway is: 
+	a substance called air
+	a picture
+
+ You also see: A door to the kitchen (that is closed), A door to the living room (that is closed), A door to the bedroom (that is closed), A door to the workshop (that is closed), A door to the greenhouse (that is closed), A door to the art studio (that is closed).
+
+STEP 5 [dynamic] open door to hallway
+REASON: Need to search other rooms for a plant; opening the hallway door allows access to the greenhouse and other rooms.
+FEEDBACK: The door is now open.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a purple box (containing nothing)
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a red light bulb, which is off, a red wire, a switch, which is off, a violet light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is open. In the ultra low temperature freezer is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 6 [dynamic] go to hallway
+REASON: Need to locate a plant; hallway has doors to greenhouse and other rooms, so explore there first.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is open)
+
+
+STEP 7 [dynamic] open door to greenhouse
+REASON: The plant is likely in the greenhouse. Open its door from the hallway to search there.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is open)
+
+
+STEP 8 [dynamic] go to greenhouse
+REASON: The greenhouse door is open; enter it to locate a plant.
+FEEDBACK: You move to the greenhouse.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a flower pot 3 (containing nothing)
+	a flower pot 5 (containing nothing)
+	a flower pot 6 (containing a peach tree in the reproducing stage, soil)
+	a flower pot 8 (containing a banana tree in the reproducing stage, soil)
+	a flower pot 9 (containing a pea plant in the reproducing stage with a short height, soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 9 [dynamic] pick up living thing in flower pot 9
+REASON: The pea plant in flower pot 9 is a plant; pick it up to carry it to the purple box in the workshop.
+FEEDBACK: You move the pea plant to the inventory.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a flower pot 3 (containing nothing)
+	a flower pot 5 (containing nothing)
+	a flower pot 6 (containing a peach tree in the reproducing stage, soil)
+	a flower pot 8 (containing a banana tree in the reproducing stage, soil)
+	a flower pot 9 (containing soil)
+	a jug (containing nothing)
+	a shovel
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+INVENTORY: In your inventory, you see:
+	an orange
+	a pea plant in the reproducing stage with a short height
+
+
+STEP 10 [dynamic] go to hallway
+REASON: I have the pea plant (a plant) in inventory. Now I need to travel to the workshop to place it in the purple box, so first move to the hallway.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a picture
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is open)
+
+INVENTORY: In your inventory, you see:
+	an orange
+	a pea plant in the reproducing stage with a short height (that looks unwell)
+
+
+STEP 11 [dynamic] go to workshop
+REASON: I have the pea plant in inventory; now move to the workshop to place it in the purple box.
+FEEDBACK: You move to the workshop.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a purple box (containing nothing)
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a red light bulb, which is off, a red wire, a switch, which is off, a violet light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is open. In the ultra low temperature freezer is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 12 [dynamic] move living thing to purple box
+REASON: The pea plant (plant) is already in inventory; now place it into the purple box in the workshop to complete the goal.
+FEEDBACK: You move the pea plant to the purple box.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a purple box (containing a pea plant in the reproducing stage with a short height (that looks unwell))
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a red light bulb, which is off, a red wire, a switch, which is off, a violet light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is open. In the ultra low temperature freezer is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 13 [dynamic] task
+REASON: The pea plant has been moved into the purple box in the workshop, matching the goal; check task completion status.
+FEEDBACK: Task description:
+Your task is to find a(n) plant. First, focus on the thing. Then, move it to the purple box in the workshop.
+
+STEP 14 [dynamic] focus on living thing
+REASON: The pea plant is already in the purple box; the task requires focusing on the plant first, so focus on it to satisfy that step.
+FEEDBACK: You focus on the pea plant.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a purple box (containing a pea plant in the dead stage (that looks unwell))
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a red light bulb, which is off, a red wire, a switch, which is off, a violet light bulb, which is off, a yellow wire.
+	a ultra low temperature freezer. The ultra low temperature freezer door is open. In the ultra low temperature freezer is: nothing.
+You also see:
+	A door to the hallway (that is open)
+

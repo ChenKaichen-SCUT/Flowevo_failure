@@ -1,0 +1,13 @@
+{
+  "files": {
+    "artifacts/success_audit/review_a.json": "bcb0811201cf8565d6b0a645c3b229639c09e2f127e9a2aa62a044a4b8109271",
+    "artifacts/success_audit/review_b.json": "8f7ee7d5c10369df4206c97d03fde6c9292c470ab9d064ca4b00f8b4ac35bd73",
+    "artifacts/success_audit/review_disagreements.json": "1c68c272f14dac2efa7e3804fe91bb94d2c9f7e673e5251158a6bc99995a0022",
+    "artifacts/success_audit/source_adjudicated.json": "0a0cb30996555873a9f874afa28b7e15abfc5f87a42179fe544f3901035153cf",
+    "artifacts/success_audit/source_manifest.json": "fae1c32eb692540830c18eba9a9ea6f1b09571754ee76a49a5f7ae0245b69dbe",
+    "configs/success_trace_audit.json": "83c79692e84214aaa17f8c3a68d97650e130866df490d7677fbe07a3832b8e7e"
+  },
+  "new_provider_calls": 0,
+  "stage": "SOURCE_REVIEW_FROZEN_BEFORE_COMPILATION_JOIN",
+  "utc": "2026-11-17T13:27:35.532140+00:00"
+}

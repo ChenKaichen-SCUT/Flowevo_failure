@@ -1,0 +1,39 @@
+# selected-train-v1.F.003597b7b9c549df70c6
+inclined-plane-friction-named-surfaces | train | variation 423
+Task Description:
+Your task is to determine which of the two inclined planes (titanium, zinc) has the least friction. After completing your experiment, focus on the inclined plane with the least friction.
+INITIAL LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	an inclined plane with a zinc surface
+	an inclined plane with a titanium surface
+	a stopwatch, which is deactivated. 
+	a table. On the table is: a battery, a blue light bulb, which is off, a blue wire, a orange wire, a red wire, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+	a wood block
+You also see:
+	A door to the hallway (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [dynamic] look at inclined plane with a titanium surface
+REASON: Inspect the titanium inclined plane to learn how to run the friction experiment.
+FEEDBACK: an inclined plane with a titanium surface
+
+STEP 2 [dynamic] look at inclined plane with a zinc surface
+REASON: Inspect the zinc inclined plane to compare its surface properties with the titanium one before running the friction experiment.
+FEEDBACK: an inclined plane with a zinc surface
+
+STEP 3 [dynamic] connect block to inclined plane with a titanium surface
+REASON: Place the wood block on the titanium inclined plane to begin the friction comparison experiment.
+FEEDBACK: terminal 1 on wood block is now connected to terminal 1 on inclined plane
+
+STEP 4 [dynamic] connect block to inclined plane with a zinc surface
+REASON: Block is connected to titanium plane; now connect it to the zinc plane to compare friction between the two inclined planes.
+FEEDBACK: terminal 2 on wood block is now connected to terminal 1 on inclined plane
+
+STEP 5 [dynamic] focus on inclined plane with a titanium surface
+REASON: The block is connected to both planes; I need to observe the titanium plane's setup to run the friction comparison.
+FEEDBACK: You focus on the inclined plane with a titanium surface.

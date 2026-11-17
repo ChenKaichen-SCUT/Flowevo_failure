@@ -1,0 +1,993 @@
+# selected-train-v1.F.ddde1cdd88f20265f732
+find-animal | train | variation 74
+Task Description:
+Your task is to find a(n) animal. First, focus on the thing. Then, move it to the blue box in the living room.
+INITIAL LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a blue wire, a red wire, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is closed. 
+You also see:
+	A door to the hallway (that is closed)
+
+INITIAL INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 1 [skill_guided] open freezer
+REASON: The freezer is the likely container holding an animal; open it before focusing on or picking up the animal.
+FEEDBACK: The ultra low temperature freezer is now open.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a blue wire, a red wire, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is open. In the ultra low temperature freezer is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+
+
+STEP 2 [skill_guided] look in freezer
+REASON: Check whether the opened freezer contains the animal to focus on.
+FEEDBACK: Inside the ultra low temperature freezer is: 
+	nothing
+
+STEP 3 [skill_guided] look around
+REASON: The freezer is empty; I need to locate the animal by surveying the workshop and nearby areas.
+FEEDBACK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a blue wire, a red wire, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is open. In the ultra low temperature freezer is: nothing.
+You also see:
+	A door to the hallway (that is closed)
+
+STEP 4 [skill_guided] open door to hallway
+REASON: The animal is not visible in the workshop; open the closed hallway door to search other rooms.
+FEEDBACK: The door is now open.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a blue wire, a red wire, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is open. In the ultra low temperature freezer is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 5 [skill_guided] go to hallway
+REASON: The workshop has no animal; move through the now-open hallway door to search other rooms.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is closed)
+	A door to the workshop (that is open)
+
+
+STEP 6 [skill_guided] open door to living room
+REASON: Need to reach the living room to find the animal and blue box; the door is currently closed.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+
+
+STEP 7 [skill_guided] go to living room
+REASON: The living room door is open; enter it to search for the animal and the blue box.
+FEEDBACK: You move to the living room.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing nothing)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 8 [skill_guided] look around
+REASON: I am in the living room but no animal is visible. I need to search other rooms; first confirm current surroundings and exits before moving.
+FEEDBACK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing nothing)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+STEP 9 [skill_guided] look in blue box
+REASON: Check whether the blue box contains the animal before searching elsewhere.
+FEEDBACK: Inside the blue box is: 
+	nothing
+
+STEP 10 [skill_guided] look around
+REASON: Need to locate an animal in the current living room before focusing on it; current look shows no animal, so re-check surroundings.
+FEEDBACK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing nothing)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+STEP 11 [skill_guided] look in chair
+REASON: The animal is not visible in the living room; check the chair as a possible container before searching elsewhere.
+FEEDBACK: Inside the chair is: 
+	nothing
+
+STEP 12 [skill_guided] look around
+REASON: The animal is not visible in the living room; I need to search other rooms, starting by rechecking the current room and then the hallway.
+FEEDBACK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing nothing)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+STEP 13 [skill_guided] go to hallway
+REASON: The animal is not in the living room; search the hallway next.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+
+
+STEP 14 [skill_guided] look around
+REASON: I am in the hallway and need to locate an animal; inspect the current room for visible animals or containers.
+FEEDBACK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is closed)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+
+STEP 15 [skill_guided] open door to bedroom
+REASON: Need to search rooms for an animal; bedroom is unexplored and its door is closed.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+
+
+STEP 16 [skill_guided] go to bedroom
+REASON: The bedroom door is now open; enter to search for the animal.
+FEEDBACK: You move to the bedroom.
+LOOK: This room is called the bedroom. In it, you see: 
+	the agent
+	a substance called air
+	a bed. On the bed is: a mattress. On the mattress is: a white pillow..
+	a closet. The closet door is closed. 
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 17 [skill_guided] open closet
+REASON: The closet is the likely container holding an animal in the bedroom; open it to reveal contents.
+FEEDBACK: The closet is now open.
+LOOK: This room is called the bedroom. In it, you see: 
+	the agent
+	a substance called air
+	a bed. On the bed is: a mattress. On the mattress is: a white pillow..
+	a closet. The closet door is open. In the closet is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 18 [skill_guided] look in closet
+REASON: Closet is now open; check inside for the animal before focusing or picking it up.
+FEEDBACK: Inside the closet is: 
+	nothing
+
+STEP 19 [skill_guided] look around
+REASON: Closet is empty; need to search other containers/rooms for the animal. Re-check bedroom contents before moving on.
+FEEDBACK: This room is called the bedroom. In it, you see: 
+	the agent
+	a substance called air
+	a bed. On the bed is: a mattress. On the mattress is: a white pillow..
+	a closet. The closet door is open. In the closet is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+STEP 20 [skill_guided] look in bed
+REASON: Search the bedroom for an animal; the bed is a likely hiding spot and hasn't been inspected yet.
+FEEDBACK: Inside the bed is: 
+	a mattress. On the mattress is: a white pillow.
+
+STEP 21 [skill_guided] look in table
+REASON: Search bedroom containers for the animal; table is currently unchecked.
+FEEDBACK: Inside the table is: 
+	nothing
+
+STEP 22 [skill_guided] look around
+REASON: Need to locate an animal; current bedroom look shows no animal, so re-check surroundings before searching other rooms.
+FEEDBACK: This room is called the bedroom. In it, you see: 
+	the agent
+	a substance called air
+	a bed. On the bed is: a mattress. On the mattress is: a white pillow..
+	a closet. The closet door is open. In the closet is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+STEP 23 [skill_guided] go to hallway
+REASON: Bedroom has no animal; return to hallway to search other rooms.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+
+
+STEP 24 [skill_guided] go to workshop
+REASON: The hallway has no animal; the workshop door is open, so search there next for the animal.
+FEEDBACK: You move to the workshop.
+LOOK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a blue wire, a red wire, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is open. In the ultra low temperature freezer is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 25 [skill_guided] look in freezer
+REASON: The freezer is open and may contain the animal; inspect it before searching elsewhere.
+FEEDBACK: Inside the ultra low temperature freezer is: 
+	nothing
+
+STEP 26 [skill_guided] look around
+REASON: I need to locate an animal; current workshop view shows no animal, so scan the room for hidden or newly visible objects.
+FEEDBACK: This room is called the workshop. In it, you see: 
+	the agent
+	a substance called air
+	a table. On the table is: a battery, a black wire, a blue light bulb, which is off, a blue wire, a red wire, a switch, which is off, a violet light bulb, which is off, a yellow light bulb, which is off.
+	a ultra low temperature freezer. The ultra low temperature freezer door is open. In the ultra low temperature freezer is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+STEP 27 [skill_guided] go to hallway
+REASON: The workshop has no animal; move through the hallway to search other rooms, starting with the living room where the blue box is located.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+
+
+STEP 28 [skill_guided] go to living room
+REASON: The blue box is in the living room; return there to check it and continue searching for the animal.
+FEEDBACK: You move to the living room.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing nothing)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 29 [skill_guided] look in blue box
+REASON: Check the blue box in the living room for the animal before searching elsewhere.
+FEEDBACK: Inside the blue box is: 
+	nothing
+
+STEP 30 [skill_guided] look around
+REASON: Need to locate an animal; current living room view shows no animal, so re-check surroundings before searching other rooms.
+FEEDBACK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing nothing)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+STEP 31 [skill_guided] go to hallway
+REASON: The living room has no animal; search other rooms, starting by returning to the hallway.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is closed)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+
+
+STEP 32 [skill_guided] open door to greenhouse
+REASON: The animal may be in the greenhouse; open its closed door to search there.
+FEEDBACK: The door is now open.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+
+
+STEP 33 [skill_guided] go to greenhouse
+REASON: The greenhouse door is now open; enter it to search for the animal.
+FEEDBACK: You move to the greenhouse.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a bee hive. The bee hive door is closed. 
+	a flower pot 2 (containing nothing)
+	a flower pot 3 (containing a apple tree in the reproducing stage. On the apple tree you see: a flower. , soil)
+	a flower pot 4 (containing a lemon tree in the reproducing stage. On the lemon tree you see: a flower. , soil)
+	a flower pot 5 (containing a cherry tree in the reproducing stage. On the cherry tree you see: a flower. , soil)
+	a flower pot 8 (containing nothing)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 34 [skill_guided] open bee hive
+REASON: The bee hive is a likely animal container; open it to reveal bees before focusing and moving one to the blue box.
+FEEDBACK: The bee hive is now open.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: a adult bee, a adult bee.
+	a flower pot 2 (containing nothing)
+	a flower pot 3 (containing a apple tree in the reproducing stage. On the apple tree you see: a flower. , soil)
+	a flower pot 4 (containing a lemon tree in the reproducing stage. On the lemon tree you see: a flower. , soil)
+	a flower pot 5 (containing a cherry tree in the reproducing stage. On the cherry tree you see: a flower. , soil)
+	a flower pot 8 (containing nothing)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 35 [skill_guided] focus on bee 0
+REASON: The bee hive is open and contains bees; focus on a specific bee to identify the animal before picking it up.
+FEEDBACK: You focus on the adult bee.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: a adult bee.
+	a flower pot 2 (containing nothing)
+	a flower pot 3 (containing a apple tree in the reproducing stage. On the apple tree you see: a flower. , soil)
+	a flower pot 4 (containing a lemon tree in the reproducing stage. On the lemon tree you see: a flower. , soil)
+	a flower pot 5 (containing a cherry tree in the reproducing stage. On the cherry tree you see: a flower. , soil)
+	a flower pot 8 (containing nothing)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 36 [skill_guided] pick up adult bee in bee hive
+REASON: The bee hive is open and contains an adult bee. Pick it up to carry it to the blue box in the living room.
+FEEDBACK: You move the bee 2 to the inventory.
+LOOK: This room is called the greenhouse. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a bee hive. The bee hive door is open. In the bee hive is: nothing.
+	a flower pot 2 (containing nothing)
+	a flower pot 3 (containing a apple tree in the reproducing stage. On the apple tree you see: a flower. , soil)
+	a flower pot 4 (containing a lemon tree in the reproducing stage. On the lemon tree you see: a flower. , soil)
+	a flower pot 5 (containing a cherry tree in the reproducing stage. On the cherry tree you see: a flower. , soil)
+	a flower pot 8 (containing nothing)
+	a jug (containing nothing)
+	a sink, which is turned off. In the sink is: nothing.
+You also see:
+	A door to the hallway (that is open)
+	A door to the outside (that is closed)
+
+
+STEP 37 [skill_guided] go to hallway
+REASON: The bee is now in inventory. I need to travel from the greenhouse through the hallway to the living room, then place the bee in the blue box.
+FEEDBACK: You move to the hallway.
+LOOK: This room is called the hallway. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a drawing
+You also see:
+	A door to the art studio (that is closed)
+	A door to the bedroom (that is open)
+	A door to the greenhouse (that is open)
+	A door to the kitchen (that is closed)
+	A door to the living room (that is open)
+	A door to the workshop (that is open)
+
+
+STEP 38 [skill_guided] go to living room
+REASON: The adult bee is already in inventory; now move to the living room to place it in the blue box.
+FEEDBACK: You move to the living room.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing nothing)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: a white pillow.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 39 [skill_guided] move object to blue box
+REASON: The adult bee is in inventory; I am in the living room with the blue box, so place the animal into the blue box to complete the task.
+FEEDBACK: You move the pillow to the blue box.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 40 [skill_guided] move object to blue box
+REASON: The bee is already in inventory; the pillow was just moved into the blue box. Next, place the animal (bee) into the blue box in the living room.
+FEEDBACK: You move the pillow to the blue box.
+
+STEP 41 [skill_guided] look in inventory
+REASON: Verify the adult bee is still in inventory before moving it to the blue box.
+FEEDBACK: Inside the inventory is: 
+	an orange
+
+STEP 42 [skill_guided] look in inventory
+REASON: Check whether the adult bee is still in inventory before moving it to the blue box.
+FEEDBACK: Inside the inventory is: 
+	an orange
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 43 [skill_guided] look around
+REASON: The bee was picked up earlier but inventory now shows only an orange; verify whether the adult bee is still present in the living room before acting.
+FEEDBACK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+STEP 44 [skill_guided] move adult bee to blue box
+REASON: The adult bee is present in the living room and the blue box is here; move the bee into the blue box to complete the goal.
+FEEDBACK: You move the bee 4 to the blue box.
+
+STEP 45 [skill_guided] look in blue box
+REASON: Verify the adult bee is now inside the blue box in the living room, completing the placement goal.
+FEEDBACK: Inside the blue box is: 
+	a white pillow
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 46 [skill_guided] look around
+REASON: The bee was moved to the blue box but the latest look inside shows only a pillow; re-check the room to locate the bee before moving it.
+FEEDBACK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+STEP 47 [skill_guided] look in blue box
+REASON: Verify whether the adult bee is still inside the blue box, since the latest look only lists the pillow.
+FEEDBACK: Inside the blue box is: 
+	a white pillow
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 48 [skill_guided] look around
+REASON: The adult bee is no longer visible in the living room, so I need to re-check the current room state before deciding where the bee went.
+FEEDBACK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+STEP 49 [skill_guided] focus on adult bee
+REASON: The adult bee is visible in the living room; focus on it before moving it into the blue box.
+FEEDBACK: You focus on the adult bee.
+
+STEP 50 [skill_guided] move adult bee to blue box
+REASON: The adult bee is visible in the living room and the blue box is here; move the bee into the blue box to complete the goal.
+FEEDBACK: You move the bee 1 to the blue box.
+
+STEP 51 [skill_guided] look in blue box
+REASON: Verify whether the adult bee is now inside the blue box after the move.
+FEEDBACK: Inside the blue box is: 
+	a white pillow
+
+STEP 52 [skill_guided] move adult bee to blue box
+REASON: The adult bee is visible in the living room and the blue box is here; move the bee into the blue box to complete the goal.
+FEEDBACK: You move the bee 1 to the blue box.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 53 [skill_guided] look in blue box
+REASON: Verify whether the bee was actually placed inside the blue box, since prior look showed only the pillow.
+FEEDBACK: Inside the blue box is: 
+	a white pillow
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 54 [skill_guided] look in blue box
+REASON: Verify whether the adult bee is actually inside the blue box, since prior look feedback only showed the pillow.
+FEEDBACK: Inside the blue box is: 
+	a white pillow
+
+STEP 55 [skill_guided] look at adult bee
+REASON: The bee is present in the living room; inspect it to confirm the target animal before moving it into the blue box.
+FEEDBACK: a adult bee, that is covered in pollen
+
+STEP 56 [skill_guided] pick up adult bee
+REASON: The adult bee is present in the living room; pick it up so it can be placed into the blue box.
+FEEDBACK: You move the bee 3 to the inventory.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	a adult bee, that is covered in pollen
+	an orange
+
+
+STEP 57 [skill_guided] move adult bee to blue box
+REASON: The bee is in inventory and the blue box is in the current living room; place the bee into the blue box to complete the goal.
+FEEDBACK: You move the bee 3 to the blue box.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+INVENTORY: In your inventory, you see:
+	an orange
+
+
+STEP 58 [skill_guided] look in blue box
+REASON: Verify whether the bee was actually placed inside the blue box, since prior attempts showed only the pillow.
+FEEDBACK: Inside the blue box is: 
+	a white pillow
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 59 [skill_guided] look in blue box
+REASON: The bee was moved to the blue box, but the last look showed only the pillow. Re-check the box contents to confirm whether the bee is now inside.
+FEEDBACK: Inside the blue box is: 
+	a white pillow
+
+STEP 60 [skill_guided] look around
+REASON: The bee was moved to the blue box but the last look inside showed only a pillow; re-check the room to confirm the bee's current location before further moves.
+FEEDBACK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+STEP 61 [skill_guided] look at adult bee
+REASON: The bee is visible in the living room; verify its state before attempting to place it in the blue box.
+FEEDBACK: a adult bee, that is covered in pollen
+
+STEP 62 [skill_guided] look in inventory
+REASON: Check whether the adult bee is actually in inventory after the last move, since the blue box still shows only a pillow.
+FEEDBACK: Inside the inventory is: 
+	an orange
+
+STEP 63 [skill_guided] look at blue box
+REASON: The bee appears to remain in the living room despite prior move attempts; inspect the blue box to verify whether the bee is actually inside.
+FEEDBACK: a blue box (containing a white pillow)
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 64 [skill_guided] focus on bee 1
+REASON: The bee is present in the living room; focus on it before moving it into the blue box.
+FEEDBACK: You focus on the adult bee.
+
+STEP 65 [skill_guided] pick up bee 1
+REASON: The bee is present in the living room; pick it up so it can be placed into the blue box.
+FEEDBACK: You move the bee 1 to the inventory.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 66 [skill_guided] move adult bee to blue box
+REASON: The bee is in inventory; place it into the blue box in the living room to complete the task.
+FEEDBACK: You move the bee 1 to the blue box.
+
+STEP 67 [skill_guided] look in blue box
+REASON: Verify whether the adult bee is now inside the blue box after the move.
+FEEDBACK: Inside the blue box is: 
+	a white pillow
+
+STEP 68 [skill_guided] look at adult bee
+REASON: Verify whether the adult bee is actually inside the blue box after the move, since the box look only showed the pillow.
+FEEDBACK: a adult bee, that is covered in pollen
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 69 [skill_guided] look in blue box
+REASON: Verify whether the adult bee is actually inside the blue box, since prior look showed only the pillow.
+FEEDBACK: Inside the blue box is: 
+	a white pillow
+
+STEP 70 [skill_guided] look around
+REASON: The bee was moved to the blue box but the box still reports only a pillow; re-check the room to locate the bee's current position before moving it.
+FEEDBACK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+STEP 71 [skill_guided] look in blue box
+REASON: The bee was moved to the blue box, but the last look showed only a pillow. Re-check the blue box contents to confirm whether the animal is present.
+FEEDBACK: Inside the blue box is: 
+	a white pillow
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 72 [skill_guided] look in blue box
+REASON: The bee was moved into the blue box, but the last look only showed the pillow. Re-check the box contents to confirm the bee is inside.
+FEEDBACK: Inside the blue box is: 
+	a white pillow
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 73 [skill_guided] look in blue box
+REASON: The bee was moved to the blue box, but the last look showed only a pillow. Re-check the blue box contents to confirm whether the bee is actually inside.
+FEEDBACK: Inside the blue box is: 
+	a white pillow
+
+STEP 74 [skill_guided] look around
+REASON: The bee was moved to the blue box but the latest look shows only a pillow; re-check the room to locate the bee or confirm placement.
+FEEDBACK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+STEP 75 [skill_guided] look in blue box
+REASON: The bee was moved into the blue box, but the last look showed only a pillow. Re-check the box contents to confirm whether the animal is present.
+FEEDBACK: Inside the blue box is: 
+	a white pillow
+
+STEP 76 [skill_guided] look around
+REASON: The bee is no longer visible in the living room or blue box; re-check the room to locate the animal before moving it.
+FEEDBACK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+STEP 77 [skill_guided] look in blue box
+REASON: The bee was previously moved into the blue box, but the current look shows only a white pillow. Re-check the blue box contents to locate the animal.
+FEEDBACK: Inside the blue box is: 
+	a white pillow
+
+STEP 78 [skill_guided] look at adult bee
+REASON: The bee was previously moved to the blue box, but current look shows only a pillow. Verify whether the adult bee is still present in the blue box before re-picking it.
+FEEDBACK: No known action matches that input.
+
+STEP 79 [skill_guided] look in inventory
+REASON: The bee is not visible in the blue box or room; check inventory to confirm whether the animal is still held before moving it.
+FEEDBACK: Inside the inventory is: 
+	an orange
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 80 [skill_guided] look at adult bee
+REASON: The bee is no longer visible in the living room; check whether it is still present or was moved, since the blue box only contains a pillow.
+FEEDBACK: a adult bee, that is covered in pollen
+
+STEP 81 [skill_guided] move adult bee to blue box
+REASON: The adult bee is present in the living room and the blue box is here; move the bee into the blue box to complete the task.
+FEEDBACK: You move the bee 0 to the blue box.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a blue box (containing a adult bee, a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 82 [skill_guided] look in blue box
+REASON: The bee was just moved to the blue box, but prior checks showed only a pillow. Verify whether the adult bee is now inside the blue box.
+FEEDBACK: Inside the blue box is: 
+	a adult bee
+	a white pillow
+
+STEP 83 [skill_guided] look in blue box
+REASON: Verify the adult bee is currently inside the blue box in the living room, satisfying the goal.
+FEEDBACK: Inside the blue box is: 
+	a adult bee
+	a white pillow
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a blue box (containing a adult bee, a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+
+
+STEP 84 [skill_guided] focus on adult bee in blue box
+REASON: The bee is already inside the blue box in the living room, so focus on it to confirm the target before completing placement.
+FEEDBACK: You focus on the adult bee.
+LOOK: This room is called the living room. In it, you see: 
+	the agent
+	a substance called air
+	a adult bee
+	a adult bee
+	a blue box (containing a white pillow)
+	a chair. On the chair is: nothing.
+	a couch. On the couch is: nothing.
+	a painting
+	a table. On the table is: nothing.
+You also see:
+	A door to the hallway (that is open)
+

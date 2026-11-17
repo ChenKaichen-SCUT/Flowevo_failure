@@ -1,0 +1,1019 @@
+[
+  {
+    "job_id": "batch-sensitivity-1-v1.F.1421639dc7e19fcaab35",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      12
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      10,
+      11,
+      12
+    ],
+    "reason_zh": "第10步见到 cloth 和 steel 斜面，第11步仅返回 cloth 表面名称，第12步便 focus cloth。没有放置滑块、运动、计时或两面摩擦结果，reason 把最终提交当作开始检查。",
+    "uncertainties_zh": "缺少公开观察支持不等于证明随机猜中；不能从 focus 后的成功资格倒推选择前已完成比较。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "batch-sensitivity-8-v1.F.1421639dc7e19fcaab35",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      9
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      7,
+      8,
+      9
+    ],
+    "reason_zh": "第7步定位两面，第8步仅获 cloth 名称，第9步 focus cloth；没有摩擦测量或可比较的行为证据。reason 中的开始选择不构成实验结果。",
+    "uncertainties_zh": "缺少公开观察支持不等于证明随机猜中；不能从 focus 后的成功资格倒推选择前已完成比较。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "batch-sensitivity-8-v1.F.ddde1cdd88f20265f732",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      44,
+      45,
+      48
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      43,
+      44,
+      45,
+      47,
+      48
+    ],
+    "reason_zh": "第43步开蜂箱公开见到成年蜜蜂，第44步 focus、第45步取出 bee 4，随后到客厅并在第48步放入蓝盒；最终 look 明示盒内成年蜜蜂。普通动物识别及搬运不需要科学比较。",
+    "uncertainties_zh": "前42步搜索冗长，但不影响最终动物身份和安放的公开支持。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "dev-baseline-v1.F.3ea7c55db1ecffae3c8a",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      7
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      5,
+      6,
+      7
+    ],
+    "reason_zh": "第5步见到 glass/brass；第6步 connect 只反馈木块端子与斜面端子连接，第7步 focus glass。没有滑动观测或 brass 对照，端子连接不能被视为完成摩擦实验。",
+    "uncertainties_zh": "缺少公开观察支持不等于证明随机猜中；不能从 focus 后的成功资格倒推选择前已完成比较。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "dev-baseline-v1.F.722d467db63128d43cf2",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      16
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      13,
+      14,
+      15,
+      16
+    ],
+    "reason_zh": "第13步定位 glass/steel，第14步只获表面名称；第15步连接砖块端子后第16步 focus glass。没有任何公开摩擦结果，也未测试另一面。",
+    "uncertainties_zh": "缺少公开观察支持不等于证明随机猜中；不能从 focus 后的成功资格倒推选择前已完成比较。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "dev-baseline-v1.F.77525ad34ec157f0577b",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      19
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      17,
+      18,
+      19
+    ],
+    "reason_zh": "第17步见到 bronze/greenpaint，第18步钢块端子连接 bronze，第19步 focus bronze 为最大摩擦。连接反馈没有运动或阻力信息，另一面没有对照。",
+    "uncertainties_zh": "缺少公开观察支持不等于证明随机猜中；不能从 focus 后的成功资格倒推选择前已完成比较。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "dev-baseline-v1.F.cfcb5065ead3594fa047",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      2,
+      6,
+      10,
+      12,
+      17,
+      27,
+      54,
+      56,
+      61,
+      73,
+      74,
+      75,
+      77
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      1,
+      3,
+      4,
+      9,
+      16,
+      26,
+      52,
+      53,
+      55,
+      60,
+      72,
+      74,
+      75,
+      76,
+      77
+    ],
+    "reason_zh": "动物身份由第1步开箱见蜂支持，后续是多次搬运及检查。末尾第74步 inventory 确有蜂，第75步放入红盒，第76步看见盒内蜂，第77步 focus。普通分类搬运，无须物理实验。",
+    "uncertainties_zh": "蜜蜂经常离开 inventory 或盒子；若干 reason 在当前 look 已空时仍声称已在盒内。中途换过 bee 0/1/2/4；末尾支持动物入盒，但不能把每次 move 当作持续留箱保证。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v1.F.1b4703786cd7f2ff0592",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      29,
+      30,
+      33
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      28,
+      29,
+      30,
+      32,
+      33
+    ],
+    "reason_zh": "第28步开蜂箱见成年蜂，第29步 focus bee 0，第30步持有蜂，第33步把 inventory 中蜂移入客厅红盒；最终 look 有盒内蜂。动物身份与目标容器都有公开依据。",
+    "uncertainties_zh": "搜索路线较长；没有比较型实验需求。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v1.F.279ad8d80a9088c7546b",
+    "label": "PROCESS_SUPPORTED",
+    "requires_inference_or_experiment": true,
+    "comparison_required": false,
+    "measurement_evidence_steps": [
+      11
+    ],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      7,
+      9,
+      10,
+      11
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "reason_zh": "第6步找到 marshmallow，先 focus 后取出，第9步开启炉灶，第10步放在已开启炉灶上，第11步等待后 look 从 marshmallow 变为 liquid marshmallow。干预及相变结果均公开可见。",
+    "uncertainties_zh": "没有温度读数，但任务只要求改变物态；液态观察足够支持结果。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v1.F.965d4f1df81ea937ed3b",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      5,
+      6,
+      9
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "reason_zh": "第4步见到成年 pea plant，第5步 focus，第6步取出，第9步放入 workshop 紫盒且 look 确认。属于明确命名植物的查找搬运。",
+    "uncertainties_zh": "途中变为 looks unwell，但植物类别未矛盾，末尾尚未记录 dead。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v1.F.d9797b94d94a3a12ea4b",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      1,
+      2,
+      5
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "reason_zh": "初始 hallway 可见 drawing，先 focus 后拾取，随后置入 bedroom 红盒并由 look 确认。画作属于非生物，无需实验比较。",
+    "uncertainties_zh": "画中 cow 不是被搬运的真实动物；对象仍是 drawing。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v1.F.e1913f9868b6d9fe9f61",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      13
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "reason_zh": "目标比较 C/B 倾角；第8至12步 look 仅返回名称或空内容，第13步直接 focus C。既无角度数值也无运动/计时对照。reason 承认名称没有角度信息，focus 仍不能补足决策前证据。",
+    "uncertainties_zh": "缺少公开观察支持不等于证明随机猜中；不能从 focus 后的成功资格倒推选择前已完成比较。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.09ae344822c12738f557",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      4
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "reason_zh": "初始候选为 brown bear、hedgehog、rabbit；第1至3步检查只返回幼体身份，第4步凭 reason 中通常寿命判断选择 hedgehog。公开环境未给寿命数值或排序。",
+    "uncertainties_zh": "物种常识可能解释该选择，不能称为随机猜中；本标签仅指未观察到任务内寿命比较依据。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.2beaa66b5bcd3db3dc64",
+    "label": "PROCESS_SUPPORTED",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [
+      9
+    ],
+    "comparison_evidence_steps": [
+      9
+    ],
+    "selection_step": [
+      14
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      1,
+      8,
+      9,
+      10,
+      14,
+      15,
+      17
+    ],
+    "reason_zh": "第9步 thermometer 对 unknown substance 的反馈明确为 -13°C。第10步 reason 正确应用低于0°C的橙盒分支，第14步放入橙盒，第15步确认物质在盒内。分支选择有目标物实测支持。",
+    "uncertainties_zh": "第17步才补 focus 物质，违反文字要求先 focus 再搬运的顺序；这不推翻温度分支判断。inventory 后续显示的温度计自身读数不是物质重测。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.2dcdca293d9b16367852",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      8
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      6,
+      7,
+      8
+    ],
+    "reason_zh": "第6步列出 frog egg、giant tortoise egg、baby hedgehog，第7步只检查巨龟卵身份，第8步根据 likely longest 选择巨龟卵；没有公开寿命信息或比较结果。",
+    "uncertainties_zh": "巨龟长寿是可理解的先验推理，但不等于此环境提供寿命测量；本标签不指随机猜中。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.31452f59c48bc5d93974",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      6,
+      7
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason_zh": "第2步候选为 dragonfly、giant tortoise、wolf；第3至5步只确认名称，第6步 focus 巨龟卵、第7步 focus 幼蜻蜓。没有寿命数值或观察排序；最后 reason 还把已进行的提交描述成继续验证身份。",
+    "uncertainties_zh": "物种先验可能支持常识上的排序，但源轨迹没有公开寿命比较；不得由提交后结束倒推此前充分支持。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.3fbe681bf784f2d76d21",
+    "label": "PARTIALLY_SUPPORTED",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [
+      5
+    ],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      6
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "reason_zh": "第5步确实测得固体 C 当前温度10°C，但无加热、相变或熔点平台观察。第6步把等于10解释成非低于从而选择橙盒，既混淆当前温度与熔点，也没有满足明确的 above 10 条件。存在相关测温过程，但熔点分支未被充分支持。",
+    "uncertainties_zh": "固体在10°C可能提供熔点下界线索，但记录没有平衡或相变证据，不能当作已测得熔点。reason 本身也承认 above 条件未满足。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.5338a5b7b1763d020e75",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      31
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      5,
+      12,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      24,
+      30,
+      31
+    ],
+    "reason_zh": "任务判断 short height 显隐性；多次看种子只获 wrinkly green，花盆只含 soil，盒子为空，第24步取种后未种植、成长、杂交或观察后代，第31步便 focus 橙盒。种子颜色/形状和空盒不支持身高显隐性。",
+    "uncertainties_zh": "已知豌豆遗传常识可能解释正确分支，但 saved reason 未建立该推理，也没有实验观测；不足以证明随机选择。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.5bfedeb6e825464e626d",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      13
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "reason_zh": "第9步见到 rubber/soapy water，后续 look 只返回表面名称，第13步 focus soapy water。任务要求实验后判断最小摩擦，轨迹没有滑动或计时比较。",
+    "uncertainties_zh": "材料常识或直觉不能等同此环境的测量；缺少公开观察支持不等于证明随机猜中；不能从 focus 后的成功资格倒推选择前已完成比较。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.6aebd9fb1322c1074fb6",
+    "label": "PROCESS_SUPPORTED",
+    "requires_inference_or_experiment": true,
+    "comparison_required": false,
+    "measurement_evidence_steps": [
+      9
+    ],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      6,
+      8,
+      9
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reason_zh": "第3步过早 focus 失败后，第5步开冷柜找到 ice；第6步 focus、第7步取出、第8步置于关闭的炉灶，第9步启动后 look 明确变成 water。公开干预与物态变化链完整。",
+    "uncertainties_zh": "没有温度数值，但融冰任务不要求测定熔点或比较另一物质。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.7ac4185e5f00f742931e",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      1,
+      2,
+      5
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "reason_zh": "初始 picture 可见；focus、取出、进入 bedroom 后放入黄盒，反馈和最终 look 均支持非生物画作已入盒。",
+    "uncertainties_zh": "raw_model_response/reason 未记录；动作和公开对象身份已足以判断这项普通搬运，不据此推断内部推理。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.8a0e00d29345445b21a5",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      6,
+      7
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reason_zh": "第2步见 frog egg、giant tortoise egg、baby mouse，第3至5步只返回身份；先 focus 巨龟卵再 focus 幼鼠。没有寿命观测或排序，第7步 reason 误把最终 focus 当作将揭示寿命的检查。",
+    "uncertainties_zh": "物种常识可能说明排序来源，不能把缺少观察说成随机猜中；focus 之后的结果不能支持之前的选择。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.8c8a122797c51e4659c6",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      8
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason_zh": "第4步见 chameleon egg、giant tortoise egg、baby wolf，第5至7步只返回身份；第8步选择变色龙卵的 reason 是 focus 可能揭示寿命。没有在提交前取得寿命或比较证据。",
+    "uncertainties_zh": "即使先验知识可能帮助选择，也不能把环境仅返回名字当作寿命观察；并非证明随机猜中。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.965d4f1df81ea937ed3b",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      9,
+      12,
+      14
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      8,
+      9,
+      10,
+      12,
+      13,
+      14
+    ],
+    "reason_zh": "第8步公开可见 pea plant，第9步取出、第12步置于紫盒，植物类别与目的地均有依据。这是普通植物搬运，无需比较型实验。",
+    "uncertainties_zh": "直到第14步才补 focus，顺序不符合先 focus 后 move；第14步结束 look 显示 dead stage。死去仍不改变植物类别，但不能宣称严格执行了任务顺序或保持健康。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.9cef108e88fa0d6aff89",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      8
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "reason_zh": "第5步找到未知材料 C/E 两面，第6、7步只返回名称，第8步 focus C。未知材料名称不含摩擦排序，亦无滑块或计时实验。",
+    "uncertainties_zh": "缺少公开观察支持不等于证明随机猜中；不能从 focus 后的成功资格倒推选择前已完成比较。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.ae8d0d5850873ad49924",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      10
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reason_zh": "目标是 tall height 显隐性。第3至5、9步只看空盒，第6步看到 wrinkly green 种子，第8步取种后没有生长或遗传观察，第10步直接选 red dominant 分支。公开证据没有身高或显隐性信息。",
+    "uncertainties_zh": "常识可能提供先验，但 reason 是两盒为空后选 dominant 分支；无法认定完成遗传推断或证明随机猜中。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.b305a2703799b76c3a98",
+    "label": "PARTIALLY_SUPPORTED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      1,
+      2,
+      7
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "reason_zh": "初始成年 pea plant 是活物，第1步 focus 和第2步取出有依据；但第6步 inventory 已明示 dead stage，第7步实际 move dead pea plant，reason 却仍称 living thing。搬运本身有反馈支持，最终活物状态与公开信息冲突。",
+    "uncertainties_zh": "任务文字也可理解为先找到活物再搬同一物体，此时初始选择有支持；此处 decision_supported=false 针对最终仍将 dead 植物称作活物的选择与解释，不将其当作科学实验缺失。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.d9797b94d94a3a12ea4b",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      1,
+      2,
+      5
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "reason_zh": "初始 drawing 被 focus、取出后移入 bedroom 红盒；drawing 的非生物类别及盒内结果均公开明确。",
+    "uncertainties_zh": "画上 cow 不改变对象为画作；无需实验。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "discovery-v2.F.def63cb9dcbcef266a65",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      2,
+      3,
+      10,
+      11
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      1,
+      2,
+      3,
+      6,
+      9,
+      10,
+      11
+    ],
+    "reason_zh": "开蜂箱后看到成年蜜蜂，先 focus bee 0，经过导航和重复拾取，第11步将 bee 0 移入 kitchen 黄盒，最终 look 明示盒内成年蜂。普通动物识别与搬运有依据。",
+    "uncertainties_zh": "蜜蜂会移动，部分 reason 的已在 inventory 与即时 inventory 不一致；最后仍有公开入盒结果，不需推断物理属性。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "selected-train-v1.F.003597b7b9c549df70c6",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      5
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason_zh": "初始两面为 titanium/zinc；第1、2步仅返回名称，第3、4步木块两个端子分别连到两面。第5步 focus titanium 前没有运动、时间或摩擦结果；连接两面不构成有效对照。",
+    "uncertainties_zh": "缺少公开观察支持不等于证明随机猜中；不能从 focus 后的成功资格倒推选择前已完成比较。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "selected-train-v1.F.098816d79aa10bdc5eec",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      5
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "reason_zh": "第2步见 steel/rubber，第3步 look steel 只得名称，第4步砖块端子连接 steel，第5步 focus steel。没有 rubber 的实验或任何摩擦观察。",
+    "uncertainties_zh": "缺少公开观察支持不等于证明随机猜中；不能从 focus 后的成功资格倒推选择前已完成比较。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "selected-train-v1.F.1421639dc7e19fcaab35",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      8
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      4,
+      6,
+      7,
+      8
+    ],
+    "reason_zh": "第4、6步定位 cloth/steel，第7步只检查 cloth 名称，第8步 focus cloth。没有滑动、计时或比较；reason 把提交解释成开始比较。",
+    "uncertainties_zh": "缺少公开观察支持不等于证明随机猜中；不能从 focus 后的成功资格倒推选择前已完成比较。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "selected-train-v1.F.17c9fd4a9e6176a23caf",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      10
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      4,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reason_zh": "第7、8步只返回 plastic/platinum 名称，第9步砖块端子连接 plastic，第10步 focus plastic。没有摩擦结果，reason 所说稍后测试 platinum 尚未发生。",
+    "uncertainties_zh": "缺少公开观察支持不等于证明随机猜中；不能从 focus 后的成功资格倒推选择前已完成比较。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "selected-train-v1.F.34085a7755ec1e593502",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      2,
+      17,
+      28,
+      50,
+      55,
+      56
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      1,
+      3,
+      5,
+      9,
+      10,
+      12,
+      23,
+      24,
+      25,
+      31,
+      41,
+      42,
+      50,
+      51,
+      55,
+      56
+    ],
+    "reason_zh": "成年蜂的动物身份有第1步公开观察支持；多次更换蜜蜂并移入 kitchen 红盒，属于查找搬运而非比较实验。第55步 inventory 确有成年蜂，第56步 move 反馈确认移动 bee 2。",
+    "uncertainties_zh": "decision_supported=true 指最终选蜂而非其他类别有依据。蜂多次立刻离箱；末步 look 仍为红盒空、房间有蜂，不能据成功资格声称最终持续留箱。初始 focus 与拾取对象也不一定为同一只。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "selected-train-v1.F.47673143391e75c3cf13",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      49,
+      50,
+      53
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53
+    ],
+    "reason_zh": "第48步公开看到成年蜂，第49步 focus bee 0，第50步拾取 bee 3；第53步反馈将 bee 0 移到 workshop 橙盒。选择动物类别有公开依据，任务无科学比较需要。",
+    "uncertainties_zh": "第51步 inventory 已失去蜂，第52步可见室内蜂；reason 仍声称携带 bee 3，但最终实际移动的是 bee 0。末步 look 没有显示盒内蜂，持续安放不确定，不能用 host 成功补足。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "selected-train-v1.F.68edb4b7a582dbbbf477",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      12,
+      15,
+      16,
+      18
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "reason_zh": "第11步看到成年蜂，第12步拾取 bee 0；第16步移动 bee 4 到绿盒且 look 确认，第17步盒内观察也有蜂。普通动物类别和目的地有依据。",
+    "uncertainties_zh": "第18步才首次 focus，未按文字先 focus 后 move；该步后的 look 绿盒又为空，蜜蜂可能移动。不能声称末尾一直留箱；选择蜂这一类别仍有支持。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "selected-train-v1.F.7d7a4efdcc6531231f85",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      10,
+      16,
+      18,
+      31,
+      40,
+      51,
+      52,
+      64,
+      68
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      7,
+      9,
+      11,
+      17,
+      19,
+      23,
+      31,
+      40,
+      41,
+      43,
+      51,
+      52,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "reason_zh": "公开观察追踪了蝶卵、蛙卵、龟卵发育为动物；第40步龟、第52步蛙、第64步成年蝶进入橙盒，第65至67步反复确认盒内三种成年动物。对象身份及目标容器充分支持普通搬运。",
+    "uncertainties_zh": "早期把 foundry 钢桌误称目标容器，第22步先放错地方，之后纠正。多次重复 focus/move 不能视为科学实验；末尾动物入盒有直接支持。",
+    "evidence_grade": "OBSERVED_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "selected-train-v1.F.8658e75cca5cffee5b04",
+    "label": "ANSWER_WITHOUT_OBSERVED_SUPPORT",
+    "requires_inference_or_experiment": true,
+    "comparison_required": true,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      19
+    ],
+    "decision_supported": false,
+    "critical_steps": [
+      15,
+      17,
+      18,
+      19
+    ],
+    "reason_zh": "第15、17步定位 glass/caesium；第18步钢块端子连接 caesium，第19步 focus caesium 为最大摩擦。没有滑动或摩擦观察，glass 未测试。",
+    "uncertainties_zh": "缺少公开观察支持不等于证明随机猜中；不能从 focus 后的成功资格倒推选择前已完成比较。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  },
+  {
+    "job_id": "selected-train-v1.F.ddde1cdd88f20265f732",
+    "label": "PROCESS_NOT_REQUIRED",
+    "requires_inference_or_experiment": false,
+    "comparison_required": false,
+    "measurement_evidence_steps": [],
+    "comparison_evidence_steps": [],
+    "selection_step": [
+      35,
+      49,
+      64,
+      81,
+      84
+    ],
+    "decision_supported": true,
+    "critical_steps": [
+      34,
+      35,
+      36,
+      39,
+      40,
+      41,
+      55,
+      56,
+      63,
+      78,
+      80,
+      81,
+      82,
+      83,
+      84
+    ],
+    "reason_zh": "第34步起公开见蜂，动物类别有依据；第39、40步泛称 object 实际误搬 pillow 后，继续找蜂。第81步明确移动 bee 0 入蓝盒，第82、83步盒内同时有蜂与枕头。属于查找搬运，无需比较实验。",
+    "uncertainties_zh": "误搬枕头是明确类别偏离，不能视为已找到动物；后续才有动物入盒证据。第84步 focus 后 look 盒内又只剩枕头、房内有蜂，持续安放及对象追踪有局限。",
+    "evidence_grade": "PARTIAL_PUBLIC",
+    "reviewer": "assistant_b"
+  }
+]
