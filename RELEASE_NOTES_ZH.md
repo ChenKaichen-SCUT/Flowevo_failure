@@ -11,3 +11,5 @@
 验收：空目录全量恢复及逐文件SHA256校验通过，56项项目测试通过，使用恢复JAR启动JVM并加载历史TRAIN任务通过；错误密钥、篡改、路径和覆盖保护等5项备份工具测试通过。未新增模型API请求或费用。GitHub附件的实际回读校验记录随备份分支交付。
 
 这是项目完整备份，不是系统盘镜像。新服务器推荐Ubuntu 22.04 x86_64 / Python 3.10。root SSH私钥、shell历史和无关系统目录不在备份内。旧服务器未被本流程删除。
+
+GitHub附件的25个加密分片和清单共26项均已实际下载回读，SHA256全部一致。详见[回读验收记录](https://github.com/ChenKaichen-SCUT/Flowevo_failure/blob/backup/server-retirement-20261117/artifacts/server_backup/github_readback.json)。

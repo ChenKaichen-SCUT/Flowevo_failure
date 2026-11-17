@@ -16,3 +16,10 @@ data/manifests/test_manifest.private.jsonl
 # Reconstructed source-only JSON is redundant with the frozen public archives.
 # Readable packets, their semantic hashes and the reconstruction script are kept.
 artifacts/success_audit/source_packets/*.json
+
+# Local decryption keys and downloaded restore material must never be committed.
+RECOVERY_KEY.txt
+recovery.key
+encrypted-backup/
+server-backup-recovery-*/
+*.partial

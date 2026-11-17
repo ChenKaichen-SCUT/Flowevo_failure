@@ -1,0 +1,6 @@
+{
+  "status": "PASSED",
+  "local_recovery_key_authenticated_complete_snapshot": true,
+  "plaintext_written_to_local_disk": false,
+  "ciphertext_sha256": "bdbd9b04f19f376ea6f9d4e13d8cbadcc14ed404ab182e155fd1f854a451f4ea"
+}

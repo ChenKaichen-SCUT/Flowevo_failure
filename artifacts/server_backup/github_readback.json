@@ -1,0 +1,219 @@
+{
+  "status": "PASSED",
+  "assets": [
+    {
+      "name": "backup_manifest.json",
+      "asset_id": 759582063,
+      "size": 5853,
+      "sha256": "03df9c81a2480a67e951c9ae526f268e48667dae2c7c13e389d28904ee2bf605",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759582063"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0001",
+      "asset_id": 759530095,
+      "size": 134217728,
+      "sha256": "a3136f572dcdbfabadf3b0a3469399fd34dc2a9aaf6e6976ea47a96789de4998",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759530095"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0002",
+      "asset_id": 759529545,
+      "size": 134217728,
+      "sha256": "fab502e732d3324e0a8dbeda5556d97a8f697a20694de250692cbd7b3357db74",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759529545"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0003",
+      "asset_id": 759530099,
+      "size": 134217728,
+      "sha256": "3e7682c568fbabb54f22d4cef41e033e85496a9436388f530087f4be51fd8036",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759530099"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0004",
+      "asset_id": 759537885,
+      "size": 134217728,
+      "sha256": "4f75e2c6ce9216b5d0d89ae9a14f9923c038c193c1f700e7bd64dd0cecc4458d",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759537885"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0005",
+      "asset_id": 759541862,
+      "size": 134217728,
+      "sha256": "bbe7ae86404b69c73a1bc66db5768d068a6615065df5d12e98de8bc37c0d00d8",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759541862"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0006",
+      "asset_id": 759543242,
+      "size": 134217728,
+      "sha256": "4720eef5fb726b380935db4575e3585da34cbc13365107ecb748ea6199f1eabc",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759543242"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0007",
+      "asset_id": 759563138,
+      "size": 134217728,
+      "sha256": "b32c3c19e2a1ad3b8095fcc8a1dee15afac374d758db0d833201bd0aa01e68b3",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759563138"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0008",
+      "asset_id": 759547364,
+      "size": 134217728,
+      "sha256": "641d37f99f51b9aaf8426c02efb62a8a3590bdd47ce638e820ded0a5cd364e0d",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759547364"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0009",
+      "asset_id": 759547650,
+      "size": 134217728,
+      "sha256": "de982169cfa173fdafb8c639a1415902db42e5b47056a1702604789e73595f40",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759547650"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0010",
+      "asset_id": 759563171,
+      "size": 134217728,
+      "sha256": "f13fbfd813647a931128c0354097c69422f22ab30a268ef6907d9a6181039dc9",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759563171"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0011",
+      "asset_id": 759563177,
+      "size": 134217728,
+      "sha256": "0d27513f7f3792ce8a45e6474de503ebccec55fd44706feb756bac84bbedeb3b",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759563177"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0012",
+      "asset_id": 759563198,
+      "size": 134217728,
+      "sha256": "f59c90acc129107bdecd20dc4ec2b49e3a80ab5214d2fbad4741cb9bfa8e7120",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759563198"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0013",
+      "asset_id": 759565922,
+      "size": 134217728,
+      "sha256": "ff7888c35639e6da8e5079836261146daffe4c3db84e39de94d4c5a1f513ad0a",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759565922"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0014",
+      "asset_id": 759565915,
+      "size": 134217728,
+      "sha256": "afe112d7493be5c2480c13b2471d8307be731022812201e5dd1a269ef41b4536",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759565915"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0015",
+      "asset_id": 759565985,
+      "size": 134217728,
+      "sha256": "0615578d1bf4031376f02168911e78c5b22fe613b878bd40ce1a4dd75385bcb6",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759565985"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0016",
+      "asset_id": 759566073,
+      "size": 134217728,
+      "sha256": "64161c1f95747f80b442c578686542462b05519ee3a327058569ea2d8227b7b8",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759566073"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0017",
+      "asset_id": 759571096,
+      "size": 134217728,
+      "sha256": "be75a5eec88e3a589d0378fa95a130a513dfdbc82b6bd24f4c73bdb867299af9",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759571096"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0018",
+      "asset_id": 759571613,
+      "size": 134217728,
+      "sha256": "1e2870db9bf7078aa873028468d1cafc67378df90a22e8956d22f5bcb49bdb91",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759571613"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0019",
+      "asset_id": 759571727,
+      "size": 134217728,
+      "sha256": "1d6bc30357b8481e26a33f508f3e2f84a9bdeb7f89015394367a800b96df4fe1",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759571727"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0020",
+      "asset_id": 759573788,
+      "size": 134217728,
+      "sha256": "967cd8d3a4283dfd9c68968d7ce4dff0ed9b1205d17ccf085b463e4ca8060d34",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759573788"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0021",
+      "asset_id": 759577170,
+      "size": 134217728,
+      "sha256": "cf128bfcb2e28fbb00a3199429208701256673c732d0760dc58aaf2799775c51",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759577170"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0022",
+      "asset_id": 759577707,
+      "size": 134217728,
+      "sha256": "281a857201d38f58fdf92fa2cc1d86be9f294a75e50e2fd9f74aa500d695561d",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759577707"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0023",
+      "asset_id": 759585536,
+      "size": 134217728,
+      "sha256": "2825fee8595f6051aa51695c9219531b6b6c1bfff7ee13e7fb2c972c53b76812",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759585536"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0024",
+      "asset_id": 759578171,
+      "size": 134217728,
+      "sha256": "0767bbd030b2c0c35b05691af6c34a77ac4ed38b2d2134c3dc0d9ce9b8cd91ce",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759578171"
+    },
+    {
+      "name": "flowevo-server-snapshot.part0025",
+      "asset_id": 759581685,
+      "size": 34946364,
+      "sha256": "b0d7aca588b21a920567734451fa954565f8d3351749b284d6af5bf26daf8f72",
+      "actual_download_verified": true,
+      "asset_api_url": "https://api.github.com/repos/ChenKaichen-SCUT/Flowevo_failure/releases/assets/759581685"
+    }
+  ],
+  "expected_assets": 26,
+  "release_id": 448796409,
+  "source": "Actual GitHub asset download; no original-server files used",
+  "public_release_url": "https://github.com/ChenKaichen-SCUT/Flowevo_failure/releases/tag/server-backup-20261117",
+  "verified_utc": "2026-11-17T15:30:27.064560+00:00",
+  "verification_transport": "Actual GitHub asset API download with redirects; draft browser URLs omitted because publication changes them."
+}

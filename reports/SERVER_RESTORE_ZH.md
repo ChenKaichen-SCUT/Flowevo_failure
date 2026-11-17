@@ -26,6 +26,8 @@ python3 scripts/download_server_backup.py --dest "$PWD/encrypted-backup"
 
 也可以直接打开[GitHub Release](https://github.com/ChenKaichen-SCUT/Flowevo_failure/releases/tag/server-backup-20261117)，下载全部 `flowevo-server-snapshot.partNNNN` 和 `backup_manifest.json`，放在同一目录。`Source code.zip` 不包含这些附件，不能替代加密备份。
 
+下载脚本使用[GitHub附件下载接口](https://docs.github.com/en/rest/releases/assets#get-a-release-asset)。若共享出口触发匿名API限流，可手动下载附件，或在当前进程环境中提供已有的 `GITHUB_TOKEN`；它只用于GitHub下载，跨域重定向会移除认证头，与模型API密钥无关。不要把令牌写入脚本或仓库。
+
 将已另行保存的 `RECOVERY_KEY.txt` 复制到新服务器的安全位置，权限设为600。下例用 `/root/RECOVERY_KEY.txt`，不要把密钥值写进命令行或聊天。建议你同时在密码管理器或独立存储介质保存一份密钥。
 
 ## 2. 解密并恢复到独立目录

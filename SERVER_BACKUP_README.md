@@ -12,4 +12,8 @@
 
 按[完整恢复说明](reports/SERVER_RESTORE_ZH.md)下载、解密、验证，再建立新的工作分支。推荐Ubuntu 22.04 x86_64 / Python 3.10。
 
+下次继续研究时先读[交接记录](reports/CONTINUATION_HANDOFF_ZH.md)，其中列明已完成阶段、固定提交、最新结论及零API等约束。
+
 [备份清单](artifacts/server_backup/backup_manifest.json) · [完整恢复校验](artifacts/server_backup/restore_verification.json) · [恢复环境验证](artifacts/server_backup/offline_smoke.json) · [加密工具测试](artifacts/server_backup/snapshot_tests.json)
+
+GitHub附件的25个加密分片和清单共26项均已实际下载回读，SHA256全部一致。详见[回读验收记录](https://github.com/ChenKaichen-SCUT/Flowevo_failure/blob/backup/server-retirement-20261117/artifacts/server_backup/github_readback.json)。
